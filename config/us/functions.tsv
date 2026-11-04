@@ -313,7 +313,7 @@
 0x5B470	0x3C	0x8005A870	func_8005A870	retail_disassembly
 0x5B4AC	0xDC	0x8005A8AC	func_8005A8AC	retail_disassembly
 0x5B588	0xC8	0x8005A988	func_8005A988	retail_disassembly
-0x5B650	0x60	0x8005AA50	func_8005AA50	retail_disassembly
+0x5B650	0x60	0x8005AA50	func_8005AA50	matching_source
 0x5B6B0	0x58	0x8005AAB0	func_8005AAB0	retail_disassembly
 0x5B708	0x60	0x8005AB08	func_8005AB08	retail_disassembly
 0x5B768	0x19C	0x8005AB68	func_8005AB68	retail_disassembly
