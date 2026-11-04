@@ -8146,7 +8146,8 @@ glabel func_800B9294_asm
 /* B9EBC 800B92BC 00000000 */   nop
 
 .section .text.after_B9E00, "ax"
-glabel func_800B92C0
+.section .text.replaced_B9EC0, "ax"
+glabel func_800B92C0_asm
 /* B9EC0 800B92C0 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* B9EC4 800B92C4 AFBF0014 */  sw         $ra, 0x14($sp)
 /* B9EC8 800B92C8 AFA40018 */  sw         $a0, 0x18($sp)
@@ -8159,7 +8160,7 @@ glabel func_800B92C0
 /* B9EE4 800B92E4 03E00008 */  jr         $ra
 /* B9EE8 800B92E8 00000000 */   nop
 
-glabel func_800B92EC
+glabel func_800B92EC_asm
 /* B9EEC 800B92EC 27BDFFE0 */  addiu      $sp, $sp, -0x20
 /* B9EF0 800B92F0 AFBF001C */  sw         $ra, 0x1c($sp)
 /* B9EF4 800B92F4 3C0E8014 */  lui        $t6, %hi(D_80144334)
@@ -8204,7 +8205,7 @@ glabel func_800B92EC
 /* B9F8C 800B938C 03E00008 */  jr         $ra
 /* B9F90 800B9390 00000000 */   nop
 
-glabel func_800B9394
+glabel func_800B9394_asm
 /* B9F94 800B9394 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* B9F98 800B9398 AFBF0014 */  sw         $ra, 0x14($sp)
 /* B9F9C 800B939C AFA40018 */  sw         $a0, 0x18($sp)
