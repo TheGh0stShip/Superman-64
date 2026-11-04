@@ -672,7 +672,7 @@
 0xBD0C4	0x60	0x800BC4C4	func_800BC4C4	retail_disassembly
 0xBD124	0x50	0x800BC524	func_800BC524	retail_disassembly
 0xBD174	0x5C	0x800BC574	func_800BC574	retail_disassembly
-0xBD1D0	0x50	0x800BC5D0	func_800BC5D0	retail_disassembly
+0xBD1D0	0x50	0x800BC5D0	func_800BC5D0	matching_source
 0xBD220	0x60	0x800BC620	func_800BC620	retail_disassembly
 0xBD280	0x70	0x800BC680	func_800BC680	retail_disassembly
 0xBD2F0	0x8C	0x800BC6F0	func_800BC6F0	retail_disassembly
