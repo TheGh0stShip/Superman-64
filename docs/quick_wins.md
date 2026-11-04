@@ -59,6 +59,7 @@ conversions. Current candidates, in order:
 | `0x0D0830` | `func_800CFC30` | select a global value | matching C (`-O1`) |
 | `0x0BED40` | `func_800BE140` | forward a pointer to a global owner | matching C |
 | `0x0BFAE0` | `func_800BEEE0` | unlink a node from a singly linked list | matching C (`-O1`) |
+| `0x0C0660` | `func_800BFA60` | decode packed records and accumulate their valid-entry mask | matching C (`-O1`) |
 | `0x0CDE50` | `func_800CD250` | initialize an aligned buffer | matching C |
 | `0x0CE070` | three libc string helpers | copy/length/search | matching C |
 | `0x0CF940` | `func_800CED40` | copy a byte range | matching C |
