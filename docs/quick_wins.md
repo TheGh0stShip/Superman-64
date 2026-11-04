@@ -22,7 +22,7 @@ conversions. Current candidates, in order:
 | `0x0A4F20` | `func_800A4320` | empty callback | matching C |
 | `0x0A4F28` | `func_800A4328` | empty callback | matching C |
 | `0x0B7610` | `func_800B6A10` | zero-trip floating-point clearing loop | matching C (`-O1`) |
-| `0x0B7F00` | three runtime-entry lookup helpers | scan for masked flags and expose two fixed predicates | matching C (`-O1 -g3`) |
+| `0x0B7F00` | four runtime lookup/transform helpers | scan masked entries and apply paired quarter-turn transforms | matching C (`-O1 -g3`) |
 | `0x0B9940` | `func_800B8D40` | clear active runtime entries up to the sentinel | matching C (`-O1 -g3`) |
 | `0x0B9E00` | two runtime state setup helpers | select a state and update the active record | matching C (`-O1 -g3`) |
 | `0x0B9EC0` | three event/state helpers | configure events and transition the active object | matching C (`-O1 -g3`) |
