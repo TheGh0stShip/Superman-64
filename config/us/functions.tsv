@@ -769,7 +769,7 @@
 0xC1F24	0x88	0x800C1324	func_800C1324	retail_disassembly
 0xC1FAC	0x12C	0x800C13AC	func_800C13AC	retail_disassembly
 0xC20D8	0xA8	0x800C14D8	func_800C14D8	retail_disassembly
-0xC2180	0x70	0x800C1580	func_800C1580	retail_disassembly
+0xC2180	0x70	0x800C1580	func_800C1580	matching_source
 0xC21F0	0xDC	0x800C15F0	func_800C15F0	retail_disassembly
 0xC22CC	0x78	0x800C16CC	func_800C16CC	retail_disassembly
 0xC2344	0x48	0x800C1744	func_800C1744	retail_disassembly

@@ -24,6 +24,7 @@ conversions. Current candidates, in order:
 | `0x0BD1D0` | three runtime state helpers | clear or flag ready states and dispatch them | matching C (`-O1 -g3`) |
 | `0x0C0CB0` | `func_800C00B0` | empty callback | matching C |
 | `0x0C0CB8` | `func_800C00B8` | empty callback | matching C |
+| `0x0C2180` | `func_800C1580` | unlink an active node and return it to the free list | matching C (`-O2`) |
 | `0x0C2400` | `func_800C1800` | acquire and initialize a node from a runtime free list | matching C (`-O2`) |
 | `0x0C36B0` | `func_800C2AB0` | set a synthesizer voice priority | matching C (`-O2`) |
 | `0x0C8BD0` | `func_800C7FD0` | pop and unlink the runtime-list head | matching C |
