@@ -206,6 +206,15 @@ the graphics-utility objects that require it. The seed is visible to the
 compiler through a non-load section at its retail RAM address; the inventoried
 raw data block remains the sole owner of its ROM bytes.
 
+The complete `0x0CD150-0x0CDE07` formatted-output object follows
+`src/libc/xprintf.c` from decompals/ultralib commit
+`e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. Its private conversion-field
+formatter and public `_Printf` engine compile byte-exactly with IDO `-O3` and
+unsigned characters. The object's padding strings, format tables, and switch
+table are visible to the compiler through non-load sections at their retail
+RAM addresses, while the inventoried raw data remains the sole owner of their
+ROM bytes.
+
 Five small linked assembly entry points also match handwritten sources in
 decompals/ultralib commit `e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`:
 `osGetCount` at `0x0C84B0` follows `src/os/getcount.s`, `sqrtf` at `0x0CCDA0`

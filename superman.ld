@@ -322,7 +322,7 @@ SECTIONS
         main_CD0D0_s = .;
         BUILD_DIR/src/main_CD0D0.o(.text);
         main_CD150_s = .;
-        BUILD_DIR/asm/main_CD150.o(.text);
+        BUILD_DIR/src/main_CD150.o(.text);
         main_CDE10_s = .;
         BUILD_DIR/src/main_CDE10.o(.text);
         main_CDE50_s = .;
@@ -492,6 +492,14 @@ SECTIONS
     .libultra_random_data 0x800DB120 (NOLOAD) :
     {
         BUILD_DIR/src/main_CD080.o(.data);
+    }
+    .libultra_printf_data 0x800DB130 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_CD150.o(.data);
+    }
+    .libultra_printf_rodata 0x800DFD30 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_CD150.o(.rodata);
     }
     .libultra_position_bss 0x80146C80 (NOLOAD) :
     {

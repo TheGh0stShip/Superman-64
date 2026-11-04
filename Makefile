@@ -165,11 +165,18 @@ $(BUILD_DIR)/src/main_BEAA0.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_BEA10.o: OPT_FLAGS := -O1 -g3
 $(BUILD_DIR)/src/main_CDF90.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_CE070.o: SIGNED_FLAG :=
-$(BUILD_DIR)/src/main_D3BE0.o $(BUILD_DIR)/src/main_CF940.o: SIGNED_FLAG :=
+$(BUILD_DIR)/src/main_D3BE0.o $(BUILD_DIR)/src/main_CF940.o $(BUILD_DIR)/src/main_CD150.o: SIGNED_FLAG :=
 $(BUILD_DIR)/src/main_C4710.o: OPT_FLAGS := -O3
 $(BUILD_DIR)/src/main_CF380.o: OPT_FLAGS := -O3
 $(BUILD_DIR)/src/main_CE9D0.o $(BUILD_DIR)/src/main_D4640.o: OPT_FLAGS := -O3
 $(BUILD_DIR)/src/main_CD080.o: OPT_FLAGS := -O3
+$(BUILD_DIR)/src/main_CD150.o: OPT_FLAGS := -O3
+
+$(BUILD_DIR)/src/main_CD150.o: src/main_CD150.c src/main_CD150.h
+	@$(CC_CHECK) -MMD -MP -MT $@ -MF $(BUILD_DIR)/src/main_CD150.d $<
+	$(CC) $(CFLAGS) -o $@ $<
+	$(STRIP) $@ -N $<
+	$(OBJCOPY) --set-section-alignment .rodata=4 $@
 
 $(BUILD_DIR)/%.szp: %.bin
 	tools/slienc $< $@

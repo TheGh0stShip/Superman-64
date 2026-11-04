@@ -89,6 +89,8 @@ conversions. Current candidates, in order:
 | `0x0C7630` | `func_800C6A30` | start raw SP DMA | matching C (`-O1`) |
 | `0x0CD0D0` | `func_800CC4D0` | formatting output callback | matching C (`-O3`) |
 | `0x0CD0F4` | `func_800CC4F4` | formatted string wrapper | matching C (`-O3`) |
+| `0x0CD150` | `func_800CC550` | format one conversion field | matching C (`-O3`) |
+| `0x0CD7C0` | `func_800CCBC0` | libultra formatted-output engine | matching C (`-O3`) |
 | `0x0D4510` | `func_800D3910` | allocate and initialize a runtime slot | matching C (`-O2`) |
 | `0x0D45B0` | `func_800D39B0` | construct and dispatch a runtime command | matching C (`-O2`) |
 | `0x0C4770` | `func_800C3B70` | dispatch a type-14 runtime command | matching C (`-O2`) |
