@@ -35,9 +35,9 @@ glabel func_800C7EC8_asm
 /* C8B18 800C7F18 03E00008 */  jr         $ra
 /* C8B1C 800C7F1C 03001025 */   or        $v0, $t8, $zero
 
-.section .text.after_C8AC0, "ax"
+.section .text.replaced_C8B20, "ax"
 
-glabel func_800C7F20
+glabel func_800C7F20_asm
 /* C8B20 800C7F20 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* C8B24 800C7F24 AFBF0014 */  sw         $ra, 0x14($sp)
 /* C8B28 800C7F28 AFA40018 */  sw         $a0, 0x18($sp)
@@ -53,7 +53,7 @@ glabel func_800C7F20
 /* C8B50 800C7F50 03E00008 */  jr         $ra
 /* C8B54 800C7F54 00000000 */   nop
 
-glabel func_800C7F58
+glabel func_800C7F58_asm
 /* C8B58 800C7F58 27BDFFD8 */  addiu      $sp, $sp, -0x28
 /* C8B5C 800C7F5C AFBF0024 */  sw         $ra, 0x24($sp)
 /* C8B60 800C7F60 AFB20020 */  sw         $s2, 0x20($sp)
@@ -81,7 +81,7 @@ glabel func_800C7F58
 /* C8BB0 800C7FB0 03E00008 */  jr         $ra
 /* C8BB4 800C7FB4 27BD0028 */   addiu     $sp, $sp, 0x28
 
-glabel func_800C7FB8
+glabel func_800C7FB8_asm
 /* C8BB8 800C7FB8 3C02800E */  lui        $v0, %hi(D_800DA040)
 /* C8BBC 800C7FBC 8C42A040 */  lw         $v0, %lo(D_800DA040)($v0)
 /* C8BC0 800C7FC0 8C4E002C */  lw         $t6, 0x2c($v0)
