@@ -53,7 +53,6 @@ SECTIONS
         main_3050_s = .;
         BUILD_DIR/asm/main_3050.o(.text);
         BUILD_DIR/src/main_3680.o(.text);
-        BUILD_DIR/asm/main_3050.o(.text.after_36F0);
         main_3A80_s = .;
         BUILD_DIR/asm/main_3A80.o(.text);
         main_4CA0_s = .;

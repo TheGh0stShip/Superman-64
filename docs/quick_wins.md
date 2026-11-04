@@ -6,7 +6,7 @@ conversions. Current candidates, in order:
 | ROM offset | Symbol | Behavior | Status |
 | --- | --- | --- | --- |
 | `0x001B90` | `func_80000F90` | initialize the shared six-field state | matching C (`-O2`) |
-| `0x003680` | two indexed dispatch helpers | map an entry and dispatch its byte or active state | matching C (`-O1 -g3`) |
+| `0x003680` | eight runtime dispatch/lifecycle helpers | map entries and manage shared runtime state | matching C (`-O1 -g3`) |
 | `0x004CA0` | `func_800040A0` | parse decimal digits backward into an integer | matching C (`-O1 -g3`) |
 | `0x004D60` | six string helpers | copy, bounded copy, concatenate, and compare strings | matching C (`-O1 -g3`) |
 | `0x005070` | `func_80004470` | convert an ASCII string to lowercase in place | matching C (`-O1`) |

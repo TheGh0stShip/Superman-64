@@ -502,8 +502,8 @@ glabel func_80002AF0_asm
 /* 3768 80002B68 03E00008 */  jr         $ra
 /* 376C 80002B6C 00000000 */   nop
 
-.section .text.after_36F0, "ax"
-glabel func_80002B70
+.section .text.replaced_3A80, "ax"
+glabel func_80002B70_asm
 /* 3770 80002B70 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 3774 80002B74 AFBF0014 */  sw         $ra, 0x14($sp)
 /* 3778 80002B78 AFA40018 */  sw         $a0, 0x18($sp)
@@ -544,7 +544,7 @@ glabel func_80002B70
 /* 37F4 80002BF4 03E00008 */  jr         $ra
 /* 37F8 80002BF8 00000000 */   nop
 
-glabel func_80002BFC
+glabel func_80002BFC_asm
 /* 37FC 80002BFC 27BDFFC8 */  addiu      $sp, $sp, -0x38
 /* 3800 80002C00 AFBF0014 */  sw         $ra, 0x14($sp)
 /* 3804 80002C04 AFA40038 */  sw         $a0, 0x38($sp)
@@ -638,7 +638,7 @@ glabel func_80002BFC
 /* 395C 80002D5C 03E00008 */  jr         $ra
 /* 3960 80002D60 00000000 */   nop
 
-glabel func_80002D64
+glabel func_80002D64_asm
 /* 3964 80002D64 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 3968 80002D68 AFBF0014 */  sw         $ra, 0x14($sp)
 /* 396C 80002D6C 0C000B76 */  jal        func_80002DD8
@@ -648,7 +648,7 @@ glabel func_80002D64
 /* 397C 80002D7C 03E00008 */  jr         $ra
 /* 3980 80002D80 00000000 */   nop
 
-glabel func_80002D84
+glabel func_80002D84_asm
 /* 3984 80002D84 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 3988 80002D88 AFBF0014 */  sw         $ra, 0x14($sp)
 /* 398C 80002D8C AFA40018 */  sw         $a0, 0x18($sp)
@@ -672,7 +672,7 @@ glabel func_80002D84
 /* 39D0 80002DD0 03E00008 */  jr         $ra
 /* 39D4 80002DD4 00000000 */   nop
 
-glabel func_80002DD8
+glabel func_80002DD8_asm
 /* 39D8 80002DD8 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 39DC 80002DDC AFBF0014 */  sw         $ra, 0x14($sp)
 /* 39E0 80002DE0 3C0E800D */  lui        $t6, %hi(D_800D6100)
@@ -700,7 +700,7 @@ glabel func_80002DD8
 /* 3A30 80002E30 03E00008 */  jr         $ra
 /* 3A34 80002E34 00000000 */   nop
 
-glabel func_80002E38
+glabel func_80002E38_asm
 /* 3A38 80002E38 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 3A3C 80002E3C AFBF0014 */  sw         $ra, 0x14($sp)
 /* 3A40 80002E40 AFA40018 */  sw         $a0, 0x18($sp)
