@@ -207,6 +207,8 @@ SECTIONS
         BUILD_DIR/asm/main_C8630.o(.text);
         main_C8AC0_s = .;
         BUILD_DIR/asm/main_C8AC0.o(.text);
+        BUILD_DIR/src/main_C8BD0.o(.text);
+        BUILD_DIR/asm/main_C8AC0.o(.text.after_C8BD0);
         main_C9940_s = .;
         BUILD_DIR/src/main_C9940.o(.text);
         BUILD_DIR/asm/main_C9940.o(.text.tail);

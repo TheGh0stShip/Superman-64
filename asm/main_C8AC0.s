@@ -87,7 +87,8 @@ glabel func_800C7FB8
 /* C8BC8 800C7FC8 03E00008 */  jr         $ra
 /* C8BCC 800C7FCC AC44002C */   sw        $a0, 0x2c($v0)
 
-glabel func_800C7FD0
+.section .text.replaced_C8BD0, "ax"
+glabel func_800C7FD0_asm
 /* C8BD0 800C7FD0 3C02800E */  lui        $v0, %hi(D_800DA040)
 /* C8BD4 800C7FD4 8C42A040 */  lw         $v0, %lo(D_800DA040)($v0)
 /* C8BD8 800C7FD8 00001825 */  or         $v1, $zero, $zero
@@ -101,6 +102,7 @@ glabel func_800C7FD0
 .L800C7FF8:
 /* C8BF8 800C7FF8 03E00008 */  jr         $ra
 /* C8BFC 800C7FFC 00601025 */   or        $v0, $v1, $zero
+.section .text.after_C8BD0, "ax"
 
 glabel func_800C8000
 /* C8C00 800C8000 03E00008 */  jr         $ra
