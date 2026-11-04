@@ -134,6 +134,8 @@ SECTIONS
         BUILD_DIR/asm/main_B2590.o(.text.after_B41D0);
         BUILD_DIR/src/main_B7610.o(.text);
         BUILD_DIR/asm/main_B2590.o(.text.after_B7610);
+        BUILD_DIR/src/main_B7970.o(.text);
+        BUILD_DIR/asm/main_B2590.o(.text.after_B7970);
         BUILD_DIR/src/main_B7F00.o(.text);
         BUILD_DIR/asm/main_B2590.o(.text.after_B8080);
         BUILD_DIR/src/main_B9940.o(.text);
