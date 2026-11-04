@@ -78,6 +78,7 @@ conversions. Current candidates, in order:
 | `0x0D2900` | `func_800D1D00` | write one word through a PI handle | matching C (`-O1`) |
 | `0x0D2A90` | `func_800D1E90` | initialize and insert a timer | matching C (`-O1`) |
 | `0x0D3C40` | two controller-pak helpers | read a RAM block and construct its command packet | matching C (`-O1`) |
+| `0x0D13D0` | three controller-pak helpers | request and decode one channel's status | matching C (`-O1`) |
 | `0x0C4070` | `func_800C3470` | raw PI word read | matching C (`-O1`) |
 | `0x0D3A60` | `func_800D2E60` | raw SI word write | matching C (`-O1`) |
 | `0x0D3AB0` | `func_800D2EB0` | set the DP next buffer | matching C (`-O1`) |

@@ -606,3 +606,8 @@ The controller-pak RAM-read object at `0x0D3C40-0x0D3F9F` follows the pre-J
 implementation of `src/io/contramread.c` from the same ultralib revision. Its
 public transfer routine and private command-packet builder compile together
 byte-exactly with IDO `-O1`, including the object's trailing alignment.
+
+The controller-pak status object at `0x0D13D0-0x0D160F` follows the pre-J
+implementation of `src/io/pfsgetstatus.c` from the same ultralib revision.
+The status transaction, one-channel request builder, and response decoder
+compile together byte-exactly with IDO `-O1`.

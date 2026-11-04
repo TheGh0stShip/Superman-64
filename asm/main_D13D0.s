@@ -7,7 +7,7 @@
 
 .section .text, "ax"
 
-glabel func_800D07D0
+glabel legacy_func_800D07D0
 /* D13D0 800D07D0 27BDFFD8 */  addiu      $sp, $sp, -0x28
 /* D13D4 800D07D4 AFBF0014 */  sw         $ra, 0x14($sp)
 /* D13D8 800D07D8 AFA40028 */  sw         $a0, 0x28($sp)
@@ -71,7 +71,7 @@ glabel func_800D07D0
 /* D14AC 800D08AC 03E00008 */  jr         $ra
 /* D14B0 800D08B0 00000000 */   nop
 
-glabel func_800D08B4
+glabel legacy_func_800D08B4
 /* D14B4 800D08B4 27BDFFF0 */  addiu      $sp, $sp, -0x10
 /* D14B8 800D08B8 3C018014 */  lui        $at, %hi(D_80145420)
 /* D14BC 800D08BC A0205420 */  sb         $zero, %lo(D_80145420)($at)
@@ -123,7 +123,7 @@ glabel func_800D08B4
 /* D156C 800D096C 03E00008 */  jr         $ra
 /* D1570 800D0970 27BD0010 */   addiu     $sp, $sp, 0x10
 
-glabel func_800D0974
+glabel legacy_func_800D0974
 /* D1574 800D0974 3C0E8014 */  lui        $t6, %hi(D_80145890)
 /* D1578 800D0978 27BDFFF0 */  addiu      $sp, $sp, -0x10
 /* D157C 800D097C 25CE5890 */  addiu      $t6, $t6, %lo(D_80145890)
@@ -166,6 +166,8 @@ glabel func_800D0974
 .L800D0A08:
 /* D1608 800D0A08 03E00008 */  jr         $ra
 /* D160C 800D0A0C 27BD0010 */   addiu     $sp, $sp, 0x10
+
+.section .text.tail, "ax"
 
 glabel func_800D0A10
 /* D1610 800D0A10 27BDFB78 */  addiu      $sp, $sp, -0x488
