@@ -13,6 +13,7 @@ conversions. Current candidates, in order:
 | `0x004D60` | six string helpers | copy, bounded copy, concatenate, and compare strings | matching C (`-O1 -g3`) |
 | `0x005070` | `func_80004470` | convert an ASCII string to lowercase in place | matching C (`-O1`) |
 | `0x0050C0` | `func_800044C0` | convert an ASCII string to uppercase in place | matching C (`-O1`) |
+| `0x00B1E0` | `func_8000A5E0` | scale two floating-point coordinates into integer output values | matching C (`-O1 -g3`) |
 | `0x05AE70` | three vector helpers | dot product, construction, and copy | matching C (`-O2 -g3`) |
 | `0x05B650` | `func_8005AA50` | multiply alternating descending integers as a float | matching C (`-O1 -g3`) |
 | `0x00B5C0` | `func_8000A9C0` | flag a cell in the shared 31-column grid | matching C (`-O1 -g3`) |

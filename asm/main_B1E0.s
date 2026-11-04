@@ -7,7 +7,8 @@
 
 .section .text, "ax"
 
-glabel func_8000A5E0
+.section .text.replaced_B1E0, "ax"
+glabel func_8000A5E0_asm
 /* B1E0 8000A5E0 3C0E8014 */  lui        $t6, %hi(D_8013B650)
 /* B1E4 8000A5E4 8DCEB650 */  lw         $t6, %lo(D_8013B650)($t6)
 /* B1E8 8000A5E8 C4840000 */  lwc1       $f4, ($a0)
@@ -33,6 +34,7 @@ glabel func_8000A5E0
 /* B238 8000A638 03E00008 */  jr         $ra
 /* B23C 8000A63C 00000000 */   nop
 
+.section .text.after_B1E0, "ax"
 glabel func_8000A640
 /* B240 8000A640 27BDFFF0 */  addiu      $sp, $sp, -0x10
 /* B244 8000A644 3C0E8014 */  lui        $t6, %hi(D_8013B724)

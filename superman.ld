@@ -71,6 +71,8 @@ SECTIONS
         BUILD_DIR/asm/main_AC90.o(.text);
         main_B1E0_s = .;
         BUILD_DIR/asm/main_B1E0.o(.text);
+        BUILD_DIR/src/main_B1E0.o(.text);
+        BUILD_DIR/asm/main_B1E0.o(.text.after_B1E0);
         BUILD_DIR/src/main_B5C0.o(.text);
         BUILD_DIR/src/main_B630.o(.text);
         BUILD_DIR/asm/main_B1E0.o(.text.after_B780);
