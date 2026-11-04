@@ -141,6 +141,7 @@ $(BUILD_DIR)/src/main_C7300.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_CE730.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_BED70.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_BEAA0.o: OPT_FLAGS := -O1
+$(BUILD_DIR)/src/main_BEA10.o: OPT_FLAGS := -O1 -g3
 $(BUILD_DIR)/src/main_CDF90.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_CE070.o: SIGNED_FLAG :=
 $(BUILD_DIR)/src/main_D3BE0.o $(BUILD_DIR)/src/main_CF940.o: SIGNED_FLAG :=

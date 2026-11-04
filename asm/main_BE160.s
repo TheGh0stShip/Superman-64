@@ -612,7 +612,8 @@ glabel func_800BDDF8
 /* BEA08 800BDE08 03E00008 */  jr         $ra
 /* BEA0C 800BDE0C 00000000 */   nop
 
-glabel func_800BDE10
+.section .text.replaced_BEAA0, "ax"
+glabel func_800BDE10_asm
 /* BEA10 800BDE10 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* BEA14 800BDE14 AFBF0014 */  sw         $ra, 0x14($sp)
 /* BEA18 800BDE18 3C0E800E */  lui        $t6, %hi(D_800DA030)

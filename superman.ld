@@ -131,6 +131,7 @@ SECTIONS
         BUILD_DIR/asm/main_B2590.o(.text.after_BD280);
         main_BE160_s = .;
         BUILD_DIR/asm/main_BE160.o(.text);
+        BUILD_DIR/src/main_BEA10.o(.text);
         BUILD_DIR/src/main_BEAA0.o(.text);
         main_BEBF0_s = .;
         BUILD_DIR/asm/main_BEBF0.o(.text);
