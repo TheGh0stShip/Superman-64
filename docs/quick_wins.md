@@ -131,6 +131,7 @@ conversions. Current candidates, in order:
 | `0x0D3630` | `func_800D2A30` | return an adjusted 64-bit quotient and remainder | matching C (`-O3`) |
 | `0x0D3730` | `func_800D2B30` | return an adjusted signed quotient and remainder | matching C (`-O3`) |
 | `0x0D3FA0` | `func_800D33A0` | start a kernel thread and preempt when needed | matching C (`-O1`) |
+| `0x0D40F0` | `func_800D34F0` | initialize and register a 76-byte runtime record | behavior and structure identified; `-O1` allocation pending |
 | `0x0C36C0` | `func_800C2AC0` | save the current standard MIDI sequence location | matching C (`-O1`) |
 | `0x0C36DC` | `func_800C2ADC` | restore a standard MIDI sequence location | matching C (`-O1`) |
 | `0x0C36F8` | `func_800C2AF8` | return the current standard MIDI sequence tick | matching C (`-O1`) |
