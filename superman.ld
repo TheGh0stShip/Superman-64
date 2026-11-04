@@ -33,6 +33,7 @@ D_800DFEB4 = 0x800DFEB4;
 D_801458CC = 0x801458CC;
 D_8014541C = 0x8014541C;
 D_800DB0FC = 0x800DB0FC;
+D_80146AE0 = 0x80146AE0;
 D_80146C00 = 0x80146C00;
 D_80146C74 = 0x80146C74;
 
@@ -301,7 +302,7 @@ SECTIONS
         main_CC460_s = .;
         BUILD_DIR/asm/main_CC460.o(.text);
         main_CC5F0_s = .;
-        BUILD_DIR/asm/main_CC5F0.o(.text);
+        BUILD_DIR/src/main_CC5F0.o(.text);
         main_CC6F0_s = .;
         BUILD_DIR/src/main_CC6F0.o(.text);
         . += 0x10;

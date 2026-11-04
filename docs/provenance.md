@@ -222,9 +222,8 @@ of `osCartRomInit` in `src/io/cartrominit.c` from decompals/ultralib commit
 `e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. The `0xB0000000` base-address
 sentinel, raw PI-domain read, timing-field extraction, transfer-info clear, and
 interrupt-protected insertion into the PI handle list all match that source.
-It remains assembly until the handle currently retained in the monolithic data
-segment is split into the same translation unit, which is required to reproduce
-the retail IDO register schedule.
+Defining the handle in the same translation unit while pinning its audited
+runtime address reproduces the retail IDO register schedule and complete unit.
 
 The 64DD handle initializer at `0x0CDE90` follows the pre-J implementation of
 `osLeoDiskInit` in `src/io/leodiskinit.c` from decompals/ultralib commit

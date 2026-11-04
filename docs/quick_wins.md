@@ -131,7 +131,7 @@ conversions. Current candidates, in order:
 | `0x0CC6F0` | `func_800CBAF0` | initialize and clear the shared runtime queue | matching C (`-O2`) |
 | `0x0CC740` | `func_800CBB40` | lazily initialize and receive from the shared queue | matching C (`-O2`) |
 | `0x0CC784` | `func_800CBB84` | clear the shared runtime queue | matching C (`-O2`) |
-| `0x0CC5F0` | `func_800CB9F0` | initialize the libultra cartridge handle | canonical C identified; data split pending |
+| `0x0CC5F0` | `func_800CB9F0` | initialize the libultra cartridge handle | matching C (`-O1`) |
 | `0x0CE140` | `func_800CD540` | invalidate an instruction-cache range | provenance-backed assembly |
 | `0x0CE1C0` | `func_800CD5C0` | invalidate a data-cache range | provenance-backed assembly |
 | `0x0C3D60` | `func_800C3160` | write back a data-cache range | provenance-backed assembly |
