@@ -126,5 +126,3 @@ int func_800043A8(char *left, char *right, unsigned int length) {
     }
     return -1;
 }
-
-
