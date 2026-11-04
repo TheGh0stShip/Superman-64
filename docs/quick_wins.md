@@ -31,6 +31,7 @@ conversions. Current candidates, in order:
 | `0x0B9E00` | two runtime state setup helpers | select a state and update the active record | matching C (`-O1 -g3`) |
 | `0x0B9EC0` | three event/state helpers | configure events and transition the active object | matching C (`-O1 -g3`) |
 | `0x0BA000` | `func_800B9400` | flag the active entry in a two-dimensional runtime table | matching C (`-O1 -g3`) |
+| `0x0B41D0` | `func_800B35D0` | reset shared state, allocate a handle, and select the next mode | matching C (`-O1 -g3`) |
 | `0x0BD1D0` | three runtime state helpers | clear or flag ready states and dispatch them | matching C (`-O1 -g3`) |
 | `0x0BEA10` | `func_800BDE10` | consume the next queued entry and advance shared queue state | matching C (`-O1 -g3`) |
 | `0x0C0CB0` | `func_800C00B0` | empty callback | matching C |

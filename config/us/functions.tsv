@@ -591,7 +591,7 @@
 0xB214C	0x438	0x800B154C	func_800B154C	retail_disassembly
 0xB2590	0x130	0x800B1990	func_800B1990	retail_disassembly
 0xB26C0	0x1B10	0x800B1AC0	func_800B1AC0	retail_disassembly
-0xB41D0	0x90	0x800B35D0	func_800B35D0	retail_disassembly
+0xB41D0	0x90	0x800B35D0	func_800B35D0	matching_source
 0xB4260	0x1CF4	0x800B3660	func_800B3660	retail_disassembly
 0xB5F54	0x1D0	0x800B5354	func_800B5354	retail_disassembly
 0xB6124	0x9DC	0x800B5524	func_800B5524	retail_disassembly
