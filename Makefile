@@ -169,6 +169,7 @@ $(BUILD_DIR)/src/main_D3BE0.o $(BUILD_DIR)/src/main_CF940.o: SIGNED_FLAG :=
 $(BUILD_DIR)/src/main_C4710.o: OPT_FLAGS := -O3
 $(BUILD_DIR)/src/main_CF380.o: OPT_FLAGS := -O3
 $(BUILD_DIR)/src/main_CE9D0.o $(BUILD_DIR)/src/main_D4640.o: OPT_FLAGS := -O3
+$(BUILD_DIR)/src/main_CD080.o: OPT_FLAGS := -O3
 
 $(BUILD_DIR)/%.szp: %.bin
 	tools/slienc $< $@

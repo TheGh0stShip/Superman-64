@@ -198,14 +198,13 @@ reconstructed C.
 The pseudorandom-number generator at `0x0CD080` implements the algorithm from
 `src/gu/random.c` in the same decompals/ultralib commit. Its retained seed at
 `0x800DB120`, two adjacent multiplicands, unsigned multiply, and two-bit shift
-identify `guRandom`. The canonical source is recorded for reconstruction, but
-the unit remains assembly until its exact IDO register allocation is
-reproduced. The seed is initialized to decimal `174823885` (`0x0A6B99CD`) at
-ROM `0x0DBD20`; compiling the canonical expression with the seed either local
-or external under `-O1`, `-O2`, and `-O3` does not reproduce the retail
-schedule. In particular, the retail code loads the seed directly through
-`$a0`, retains separate `+2` and `+3` operands, receives the multiply result in
-`$a1`, and shifts it into `$v0` before the delay-slot store.
+identify `guRandom`. The seed is initialized to decimal `174823885`
+(`0x0A6B99CD`) at ROM
+`0x0DBD20`. The canonical source, with the seed as its function-local static,
+compiles byte-exactly with IDO `-O2` and `-O3`; the unit uses `-O3`, matching
+the graphics-utility objects that require it. The seed is visible to the
+compiler through a non-load section at its retail RAM address; the inventoried
+raw data block remains the sole owner of its ROM bytes.
 
 Five small linked assembly entry points also match handwritten sources in
 decompals/ultralib commit `e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`:

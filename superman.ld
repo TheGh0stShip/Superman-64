@@ -316,7 +316,7 @@ SECTIONS
         main_CCE70_s = .;
         BUILD_DIR/src/main_CCE70.o(.text);
         main_CD080_s = .;
-        BUILD_DIR/asm/main_CD080.o(.text);
+        BUILD_DIR/src/main_CD080.o(.text);
         main_CD0B0_s = .;
         BUILD_DIR/src/main_CD0B0.o(.text);
         main_CD0D0_s = .;
@@ -488,6 +488,10 @@ SECTIONS
     .libultra_position_rodata 0x800DFE30 (NOLOAD) :
     {
         BUILD_DIR/src/main_CE9D0.o(.rodata);
+    }
+    .libultra_random_data 0x800DB120 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_CD080.o(.data);
     }
     .libultra_position_bss 0x80146C80 (NOLOAD) :
     {
