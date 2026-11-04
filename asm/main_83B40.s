@@ -17964,7 +17964,8 @@ glabel func_80093A0C
 /* 94768 80093B68 03E00008 */  jr         $ra
 /* 9476C 80093B6C 27BD0010 */   addiu     $sp, $sp, 0x10
 
-glabel func_80093B70
+.section .text.replaced_94770, "ax"
+glabel func_80093B70_asm
 /* 94770 80093B70 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 94774 80093B74 AFBF0014 */  sw         $ra, 0x14($sp)
 /* 94778 80093B78 3C0E800E */  lui        $t6, %hi(D_800D9E18)
@@ -17991,7 +17992,7 @@ glabel func_80093B70
 /* 947C8 80093BC8 03E00008 */  jr         $ra
 /* 947CC 80093BCC 00000000 */   nop
 
-glabel func_80093BD0
+glabel func_80093BD0_asm
 /* 947D0 80093BD0 27BDFFE0 */  addiu      $sp, $sp, -0x20
 /* 947D4 80093BD4 AFBF001C */  sw         $ra, 0x1c($sp)
 /* 947D8 80093BD8 0C000B8E */  jal        func_80002E38
@@ -18013,6 +18014,7 @@ glabel func_80093BD0
 /* 94818 80093C18 03E00008 */  jr         $ra
 /* 9481C 80093C1C 00000000 */   nop
 
+.section .text.after_94770, "ax"
 glabel func_80093C20
 /* 94820 80093C20 00052C00 */  sll        $a1, $a1, 0x10
 /* 94824 80093C24 00063400 */  sll        $a2, $a2, 0x10
