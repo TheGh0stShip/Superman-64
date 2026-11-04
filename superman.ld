@@ -30,6 +30,8 @@ D_800DFE78 = 0x800DFE78;
 D_800DFE90 = 0x800DFE90;
 D_800DFEB4 = 0x800DFEB4;
 
+D_801458CC = 0x801458CC;
+
 SECTIONS
 {
     SPLAT_BEGIN_SEG(header, 0x0, 0x0, SUBALIGN(16))
@@ -241,6 +243,7 @@ SECTIONS
         BUILD_DIR/asm/main_C59B0.o(.text);
         main_C6490_s = .;
         BUILD_DIR/asm/main_C6490.o(.text);
+        BUILD_DIR/src/main_C6630.o(.text);
         BUILD_DIR/src/main_C6700.o(.text);
         BUILD_DIR/src/main_C67D0.o(.text);
         main_C6860_s = .;

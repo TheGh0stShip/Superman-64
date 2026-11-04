@@ -121,7 +121,8 @@ glabel func_800C5890
 /* C6628 800C5A28 03E00008 */  jr         $ra
 /* C662C 800C5A2C 00000000 */   nop
 
-glabel func_800C5A30
+.section .text.replaced_C6630, "ax"
+glabel func_800C5A30_asm
 /* C6630 800C5A30 27BDFFF0 */  addiu      $sp, $sp, -0x10
 /* C6634 800C5A34 3C0D8014 */  lui        $t5, %hi(D_80145421)
 /* C6638 800C5A38 91AD5421 */  lbu        $t5, %lo(D_80145421)($t5)
