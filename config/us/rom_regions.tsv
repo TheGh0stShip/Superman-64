@@ -1,0 +1,5 @@
+start	end	kind	evidence
+0x0	0x40	cartridge_header	N64 header fields and checksums
+0x40	0x1000	ipl3_boot	CIC-NUS-6102 boot block
+0x1000	0xE15F0	program_image	IPL3-loaded main image measured from the retail boot path
+0xE15F0	0x800000	rom_payload	Asset and payload region classified by analysis/rom_inventory.tsv

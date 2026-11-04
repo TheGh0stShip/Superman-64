@@ -1,0 +1,1273 @@
+start	end	size	class	category	kind	name	evidence
+0x0	0x40	64	rom_metadata	rom_metadata	header	rom_header	rom header
+0x40	0x1000	4032	rom_metadata	rom_metadata	ipl3	ipl3	cic 6102
+0x1000	0x1040	64	code	program	.text	text_80000400	datamap section
+0x1040	0x1060	32	data	program	.data	data_80000440	datamap section
+0x1060	0xD4DC0	867680	code	program	.text	text_80000460	datamap section
+0xD4DC0	0xD5100	832	code	program	rsp_text	rsp_800D41C0	RSP opcodes only, vector-heavy (64-byte granularity)
+0xD5100	0xD5340	576	code	program	.text	text_80000460	datamap section
+0xD5340	0xD6CC0	6528	code	program	rsp_text	rsp_800D4740	RSP opcodes only, vector-heavy (64-byte granularity)
+0xD6CC0	0xDBF50	21136	data	program	.data	data_800D540C	datamap section
+0xDBF50	0xE15F0	22176	data	program	.rodata	rodata_800DB350	datamap section
+0xE15F0	0xF4440	77392	referenced	loader_range	raw	rom_E15F0	call 0x80004A40 in 0x80004918
+0xF4440	0xF6BC0	10112	referenced	loader_range	raw	rom_F4440	call 0x8001A8E4 in 0x8001A604
+0xF6BC0	0xF91E0	9760	referenced	loader_range	raw	rom_F6BC0	call 0x8001AAD8 in 0x8001A604
+0xF91E0	0xFBA30	10320	referenced	loader_range	raw	rom_F91E0	call 0x8001A948 in 0x8001A604
+0xFBA30	0xFE250	10272	referenced	loader_range	raw	rom_FBA30	call 0x8001A9AC in 0x8001A604
+0xFE250	0x100BB0	10592	referenced	loader_range	raw	rom_FE250	call 0x8001AA10 in 0x8001A604
+0x100BB0	0x103430	10368	referenced	loader_range	raw	rom_100BB0	call 0x8001AA74 in 0x8001A604
+0x103430	0x11EDE0	113072	referenced	loader_range	raw	rom_103430	call 0x8000A0B4 in 0x8000A090
+0x11EDE0	0x11EE88	168	payload	graphics	display_list	dl_11EDE0	f3dex display list, 21 commands (data not resolvable)
+0x11EE88	0x123CD0	20040	referenced	loader_range	raw	rom_103430	call 0x8000A0B4 in 0x8000A090
+0x123CD0	0x1298F0	23584	referenced	loader_range	raw	rom_123CD0	call 0x800B1A88 in 0x800B1990
+0x1298F0	0x12A670	3456	payload	graphics	display_list	dl_1298F0	f3dex display list, 432 commands (data not resolvable)
+0x12A670	0x12B3E8	3448	payload	graphics	display_list	dl_12A670	f3dex display list, 431 commands (data not resolvable)
+0x12B3E8	0x12D6C0	8920	referenced	loader_range	raw	rom_123CD0	call 0x800B1A88 in 0x800B1990
+0x12D6C0	0x12D6D8	24	payload	graphics	display_list	dl_12D6C0	f3dex display list, 3 commands (data not resolvable)
+0x12D6D8	0x131AB8	17376	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x131AB8	0x131BB0	248	payload	graphics	display_list	dl_131AB8	f3dex display list, 31 commands (data not resolvable)
+0x131BB0	0x131C40	144	payload	graphics	display_list	dl_131BB0	f3dex display list, 18 commands (data not resolvable)
+0x131C40	0x13D9C8	48520	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x13D9C8	0x13DAD8	272	payload	graphics	display_list	dl_13D9C8	f3dex display list, 34 commands (data not resolvable)
+0x13DAD8	0x13DB98	192	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x13DB98	0x13DC00	104	payload	graphics	display_list	dl_13DB98	f3dex display list, 13 commands (data not resolvable)
+0x13DC00	0x13DC58	88	payload	graphics	display_list	dl_13DC00	f3dex display list, 11 commands (data not resolvable)
+0x13DC58	0x13DCB0	88	payload	graphics	display_list	dl_13DC58	f3dex display list, 11 commands (data not resolvable)
+0x13DCB0	0x13DD08	88	payload	graphics	display_list	dl_13DCB0	f3dex display list, 11 commands (data not resolvable)
+0x13DD08	0x13DD60	88	payload	graphics	display_list	dl_13DD08	f3dex display list, 11 commands (data not resolvable)
+0x13DD60	0x13DDB0	80	payload	graphics	display_list	dl_13DD60	f3dex display list, 10 commands (data not resolvable)
+0x13DDB0	0x13DE00	80	payload	graphics	display_list	dl_13DDB0	f3dex display list, 10 commands (data not resolvable)
+0x13DE00	0x13DE50	80	payload	graphics	display_list	dl_13DE00	f3dex display list, 10 commands (data not resolvable)
+0x13DE50	0x13DE90	64	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x13DE90	0x13DF28	152	payload	graphics	display_list	dl_13DE90	f3dex display list, 19 commands (data not resolvable)
+0x13DF28	0x13DF68	64	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x13DF68	0x13DFA8	64	payload	graphics	display_list	dl_13DF68	f3dex display list, 8 commands (data not resolvable)
+0x13DFA8	0x13DFE8	64	payload	graphics	display_list	dl_13DFA8	f3dex display list, 8 commands (data not resolvable)
+0x13DFE8	0x13E028	64	payload	graphics	display_list	dl_13DFE8	f3dex display list, 8 commands (data not resolvable)
+0x13E028	0x13E068	64	payload	graphics	display_list	dl_13E028	f3dex display list, 8 commands (data not resolvable)
+0x13E068	0x13E0A8	64	payload	graphics	display_list	dl_13E068	f3dex display list, 8 commands (data not resolvable)
+0x13E0A8	0x13E0E8	64	payload	graphics	display_list	dl_13E0A8	f3dex display list, 8 commands (data not resolvable)
+0x13E0E8	0x13E128	64	payload	graphics	display_list	dl_13E0E8	f3dex display list, 8 commands (data not resolvable)
+0x13E128	0x1401F8	8400	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x1401F8	0x1402B8	192	payload	graphics	display_list	dl_1401F8	f3dex display list, 24 commands (data not resolvable)
+0x1402B8	0x1416C0	5128	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x1416C0	0x141750	144	payload	graphics	display_list	dl_1416C0	f3dex display list, 18 commands (data not resolvable)
+0x141750	0x144BC8	13432	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x144BC8	0x144C98	208	payload	graphics	display_list	dl_144BC8	f3dex display list, 26 commands (data not resolvable)
+0x144C98	0x144D78	224	payload	graphics	display_list	dl_144C98	f3dex display list, 28 commands (data not resolvable)
+0x144D78	0x144D90	24	payload	graphics	display_list	dl_144D78	f3dex display list, 3 commands (data not resolvable)
+0x144D90	0x147E40	12464	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x147E40	0x147F20	224	payload	graphics	display_list	dl_147E40	f3dex display list, 28 commands (data not resolvable)
+0x147F20	0x147FB8	152	payload	graphics	display_list	dl_147F20	f3dex display list, 19 commands (data not resolvable)
+0x147FB8	0x148050	152	payload	graphics	display_list	dl_147FB8	f3dex display list, 19 commands (data not resolvable)
+0x148050	0x1480E8	152	payload	graphics	display_list	dl_148050	f3dex display list, 19 commands (data not resolvable)
+0x1480E8	0x148180	152	payload	graphics	display_list	dl_1480E8	f3dex display list, 19 commands (data not resolvable)
+0x148180	0x154BB0	51760	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x154BB0	0x154BC8	24	payload	graphics	display_list	dl_154BB0	f3dex display list, 3 commands (data not resolvable)
+0x154BC8	0x154BD8	16	payload	graphics	display_list	dl_154BC8	f3dex display list, 2 commands (data not resolvable)
+0x154BD8	0x1550B8	1248	payload	graphics	display_list	dl_154BD8	f3dex display list, 156 commands (data not resolvable)
+0x1550B8	0x155138	128	payload	graphics	display_list	dl_1550B8	f3dex display list, 16 commands (data not resolvable)
+0x155138	0x1551E0	168	payload	graphics	display_list	dl_155138	f3dex display list, 21 commands (data not resolvable)
+0x1551E0	0x155270	144	payload	graphics	display_list	dl_1551E0	f3dex display list, 18 commands (data not resolvable)
+0x155270	0x155318	168	payload	graphics	display_list	dl_155270	f3dex display list, 21 commands (data not resolvable)
+0x155318	0x1553A8	144	payload	graphics	display_list	dl_155318	f3dex display list, 18 commands (data not resolvable)
+0x1553A8	0x155450	168	payload	graphics	display_list	dl_1553A8	f3dex display list, 21 commands (data not resolvable)
+0x155450	0x1554E0	144	payload	graphics	display_list	dl_155450	f3dex display list, 18 commands (data not resolvable)
+0x1554E0	0x155588	168	payload	graphics	display_list	dl_1554E0	f3dex display list, 21 commands (data not resolvable)
+0x155588	0x155618	144	payload	graphics	display_list	dl_155588	f3dex display list, 18 commands (data not resolvable)
+0x155618	0x155688	112	payload	graphics	display_list	dl_155618	f3dex display list, 14 commands (data not resolvable)
+0x155688	0x1556E0	88	payload	graphics	display_list	dl_155688	f3dex display list, 11 commands (data not resolvable)
+0x1556E0	0x155738	88	payload	graphics	display_list	dl_1556E0	f3dex display list, 11 commands (data not resolvable)
+0x155738	0x155790	88	payload	graphics	display_list	dl_155738	f3dex display list, 11 commands (data not resolvable)
+0x155790	0x1558A0	272	payload	graphics	display_list	dl_155790	f3dex display list, 34 commands (data not resolvable)
+0x1558A0	0x155A48	424	payload	graphics	display_list	dl_1558A0	f3dex display list, 53 commands (data not resolvable)
+0x155A48	0x155AF8	176	payload	graphics	display_list	dl_155A48	f3dex display list, 22 commands (data not resolvable)
+0x155AF8	0x15C2E0	26600	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x15C2E0	0x15C538	600	payload	graphics	display_list	dl_15C2E0	f3dex display list, 75 commands (data not resolvable)
+0x15C538	0x15DBA0	5736	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x15DBA0	0x15DC20	128	payload	graphics	display_list	dl_15DBA0	f3dex display list, 16 commands (data not resolvable)
+0x15DC20	0x15DC90	112	payload	graphics	display_list	dl_15DC20	f3dex display list, 14 commands (data not resolvable)
+0x15DC90	0x15EB18	3720	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x15EB18	0x15EC78	352	payload	graphics	display_list	dl_15EB18	f3dex display list, 44 commands (data not resolvable)
+0x15EC78	0x160870	7160	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x160870	0x160928	184	payload	graphics	display_list	dl_160870	f3dex display list, 23 commands (data not resolvable)
+0x160928	0x1609E0	184	payload	graphics	display_list	dl_160928	f3dex display list, 23 commands (data not resolvable)
+0x1609E0	0x160AD8	248	payload	graphics	display_list	dl_1609E0	f3dex display list, 31 commands (data not resolvable)
+0x160AD8	0x160B88	176	payload	graphics	display_list	dl_160AD8	f3dex display list, 22 commands (data not resolvable)
+0x160B88	0x160C38	176	payload	graphics	display_list	dl_160B88	f3dex display list, 22 commands (data not resolvable)
+0x160C38	0x160CE8	176	payload	graphics	display_list	dl_160C38	f3dex display list, 22 commands (data not resolvable)
+0x160CE8	0x160DA0	184	payload	graphics	display_list	dl_160CE8	f3dex display list, 23 commands (data not resolvable)
+0x160DA0	0x160E60	192	payload	graphics	display_list	dl_160DA0	f3dex display list, 24 commands (data not resolvable)
+0x160E60	0x160F18	184	payload	graphics	display_list	dl_160E60	f3dex display list, 23 commands (data not resolvable)
+0x160F18	0x160FF0	216	payload	graphics	display_list	dl_160F18	f3dex display list, 27 commands (data not resolvable)
+0x160FF0	0x1610A0	176	payload	graphics	display_list	dl_160FF0	f3dex display list, 22 commands (data not resolvable)
+0x1610A0	0x1610B8	24	payload	graphics	display_list	dl_1610A0	f3dex display list, 3 commands (data not resolvable)
+0x1610B8	0x161120	104	payload	graphics	display_list	dl_1610B8	f3dex display list, 13 commands (data not resolvable)
+0x161120	0x164408	13032	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x164408	0x1644B0	168	payload	graphics	display_list	dl_164408	f3dex display list, 21 commands (data not resolvable)
+0x1644B0	0x164540	144	payload	graphics	display_list	dl_1644B0	f3dex display list, 18 commands (data not resolvable)
+0x164540	0x164608	200	payload	graphics	display_list	dl_164540	f3dex display list, 25 commands (data not resolvable)
+0x164608	0x167660	12376	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x167660	0x1676F0	144	payload	graphics	display_list	dl_167660	f3dex display list, 18 commands (data not resolvable)
+0x1676F0	0x168F48	6232	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x168F48	0x168FA8	96	payload	graphics	display_list	dl_168F48	f3dex display list, 12 commands (data not resolvable)
+0x168FA8	0x16A030	4232	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x16A030	0x16A0C8	152	payload	graphics	display_list	dl_16A030	f3dex display list, 19 commands (data not resolvable)
+0x16A0C8	0x16E3F0	17192	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x16E3F0	0x16E488	152	payload	graphics	display_list	dl_16E3F0	f3dex display list, 19 commands (data not resolvable)
+0x16E488	0x16E4B0	40	payload	graphics	display_list	dl_16E488	f3dex display list, 5 commands (data not resolvable)
+0x16E4B0	0x16E4C8	24	payload	graphics	display_list	dl_16E4B0	f3dex display list, 3 commands (data not resolvable)
+0x16E4C8	0x16F530	4200	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x16F530	0x16F5C0	144	payload	graphics	display_list	dl_16F530	f3dex display list, 18 commands (data not resolvable)
+0x16F5C0	0x1781F0	35888	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x1781F0	0x178330	320	payload	graphics	display_list	dl_1781F0	f3dex display list, 40 commands (data not resolvable)
+0x178330	0x179608	4824	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x179608	0x179740	312	payload	graphics	display_list	dl_179608	f3dex display list, 39 commands (data not resolvable)
+0x179740	0x1799E0	672	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x1799E0	0x179AD8	248	payload	graphics	display_list	dl_1799E0	f3dex display list, 31 commands (data not resolvable)
+0x179AD8	0x179AF8	32	payload	graphics	display_list	dl_179AD8	f3dex display list, 4 commands (data not resolvable)
+0x179AF8	0x179B18	32	payload	graphics	display_list	dl_179AF8	f3dex display list, 4 commands (data not resolvable)
+0x179B18	0x179B38	32	payload	graphics	display_list	dl_179B18	f3dex display list, 4 commands (data not resolvable)
+0x179B38	0x179B58	32	payload	graphics	display_list	dl_179B38	f3dex display list, 4 commands (data not resolvable)
+0x179B58	0x179B78	32	payload	graphics	display_list	dl_179B58	f3dex display list, 4 commands (data not resolvable)
+0x179B78	0x179B98	32	payload	graphics	display_list	dl_179B78	f3dex display list, 4 commands (data not resolvable)
+0x179B98	0x179C28	144	payload	graphics	display_list	dl_179B98	f3dex display list, 18 commands (data not resolvable)
+0x179C28	0x179C70	72	payload	graphics	display_list	dl_179C28	f3dex display list, 9 commands (data not resolvable)
+0x179C70	0x17A778	2824	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x17A778	0x17A868	240	payload	graphics	display_list	dl_17A778	f3dex display list, 30 commands (data not resolvable)
+0x17A868	0x17B000	1944	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x17B000	0x17B128	296	payload	graphics	display_list	dl_17B000	f3dex display list, 37 commands (data not resolvable)
+0x17B128	0x17BA40	2328	referenced	loader_range	raw	rom_12D6D0	call 0x8001B6E0 in 0x8001A604
+0x17BA40	0x17BDE0	928	unknown	-	-	gap_17BA40	-
+0x17BDE0	0x17BEC8	232	payload	graphics	display_list	dl_17BDE0	f3dex display list, 29 commands (data not resolvable)
+0x17BEC8	0x17C6C8	2048	unknown	-	-	gap_17BEC8	-
+0x17C6C8	0x17C848	384	payload	graphics	display_list	dl_17C6C8	f3dex display list, 48 commands (data not resolvable)
+0x17C848	0x17CC70	1064	unknown	-	-	gap_17C848	-
+0x17CC70	0x17CC80	16	payload	graphics	display_list	dl_17CC70	f3dex display list, 2 commands (data not resolvable)
+0x17CC80	0x17D288	1544	unknown	-	-	gap_17CC80	-
+0x17D288	0x17D370	232	payload	graphics	display_list	dl_17D288	f3dex display list, 29 commands (data not resolvable)
+0x17D370	0x17D560	496	unknown	-	-	gap_17D370	-
+0x17D560	0x17D580	32	payload	graphics	display_list	dl_17D560	f3dex display list, 4 commands (data not resolvable)
+0x17D580	0x17D950	976	unknown	-	-	gap_17D580	-
+0x17D950	0x17DA38	232	payload	graphics	display_list	dl_17D950	f3dex display list, 29 commands (data not resolvable)
+0x17DA38	0x17DA40	8	padding	-	fill_00	gap_17DA38	-
+0x17DA40	0x18B440	55808	referenced	loader_range	raw	rom_17DA40	call 0x80006E50 in 0x80005644
+0x18B440	0x18B5B0	368	payload	graphics	display_list	dl_18B440	f3dex display list, 46 commands (data not resolvable)
+0x18B5B0	0x18B638	136	payload	graphics	display_list	dl_18B5B0	f3dex display list, 17 commands (data not resolvable)
+0x18B638	0x18B708	208	payload	graphics	display_list	dl_18B638	f3dex display list, 26 commands (data not resolvable)
+0x18B708	0x18B760	88	payload	graphics	display_list	dl_18B708	f3dex display list, 11 commands (data not resolvable)
+0x18B760	0x18B850	240	payload	graphics	display_list	dl_18B760	f3dex display list, 30 commands (data not resolvable)
+0x18B850	0x18B920	208	payload	graphics	display_list	dl_18B850	f3dex display list, 26 commands (data not resolvable)
+0x18B920	0x18B978	88	payload	graphics	display_list	dl_18B920	f3dex display list, 11 commands (data not resolvable)
+0x18B978	0x18BB70	504	payload	graphics	display_list	dl_18B978	f3dex display list, 63 commands (data not resolvable)
+0x18BB70	0x18BC60	240	payload	graphics	display_list	dl_18BB70	f3dex display list, 30 commands (data not resolvable)
+0x18BC60	0x18BCD8	120	payload	graphics	display_list	dl_18BC60	f3dex display list, 15 commands (data not resolvable)
+0x18BCD8	0x18BDA0	200	payload	graphics	display_list	dl_18BCD8	f3dex display list, 25 commands (data not resolvable)
+0x18BDA0	0x18BE90	240	payload	graphics	display_list	dl_18BDA0	f3dex display list, 30 commands (data not resolvable)
+0x18BE90	0x18BF08	120	payload	graphics	display_list	dl_18BE90	f3dex display list, 15 commands (data not resolvable)
+0x18BF08	0x18BFD0	200	payload	graphics	display_list	dl_18BF08	f3dex display list, 25 commands (data not resolvable)
+0x18BFD0	0x18C2F8	808	payload	graphics	display_list	dl_18BFD0	f3dex display list, 101 commands (data not resolvable)
+0x18C2F8	0x18D780	5256	referenced	loader_range	raw	rom_17DA40	call 0x80006E50 in 0x80005644
+0x18D780	0x18D8A0	288	payload	graphics	display_list	dl_18D780	f3dex display list, 36 commands (data not resolvable)
+0x18D8A0	0x18D960	192	payload	graphics	display_list	dl_18D8A0	f3dex display list, 24 commands (data not resolvable)
+0x18D960	0x18DA28	200	payload	graphics	display_list	dl_18D960	f3dex display list, 25 commands (data not resolvable)
+0x18DA28	0x18DAD8	176	payload	graphics	display_list	dl_18DA28	f3dex display list, 22 commands (data not resolvable)
+0x18DAD8	0x18DB98	192	payload	graphics	display_list	dl_18DAD8	f3dex display list, 24 commands (data not resolvable)
+0x18DB98	0x18DC60	200	payload	graphics	display_list	dl_18DB98	f3dex display list, 25 commands (data not resolvable)
+0x18DC60	0x18DD10	176	payload	graphics	display_list	dl_18DC60	f3dex display list, 22 commands (data not resolvable)
+0x18DD10	0x18DE50	320	payload	graphics	display_list	dl_18DD10	f3dex display list, 40 commands (data not resolvable)
+0x18DE50	0x18DF20	208	payload	graphics	display_list	dl_18DE50	f3dex display list, 26 commands (data not resolvable)
+0x18DF20	0x18DFE8	200	payload	graphics	display_list	dl_18DF20	f3dex display list, 25 commands (data not resolvable)
+0x18DFE8	0x18E090	168	payload	graphics	display_list	dl_18DFE8	f3dex display list, 21 commands (data not resolvable)
+0x18E090	0x18E160	208	payload	graphics	display_list	dl_18E090	f3dex display list, 26 commands (data not resolvable)
+0x18E160	0x18E228	200	payload	graphics	display_list	dl_18E160	f3dex display list, 25 commands (data not resolvable)
+0x18E228	0x18E2D0	168	payload	graphics	display_list	dl_18E228	f3dex display list, 21 commands (data not resolvable)
+0x18E2D0	0x18E3D8	264	payload	graphics	display_list	dl_18E2D0	f3dex display list, 33 commands (data not resolvable)
+0x18E3D8	0x18E550	376	payload	graphics	display_list	dl_18E3D8	f3dex display list, 47 commands (data not resolvable)
+0x18E550	0x18F8B8	4968	referenced	loader_range	raw	rom_17DA40	call 0x80006E50 in 0x80005644
+0x18F8B8	0x18F980	200	payload	graphics	display_list	dl_18F8B8	f3dex display list, 25 commands (data not resolvable)
+0x18F980	0x18FA28	168	payload	graphics	display_list	dl_18F980	f3dex display list, 21 commands (data not resolvable)
+0x18FA28	0x18FAD8	176	payload	graphics	display_list	dl_18FA28	f3dex display list, 22 commands (data not resolvable)
+0x18FAD8	0x18FB70	152	payload	graphics	display_list	dl_18FAD8	f3dex display list, 19 commands (data not resolvable)
+0x18FB70	0x18FC18	168	payload	graphics	display_list	dl_18FB70	f3dex display list, 21 commands (data not resolvable)
+0x18FC18	0x18FCC8	176	payload	graphics	display_list	dl_18FC18	f3dex display list, 22 commands (data not resolvable)
+0x18FCC8	0x18FD60	152	payload	graphics	display_list	dl_18FCC8	f3dex display list, 19 commands (data not resolvable)
+0x18FD60	0x18FE48	232	payload	graphics	display_list	dl_18FD60	f3dex display list, 29 commands (data not resolvable)
+0x18FE48	0x18FEF0	168	payload	graphics	display_list	dl_18FE48	f3dex display list, 21 commands (data not resolvable)
+0x18FEF0	0x18FF98	168	payload	graphics	display_list	dl_18FEF0	f3dex display list, 21 commands (data not resolvable)
+0x18FF98	0x190038	160	payload	graphics	display_list	dl_18FF98	f3dex display list, 20 commands (data not resolvable)
+0x190038	0x1900E0	168	payload	graphics	display_list	dl_190038	f3dex display list, 21 commands (data not resolvable)
+0x1900E0	0x190188	168	payload	graphics	display_list	dl_1900E0	f3dex display list, 21 commands (data not resolvable)
+0x190188	0x190228	160	payload	graphics	display_list	dl_190188	f3dex display list, 20 commands (data not resolvable)
+0x190228	0x1902E8	192	payload	graphics	display_list	dl_190228	f3dex display list, 24 commands (data not resolvable)
+0x1902E8	0x1903C8	224	payload	graphics	display_list	dl_1902E8	f3dex display list, 28 commands (data not resolvable)
+0x1903C8	0x191FA8	7136	referenced	loader_range	raw	rom_17DA40	call 0x80006E50 in 0x80005644
+0x191FA8	0x192CB8	3344	payload	graphics	display_list	dl_191FA8	f3dex display list, 418 commands (data not resolvable)
+0x192CB8	0x193A18	3424	referenced	loader_range	raw	rom_17DA40	call 0x80006E50 in 0x80005644
+0x193A18	0x193C20	520	payload	graphics	display_list	dl_193A18	f3dex display list, 65 commands (data not resolvable)
+0x193C20	0x193E30	528	payload	graphics	display_list	dl_193C20	f3dex display list, 66 commands (data not resolvable)
+0x193E30	0x19EEA0	45168	referenced	loader_range	raw	rom_17DA40	call 0x80006E50 in 0x80005644
+0x19EEA0	0x1C6C00	163168	unknown	-	-	gap_19EEA0	-
+0x1C6C00	0x1C9D40	12608	referenced	loader_range	raw	rom_1C6C00	call 0x8001C0AC in 0x8001A604
+0x1C9D40	0x1CF080	21312	unknown	-	-	gap_1C9D40	-
+0x1CF080	0x1CF5C8	1352	payload	graphics	dl_blob	gfx_1CF080	f3dex self-relative blob in pool 0x1CF080: 169 commands, 10 vertex loads, 6 textures
+0x1CF5C8	0x1CF7B0	488	payload	graphics	dl_blob	gfx_1CF5C8	f3dex self-relative blob in pool 0x1CF080: 61 commands, 3 vertex loads, 3 textures
+0x1CF7B0	0x1CFBE8	1080	payload	graphics	dl_blob	gfx_1CF7B0	f3dex self-relative blob in pool 0x1CF080: 135 commands, 10 vertex loads, 5 textures
+0x1CFBE8	0x1CFC00	24	payload	graphics	dl_blob	gfx_1CFBE8	f3dex self-relative blob in pool 0x1CF080: 3 commands, 0 vertex loads, 0 textures
+0x1CFC00	0x1CFC08	8	payload	graphics	dl_blob	gfx_1CFC00	f3dex self-relative blob in pool 0x1CF080: 1 commands, 0 vertex loads, 0 textures
+0x1CFC08	0x1CFC10	8	payload	graphics	dl_blob	gfx_1CFC08	f3dex self-relative blob in pool 0x1CF080: 1 commands, 0 vertex loads, 0 textures
+0x1CFC10	0x1D32E8	14040	unknown	-	-	gap_1CFC10	-
+0x1D32E8	0x1D3950	1640	payload	graphics	display_list	dl_1D32E8	f3dex display list, 205 commands (data not resolvable)
+0x1D3950	0x1D83D0	19072	unknown	-	-	gap_1D3950	-
+0x1D83D0	0x1D8890	1216	payload	graphics	dl_blob	gfx_1D83D0	f3dex self-relative blob in pool 0x1D83D0: 152 commands, 9 vertex loads, 6 textures
+0x1D8890	0x1D8AA0	528	payload	graphics	dl_blob	gfx_1D8890	f3dex self-relative blob in pool 0x1D83D0: 66 commands, 3 vertex loads, 3 textures
+0x1D8AA0	0x1D8C98	504	payload	graphics	dl_blob	gfx_1D8AA0	f3dex self-relative blob in pool 0x1D83D0: 63 commands, 3 vertex loads, 3 textures
+0x1D8C98	0x1D8D78	224	payload	graphics	dl_blob	gfx_1D8C98	f3dex self-relative blob in pool 0x1D83D0: 28 commands, 1 vertex loads, 1 textures
+0x1D8D78	0x1D8DA0	40	payload	graphics	dl_blob	gfx_1D8D78	f3dex self-relative blob in pool 0x1D83D0: 5 commands, 0 vertex loads, 0 textures
+0x1D8DA0	0x1D8DA8	8	payload	graphics	dl_blob	gfx_1D8DA0	f3dex self-relative blob in pool 0x1D83D0: 1 commands, 0 vertex loads, 0 textures
+0x1D8DA8	0x1D8DB0	8	payload	graphics	dl_blob	gfx_1D8DA8	f3dex self-relative blob in pool 0x1D83D0: 1 commands, 0 vertex loads, 0 textures
+0x1D8DB0	0x1DD190	17376	unknown	-	-	gap_1D8DB0	-
+0x1DD190	0x1DD6B0	1312	payload	graphics	display_list	dl_1DD190	f3dex display list, 164 commands (data not resolvable)
+0x1DD6B0	0x1E5180	31440	unknown	-	-	gap_1DD6B0	-
+0x1E5180	0x1E5190	16	payload	graphics	display_list	dl_1E5180	f3dex display list, 2 commands (data not resolvable)
+0x1E5190	0x1E92A8	16664	unknown	-	-	gap_1E5190	-
+0x1E92A8	0x1E9898	1520	payload	graphics	dl_blob	gfx_1E92A8	f3dex self-relative blob in pool 0x1E92A8: 190 commands, 9 vertex loads, 8 textures
+0x1E9898	0x1E9E18	1408	payload	graphics	dl_blob	gfx_1E9898	f3dex self-relative blob in pool 0x1E92A8: 176 commands, 8 vertex loads, 8 textures
+0x1E9E18	0x1EA410	1528	payload	graphics	dl_blob	gfx_1E9E18	f3dex self-relative blob in pool 0x1E92A8: 191 commands, 11 vertex loads, 8 textures
+0x1EA410	0x1EA418	8	payload	graphics	dl_blob	gfx_1EA410	f3dex self-relative blob in pool 0x1E92A8: 1 commands, 0 vertex loads, 0 textures
+0x1EA418	0x1EE840	17448	unknown	-	-	gap_1EA418	-
+0x1EE840	0x1EED20	1248	payload	graphics	display_list	dl_1EE840	f3dex display list, 156 commands (data not resolvable)
+0x1EED20	0x1F0F20	8704	unknown	-	-	gap_1EED20	-
+0x1F0F20	0x1F13D0	1200	payload	graphics	display_list	dl_1F0F20	f3dex display list, 150 commands (data not resolvable)
+0x1F13D0	0x1F1C90	2240	unknown	-	-	gap_1F13D0	-
+0x1F1C90	0x1F1CB8	40	payload	graphics	display_list	dl_1F1C90	f3dex display list, 5 commands (data not resolvable)
+0x1F1CB8	0x1F6FA0	21224	unknown	-	-	gap_1F1CB8	-
+0x1F6FA0	0x1F7178	472	payload	graphics	dl_blob	gfx_1F6FA0	f3dex self-relative blob in pool 0x1F6FA0: 59 commands, 4 vertex loads, 2 textures
+0x1F7178	0x1F7398	544	payload	graphics	dl_blob	gfx_1F7178	f3dex self-relative blob in pool 0x1F6FA0: 68 commands, 3 vertex loads, 3 textures
+0x1F7398	0x1F7468	208	payload	graphics	dl_blob	gfx_1F7398	f3dex self-relative blob in pool 0x1F6FA0: 26 commands, 1 vertex loads, 1 textures
+0x1F7468	0x1F75E0	376	payload	graphics	dl_blob	gfx_1F7468	f3dex self-relative blob in pool 0x1F6FA0: 47 commands, 6 vertex loads, 2 textures
+0x1F75E0	0x1F7790	432	payload	graphics	dl_blob	gfx_1F75E0	f3dex self-relative blob in pool 0x1F6FA0: 54 commands, 3 vertex loads, 3 textures
+0x1F7790	0x1F7860	208	payload	graphics	dl_blob	gfx_1F7790	f3dex self-relative blob in pool 0x1F6FA0: 26 commands, 1 vertex loads, 1 textures
+0x1F7860	0x1F79D8	376	payload	graphics	dl_blob	gfx_1F7860	f3dex self-relative blob in pool 0x1F6FA0: 47 commands, 6 vertex loads, 2 textures
+0x1F79D8	0x1F7B88	432	payload	graphics	dl_blob	gfx_1F79D8	f3dex self-relative blob in pool 0x1F6FA0: 54 commands, 3 vertex loads, 3 textures
+0x1F7B88	0x1F7F10	904	payload	graphics	dl_blob	gfx_1F7B88	f3dex self-relative blob in pool 0x1F6FA0: 113 commands, 11 vertex loads, 4 textures
+0x1F7F10	0x1F7FE8	216	payload	graphics	dl_blob	gfx_1F7F10	f3dex self-relative blob in pool 0x1F6FA0: 27 commands, 1 vertex loads, 1 textures
+0x1F7FE8	0x1F80B0	200	payload	graphics	dl_blob	gfx_1F7FE8	f3dex self-relative blob in pool 0x1F6FA0: 25 commands, 1 vertex loads, 1 textures
+0x1F80B0	0x1F80F8	72	payload	graphics	dl_blob	gfx_1F80B0	f3dex self-relative blob in pool 0x1F6FA0: 9 commands, 1 vertex loads, 0 textures
+0x1F80F8	0x1F81D0	216	payload	graphics	dl_blob	gfx_1F80F8	f3dex self-relative blob in pool 0x1F6FA0: 27 commands, 1 vertex loads, 1 textures
+0x1F81D0	0x1F8298	200	payload	graphics	dl_blob	gfx_1F81D0	f3dex self-relative blob in pool 0x1F6FA0: 25 commands, 1 vertex loads, 1 textures
+0x1F8298	0x1F82E0	72	payload	graphics	dl_blob	gfx_1F8298	f3dex self-relative blob in pool 0x1F6FA0: 9 commands, 1 vertex loads, 0 textures
+0x1F82E0	0x1F8408	296	payload	graphics	dl_blob	gfx_1F82E0	f3dex self-relative blob in pool 0x1F6FA0: 37 commands, 1 vertex loads, 1 textures
+0x1F8408	0x1F85B0	424	payload	graphics	dl_blob	gfx_1F8408	f3dex self-relative blob in pool 0x1F6FA0: 53 commands, 5 vertex loads, 2 textures
+0x1F85B0	0x1F8668	184	payload	graphics	dl_blob	gfx_1F85B0	f3dex self-relative blob in pool 0x1F6FA0: 23 commands, 1 vertex loads, 1 textures
+0x1F8668	0x1F87C0	344	payload	graphics	dl_blob	gfx_1F8668	f3dex self-relative blob in pool 0x1F6FA0: 43 commands, 5 vertex loads, 2 textures
+0x1F87C0	0x1F88F0	304	payload	graphics	dl_blob	gfx_1F87C0	f3dex self-relative blob in pool 0x1F6FA0: 38 commands, 2 vertex loads, 2 textures
+0x1F88F0	0x1F89A8	184	payload	graphics	dl_blob	gfx_1F88F0	f3dex self-relative blob in pool 0x1F6FA0: 23 commands, 1 vertex loads, 1 textures
+0x1F89A8	0x1F8B00	344	payload	graphics	dl_blob	gfx_1F89A8	f3dex self-relative blob in pool 0x1F6FA0: 43 commands, 5 vertex loads, 2 textures
+0x1F8B00	0x1F8C30	304	payload	graphics	dl_blob	gfx_1F8B00	f3dex self-relative blob in pool 0x1F6FA0: 38 commands, 2 vertex loads, 2 textures
+0x1F8C30	0x1F8D48	280	payload	graphics	dl_blob	gfx_1F8C30	f3dex self-relative blob in pool 0x1F6FA0: 35 commands, 5 vertex loads, 0 textures
+0x1F8D48	0x1F8E10	200	payload	graphics	dl_blob	gfx_1F8D48	f3dex self-relative blob in pool 0x1F6FA0: 25 commands, 1 vertex loads, 1 textures
+0x1F8E10	0x1F8ED0	192	payload	graphics	dl_blob	gfx_1F8E10	f3dex self-relative blob in pool 0x1F6FA0: 24 commands, 1 vertex loads, 1 textures
+0x1F8ED0	0x1F8F18	72	payload	graphics	dl_blob	gfx_1F8ED0	f3dex self-relative blob in pool 0x1F6FA0: 9 commands, 1 vertex loads, 0 textures
+0x1F8F18	0x1F8FE0	200	payload	graphics	dl_blob	gfx_1F8F18	f3dex self-relative blob in pool 0x1F6FA0: 25 commands, 1 vertex loads, 1 textures
+0x1F8FE0	0x1F90A0	192	payload	graphics	dl_blob	gfx_1F8FE0	f3dex self-relative blob in pool 0x1F6FA0: 24 commands, 1 vertex loads, 1 textures
+0x1F90A0	0x1F90E8	72	payload	graphics	dl_blob	gfx_1F90A0	f3dex self-relative blob in pool 0x1F6FA0: 9 commands, 1 vertex loads, 0 textures
+0x1F90E8	0x1F91F8	272	payload	graphics	dl_blob	gfx_1F90E8	f3dex self-relative blob in pool 0x1F6FA0: 34 commands, 1 vertex loads, 1 textures
+0x1F91F8	0x1F9360	360	payload	graphics	dl_blob	gfx_1F91F8	f3dex self-relative blob in pool 0x1F6FA0: 45 commands, 2 vertex loads, 2 textures
+0x1F9360	0x1F9410	176	payload	graphics	dl_blob	gfx_1F9360	f3dex self-relative blob in pool 0x1F6FA0: 22 commands, 1 vertex loads, 1 textures
+0x1F9410	0x1F94D0	192	payload	graphics	dl_blob	gfx_1F9410	f3dex self-relative blob in pool 0x1F6FA0: 24 commands, 1 vertex loads, 1 textures
+0x1F94D0	0x1F9578	168	payload	graphics	dl_blob	gfx_1F94D0	f3dex self-relative blob in pool 0x1F6FA0: 21 commands, 1 vertex loads, 1 textures
+0x1F9578	0x1F95C0	72	payload	graphics	dl_blob	gfx_1F9578	f3dex self-relative blob in pool 0x1F6FA0: 9 commands, 1 vertex loads, 0 textures
+0x1F95C0	0x1F9680	192	payload	graphics	dl_blob	gfx_1F95C0	f3dex self-relative blob in pool 0x1F6FA0: 24 commands, 1 vertex loads, 1 textures
+0x1F9680	0x1F9728	168	payload	graphics	dl_blob	gfx_1F9680	f3dex self-relative blob in pool 0x1F6FA0: 21 commands, 1 vertex loads, 1 textures
+0x1F9728	0x1F9800	216	payload	graphics	dl_blob	gfx_1F9728	f3dex self-relative blob in pool 0x1F6FA0: 27 commands, 6 vertex loads, 0 textures
+0x1F9800	0x1F98D0	208	payload	graphics	dl_blob	gfx_1F9800	f3dex self-relative blob in pool 0x1F6FA0: 26 commands, 3 vertex loads, 1 textures
+0x1F98D0	0x1F9990	192	payload	graphics	dl_blob	gfx_1F98D0	f3dex self-relative blob in pool 0x1F6FA0: 24 commands, 1 vertex loads, 1 textures
+0x1F9990	0x1F99C0	48	payload	graphics	dl_blob	gfx_1F9990	f3dex self-relative blob in pool 0x1F6FA0: 6 commands, 1 vertex loads, 0 textures
+0x1F99C0	0x1F9A80	192	payload	graphics	dl_blob	gfx_1F99C0	f3dex self-relative blob in pool 0x1F6FA0: 24 commands, 2 vertex loads, 1 textures
+0x1F9A80	0x1F9B38	184	payload	graphics	dl_blob	gfx_1F9A80	f3dex self-relative blob in pool 0x1F6FA0: 23 commands, 1 vertex loads, 1 textures
+0x1F9B38	0x1F9B68	48	payload	graphics	dl_blob	gfx_1F9B38	f3dex self-relative blob in pool 0x1F6FA0: 6 commands, 1 vertex loads, 0 textures
+0x1F9B68	0x21A978	134672	unknown	-	-	gap_1F9B68	-
+0x21A978	0x21AAC8	336	payload	graphics	dl_blob	gfx_21A978	f3dex self-relative blob in pool 0x21A978: 42 commands, 2 vertex loads, 1 textures
+0x21AAC8	0x21ABB8	240	payload	graphics	dl_blob	gfx_21AAC8	f3dex self-relative blob in pool 0x21A978: 30 commands, 1 vertex loads, 1 textures
+0x21ABB8	0x21ACA0	232	payload	graphics	dl_blob	gfx_21ABB8	f3dex self-relative blob in pool 0x21A978: 29 commands, 1 vertex loads, 1 textures
+0x21ACA0	0x21AD80	224	payload	graphics	dl_blob	gfx_21ACA0	f3dex self-relative blob in pool 0x21A978: 28 commands, 1 vertex loads, 1 textures
+0x21AD80	0x21AE70	240	payload	graphics	dl_blob	gfx_21AD80	f3dex self-relative blob in pool 0x21A978: 30 commands, 1 vertex loads, 1 textures
+0x21AE70	0x21AF58	232	payload	graphics	dl_blob	gfx_21AE70	f3dex self-relative blob in pool 0x21A978: 29 commands, 1 vertex loads, 1 textures
+0x21AF58	0x21B038	224	payload	graphics	dl_blob	gfx_21AF58	f3dex self-relative blob in pool 0x21A978: 28 commands, 1 vertex loads, 1 textures
+0x21B038	0x21B1E8	432	payload	graphics	dl_blob	gfx_21B038	f3dex self-relative blob in pool 0x21A978: 54 commands, 5 vertex loads, 1 textures
+0x21B1E8	0x21B2E8	256	payload	graphics	dl_blob	gfx_21B1E8	f3dex self-relative blob in pool 0x21A978: 32 commands, 1 vertex loads, 1 textures
+0x21B2E8	0x21B3D8	240	payload	graphics	dl_blob	gfx_21B2E8	f3dex self-relative blob in pool 0x21A978: 30 commands, 1 vertex loads, 1 textures
+0x21B3D8	0x21B5F8	544	payload	graphics	dl_blob	gfx_21B3D8	f3dex self-relative blob in pool 0x21A978: 68 commands, 5 vertex loads, 2 textures
+0x21B5F8	0x21B6F8	256	payload	graphics	dl_blob	gfx_21B5F8	f3dex self-relative blob in pool 0x21A978: 32 commands, 1 vertex loads, 1 textures
+0x21B6F8	0x21B7E8	240	payload	graphics	dl_blob	gfx_21B6F8	f3dex self-relative blob in pool 0x21A978: 30 commands, 1 vertex loads, 1 textures
+0x21B7E8	0x21B8D0	232	payload	graphics	dl_blob	gfx_21B7E8	f3dex self-relative blob in pool 0x21A978: 29 commands, 1 vertex loads, 1 textures
+0x21B8D0	0x21B9D0	256	payload	graphics	dl_blob	gfx_21B8D0	f3dex self-relative blob in pool 0x21A978: 32 commands, 1 vertex loads, 1 textures
+0x21B9D0	0x21BA50	128	payload	graphics	dl_blob	gfx_21B9D0	f3dex self-relative blob in pool 0x21A978: 16 commands, 0 vertex loads, 0 textures
+0x21BA50	0x21BB88	312	payload	graphics	dl_blob	gfx_21BA50	f3dex self-relative blob in pool 0x21A978: 39 commands, 2 vertex loads, 1 textures
+0x21BB88	0x21BC88	256	payload	graphics	dl_blob	gfx_21BB88	f3dex self-relative blob in pool 0x21A978: 32 commands, 3 vertex loads, 1 textures
+0x21BC88	0x21BD70	232	payload	graphics	dl_blob	gfx_21BC88	f3dex self-relative blob in pool 0x21A978: 29 commands, 1 vertex loads, 1 textures
+0x21BD70	0x21BE50	224	payload	graphics	dl_blob	gfx_21BD70	f3dex self-relative blob in pool 0x21A978: 28 commands, 1 vertex loads, 1 textures
+0x21BE50	0x21BF48	248	payload	graphics	dl_blob	gfx_21BE50	f3dex self-relative blob in pool 0x21A978: 31 commands, 2 vertex loads, 1 textures
+0x21BF48	0x21C030	232	payload	graphics	dl_blob	gfx_21BF48	f3dex self-relative blob in pool 0x21A978: 29 commands, 1 vertex loads, 1 textures
+0x21C030	0x21C110	224	payload	graphics	dl_blob	gfx_21C030	f3dex self-relative blob in pool 0x21A978: 28 commands, 1 vertex loads, 1 textures
+0x21C110	0x21C2A0	400	payload	graphics	dl_blob	gfx_21C110	f3dex self-relative blob in pool 0x21A978: 50 commands, 4 vertex loads, 1 textures
+0x21C2A0	0x21C398	248	payload	graphics	dl_blob	gfx_21C2A0	f3dex self-relative blob in pool 0x21A978: 31 commands, 1 vertex loads, 1 textures
+0x21C398	0x21C480	232	payload	graphics	dl_blob	gfx_21C398	f3dex self-relative blob in pool 0x21A978: 29 commands, 1 vertex loads, 1 textures
+0x21C480	0x21C650	464	payload	graphics	dl_blob	gfx_21C480	f3dex self-relative blob in pool 0x21A978: 58 commands, 4 vertex loads, 2 textures
+0x21C650	0x21C748	248	payload	graphics	dl_blob	gfx_21C650	f3dex self-relative blob in pool 0x21A978: 31 commands, 1 vertex loads, 1 textures
+0x21C748	0x21C830	232	payload	graphics	dl_blob	gfx_21C748	f3dex self-relative blob in pool 0x21A978: 29 commands, 1 vertex loads, 1 textures
+0x21C830	0x21C910	224	payload	graphics	dl_blob	gfx_21C830	f3dex self-relative blob in pool 0x21A978: 28 commands, 1 vertex loads, 1 textures
+0x21C910	0x21CA00	240	payload	graphics	dl_blob	gfx_21C910	f3dex self-relative blob in pool 0x21A978: 30 commands, 1 vertex loads, 1 textures
+0x21CA00	0x21CA80	128	payload	graphics	dl_blob	gfx_21CA00	f3dex self-relative blob in pool 0x21A978: 16 commands, 0 vertex loads, 0 textures
+0x21CA80	0x21CB68	232	payload	graphics	dl_blob	gfx_21CA80	f3dex self-relative blob in pool 0x21A978: 29 commands, 1 vertex loads, 1 textures
+0x21CB68	0x21CC48	224	payload	graphics	dl_blob	gfx_21CB68	f3dex self-relative blob in pool 0x21A978: 28 commands, 2 vertex loads, 1 textures
+0x21CC48	0x21CD48	256	payload	graphics	dl_blob	gfx_21CC48	f3dex self-relative blob in pool 0x21A978: 32 commands, 5 vertex loads, 1 textures
+0x21CD48	0x21CE20	216	payload	graphics	dl_blob	gfx_21CD48	f3dex self-relative blob in pool 0x21A978: 27 commands, 1 vertex loads, 1 textures
+0x21CE20	0x21CF08	232	payload	graphics	dl_blob	gfx_21CE20	f3dex self-relative blob in pool 0x21A978: 29 commands, 3 vertex loads, 1 textures
+0x21CF08	0x21D000	248	payload	graphics	dl_blob	gfx_21CF08	f3dex self-relative blob in pool 0x21A978: 31 commands, 4 vertex loads, 1 textures
+0x21D000	0x21D0D8	216	payload	graphics	dl_blob	gfx_21D000	f3dex self-relative blob in pool 0x21A978: 27 commands, 1 vertex loads, 1 textures
+0x21D0D8	0x21D1E8	272	payload	graphics	dl_blob	gfx_21D0D8	f3dex self-relative blob in pool 0x21A978: 34 commands, 1 vertex loads, 1 textures
+0x21D1E8	0x21D2C8	224	payload	graphics	dl_blob	gfx_21D1E8	f3dex self-relative blob in pool 0x21A978: 28 commands, 1 vertex loads, 1 textures
+0x21D2C8	0x21D3A0	216	payload	graphics	dl_blob	gfx_21D2C8	f3dex self-relative blob in pool 0x21A978: 27 commands, 1 vertex loads, 1 textures
+0x21D3A0	0x21D530	400	payload	graphics	dl_blob	gfx_21D3A0	f3dex self-relative blob in pool 0x21A978: 50 commands, 2 vertex loads, 2 textures
+0x21D530	0x21D610	224	payload	graphics	dl_blob	gfx_21D530	f3dex self-relative blob in pool 0x21A978: 28 commands, 1 vertex loads, 1 textures
+0x21D610	0x21D6E8	216	payload	graphics	dl_blob	gfx_21D610	f3dex self-relative blob in pool 0x21A978: 27 commands, 1 vertex loads, 1 textures
+0x21D6E8	0x21D7F8	272	payload	graphics	dl_blob	gfx_21D6E8	f3dex self-relative blob in pool 0x21A978: 34 commands, 7 vertex loads, 1 textures
+0x21D7F8	0x21D8D8	224	payload	graphics	dl_blob	gfx_21D7F8	f3dex self-relative blob in pool 0x21A978: 28 commands, 1 vertex loads, 1 textures
+0x21D8D8	0x21D958	128	payload	graphics	dl_blob	gfx_21D8D8	f3dex self-relative blob in pool 0x21A978: 16 commands, 0 vertex loads, 0 textures
+0x21D958	0x226218	35008	unknown	-	-	gap_21D958	-
+0x226218	0x226350	312	payload	graphics	dl_blob	gfx_226218	f3dex self-relative blob in pool 0x226218: 39 commands, 2 vertex loads, 1 textures
+0x226350	0x226440	240	payload	graphics	dl_blob	gfx_226350	f3dex self-relative blob in pool 0x226218: 30 commands, 1 vertex loads, 1 textures
+0x226440	0x226528	232	payload	graphics	dl_blob	gfx_226440	f3dex self-relative blob in pool 0x226218: 29 commands, 1 vertex loads, 1 textures
+0x226528	0x226608	224	payload	graphics	dl_blob	gfx_226528	f3dex self-relative blob in pool 0x226218: 28 commands, 1 vertex loads, 1 textures
+0x226608	0x2266F8	240	payload	graphics	dl_blob	gfx_226608	f3dex self-relative blob in pool 0x226218: 30 commands, 1 vertex loads, 1 textures
+0x2266F8	0x2267E0	232	payload	graphics	dl_blob	gfx_2266F8	f3dex self-relative blob in pool 0x226218: 29 commands, 1 vertex loads, 1 textures
+0x2267E0	0x2268C0	224	payload	graphics	dl_blob	gfx_2267E0	f3dex self-relative blob in pool 0x226218: 28 commands, 1 vertex loads, 1 textures
+0x2268C0	0x226A60	416	payload	graphics	dl_blob	gfx_2268C0	f3dex self-relative blob in pool 0x226218: 52 commands, 3 vertex loads, 1 textures
+0x226A60	0x226B60	256	payload	graphics	dl_blob	gfx_226A60	f3dex self-relative blob in pool 0x226218: 32 commands, 1 vertex loads, 1 textures
+0x226B60	0x226C50	240	payload	graphics	dl_blob	gfx_226B60	f3dex self-relative blob in pool 0x226218: 30 commands, 1 vertex loads, 1 textures
+0x226C50	0x226DE0	400	payload	graphics	dl_blob	gfx_226C50	f3dex self-relative blob in pool 0x226218: 50 commands, 2 vertex loads, 2 textures
+0x226DE0	0x226EE0	256	payload	graphics	dl_blob	gfx_226DE0	f3dex self-relative blob in pool 0x226218: 32 commands, 1 vertex loads, 1 textures
+0x226EE0	0x226FD0	240	payload	graphics	dl_blob	gfx_226EE0	f3dex self-relative blob in pool 0x226218: 30 commands, 1 vertex loads, 1 textures
+0x226FD0	0x2270B8	232	payload	graphics	dl_blob	gfx_226FD0	f3dex self-relative blob in pool 0x226218: 29 commands, 1 vertex loads, 1 textures
+0x2270B8	0x227298	480	payload	graphics	dl_blob	gfx_2270B8	f3dex self-relative blob in pool 0x226218: 60 commands, 3 vertex loads, 2 textures
+0x227298	0x227318	128	payload	graphics	dl_blob	gfx_227298	f3dex self-relative blob in pool 0x226218: 16 commands, 0 vertex loads, 0 textures
+0x227318	0x227418	256	payload	graphics	dl_blob	gfx_227318	f3dex self-relative blob in pool 0x226218: 32 commands, 1 vertex loads, 1 textures
+0x227418	0x227468	80	payload	graphics	dl_blob	gfx_227418	f3dex self-relative blob in pool 0x226218: 10 commands, 1 vertex loads, 0 textures
+0x227468	0x2274A8	64	payload	graphics	dl_blob	gfx_227468	f3dex self-relative blob in pool 0x226218: 8 commands, 1 vertex loads, 0 textures
+0x2274A8	0x2274E8	64	payload	graphics	dl_blob	gfx_2274A8	f3dex self-relative blob in pool 0x226218: 8 commands, 1 vertex loads, 0 textures
+0x2274E8	0x227538	80	payload	graphics	dl_blob	gfx_2274E8	f3dex self-relative blob in pool 0x226218: 10 commands, 1 vertex loads, 0 textures
+0x227538	0x227578	64	payload	graphics	dl_blob	gfx_227538	f3dex self-relative blob in pool 0x226218: 8 commands, 1 vertex loads, 0 textures
+0x227578	0x2275B8	64	payload	graphics	dl_blob	gfx_227578	f3dex self-relative blob in pool 0x226218: 8 commands, 1 vertex loads, 0 textures
+0x2275B8	0x227688	208	payload	graphics	dl_blob	gfx_2275B8	f3dex self-relative blob in pool 0x226218: 26 commands, 5 vertex loads, 0 textures
+0x227688	0x2276F0	104	payload	graphics	dl_blob	gfx_227688	f3dex self-relative blob in pool 0x226218: 13 commands, 1 vertex loads, 0 textures
+0x2276F0	0x227740	80	payload	graphics	dl_blob	gfx_2276F0	f3dex self-relative blob in pool 0x226218: 10 commands, 1 vertex loads, 0 textures
+0x227740	0x227828	232	payload	graphics	dl_blob	gfx_227740	f3dex self-relative blob in pool 0x226218: 29 commands, 2 vertex loads, 1 textures
+0x227828	0x2278F0	200	payload	graphics	dl_blob	gfx_227828	f3dex self-relative blob in pool 0x226218: 25 commands, 1 vertex loads, 1 textures
+0x2278F0	0x227940	80	payload	graphics	dl_blob	gfx_2278F0	f3dex self-relative blob in pool 0x226218: 10 commands, 1 vertex loads, 0 textures
+0x227940	0x227980	64	payload	graphics	dl_blob	gfx_227940	f3dex self-relative blob in pool 0x226218: 8 commands, 1 vertex loads, 0 textures
+0x227980	0x227AA0	288	payload	graphics	dl_blob	gfx_227980	f3dex self-relative blob in pool 0x226218: 36 commands, 3 vertex loads, 1 textures
+0x227AA0	0x227B20	128	payload	graphics	dl_blob	gfx_227AA0	f3dex self-relative blob in pool 0x226218: 16 commands, 0 vertex loads, 0 textures
+0x227B20	0x227C08	232	payload	graphics	dl_blob	gfx_227B20	f3dex self-relative blob in pool 0x226218: 29 commands, 1 vertex loads, 1 textures
+0x227C08	0x227C38	48	payload	graphics	dl_blob	gfx_227C08	f3dex self-relative blob in pool 0x226218: 6 commands, 1 vertex loads, 0 textures
+0x227C38	0x227C68	48	payload	graphics	dl_blob	gfx_227C38	f3dex self-relative blob in pool 0x226218: 6 commands, 1 vertex loads, 0 textures
+0x227C68	0x227C98	48	payload	graphics	dl_blob	gfx_227C68	f3dex self-relative blob in pool 0x226218: 6 commands, 1 vertex loads, 0 textures
+0x227C98	0x227CC8	48	payload	graphics	dl_blob	gfx_227C98	f3dex self-relative blob in pool 0x226218: 6 commands, 1 vertex loads, 0 textures
+0x227CC8	0x227CF8	48	payload	graphics	dl_blob	gfx_227CC8	f3dex self-relative blob in pool 0x226218: 6 commands, 1 vertex loads, 0 textures
+0x227CF8	0x227D28	48	payload	graphics	dl_blob	gfx_227CF8	f3dex self-relative blob in pool 0x226218: 6 commands, 1 vertex loads, 0 textures
+0x227D28	0x227D90	104	payload	graphics	dl_blob	gfx_227D28	f3dex self-relative blob in pool 0x226218: 13 commands, 1 vertex loads, 0 textures
+0x227D90	0x227DF0	96	payload	graphics	dl_blob	gfx_227D90	f3dex self-relative blob in pool 0x226218: 12 commands, 2 vertex loads, 0 textures
+0x227DF0	0x227E28	56	payload	graphics	dl_blob	gfx_227DF0	f3dex self-relative blob in pool 0x226218: 7 commands, 1 vertex loads, 0 textures
+0x227E28	0x227F10	232	payload	graphics	dl_blob	gfx_227E28	f3dex self-relative blob in pool 0x226218: 29 commands, 2 vertex loads, 1 textures
+0x227F10	0x227FD8	200	payload	graphics	dl_blob	gfx_227F10	f3dex self-relative blob in pool 0x226218: 25 commands, 2 vertex loads, 1 textures
+0x227FD8	0x228010	56	payload	graphics	dl_blob	gfx_227FD8	f3dex self-relative blob in pool 0x226218: 7 commands, 1 vertex loads, 0 textures
+0x228010	0x228048	56	payload	graphics	dl_blob	gfx_228010	f3dex self-relative blob in pool 0x226218: 7 commands, 1 vertex loads, 0 textures
+0x228048	0x228150	264	payload	graphics	dl_blob	gfx_228048	f3dex self-relative blob in pool 0x226218: 33 commands, 4 vertex loads, 1 textures
+0x228150	0x2281D0	128	payload	graphics	dl_blob	gfx_228150	f3dex self-relative blob in pool 0x226218: 16 commands, 0 vertex loads, 0 textures
+0x2281D0	0x231DD8	39944	unknown	-	-	gap_2281D0	-
+0x231DD8	0x231DE8	16	payload	graphics	display_list	dl_231DD8	f3dex display list, 2 commands (data not resolvable)
+0x231DE8	0x232C20	3640	unknown	-	-	gap_231DE8	-
+0x232C20	0x232C40	32	payload	graphics	display_list	dl_232C20	f3dex display list, 4 commands (data not resolvable)
+0x232C40	0x232CD8	152	unknown	-	-	gap_232C40	-
+0x232CD8	0x232CE8	16	payload	graphics	display_list	dl_232CD8	f3dex display list, 2 commands (data not resolvable)
+0x232CE8	0x2367D0	15080	unknown	-	-	gap_232CE8	-
+0x2367D0	0x236A50	640	payload	graphics	dl_blob	gfx_2367D0	f3dex self-relative blob in pool 0x2367D0: 80 commands, 5 vertex loads, 3 textures
+0x236A50	0x236D58	776	payload	graphics	dl_blob	gfx_236A50	f3dex self-relative blob in pool 0x2367D0: 97 commands, 11 vertex loads, 3 textures
+0x236D58	0x236EB8	352	payload	graphics	dl_blob	gfx_236D58	f3dex self-relative blob in pool 0x2367D0: 44 commands, 2 vertex loads, 2 textures
+0x236EB8	0x237008	336	payload	graphics	dl_blob	gfx_236EB8	f3dex self-relative blob in pool 0x2367D0: 42 commands, 3 vertex loads, 2 textures
+0x237008	0x2371D0	456	payload	graphics	dl_blob	gfx_237008	f3dex self-relative blob in pool 0x2367D0: 57 commands, 3 vertex loads, 3 textures
+0x2371D0	0x237328	344	payload	graphics	dl_blob	gfx_2371D0	f3dex self-relative blob in pool 0x2367D0: 43 commands, 2 vertex loads, 2 textures
+0x237328	0x237478	336	payload	graphics	dl_blob	gfx_237328	f3dex self-relative blob in pool 0x2367D0: 42 commands, 3 vertex loads, 2 textures
+0x237478	0x237640	456	payload	graphics	dl_blob	gfx_237478	f3dex self-relative blob in pool 0x2367D0: 57 commands, 3 vertex loads, 3 textures
+0x237640	0x237B78	1336	payload	graphics	dl_blob	gfx_237640	f3dex self-relative blob in pool 0x2367D0: 167 commands, 14 vertex loads, 6 textures
+0x237B78	0x237C48	208	payload	graphics	dl_blob	gfx_237B78	f3dex self-relative blob in pool 0x2367D0: 26 commands, 1 vertex loads, 1 textures
+0x237C48	0x237DA8	352	payload	graphics	dl_blob	gfx_237C48	f3dex self-relative blob in pool 0x2367D0: 44 commands, 2 vertex loads, 2 textures
+0x237DA8	0x237E98	240	payload	graphics	dl_blob	gfx_237DA8	f3dex self-relative blob in pool 0x2367D0: 30 commands, 1 vertex loads, 1 textures
+0x237E98	0x237F68	208	payload	graphics	dl_blob	gfx_237E98	f3dex self-relative blob in pool 0x2367D0: 26 commands, 1 vertex loads, 1 textures
+0x237F68	0x2380C8	352	payload	graphics	dl_blob	gfx_237F68	f3dex self-relative blob in pool 0x2367D0: 44 commands, 2 vertex loads, 2 textures
+0x2380C8	0x2381B8	240	payload	graphics	dl_blob	gfx_2380C8	f3dex self-relative blob in pool 0x2367D0: 30 commands, 1 vertex loads, 1 textures
+0x2381B8	0x238310	344	payload	graphics	dl_blob	gfx_2381B8	f3dex self-relative blob in pool 0x2367D0: 43 commands, 3 vertex loads, 1 textures
+0x238310	0x238608	760	payload	graphics	dl_blob	gfx_238310	f3dex self-relative blob in pool 0x2367D0: 95 commands, 17 vertex loads, 3 textures
+0x238608	0x238670	104	payload	graphics	dl_blob	gfx_238608	f3dex self-relative blob in pool 0x2367D0: 13 commands, 1 vertex loads, 0 textures
+0x238670	0x238838	456	payload	graphics	dl_blob	gfx_238670	f3dex self-relative blob in pool 0x2367D0: 57 commands, 6 vertex loads, 3 textures
+0x238838	0x238A10	472	payload	graphics	dl_blob	gfx_238838	f3dex self-relative blob in pool 0x2367D0: 59 commands, 8 vertex loads, 3 textures
+0x238A10	0x238AD8	200	payload	graphics	dl_blob	gfx_238A10	f3dex self-relative blob in pool 0x2367D0: 25 commands, 1 vertex loads, 1 textures
+0x238AD8	0x238CA0	456	payload	graphics	dl_blob	gfx_238AD8	f3dex self-relative blob in pool 0x2367D0: 57 commands, 6 vertex loads, 3 textures
+0x238CA0	0x238E70	464	payload	graphics	dl_blob	gfx_238CA0	f3dex self-relative blob in pool 0x2367D0: 58 commands, 7 vertex loads, 3 textures
+0x238E70	0x2392E8	1144	payload	graphics	dl_blob	gfx_238E70	f3dex self-relative blob in pool 0x2367D0: 143 commands, 21 vertex loads, 5 textures
+0x2392E8	0x2393C8	224	payload	graphics	dl_blob	gfx_2392E8	f3dex self-relative blob in pool 0x2367D0: 28 commands, 5 vertex loads, 1 textures
+0x2393C8	0x2395B8	496	payload	graphics	dl_blob	gfx_2393C8	f3dex self-relative blob in pool 0x2367D0: 62 commands, 5 vertex loads, 3 textures
+0x2395B8	0x2396A8	240	payload	graphics	dl_blob	gfx_2395B8	f3dex self-relative blob in pool 0x2367D0: 30 commands, 6 vertex loads, 1 textures
+0x2396A8	0x239790	232	payload	graphics	dl_blob	gfx_2396A8	f3dex self-relative blob in pool 0x2367D0: 29 commands, 6 vertex loads, 1 textures
+0x239790	0x239978	488	payload	graphics	dl_blob	gfx_239790	f3dex self-relative blob in pool 0x2367D0: 61 commands, 4 vertex loads, 3 textures
+0x239978	0x239A50	216	payload	graphics	dl_blob	gfx_239978	f3dex self-relative blob in pool 0x2367D0: 27 commands, 3 vertex loads, 1 textures
+0x239A50	0x239BD8	392	payload	graphics	dl_blob	gfx_239A50	f3dex self-relative blob in pool 0x2367D0: 49 commands, 11 vertex loads, 1 textures
+0x239BD8	0x239D00	296	payload	graphics	dl_blob	gfx_239BD8	f3dex self-relative blob in pool 0x2367D0: 37 commands, 1 vertex loads, 1 textures
+0x239D00	0x239E48	328	payload	graphics	dl_blob	gfx_239D00	f3dex self-relative blob in pool 0x2367D0: 41 commands, 5 vertex loads, 2 textures
+0x239E48	0x239FA0	344	payload	graphics	dl_blob	gfx_239E48	f3dex self-relative blob in pool 0x2367D0: 43 commands, 8 vertex loads, 2 textures
+0x239FA0	0x23A1D0	560	payload	graphics	dl_blob	gfx_239FA0	f3dex self-relative blob in pool 0x2367D0: 70 commands, 8 vertex loads, 4 textures
+0x23A1D0	0x23A310	320	payload	graphics	dl_blob	gfx_23A1D0	f3dex self-relative blob in pool 0x2367D0: 40 commands, 4 vertex loads, 2 textures
+0x23A310	0x23A468	344	payload	graphics	dl_blob	gfx_23A310	f3dex self-relative blob in pool 0x2367D0: 43 commands, 8 vertex loads, 2 textures
+0x23A468	0x23A698	560	payload	graphics	dl_blob	gfx_23A468	f3dex self-relative blob in pool 0x2367D0: 70 commands, 8 vertex loads, 4 textures
+0x23A698	0x23AA10	888	payload	graphics	dl_blob	gfx_23A698	f3dex self-relative blob in pool 0x2367D0: 111 commands, 25 vertex loads, 4 textures
+0x23AA10	0x23AAE8	216	payload	graphics	dl_blob	gfx_23AA10	f3dex self-relative blob in pool 0x2367D0: 27 commands, 6 vertex loads, 1 textures
+0x23AAE8	0x23ACF0	520	payload	graphics	dl_blob	gfx_23AAE8	f3dex self-relative blob in pool 0x2367D0: 65 commands, 12 vertex loads, 3 textures
+0x23ACF0	0x23ADC8	216	payload	graphics	dl_blob	gfx_23ACF0	f3dex self-relative blob in pool 0x2367D0: 27 commands, 5 vertex loads, 1 textures
+0x23ADC8	0x23AEB0	232	payload	graphics	dl_blob	gfx_23ADC8	f3dex self-relative blob in pool 0x2367D0: 29 commands, 8 vertex loads, 1 textures
+0x23AEB0	0x23B0B0	512	payload	graphics	dl_blob	gfx_23AEB0	f3dex self-relative blob in pool 0x2367D0: 64 commands, 11 vertex loads, 3 textures
+0x23B0B0	0x23B198	232	payload	graphics	dl_blob	gfx_23B0B0	f3dex self-relative blob in pool 0x2367D0: 29 commands, 7 vertex loads, 1 textures
+0x23B198	0x240D68	23504	unknown	-	-	gap_23B198	-
+0x240D68	0x240E70	264	payload	graphics	dl_blob	gfx_240D68	f3dex self-relative blob in pool 0x240D68: 33 commands, 1 vertex loads, 1 textures
+0x240E70	0x240FE8	376	payload	graphics	dl_blob	gfx_240E70	f3dex self-relative blob in pool 0x240D68: 47 commands, 2 vertex loads, 2 textures
+0x240FE8	0x241150	360	payload	graphics	dl_blob	gfx_240FE8	f3dex self-relative blob in pool 0x240D68: 45 commands, 2 vertex loads, 2 textures
+0x241150	0x241238	232	payload	graphics	dl_blob	gfx_241150	f3dex self-relative blob in pool 0x240D68: 29 commands, 1 vertex loads, 1 textures
+0x241238	0x2413B0	376	payload	graphics	dl_blob	gfx_241238	f3dex self-relative blob in pool 0x240D68: 47 commands, 2 vertex loads, 2 textures
+0x2413B0	0x241518	360	payload	graphics	dl_blob	gfx_2413B0	f3dex self-relative blob in pool 0x240D68: 45 commands, 2 vertex loads, 2 textures
+0x241518	0x241600	232	payload	graphics	dl_blob	gfx_241518	f3dex self-relative blob in pool 0x240D68: 29 commands, 1 vertex loads, 1 textures
+0x241600	0x241798	408	payload	graphics	dl_blob	gfx_241600	f3dex self-relative blob in pool 0x240D68: 51 commands, 2 vertex loads, 2 textures
+0x241798	0x2418A0	264	payload	graphics	dl_blob	gfx_241798	f3dex self-relative blob in pool 0x240D68: 33 commands, 1 vertex loads, 1 textures
+0x2418A0	0x2419A8	264	payload	graphics	dl_blob	gfx_2418A0	f3dex self-relative blob in pool 0x240D68: 33 commands, 1 vertex loads, 1 textures
+0x2419A8	0x241A80	216	payload	graphics	dl_blob	gfx_2419A8	f3dex self-relative blob in pool 0x240D68: 27 commands, 1 vertex loads, 1 textures
+0x241A80	0x241B68	232	payload	graphics	dl_blob	gfx_241A80	f3dex self-relative blob in pool 0x240D68: 29 commands, 1 vertex loads, 1 textures
+0x241B68	0x241C40	216	payload	graphics	dl_blob	gfx_241B68	f3dex self-relative blob in pool 0x240D68: 27 commands, 1 vertex loads, 1 textures
+0x241C40	0x241D38	248	payload	graphics	dl_blob	gfx_241C40	f3dex self-relative blob in pool 0x240D68: 31 commands, 1 vertex loads, 1 textures
+0x241D38	0x241FA0	616	payload	graphics	dl_blob	gfx_241D38	f3dex self-relative blob in pool 0x240D68: 77 commands, 6 vertex loads, 2 textures
+0x241FA0	0x2420A0	256	payload	graphics	dl_blob	gfx_241FA0	f3dex self-relative blob in pool 0x240D68: 32 commands, 2 vertex loads, 1 textures
+0x2420A0	0x2420F0	80	payload	graphics	dl_blob	gfx_2420A0	f3dex self-relative blob in pool 0x240D68: 10 commands, 1 vertex loads, 0 textures
+0x2420F0	0x242130	64	payload	graphics	dl_blob	gfx_2420F0	f3dex self-relative blob in pool 0x240D68: 8 commands, 1 vertex loads, 0 textures
+0x242130	0x2421D8	168	payload	graphics	dl_blob	gfx_242130	f3dex self-relative blob in pool 0x240D68: 21 commands, 1 vertex loads, 1 textures
+0x2421D8	0x242290	184	payload	graphics	dl_blob	gfx_2421D8	f3dex self-relative blob in pool 0x240D68: 23 commands, 1 vertex loads, 1 textures
+0x242290	0x2422D0	64	payload	graphics	dl_blob	gfx_242290	f3dex self-relative blob in pool 0x240D68: 8 commands, 1 vertex loads, 0 textures
+0x2422D0	0x242378	168	payload	graphics	dl_blob	gfx_2422D0	f3dex self-relative blob in pool 0x240D68: 21 commands, 1 vertex loads, 1 textures
+0x242378	0x2424D8	352	payload	graphics	dl_blob	gfx_242378	f3dex self-relative blob in pool 0x240D68: 44 commands, 2 vertex loads, 2 textures
+0x2424D8	0x242590	184	payload	graphics	dl_blob	gfx_2424D8	f3dex self-relative blob in pool 0x240D68: 23 commands, 1 vertex loads, 1 textures
+0x242590	0x2425E0	80	payload	graphics	dl_blob	gfx_242590	f3dex self-relative blob in pool 0x240D68: 10 commands, 1 vertex loads, 0 textures
+0x2425E0	0x242688	168	payload	graphics	dl_blob	gfx_2425E0	f3dex self-relative blob in pool 0x240D68: 21 commands, 1 vertex loads, 1 textures
+0x242688	0x242738	176	payload	graphics	dl_blob	gfx_242688	f3dex self-relative blob in pool 0x240D68: 22 commands, 1 vertex loads, 1 textures
+0x242738	0x242778	64	payload	graphics	dl_blob	gfx_242738	f3dex self-relative blob in pool 0x240D68: 8 commands, 1 vertex loads, 0 textures
+0x242778	0x242820	168	payload	graphics	dl_blob	gfx_242778	f3dex self-relative blob in pool 0x240D68: 21 commands, 1 vertex loads, 1 textures
+0x242820	0x242960	320	payload	graphics	dl_blob	gfx_242820	f3dex self-relative blob in pool 0x240D68: 40 commands, 3 vertex loads, 1 textures
+0x242960	0x2504D0	56176	unknown	-	-	gap_242960	-
+0x2504D0	0x250538	104	payload	graphics	display_list	dl_2504D0	f3dex display list, 13 commands (data not resolvable)
+0x250538	0x256EE8	27056	unknown	-	-	gap_250538	-
+0x256EE8	0x2570F0	520	payload	graphics	dl_blob	gfx_256EE8	f3dex self-relative blob in pool 0x256EE8: 65 commands, 7 vertex loads, 2 textures
+0x2570F0	0x257400	784	payload	graphics	dl_blob	gfx_2570F0	f3dex self-relative blob in pool 0x256EE8: 98 commands, 9 vertex loads, 4 textures
+0x257400	0x2576D8	728	payload	graphics	dl_blob	gfx_257400	f3dex self-relative blob in pool 0x256EE8: 91 commands, 7 vertex loads, 2 textures
+0x2576D8	0x2577B0	216	payload	graphics	dl_blob	gfx_2576D8	f3dex self-relative blob in pool 0x256EE8: 27 commands, 1 vertex loads, 1 textures
+0x2577B0	0x257858	168	payload	graphics	dl_blob	gfx_2577B0	f3dex self-relative blob in pool 0x256EE8: 21 commands, 3 vertex loads, 0 textures
+0x257858	0x257998	320	payload	graphics	dl_blob	gfx_257858	f3dex self-relative blob in pool 0x256EE8: 40 commands, 2 vertex loads, 2 textures
+0x257998	0x257A70	216	payload	graphics	dl_blob	gfx_257998	f3dex self-relative blob in pool 0x256EE8: 27 commands, 1 vertex loads, 1 textures
+0x257A70	0x257B18	168	payload	graphics	dl_blob	gfx_257A70	f3dex self-relative blob in pool 0x256EE8: 21 commands, 3 vertex loads, 0 textures
+0x257B18	0x257C58	320	payload	graphics	dl_blob	gfx_257B18	f3dex self-relative blob in pool 0x256EE8: 40 commands, 2 vertex loads, 2 textures
+0x257C58	0x257E40	488	payload	graphics	dl_blob	gfx_257C58	f3dex self-relative blob in pool 0x256EE8: 61 commands, 3 vertex loads, 3 textures
+0x257E40	0x257F90	336	payload	graphics	dl_blob	gfx_257E40	f3dex self-relative blob in pool 0x256EE8: 42 commands, 2 vertex loads, 2 textures
+0x257F90	0x258058	200	payload	graphics	dl_blob	gfx_257F90	f3dex self-relative blob in pool 0x256EE8: 25 commands, 1 vertex loads, 1 textures
+0x258058	0x258240	488	payload	graphics	dl_blob	gfx_258058	f3dex self-relative blob in pool 0x256EE8: 61 commands, 3 vertex loads, 3 textures
+0x258240	0x258390	336	payload	graphics	dl_blob	gfx_258240	f3dex self-relative blob in pool 0x256EE8: 42 commands, 2 vertex loads, 2 textures
+0x258390	0x258458	200	payload	graphics	dl_blob	gfx_258390	f3dex self-relative blob in pool 0x256EE8: 25 commands, 1 vertex loads, 1 textures
+0x258458	0x2586A8	592	payload	graphics	dl_blob	gfx_258458	f3dex self-relative blob in pool 0x256EE8: 74 commands, 6 vertex loads, 3 textures
+0x2586A8	0x2588F8	592	payload	graphics	dl_blob	gfx_2586A8	f3dex self-relative blob in pool 0x256EE8: 74 commands, 13 vertex loads, 3 textures
+0x2588F8	0x258C10	792	payload	graphics	dl_blob	gfx_2588F8	f3dex self-relative blob in pool 0x256EE8: 99 commands, 4 vertex loads, 4 textures
+0x258C10	0x258CE0	208	payload	graphics	dl_blob	gfx_258C10	f3dex self-relative blob in pool 0x256EE8: 26 commands, 1 vertex loads, 1 textures
+0x258CE0	0x258DD0	240	payload	graphics	dl_blob	gfx_258CE0	f3dex self-relative blob in pool 0x256EE8: 30 commands, 3 vertex loads, 1 textures
+0x258DD0	0x258F00	304	payload	graphics	dl_blob	gfx_258DD0	f3dex self-relative blob in pool 0x256EE8: 38 commands, 2 vertex loads, 2 textures
+0x258F00	0x258FD0	208	payload	graphics	dl_blob	gfx_258F00	f3dex self-relative blob in pool 0x256EE8: 26 commands, 1 vertex loads, 1 textures
+0x258FD0	0x2590C0	240	payload	graphics	dl_blob	gfx_258FD0	f3dex self-relative blob in pool 0x256EE8: 30 commands, 3 vertex loads, 1 textures
+0x2590C0	0x2591F0	304	payload	graphics	dl_blob	gfx_2590C0	f3dex self-relative blob in pool 0x256EE8: 38 commands, 2 vertex loads, 2 textures
+0x2591F0	0x259450	608	payload	graphics	dl_blob	gfx_2591F0	f3dex self-relative blob in pool 0x256EE8: 76 commands, 5 vertex loads, 4 textures
+0x259450	0x2595B8	360	payload	graphics	dl_blob	gfx_259450	f3dex self-relative blob in pool 0x256EE8: 45 commands, 5 vertex loads, 2 textures
+0x2595B8	0x259670	184	payload	graphics	dl_blob	gfx_2595B8	f3dex self-relative blob in pool 0x256EE8: 23 commands, 1 vertex loads, 1 textures
+0x259670	0x259870	512	payload	graphics	dl_blob	gfx_259670	f3dex self-relative blob in pool 0x256EE8: 64 commands, 6 vertex loads, 3 textures
+0x259870	0x2599D8	360	payload	graphics	dl_blob	gfx_259870	f3dex self-relative blob in pool 0x256EE8: 45 commands, 5 vertex loads, 2 textures
+0x2599D8	0x259A90	184	payload	graphics	dl_blob	gfx_2599D8	f3dex self-relative blob in pool 0x256EE8: 23 commands, 1 vertex loads, 1 textures
+0x259A90	0x259C30	416	payload	graphics	dl_blob	gfx_259A90	f3dex self-relative blob in pool 0x256EE8: 52 commands, 4 vertex loads, 2 textures
+0x259C30	0x259E18	488	payload	graphics	dl_blob	gfx_259C30	f3dex self-relative blob in pool 0x256EE8: 61 commands, 16 vertex loads, 2 textures
+0x259E18	0x25A070	600	payload	graphics	dl_blob	gfx_259E18	f3dex self-relative blob in pool 0x256EE8: 75 commands, 7 vertex loads, 3 textures
+0x25A070	0x25A148	216	payload	graphics	dl_blob	gfx_25A070	f3dex self-relative blob in pool 0x256EE8: 27 commands, 3 vertex loads, 1 textures
+0x25A148	0x25A218	208	payload	graphics	dl_blob	gfx_25A148	f3dex self-relative blob in pool 0x256EE8: 26 commands, 2 vertex loads, 1 textures
+0x25A218	0x25A340	296	payload	graphics	dl_blob	gfx_25A218	f3dex self-relative blob in pool 0x256EE8: 37 commands, 2 vertex loads, 2 textures
+0x25A340	0x25A410	208	payload	graphics	dl_blob	gfx_25A340	f3dex self-relative blob in pool 0x256EE8: 26 commands, 2 vertex loads, 1 textures
+0x25A410	0x25A4F8	232	payload	graphics	dl_blob	gfx_25A410	f3dex self-relative blob in pool 0x256EE8: 29 commands, 5 vertex loads, 1 textures
+0x25A4F8	0x25A620	296	payload	graphics	dl_blob	gfx_25A4F8	f3dex self-relative blob in pool 0x256EE8: 37 commands, 2 vertex loads, 2 textures
+0x25A620	0x25A7E0	448	payload	graphics	dl_blob	gfx_25A620	f3dex self-relative blob in pool 0x256EE8: 56 commands, 3 vertex loads, 3 textures
+0x25A7E0	0x25A950	368	payload	graphics	dl_blob	gfx_25A7E0	f3dex self-relative blob in pool 0x256EE8: 46 commands, 6 vertex loads, 2 textures
+0x25A950	0x25AA00	176	payload	graphics	dl_blob	gfx_25A950	f3dex self-relative blob in pool 0x256EE8: 22 commands, 1 vertex loads, 1 textures
+0x25AA00	0x25ABC0	448	payload	graphics	dl_blob	gfx_25AA00	f3dex self-relative blob in pool 0x256EE8: 56 commands, 3 vertex loads, 3 textures
+0x25ABC0	0x25AD08	328	payload	graphics	dl_blob	gfx_25ABC0	f3dex self-relative blob in pool 0x256EE8: 41 commands, 2 vertex loads, 2 textures
+0x25AD08	0x25ADD0	200	payload	graphics	dl_blob	gfx_25AD08	f3dex self-relative blob in pool 0x256EE8: 25 commands, 4 vertex loads, 1 textures
+0x25ADD0	0x2655B8	42984	unknown	-	-	gap_25ADD0	-
+0x2655B8	0x2655C8	16	payload	graphics	display_list	dl_2655B8	f3dex display list, 2 commands (data not resolvable)
+0x2655C8	0x26C338	28016	unknown	-	-	gap_2655C8	-
+0x26C338	0x26C5F0	696	payload	graphics	dl_blob	gfx_26C338	f3dex self-relative blob in pool 0x26C338: 87 commands, 4 vertex loads, 4 textures
+0x26C5F0	0x26C8E8	760	payload	graphics	dl_blob	gfx_26C5F0	f3dex self-relative blob in pool 0x26C338: 95 commands, 4 vertex loads, 4 textures
+0x26C8E8	0x26CDD8	1264	payload	graphics	dl_blob	gfx_26C8E8	f3dex self-relative blob in pool 0x26C338: 158 commands, 12 vertex loads, 6 textures
+0x26CDD8	0x26CEE8	272	payload	graphics	dl_blob	gfx_26CDD8	f3dex self-relative blob in pool 0x26C338: 34 commands, 1 vertex loads, 1 textures
+0x26CEE8	0x26D0F0	520	payload	graphics	dl_blob	gfx_26CEE8	f3dex self-relative blob in pool 0x26C338: 65 commands, 3 vertex loads, 3 textures
+0x26D0F0	0x26D2E0	496	payload	graphics	dl_blob	gfx_26D0F0	f3dex self-relative blob in pool 0x26C338: 62 commands, 3 vertex loads, 3 textures
+0x26D2E0	0x26D3F0	272	payload	graphics	dl_blob	gfx_26D2E0	f3dex self-relative blob in pool 0x26C338: 34 commands, 1 vertex loads, 1 textures
+0x26D3F0	0x26D5F8	520	payload	graphics	dl_blob	gfx_26D3F0	f3dex self-relative blob in pool 0x26C338: 65 commands, 3 vertex loads, 3 textures
+0x26D5F8	0x26D7E8	496	payload	graphics	dl_blob	gfx_26D5F8	f3dex self-relative blob in pool 0x26C338: 62 commands, 3 vertex loads, 3 textures
+0x26D7E8	0x26D978	400	payload	graphics	dl_blob	gfx_26D7E8	f3dex self-relative blob in pool 0x26C338: 50 commands, 2 vertex loads, 2 textures
+0x26D978	0x26DAF0	376	payload	graphics	dl_blob	gfx_26D978	f3dex self-relative blob in pool 0x26C338: 47 commands, 2 vertex loads, 2 textures
+0x26DAF0	0x26DC68	376	payload	graphics	dl_blob	gfx_26DAF0	f3dex self-relative blob in pool 0x26C338: 47 commands, 2 vertex loads, 2 textures
+0x26DC68	0x26DDF8	400	payload	graphics	dl_blob	gfx_26DC68	f3dex self-relative blob in pool 0x26C338: 50 commands, 2 vertex loads, 2 textures
+0x26DDF8	0x26DF70	376	payload	graphics	dl_blob	gfx_26DDF8	f3dex self-relative blob in pool 0x26C338: 47 commands, 2 vertex loads, 2 textures
+0x26DF70	0x26E0E8	376	payload	graphics	dl_blob	gfx_26DF70	f3dex self-relative blob in pool 0x26C338: 47 commands, 2 vertex loads, 2 textures
+0x26E0E8	0x26E350	616	payload	graphics	dl_blob	gfx_26E0E8	f3dex self-relative blob in pool 0x26C338: 77 commands, 10 vertex loads, 3 textures
+0x26E350	0x26E540	496	payload	graphics	dl_blob	gfx_26E350	f3dex self-relative blob in pool 0x26C338: 62 commands, 3 vertex loads, 3 textures
+0x26E540	0x26E7E8	680	payload	graphics	dl_blob	gfx_26E540	f3dex self-relative blob in pool 0x26C338: 85 commands, 10 vertex loads, 3 textures
+0x26E7E8	0x26E8C8	224	payload	graphics	dl_blob	gfx_26E7E8	f3dex self-relative blob in pool 0x26C338: 28 commands, 3 vertex loads, 1 textures
+0x26E8C8	0x26EA60	408	payload	graphics	dl_blob	gfx_26E8C8	f3dex self-relative blob in pool 0x26C338: 51 commands, 7 vertex loads, 2 textures
+0x26EA60	0x26EC20	448	payload	graphics	dl_blob	gfx_26EA60	f3dex self-relative blob in pool 0x26C338: 56 commands, 6 vertex loads, 3 textures
+0x26EC20	0x26ECF8	216	payload	graphics	dl_blob	gfx_26EC20	f3dex self-relative blob in pool 0x26C338: 27 commands, 2 vertex loads, 1 textures
+0x26ECF8	0x26EEB0	440	payload	graphics	dl_blob	gfx_26ECF8	f3dex self-relative blob in pool 0x26C338: 55 commands, 11 vertex loads, 2 textures
+0x26EEB0	0x26F058	424	payload	graphics	dl_blob	gfx_26EEB0	f3dex self-relative blob in pool 0x26C338: 53 commands, 3 vertex loads, 3 textures
+0x26F058	0x26F1C0	360	payload	graphics	dl_blob	gfx_26F058	f3dex self-relative blob in pool 0x26C338: 45 commands, 6 vertex loads, 2 textures
+0x26F1C0	0x26F280	192	payload	graphics	dl_blob	gfx_26F1C0	f3dex self-relative blob in pool 0x26C338: 24 commands, 3 vertex loads, 1 textures
+0x26F280	0x26F338	184	payload	graphics	dl_blob	gfx_26F280	f3dex self-relative blob in pool 0x26C338: 23 commands, 1 vertex loads, 1 textures
+0x26F338	0x26F4A0	360	payload	graphics	dl_blob	gfx_26F338	f3dex self-relative blob in pool 0x26C338: 45 commands, 6 vertex loads, 2 textures
+0x26F4A0	0x26F578	216	payload	graphics	dl_blob	gfx_26F4A0	f3dex self-relative blob in pool 0x26C338: 27 commands, 6 vertex loads, 1 textures
+0x26F578	0x26F628	176	payload	graphics	dl_blob	gfx_26F578	f3dex self-relative blob in pool 0x26C338: 22 commands, 1 vertex loads, 1 textures
+0x26F628	0x26F7B0	392	payload	graphics	dl_blob	gfx_26F628	f3dex self-relative blob in pool 0x26C338: 49 commands, 2 vertex loads, 2 textures
+0x26F7B0	0x26FA08	600	payload	graphics	dl_blob	gfx_26F7B0	f3dex self-relative blob in pool 0x26C338: 75 commands, 6 vertex loads, 4 textures
+0x26FA08	0x26FCC8	704	payload	graphics	dl_blob	gfx_26FA08	f3dex self-relative blob in pool 0x26C338: 88 commands, 9 vertex loads, 4 textures
+0x26FCC8	0x26FDF0	296	payload	graphics	dl_blob	gfx_26FCC8	f3dex self-relative blob in pool 0x26C338: 37 commands, 2 vertex loads, 2 textures
+0x26FDF0	0x26FF28	312	payload	graphics	dl_blob	gfx_26FDF0	f3dex self-relative blob in pool 0x26C338: 39 commands, 2 vertex loads, 2 textures
+0x26FF28	0x2700F0	456	payload	graphics	dl_blob	gfx_26FF28	f3dex self-relative blob in pool 0x26C338: 57 commands, 8 vertex loads, 3 textures
+0x2700F0	0x270220	304	payload	graphics	dl_blob	gfx_2700F0	f3dex self-relative blob in pool 0x26C338: 38 commands, 3 vertex loads, 2 textures
+0x270220	0x270370	336	payload	graphics	dl_blob	gfx_270220	f3dex self-relative blob in pool 0x26C338: 42 commands, 5 vertex loads, 2 textures
+0x270370	0x270510	416	payload	graphics	dl_blob	gfx_270370	f3dex self-relative blob in pool 0x26C338: 52 commands, 3 vertex loads, 3 textures
+0x270510	0x2705E8	216	payload	graphics	dl_blob	gfx_270510	f3dex self-relative blob in pool 0x26C338: 27 commands, 4 vertex loads, 1 textures
+0x2705E8	0x2706D0	232	payload	graphics	dl_blob	gfx_2705E8	f3dex self-relative blob in pool 0x26C338: 29 commands, 8 vertex loads, 1 textures
+0x2706D0	0x270870	416	payload	graphics	dl_blob	gfx_2706D0	f3dex self-relative blob in pool 0x26C338: 52 commands, 3 vertex loads, 3 textures
+0x270870	0x270948	216	payload	graphics	dl_blob	gfx_270870	f3dex self-relative blob in pool 0x26C338: 27 commands, 4 vertex loads, 1 textures
+0x270948	0x270A30	232	payload	graphics	dl_blob	gfx_270948	f3dex self-relative blob in pool 0x26C338: 29 commands, 8 vertex loads, 1 textures
+0x270A30	0x270BE0	432	payload	graphics	dl_blob	gfx_270A30	f3dex self-relative blob in pool 0x26C338: 54 commands, 5 vertex loads, 3 textures
+0x270BE0	0x281DA8	70088	unknown	-	-	gap_270BE0	-
+0x281DA8	0x281F48	416	payload	graphics	dl_blob	gfx_281DA8	f3dex self-relative blob in pool 0x281DA8: 52 commands, 2 vertex loads, 2 textures
+0x281F48	0x282140	504	payload	graphics	dl_blob	gfx_281F48	f3dex self-relative blob in pool 0x281DA8: 63 commands, 3 vertex loads, 3 textures
+0x282140	0x282210	208	payload	graphics	dl_blob	gfx_282140	f3dex self-relative blob in pool 0x281DA8: 26 commands, 1 vertex loads, 1 textures
+0x282210	0x282390	384	payload	graphics	dl_blob	gfx_282210	f3dex self-relative blob in pool 0x281DA8: 48 commands, 2 vertex loads, 2 textures
+0x282390	0x2824A8	280	payload	graphics	dl_blob	gfx_282390	f3dex self-relative blob in pool 0x281DA8: 35 commands, 1 vertex loads, 1 textures
+0x2824A8	0x282698	496	payload	graphics	dl_blob	gfx_2824A8	f3dex self-relative blob in pool 0x281DA8: 62 commands, 3 vertex loads, 3 textures
+0x282698	0x282768	208	payload	graphics	dl_blob	gfx_282698	f3dex self-relative blob in pool 0x281DA8: 26 commands, 1 vertex loads, 1 textures
+0x282768	0x2828E8	384	payload	graphics	dl_blob	gfx_282768	f3dex self-relative blob in pool 0x281DA8: 48 commands, 2 vertex loads, 2 textures
+0x2828E8	0x282A18	304	payload	graphics	dl_blob	gfx_2828E8	f3dex self-relative blob in pool 0x281DA8: 38 commands, 4 vertex loads, 1 textures
+0x282A18	0x282AF0	216	payload	graphics	dl_blob	gfx_282A18	f3dex self-relative blob in pool 0x281DA8: 27 commands, 1 vertex loads, 1 textures
+0x282AF0	0x282E40	848	payload	graphics	dl_blob	gfx_282AF0	f3dex self-relative blob in pool 0x281DA8: 106 commands, 5 vertex loads, 4 textures
+0x282E40	0x282F20	224	payload	graphics	dl_blob	gfx_282E40	f3dex self-relative blob in pool 0x281DA8: 28 commands, 1 vertex loads, 1 textures
+0x282F20	0x283100	480	payload	graphics	dl_blob	gfx_282F20	f3dex self-relative blob in pool 0x281DA8: 60 commands, 3 vertex loads, 2 textures
+0x283100	0x2831E0	224	payload	graphics	dl_blob	gfx_283100	f3dex self-relative blob in pool 0x281DA8: 28 commands, 1 vertex loads, 1 textures
+0x2831E0	0x283380	416	payload	graphics	dl_blob	gfx_2831E0	f3dex self-relative blob in pool 0x281DA8: 52 commands, 2 vertex loads, 2 textures
+0x283380	0x283448	200	payload	graphics	dl_blob	gfx_283380	f3dex self-relative blob in pool 0x281DA8: 25 commands, 1 vertex loads, 1 textures
+0x283448	0x283510	200	payload	graphics	dl_blob	gfx_283448	f3dex self-relative blob in pool 0x281DA8: 25 commands, 1 vertex loads, 1 textures
+0x283510	0x2835D8	200	payload	graphics	dl_blob	gfx_283510	f3dex self-relative blob in pool 0x281DA8: 25 commands, 1 vertex loads, 1 textures
+0x2835D8	0x2836D0	248	payload	graphics	dl_blob	gfx_2835D8	f3dex self-relative blob in pool 0x281DA8: 31 commands, 1 vertex loads, 1 textures
+0x2836D0	0x2837C8	248	payload	graphics	dl_blob	gfx_2836D0	f3dex self-relative blob in pool 0x281DA8: 31 commands, 1 vertex loads, 1 textures
+0x2837C8	0x283948	384	payload	graphics	dl_blob	gfx_2837C8	f3dex self-relative blob in pool 0x281DA8: 48 commands, 2 vertex loads, 2 textures
+0x283948	0x283AF8	432	payload	graphics	dl_blob	gfx_283948	f3dex self-relative blob in pool 0x281DA8: 54 commands, 3 vertex loads, 3 textures
+0x283AF8	0x283B30	56	payload	graphics	dl_blob	gfx_283AF8	f3dex self-relative blob in pool 0x281DA8: 7 commands, 1 vertex loads, 0 textures
+0x283B30	0x283C68	312	payload	graphics	dl_blob	gfx_283B30	f3dex self-relative blob in pool 0x281DA8: 39 commands, 2 vertex loads, 2 textures
+0x283C68	0x283CE8	128	payload	graphics	dl_blob	gfx_283C68	f3dex self-relative blob in pool 0x281DA8: 16 commands, 1 vertex loads, 0 textures
+0x283CE8	0x283E98	432	payload	graphics	dl_blob	gfx_283CE8	f3dex self-relative blob in pool 0x281DA8: 54 commands, 3 vertex loads, 3 textures
+0x283E98	0x283ED0	56	payload	graphics	dl_blob	gfx_283E98	f3dex self-relative blob in pool 0x281DA8: 7 commands, 1 vertex loads, 0 textures
+0x283ED0	0x284008	312	payload	graphics	dl_blob	gfx_283ED0	f3dex self-relative blob in pool 0x281DA8: 39 commands, 2 vertex loads, 2 textures
+0x284008	0x284088	128	payload	graphics	dl_blob	gfx_284008	f3dex self-relative blob in pool 0x281DA8: 16 commands, 1 vertex loads, 0 textures
+0x284088	0x284138	176	payload	graphics	dl_blob	gfx_284088	f3dex self-relative blob in pool 0x281DA8: 22 commands, 2 vertex loads, 1 textures
+0x284138	0x2843E0	680	payload	graphics	dl_blob	gfx_284138	f3dex self-relative blob in pool 0x281DA8: 85 commands, 8 vertex loads, 3 textures
+0x2843E0	0x284490	176	payload	graphics	dl_blob	gfx_2843E0	f3dex self-relative blob in pool 0x281DA8: 22 commands, 1 vertex loads, 1 textures
+0x284490	0x284618	392	payload	graphics	dl_blob	gfx_284490	f3dex self-relative blob in pool 0x281DA8: 49 commands, 3 vertex loads, 2 textures
+0x284618	0x2846C8	176	payload	graphics	dl_blob	gfx_284618	f3dex self-relative blob in pool 0x281DA8: 22 commands, 1 vertex loads, 1 textures
+0x2846C8	0x284838	368	payload	graphics	dl_blob	gfx_2846C8	f3dex self-relative blob in pool 0x281DA8: 46 commands, 2 vertex loads, 2 textures
+0x284838	0x2848D0	152	payload	graphics	dl_blob	gfx_284838	f3dex self-relative blob in pool 0x281DA8: 19 commands, 1 vertex loads, 1 textures
+0x2848D0	0x284900	48	payload	graphics	dl_blob	gfx_2848D0	f3dex self-relative blob in pool 0x281DA8: 6 commands, 1 vertex loads, 0 textures
+0x284900	0x284930	48	payload	graphics	dl_blob	gfx_284900	f3dex self-relative blob in pool 0x281DA8: 6 commands, 1 vertex loads, 0 textures
+0x284930	0x284A68	312	payload	graphics	dl_blob	gfx_284930	f3dex self-relative blob in pool 0x281DA8: 39 commands, 3 vertex loads, 2 textures
+0x284A68	0x284B98	304	payload	graphics	dl_blob	gfx_284A68	f3dex self-relative blob in pool 0x281DA8: 38 commands, 2 vertex loads, 2 textures
+0x284B98	0x284D18	384	payload	graphics	dl_blob	gfx_284B98	f3dex self-relative blob in pool 0x281DA8: 48 commands, 4 vertex loads, 2 textures
+0x284D18	0x284F00	488	payload	graphics	dl_blob	gfx_284D18	f3dex self-relative blob in pool 0x281DA8: 61 commands, 10 vertex loads, 3 textures
+0x284F00	0x284F38	56	payload	graphics	dl_blob	gfx_284F00	f3dex self-relative blob in pool 0x281DA8: 7 commands, 1 vertex loads, 0 textures
+0x284F38	0x285088	336	payload	graphics	dl_blob	gfx_284F38	f3dex self-relative blob in pool 0x281DA8: 42 commands, 5 vertex loads, 2 textures
+0x285088	0x285108	128	payload	graphics	dl_blob	gfx_285088	f3dex self-relative blob in pool 0x281DA8: 16 commands, 3 vertex loads, 0 textures
+0x285108	0x2852F8	496	payload	graphics	dl_blob	gfx_285108	f3dex self-relative blob in pool 0x281DA8: 62 commands, 11 vertex loads, 3 textures
+0x2852F8	0x285340	72	payload	graphics	dl_blob	gfx_2852F8	f3dex self-relative blob in pool 0x281DA8: 9 commands, 3 vertex loads, 0 textures
+0x285340	0x2854C8	392	payload	graphics	dl_blob	gfx_285340	f3dex self-relative blob in pool 0x281DA8: 49 commands, 12 vertex loads, 2 textures
+0x2854C8	0x285550	136	payload	graphics	dl_blob	gfx_2854C8	f3dex self-relative blob in pool 0x281DA8: 17 commands, 4 vertex loads, 0 textures
+0x285550	0x285600	176	payload	graphics	dl_blob	gfx_285550	f3dex self-relative blob in pool 0x281DA8: 22 commands, 2 vertex loads, 1 textures
+0x285600	0x285900	768	payload	graphics	dl_blob	gfx_285600	f3dex self-relative blob in pool 0x281DA8: 96 commands, 24 vertex loads, 3 textures
+0x285900	0x2859C0	192	payload	graphics	dl_blob	gfx_285900	f3dex self-relative blob in pool 0x281DA8: 24 commands, 3 vertex loads, 1 textures
+0x2859C0	0x285BB0	496	payload	graphics	dl_blob	gfx_2859C0	f3dex self-relative blob in pool 0x281DA8: 62 commands, 16 vertex loads, 2 textures
+0x285BB0	0x285C78	200	payload	graphics	dl_blob	gfx_285BB0	f3dex self-relative blob in pool 0x281DA8: 25 commands, 4 vertex loads, 1 textures
+0x285C78	0x285DE0	360	payload	graphics	dl_blob	gfx_285C78	f3dex self-relative blob in pool 0x281DA8: 45 commands, 4 vertex loads, 2 textures
+0x285DE0	0x285E70	144	payload	graphics	dl_blob	gfx_285DE0	f3dex self-relative blob in pool 0x281DA8: 18 commands, 1 vertex loads, 1 textures
+0x285E70	0x285E90	32	payload	graphics	dl_blob	gfx_285E70	f3dex self-relative blob in pool 0x281DA8: 4 commands, 1 vertex loads, 0 textures
+0x285E90	0x285EB0	32	payload	graphics	dl_blob	gfx_285E90	f3dex self-relative blob in pool 0x281DA8: 4 commands, 1 vertex loads, 0 textures
+0x285EB0	0x285FF8	328	payload	graphics	dl_blob	gfx_285EB0	f3dex self-relative blob in pool 0x281DA8: 41 commands, 4 vertex loads, 2 textures
+0x285FF8	0x286130	312	payload	graphics	dl_blob	gfx_285FF8	f3dex self-relative blob in pool 0x281DA8: 39 commands, 4 vertex loads, 2 textures
+0x286130	0x293E90	56672	unknown	-	-	gap_286130	-
+0x293E90	0x2940A8	536	payload	graphics	dl_blob	gfx_293E90	f3dex self-relative blob in pool 0x293E90: 67 commands, 3 vertex loads, 3 textures
+0x2940A8	0x294340	664	payload	graphics	dl_blob	gfx_2940A8	f3dex self-relative blob in pool 0x293E90: 83 commands, 4 vertex loads, 4 textures
+0x294340	0x2944F8	440	payload	graphics	dl_blob	gfx_294340	f3dex self-relative blob in pool 0x293E90: 55 commands, 3 vertex loads, 1 textures
+0x2944F8	0x2945B8	192	payload	graphics	dl_blob	gfx_2944F8	f3dex self-relative blob in pool 0x293E90: 24 commands, 1 vertex loads, 1 textures
+0x2945B8	0x294688	208	payload	graphics	dl_blob	gfx_2945B8	f3dex self-relative blob in pool 0x293E90: 26 commands, 2 vertex loads, 1 textures
+0x294688	0x2947D8	336	payload	graphics	dl_blob	gfx_294688	f3dex self-relative blob in pool 0x293E90: 42 commands, 2 vertex loads, 2 textures
+0x2947D8	0x294898	192	payload	graphics	dl_blob	gfx_2947D8	f3dex self-relative blob in pool 0x293E90: 24 commands, 1 vertex loads, 1 textures
+0x294898	0x294968	208	payload	graphics	dl_blob	gfx_294898	f3dex self-relative blob in pool 0x293E90: 26 commands, 2 vertex loads, 1 textures
+0x294968	0x294AC0	344	payload	graphics	dl_blob	gfx_294968	f3dex self-relative blob in pool 0x293E90: 43 commands, 2 vertex loads, 2 textures
+0x294AC0	0x294BA0	224	payload	graphics	dl_blob	gfx_294AC0	f3dex self-relative blob in pool 0x293E90: 28 commands, 1 vertex loads, 1 textures
+0x294BA0	0x294C08	104	payload	graphics	dl_blob	gfx_294BA0	f3dex self-relative blob in pool 0x293E90: 13 commands, 1 vertex loads, 0 textures
+0x294C08	0x294CC8	192	payload	graphics	dl_blob	gfx_294C08	f3dex self-relative blob in pool 0x293E90: 24 commands, 1 vertex loads, 1 textures
+0x294CC8	0x294DA8	224	payload	graphics	dl_blob	gfx_294CC8	f3dex self-relative blob in pool 0x293E90: 28 commands, 1 vertex loads, 1 textures
+0x294DA8	0x294E10	104	payload	graphics	dl_blob	gfx_294DA8	f3dex self-relative blob in pool 0x293E90: 13 commands, 1 vertex loads, 0 textures
+0x294E10	0x294ED0	192	payload	graphics	dl_blob	gfx_294E10	f3dex self-relative blob in pool 0x293E90: 24 commands, 1 vertex loads, 1 textures
+0x294ED0	0x294F50	128	payload	graphics	dl_blob	gfx_294ED0	f3dex self-relative blob in pool 0x293E90: 16 commands, 0 vertex loads, 0 textures
+0x294F50	0x295A80	2864	unknown	-	-	gap_294F50	-
+0x295A80	0x295A90	16	payload	graphics	display_list	dl_295A80	f3dex display list, 2 commands (data not resolvable)
+0x295A90	0x296570	2784	unknown	-	-	gap_295A90	-
+0x296570	0x296580	16	payload	graphics	display_list	dl_296570	f3dex display list, 2 commands (data not resolvable)
+0x296580	0x296768	488	unknown	-	-	gap_296580	-
+0x296768	0x296788	32	payload	graphics	display_list	dl_296768	f3dex display list, 4 commands (data not resolvable)
+0x296788	0x2979D0	4680	unknown	-	-	gap_296788	-
+0x2979D0	0x2979E0	16	payload	graphics	display_list	dl_2979D0	f3dex display list, 2 commands (data not resolvable)
+0x2979E0	0x29CFF0	22032	unknown	-	-	gap_2979E0	-
+0x29CFF0	0x29D1F0	512	payload	graphics	dl_blob	gfx_29CFF0	f3dex self-relative blob in pool 0x29CFF0: 64 commands, 3 vertex loads, 2 textures
+0x29D1F0	0x29D350	352	payload	graphics	dl_blob	gfx_29D1F0	f3dex self-relative blob in pool 0x29CFF0: 44 commands, 2 vertex loads, 2 textures
+0x29D350	0x29D438	232	payload	graphics	dl_blob	gfx_29D350	f3dex self-relative blob in pool 0x29CFF0: 29 commands, 2 vertex loads, 1 textures
+0x29D438	0x29D590	344	payload	graphics	dl_blob	gfx_29D438	f3dex self-relative blob in pool 0x29CFF0: 43 commands, 2 vertex loads, 2 textures
+0x29D590	0x29D6F0	352	payload	graphics	dl_blob	gfx_29D590	f3dex self-relative blob in pool 0x29CFF0: 44 commands, 2 vertex loads, 2 textures
+0x29D6F0	0x29D7D8	232	payload	graphics	dl_blob	gfx_29D6F0	f3dex self-relative blob in pool 0x29CFF0: 29 commands, 2 vertex loads, 1 textures
+0x29D7D8	0x29D930	344	payload	graphics	dl_blob	gfx_29D7D8	f3dex self-relative blob in pool 0x29CFF0: 43 commands, 2 vertex loads, 2 textures
+0x29D930	0x29DAD0	416	payload	graphics	dl_blob	gfx_29D930	f3dex self-relative blob in pool 0x29CFF0: 52 commands, 2 vertex loads, 2 textures
+0x29DAD0	0x29DB30	96	payload	graphics	dl_blob	gfx_29DAD0	f3dex self-relative blob in pool 0x29CFF0: 12 commands, 1 vertex loads, 0 textures
+0x29DB30	0x29DC20	240	payload	graphics	dl_blob	gfx_29DB30	f3dex self-relative blob in pool 0x29CFF0: 30 commands, 3 vertex loads, 1 textures
+0x29DC20	0x29DDE8	456	payload	graphics	dl_blob	gfx_29DC20	f3dex self-relative blob in pool 0x29CFF0: 57 commands, 3 vertex loads, 3 textures
+0x29DDE8	0x29DEB0	200	payload	graphics	dl_blob	gfx_29DDE8	f3dex self-relative blob in pool 0x29CFF0: 25 commands, 1 vertex loads, 1 textures
+0x29DEB0	0x29DFA0	240	payload	graphics	dl_blob	gfx_29DEB0	f3dex self-relative blob in pool 0x29CFF0: 30 commands, 3 vertex loads, 1 textures
+0x29DFA0	0x29E168	456	payload	graphics	dl_blob	gfx_29DFA0	f3dex self-relative blob in pool 0x29CFF0: 57 commands, 3 vertex loads, 3 textures
+0x29E168	0x29E660	1272	payload	graphics	dl_blob	gfx_29E168	f3dex self-relative blob in pool 0x29CFF0: 159 commands, 13 vertex loads, 6 textures
+0x29E660	0x29E740	224	payload	graphics	dl_blob	gfx_29E660	f3dex self-relative blob in pool 0x29CFF0: 28 commands, 1 vertex loads, 1 textures
+0x29E740	0x29E7C0	128	payload	graphics	dl_blob	gfx_29E740	f3dex self-relative blob in pool 0x29CFF0: 16 commands, 1 vertex loads, 0 textures
+0x29E7C0	0x29E850	144	payload	graphics	dl_blob	gfx_29E7C0	f3dex self-relative blob in pool 0x29CFF0: 18 commands, 0 vertex loads, 0 textures
+0x29E850	0x29E998	328	payload	graphics	dl_blob	gfx_29E850	f3dex self-relative blob in pool 0x29CFF0: 41 commands, 1 vertex loads, 1 textures
+0x29E998	0x29EB88	496	payload	graphics	dl_blob	gfx_29E998	f3dex self-relative blob in pool 0x29CFF0: 62 commands, 6 vertex loads, 3 textures
+0x29EB88	0x29EC48	192	payload	graphics	dl_blob	gfx_29EB88	f3dex self-relative blob in pool 0x29CFF0: 24 commands, 1 vertex loads, 1 textures
+0x29EC48	0x29ECA0	88	payload	graphics	dl_blob	gfx_29EC48	f3dex self-relative blob in pool 0x29CFF0: 11 commands, 1 vertex loads, 0 textures
+0x29ECA0	0x29EEF8	600	payload	graphics	dl_blob	gfx_29ECA0	f3dex self-relative blob in pool 0x29CFF0: 75 commands, 6 vertex loads, 4 textures
+0x29EEF8	0x29EFB8	192	payload	graphics	dl_blob	gfx_29EEF8	f3dex self-relative blob in pool 0x29CFF0: 24 commands, 1 vertex loads, 1 textures
+0x29EFB8	0x29F010	88	payload	graphics	dl_blob	gfx_29EFB8	f3dex self-relative blob in pool 0x29CFF0: 11 commands, 1 vertex loads, 0 textures
+0x29F010	0x29F0F0	224	payload	graphics	dl_blob	gfx_29F010	f3dex self-relative blob in pool 0x29CFF0: 28 commands, 1 vertex loads, 1 textures
+0x29F0F0	0x29F150	96	payload	graphics	dl_blob	gfx_29F0F0	f3dex self-relative blob in pool 0x29CFF0: 12 commands, 1 vertex loads, 0 textures
+0x29F150	0x29F1A0	80	payload	graphics	dl_blob	gfx_29F150	f3dex self-relative blob in pool 0x29CFF0: 10 commands, 1 vertex loads, 0 textures
+0x29F1A0	0x29F370	464	payload	graphics	dl_blob	gfx_29F1A0	f3dex self-relative blob in pool 0x29CFF0: 58 commands, 7 vertex loads, 3 textures
+0x29F370	0x29F438	200	payload	graphics	dl_blob	gfx_29F370	f3dex self-relative blob in pool 0x29CFF0: 25 commands, 1 vertex loads, 1 textures
+0x29F438	0x29F488	80	payload	graphics	dl_blob	gfx_29F438	f3dex self-relative blob in pool 0x29CFF0: 10 commands, 1 vertex loads, 0 textures
+0x29F488	0x29F650	456	payload	graphics	dl_blob	gfx_29F488	f3dex self-relative blob in pool 0x29CFF0: 57 commands, 6 vertex loads, 3 textures
+0x29F650	0x29F9B0	864	payload	graphics	dl_blob	gfx_29F650	f3dex self-relative blob in pool 0x29CFF0: 108 commands, 8 vertex loads, 4 textures
+0x29F9B0	0x29FA88	216	payload	graphics	dl_blob	gfx_29F9B0	f3dex self-relative blob in pool 0x29CFF0: 27 commands, 1 vertex loads, 1 textures
+0x29FA88	0x29FAE8	96	payload	graphics	dl_blob	gfx_29FA88	f3dex self-relative blob in pool 0x29CFF0: 12 commands, 1 vertex loads, 0 textures
+0x29FAE8	0x29FB78	144	payload	graphics	dl_blob	gfx_29FAE8	f3dex self-relative blob in pool 0x29CFF0: 18 commands, 0 vertex loads, 0 textures
+0x29FB78	0x29FC88	272	payload	graphics	dl_blob	gfx_29FB78	f3dex self-relative blob in pool 0x29CFF0: 34 commands, 1 vertex loads, 1 textures
+0x29FC88	0x29FD90	264	payload	graphics	dl_blob	gfx_29FC88	f3dex self-relative blob in pool 0x29CFF0: 33 commands, 6 vertex loads, 1 textures
+0x29FD90	0x29FDD0	64	payload	graphics	dl_blob	gfx_29FD90	f3dex self-relative blob in pool 0x29CFF0: 8 commands, 1 vertex loads, 0 textures
+0x29FDD0	0x29FE40	112	payload	graphics	dl_blob	gfx_29FDD0	f3dex self-relative blob in pool 0x29CFF0: 14 commands, 4 vertex loads, 0 textures
+0x29FE40	0x29FFA8	360	payload	graphics	dl_blob	gfx_29FE40	f3dex self-relative blob in pool 0x29CFF0: 45 commands, 6 vertex loads, 2 textures
+0x29FFA8	0x29FFE8	64	payload	graphics	dl_blob	gfx_29FFA8	f3dex self-relative blob in pool 0x29CFF0: 8 commands, 1 vertex loads, 0 textures
+0x29FFE8	0x2A0058	112	payload	graphics	dl_blob	gfx_29FFE8	f3dex self-relative blob in pool 0x29CFF0: 14 commands, 4 vertex loads, 0 textures
+0x2A0058	0x2A0150	248	payload	graphics	dl_blob	gfx_2A0058	f3dex self-relative blob in pool 0x29CFF0: 31 commands, 4 vertex loads, 1 textures
+0x2A0150	0x2A0198	72	payload	graphics	dl_blob	gfx_2A0150	f3dex self-relative blob in pool 0x29CFF0: 9 commands, 1 vertex loads, 0 textures
+0x2A0198	0x2A01D0	56	payload	graphics	dl_blob	gfx_2A0198	f3dex self-relative blob in pool 0x29CFF0: 7 commands, 1 vertex loads, 0 textures
+0x2A01D0	0x2A03D8	520	payload	graphics	dl_blob	gfx_2A01D0	f3dex self-relative blob in pool 0x29CFF0: 65 commands, 14 vertex loads, 3 textures
+0x2A03D8	0x2A0488	176	payload	graphics	dl_blob	gfx_2A03D8	f3dex self-relative blob in pool 0x29CFF0: 22 commands, 1 vertex loads, 1 textures
+0x2A0488	0x2A04C0	56	payload	graphics	dl_blob	gfx_2A0488	f3dex self-relative blob in pool 0x29CFF0: 7 commands, 1 vertex loads, 0 textures
+0x2A04C0	0x2A06A0	480	payload	graphics	dl_blob	gfx_2A04C0	f3dex self-relative blob in pool 0x29CFF0: 60 commands, 9 vertex loads, 3 textures
+0x2A06A0	0x2A0938	664	payload	graphics	dl_blob	gfx_2A06A0	f3dex self-relative blob in pool 0x29CFF0: 83 commands, 8 vertex loads, 3 textures
+0x2A0938	0x2A0A30	248	payload	graphics	dl_blob	gfx_2A0938	f3dex self-relative blob in pool 0x29CFF0: 31 commands, 6 vertex loads, 1 textures
+0x2A0A30	0x2A0A90	96	payload	graphics	dl_blob	gfx_2A0A30	f3dex self-relative blob in pool 0x29CFF0: 12 commands, 3 vertex loads, 0 textures
+0x2A0A90	0x2A0B20	144	payload	graphics	dl_blob	gfx_2A0A90	f3dex self-relative blob in pool 0x29CFF0: 18 commands, 0 vertex loads, 0 textures
+0x2A0B20	0x2A3460	10560	unknown	-	-	gap_2A0B20	-
+0x2A3460	0x2A3470	16	payload	graphics	display_list	dl_2A3460	f3dex display list, 2 commands (data not resolvable)
+0x2A3470	0x2A3DC8	2392	unknown	-	-	gap_2A3470	-
+0x2A3DC8	0x2A3DF0	40	payload	graphics	display_list	dl_2A3DC8	f3dex display list, 5 commands (data not resolvable)
+0x2A3DF0	0x2A4C00	3600	unknown	-	-	gap_2A3DF0	-
+0x2A4C00	0x2A4C10	16	payload	graphics	display_list	dl_2A4C00	f3dex display list, 2 commands (data not resolvable)
+0x2A4C10	0x2AAC98	24712	unknown	-	-	gap_2A4C10	-
+0x2AAC98	0x2AAE20	392	payload	graphics	dl_blob	gfx_2AAC98	f3dex self-relative blob in pool 0x2AAC98: 49 commands, 3 vertex loads, 2 textures
+0x2AAE20	0x2AAF00	224	payload	graphics	dl_blob	gfx_2AAE20	f3dex self-relative blob in pool 0x2AAC98: 28 commands, 2 vertex loads, 1 textures
+0x2AAF00	0x2AAF58	88	payload	graphics	dl_blob	gfx_2AAF00	f3dex self-relative blob in pool 0x2AAC98: 11 commands, 1 vertex loads, 0 textures
+0x2AAF58	0x2AAFA8	80	payload	graphics	dl_blob	gfx_2AAF58	f3dex self-relative blob in pool 0x2AAC98: 10 commands, 1 vertex loads, 0 textures
+0x2AAFA8	0x2AB0F0	328	payload	graphics	dl_blob	gfx_2AAFA8	f3dex self-relative blob in pool 0x2AAC98: 41 commands, 2 vertex loads, 2 textures
+0x2AB0F0	0x2AB148	88	payload	graphics	dl_blob	gfx_2AB0F0	f3dex self-relative blob in pool 0x2AAC98: 11 commands, 1 vertex loads, 0 textures
+0x2AB148	0x2AB198	80	payload	graphics	dl_blob	gfx_2AB148	f3dex self-relative blob in pool 0x2AAC98: 10 commands, 1 vertex loads, 0 textures
+0x2AB198	0x2AB448	688	payload	graphics	dl_blob	gfx_2AB198	f3dex self-relative blob in pool 0x2AAC98: 86 commands, 4 vertex loads, 4 textures
+0x2AB448	0x2AB518	208	payload	graphics	dl_blob	gfx_2AB448	f3dex self-relative blob in pool 0x2AAC98: 26 commands, 1 vertex loads, 1 textures
+0x2AB518	0x2AB648	304	payload	graphics	dl_blob	gfx_2AB518	f3dex self-relative blob in pool 0x2AAC98: 38 commands, 2 vertex loads, 2 textures
+0x2AB648	0x2AB810	456	payload	graphics	dl_blob	gfx_2AB648	f3dex self-relative blob in pool 0x2AAC98: 57 commands, 3 vertex loads, 3 textures
+0x2AB810	0x2AB8E0	208	payload	graphics	dl_blob	gfx_2AB810	f3dex self-relative blob in pool 0x2AAC98: 26 commands, 1 vertex loads, 1 textures
+0x2AB8E0	0x2ABA10	304	payload	graphics	dl_blob	gfx_2AB8E0	f3dex self-relative blob in pool 0x2AAC98: 38 commands, 2 vertex loads, 2 textures
+0x2ABA10	0x2ABBD8	456	payload	graphics	dl_blob	gfx_2ABA10	f3dex self-relative blob in pool 0x2AAC98: 57 commands, 3 vertex loads, 3 textures
+0x2ABBD8	0x2ABFF8	1056	payload	graphics	dl_blob	gfx_2ABBD8	f3dex self-relative blob in pool 0x2AAC98: 132 commands, 8 vertex loads, 5 textures
+0x2ABFF8	0x2AC078	128	payload	graphics	dl_blob	gfx_2ABFF8	f3dex self-relative blob in pool 0x2AAC98: 16 commands, 0 vertex loads, 0 textures
+0x2AC078	0x2AC178	256	payload	graphics	dl_blob	gfx_2AC078	f3dex self-relative blob in pool 0x2AAC98: 32 commands, 1 vertex loads, 1 textures
+0x2AC178	0x2AC230	184	payload	graphics	dl_blob	gfx_2AC178	f3dex self-relative blob in pool 0x2AAC98: 23 commands, 2 vertex loads, 1 textures
+0x2AC230	0x2AC278	72	payload	graphics	dl_blob	gfx_2AC230	f3dex self-relative blob in pool 0x2AAC98: 9 commands, 1 vertex loads, 0 textures
+0x2AC278	0x2AC320	168	payload	graphics	dl_blob	gfx_2AC278	f3dex self-relative blob in pool 0x2AAC98: 21 commands, 1 vertex loads, 1 textures
+0x2AC320	0x2AC3D8	184	payload	graphics	dl_blob	gfx_2AC320	f3dex self-relative blob in pool 0x2AAC98: 23 commands, 2 vertex loads, 1 textures
+0x2AC3D8	0x2AC420	72	payload	graphics	dl_blob	gfx_2AC3D8	f3dex self-relative blob in pool 0x2AAC98: 9 commands, 1 vertex loads, 0 textures
+0x2AC420	0x2AC4C8	168	payload	graphics	dl_blob	gfx_2AC420	f3dex self-relative blob in pool 0x2AAC98: 21 commands, 1 vertex loads, 1 textures
+0x2AC4C8	0x2AC668	416	payload	graphics	dl_blob	gfx_2AC4C8	f3dex self-relative blob in pool 0x2AAC98: 52 commands, 4 vertex loads, 2 textures
+0x2AC668	0x2AC730	200	payload	graphics	dl_blob	gfx_2AC668	f3dex self-relative blob in pool 0x2AAC98: 25 commands, 1 vertex loads, 1 textures
+0x2AC730	0x2AC830	256	payload	graphics	dl_blob	gfx_2AC730	f3dex self-relative blob in pool 0x2AAC98: 32 commands, 9 vertex loads, 1 textures
+0x2AC830	0x2ACA08	472	payload	graphics	dl_blob	gfx_2AC830	f3dex self-relative blob in pool 0x2AAC98: 59 commands, 8 vertex loads, 3 textures
+0x2ACA08	0x2ACAD0	200	payload	graphics	dl_blob	gfx_2ACA08	f3dex self-relative blob in pool 0x2AAC98: 25 commands, 1 vertex loads, 1 textures
+0x2ACAD0	0x2ACBC0	240	payload	graphics	dl_blob	gfx_2ACAD0	f3dex self-relative blob in pool 0x2AAC98: 30 commands, 7 vertex loads, 1 textures
+0x2ACBC0	0x2ACD90	464	payload	graphics	dl_blob	gfx_2ACBC0	f3dex self-relative blob in pool 0x2AAC98: 58 commands, 7 vertex loads, 3 textures
+0x2ACD90	0x2AD0A8	792	payload	graphics	dl_blob	gfx_2ACD90	f3dex self-relative blob in pool 0x2AAC98: 99 commands, 6 vertex loads, 4 textures
+0x2AD0A8	0x2AD128	128	payload	graphics	dl_blob	gfx_2AD0A8	f3dex self-relative blob in pool 0x2AAC98: 16 commands, 0 vertex loads, 0 textures
+0x2AD128	0x2AD258	304	payload	graphics	dl_blob	gfx_2AD128	f3dex self-relative blob in pool 0x2AAC98: 38 commands, 8 vertex loads, 1 textures
+0x2AD258	0x2AD2A8	80	payload	graphics	dl_blob	gfx_2AD258	f3dex self-relative blob in pool 0x2AAC98: 10 commands, 4 vertex loads, 0 textures
+0x2AD2A8	0x2AD358	176	payload	graphics	dl_blob	gfx_2AD2A8	f3dex self-relative blob in pool 0x2AAC98: 22 commands, 3 vertex loads, 1 textures
+0x2AD358	0x2AD408	176	payload	graphics	dl_blob	gfx_2AD358	f3dex self-relative blob in pool 0x2AAC98: 22 commands, 3 vertex loads, 1 textures
+0x2AD408	0x2AD458	80	payload	graphics	dl_blob	gfx_2AD408	f3dex self-relative blob in pool 0x2AAC98: 10 commands, 4 vertex loads, 0 textures
+0x2AD458	0x2AD510	184	payload	graphics	dl_blob	gfx_2AD458	f3dex self-relative blob in pool 0x2AAC98: 23 commands, 4 vertex loads, 1 textures
+0x2AD510	0x2AD5D0	192	payload	graphics	dl_blob	gfx_2AD510	f3dex self-relative blob in pool 0x2AAC98: 24 commands, 5 vertex loads, 1 textures
+0x2AD5D0	0x2AD6C8	248	payload	graphics	dl_blob	gfx_2AD5D0	f3dex self-relative blob in pool 0x2AAC98: 31 commands, 3 vertex loads, 1 textures
+0x2AD6C8	0x2AD798	208	payload	graphics	dl_blob	gfx_2AD6C8	f3dex self-relative blob in pool 0x2AAC98: 26 commands, 2 vertex loads, 1 textures
+0x2AD798	0x2AD820	136	payload	graphics	dl_blob	gfx_2AD798	f3dex self-relative blob in pool 0x2AAC98: 17 commands, 9 vertex loads, 0 textures
+0x2AD820	0x2ADA10	496	payload	graphics	dl_blob	gfx_2AD820	f3dex self-relative blob in pool 0x2AAC98: 62 commands, 11 vertex loads, 3 textures
+0x2ADA10	0x2ADAE8	216	payload	graphics	dl_blob	gfx_2ADA10	f3dex self-relative blob in pool 0x2AAC98: 27 commands, 5 vertex loads, 1 textures
+0x2ADAE8	0x2ADB78	144	payload	graphics	dl_blob	gfx_2ADAE8	f3dex self-relative blob in pool 0x2AAC98: 18 commands, 10 vertex loads, 0 textures
+0x2ADB78	0x2ADD68	496	payload	graphics	dl_blob	gfx_2ADB78	f3dex self-relative blob in pool 0x2AAC98: 62 commands, 11 vertex loads, 3 textures
+0x2ADD68	0x2ADE80	280	payload	graphics	dl_blob	gfx_2ADD68	f3dex self-relative blob in pool 0x2AAC98: 35 commands, 2 vertex loads, 1 textures
+0x2ADE80	0x2ADF00	128	payload	graphics	dl_blob	gfx_2ADE80	f3dex self-relative blob in pool 0x2AAC98: 16 commands, 0 vertex loads, 0 textures
+0x2ADF00	0x2B5AD0	31696	unknown	-	-	gap_2ADF00	-
+0x2B5AD0	0x2B5DA0	720	payload	graphics	dl_blob	gfx_2B5AD0	f3dex self-relative blob in pool 0x2B5AD0: 90 commands, 7 vertex loads, 4 textures
+0x2B5DA0	0x2B5E90	240	payload	graphics	dl_blob	gfx_2B5DA0	f3dex self-relative blob in pool 0x2B5AD0: 30 commands, 1 vertex loads, 1 textures
+0x2B5E90	0x2B5F80	240	payload	graphics	dl_blob	gfx_2B5E90	f3dex self-relative blob in pool 0x2B5AD0: 30 commands, 1 vertex loads, 1 textures
+0x2B5F80	0x2B6010	144	payload	graphics	dl_blob	gfx_2B5F80	f3dex self-relative blob in pool 0x2B5AD0: 18 commands, 1 vertex loads, 0 textures
+0x2B6010	0x2B6100	240	payload	graphics	dl_blob	gfx_2B6010	f3dex self-relative blob in pool 0x2B5AD0: 30 commands, 1 vertex loads, 1 textures
+0x2B6100	0x2B61F0	240	payload	graphics	dl_blob	gfx_2B6100	f3dex self-relative blob in pool 0x2B5AD0: 30 commands, 1 vertex loads, 1 textures
+0x2B61F0	0x2B6278	136	payload	graphics	dl_blob	gfx_2B61F0	f3dex self-relative blob in pool 0x2B5AD0: 17 commands, 1 vertex loads, 0 textures
+0x2B6278	0x2B6500	648	payload	graphics	dl_blob	gfx_2B6278	f3dex self-relative blob in pool 0x2B5AD0: 81 commands, 5 vertex loads, 3 textures
+0x2B6500	0x2B65F8	248	payload	graphics	dl_blob	gfx_2B6500	f3dex self-relative blob in pool 0x2B5AD0: 31 commands, 1 vertex loads, 1 textures
+0x2B65F8	0x2B66E8	240	payload	graphics	dl_blob	gfx_2B65F8	f3dex self-relative blob in pool 0x2B5AD0: 30 commands, 1 vertex loads, 1 textures
+0x2B66E8	0x2B67D8	240	payload	graphics	dl_blob	gfx_2B66E8	f3dex self-relative blob in pool 0x2B5AD0: 30 commands, 1 vertex loads, 1 textures
+0x2B67D8	0x2B68D0	248	payload	graphics	dl_blob	gfx_2B67D8	f3dex self-relative blob in pool 0x2B5AD0: 31 commands, 1 vertex loads, 1 textures
+0x2B68D0	0x2B69C0	240	payload	graphics	dl_blob	gfx_2B68D0	f3dex self-relative blob in pool 0x2B5AD0: 30 commands, 1 vertex loads, 1 textures
+0x2B69C0	0x2B6AB0	240	payload	graphics	dl_blob	gfx_2B69C0	f3dex self-relative blob in pool 0x2B5AD0: 30 commands, 1 vertex loads, 1 textures
+0x2B6AB0	0x2B6CD8	552	payload	graphics	dl_blob	gfx_2B6AB0	f3dex self-relative blob in pool 0x2B5AD0: 69 commands, 4 vertex loads, 1 textures
+0x2B6CD8	0x2B6D58	128	payload	graphics	dl_blob	gfx_2B6CD8	f3dex self-relative blob in pool 0x2B5AD0: 16 commands, 0 vertex loads, 0 textures
+0x2B6D58	0x2B7320	1480	unknown	-	-	gap_2B6D58	-
+0x2B7320	0x2B7330	16	payload	graphics	display_list	dl_2B7320	f3dex display list, 2 commands (data not resolvable)
+0x2B7330	0x2B9068	7480	unknown	-	-	gap_2B7330	-
+0x2B9068	0x2B9080	24	payload	graphics	display_list	dl_2B9068	f3dex display list, 3 commands (data not resolvable)
+0x2B9080	0x2B9658	1496	unknown	-	-	gap_2B9080	-
+0x2B9658	0x2B9668	16	payload	graphics	display_list	dl_2B9658	f3dex display list, 2 commands (data not resolvable)
+0x2B9668	0x2B97D0	360	unknown	-	-	gap_2B9668	-
+0x2B97D0	0x2B97E0	16	payload	graphics	display_list	dl_2B97D0	f3dex display list, 2 commands (data not resolvable)
+0x2B97E0	0x2BED30	21840	unknown	-	-	gap_2B97E0	-
+0x2BED30	0x2BEF18	488	payload	graphics	dl_blob	gfx_2BED30	f3dex self-relative blob in pool 0x2BED30: 61 commands, 2 vertex loads, 2 textures
+0x2BEF18	0x2BEFF0	216	payload	graphics	dl_blob	gfx_2BEF18	f3dex self-relative blob in pool 0x2BED30: 27 commands, 1 vertex loads, 1 textures
+0x2BEFF0	0x2BF0B8	200	payload	graphics	dl_blob	gfx_2BEFF0	f3dex self-relative blob in pool 0x2BED30: 25 commands, 1 vertex loads, 1 textures
+0x2BF0B8	0x2BF120	104	payload	graphics	dl_blob	gfx_2BF0B8	f3dex self-relative blob in pool 0x2BED30: 13 commands, 1 vertex loads, 0 textures
+0x2BF120	0x2BF1F8	216	payload	graphics	dl_blob	gfx_2BF120	f3dex self-relative blob in pool 0x2BED30: 27 commands, 1 vertex loads, 1 textures
+0x2BF1F8	0x2BF2C0	200	payload	graphics	dl_blob	gfx_2BF1F8	f3dex self-relative blob in pool 0x2BED30: 25 commands, 1 vertex loads, 1 textures
+0x2BF2C0	0x2BF328	104	payload	graphics	dl_blob	gfx_2BF2C0	f3dex self-relative blob in pool 0x2BED30: 13 commands, 1 vertex loads, 0 textures
+0x2BF328	0x2BF5F0	712	payload	graphics	dl_blob	gfx_2BF328	f3dex self-relative blob in pool 0x2BED30: 89 commands, 10 vertex loads, 3 textures
+0x2BF5F0	0x2BF6C0	208	payload	graphics	dl_blob	gfx_2BF5F0	f3dex self-relative blob in pool 0x2BED30: 26 commands, 1 vertex loads, 1 textures
+0x2BF6C0	0x2BF7B0	240	payload	graphics	dl_blob	gfx_2BF6C0	f3dex self-relative blob in pool 0x2BED30: 30 commands, 2 vertex loads, 1 textures
+0x2BF7B0	0x2BF978	456	payload	graphics	dl_blob	gfx_2BF7B0	f3dex self-relative blob in pool 0x2BED30: 57 commands, 3 vertex loads, 3 textures
+0x2BF978	0x2BFA48	208	payload	graphics	dl_blob	gfx_2BF978	f3dex self-relative blob in pool 0x2BED30: 26 commands, 1 vertex loads, 1 textures
+0x2BFA48	0x2BFB38	240	payload	graphics	dl_blob	gfx_2BFA48	f3dex self-relative blob in pool 0x2BED30: 30 commands, 2 vertex loads, 1 textures
+0x2BFB38	0x2BFD00	456	payload	graphics	dl_blob	gfx_2BFB38	f3dex self-relative blob in pool 0x2BED30: 57 commands, 3 vertex loads, 3 textures
+0x2BFD00	0x2C0250	1360	payload	graphics	dl_blob	gfx_2BFD00	f3dex self-relative blob in pool 0x2BED30: 170 commands, 8 vertex loads, 8 textures
+0x2C0250	0x2C0360	272	payload	graphics	dl_blob	gfx_2C0250	f3dex self-relative blob in pool 0x2BED30: 34 commands, 3 vertex loads, 1 textures
+0x2C0360	0x2C03A0	64	payload	graphics	dl_blob	gfx_2C0360	f3dex self-relative blob in pool 0x2BED30: 8 commands, 1 vertex loads, 0 textures
+0x2C03A0	0x2C03D8	56	payload	graphics	dl_blob	gfx_2C03A0	f3dex self-relative blob in pool 0x2BED30: 7 commands, 1 vertex loads, 0 textures
+0x2C03D8	0x2C0410	56	payload	graphics	dl_blob	gfx_2C03D8	f3dex self-relative blob in pool 0x2BED30: 7 commands, 1 vertex loads, 0 textures
+0x2C0410	0x2C0438	40	payload	graphics	dl_blob	gfx_2C0410	f3dex self-relative blob in pool 0x2BED30: 5 commands, 1 vertex loads, 0 textures
+0x2C0438	0x2C0620	488	payload	graphics	dl_blob	gfx_2C0438	f3dex self-relative blob in pool 0x2BED30: 61 commands, 8 vertex loads, 2 textures
+0x2C0620	0x2C06E0	192	payload	graphics	dl_blob	gfx_2C0620	f3dex self-relative blob in pool 0x2BED30: 24 commands, 1 vertex loads, 1 textures
+0x2C06E0	0x2C07B0	208	payload	graphics	dl_blob	gfx_2C06E0	f3dex self-relative blob in pool 0x2BED30: 26 commands, 2 vertex loads, 1 textures
+0x2C07B0	0x2C0820	112	payload	graphics	dl_blob	gfx_2C07B0	f3dex self-relative blob in pool 0x2BED30: 14 commands, 4 vertex loads, 0 textures
+0x2C0820	0x2C08E0	192	payload	graphics	dl_blob	gfx_2C0820	f3dex self-relative blob in pool 0x2BED30: 24 commands, 1 vertex loads, 1 textures
+0x2C08E0	0x2C09D0	240	payload	graphics	dl_blob	gfx_2C08E0	f3dex self-relative blob in pool 0x2BED30: 30 commands, 6 vertex loads, 1 textures
+0x2C09D0	0x2C0A38	104	payload	graphics	dl_blob	gfx_2C09D0	f3dex self-relative blob in pool 0x2BED30: 13 commands, 3 vertex loads, 0 textures
+0x2C0A38	0x2C0CA0	616	payload	graphics	dl_blob	gfx_2C0A38	f3dex self-relative blob in pool 0x2BED30: 77 commands, 6 vertex loads, 3 textures
+0x2C0CA0	0x2C0D68	200	payload	graphics	dl_blob	gfx_2C0CA0	f3dex self-relative blob in pool 0x2BED30: 25 commands, 1 vertex loads, 1 textures
+0x2C0D68	0x2C0E58	240	payload	graphics	dl_blob	gfx_2C0D68	f3dex self-relative blob in pool 0x2BED30: 30 commands, 2 vertex loads, 1 textures
+0x2C0E58	0x2C1030	472	payload	graphics	dl_blob	gfx_2C0E58	f3dex self-relative blob in pool 0x2BED30: 59 commands, 8 vertex loads, 3 textures
+0x2C1030	0x2C10F8	200	payload	graphics	dl_blob	gfx_2C1030	f3dex self-relative blob in pool 0x2BED30: 25 commands, 1 vertex loads, 1 textures
+0x2C10F8	0x2C1218	288	payload	graphics	dl_blob	gfx_2C10F8	f3dex self-relative blob in pool 0x2BED30: 36 commands, 8 vertex loads, 1 textures
+0x2C1218	0x2C13E8	464	payload	graphics	dl_blob	gfx_2C1218	f3dex self-relative blob in pool 0x2BED30: 58 commands, 7 vertex loads, 3 textures
+0x2C13E8	0x2C1738	848	payload	graphics	dl_blob	gfx_2C13E8	f3dex self-relative blob in pool 0x2BED30: 106 commands, 11 vertex loads, 4 textures
+0x2C1738	0x2C1808	208	payload	graphics	dl_blob	gfx_2C1738	f3dex self-relative blob in pool 0x2BED30: 26 commands, 1 vertex loads, 1 textures
+0x2C1808	0x2C18C0	184	payload	graphics	dl_blob	gfx_2C1808	f3dex self-relative blob in pool 0x2BED30: 23 commands, 4 vertex loads, 1 textures
+0x2C18C0	0x2C1918	88	payload	graphics	dl_blob	gfx_2C18C0	f3dex self-relative blob in pool 0x2BED30: 11 commands, 5 vertex loads, 0 textures
+0x2C1918	0x2C1970	88	payload	graphics	dl_blob	gfx_2C1918	f3dex self-relative blob in pool 0x2BED30: 11 commands, 5 vertex loads, 0 textures
+0x2C1970	0x2C19A0	48	payload	graphics	dl_blob	gfx_2C1970	f3dex self-relative blob in pool 0x2BED30: 6 commands, 2 vertex loads, 0 textures
+0x2C19A0	0x2C1B68	456	payload	graphics	dl_blob	gfx_2C19A0	f3dex self-relative blob in pool 0x2BED30: 57 commands, 6 vertex loads, 2 textures
+0x2C1B68	0x2C1C38	208	payload	graphics	dl_blob	gfx_2C1B68	f3dex self-relative blob in pool 0x2BED30: 26 commands, 3 vertex loads, 1 textures
+0x2C1C38	0x2C1D08	208	payload	graphics	dl_blob	gfx_2C1C38	f3dex self-relative blob in pool 0x2BED30: 26 commands, 4 vertex loads, 1 textures
+0x2C1D08	0x2C1D38	48	payload	graphics	dl_blob	gfx_2C1D08	f3dex self-relative blob in pool 0x2BED30: 6 commands, 1 vertex loads, 0 textures
+0x2C1D38	0x2C1E00	200	payload	graphics	dl_blob	gfx_2C1D38	f3dex self-relative blob in pool 0x2BED30: 25 commands, 2 vertex loads, 1 textures
+0x2C1E00	0x2C1EC8	200	payload	graphics	dl_blob	gfx_2C1E00	f3dex self-relative blob in pool 0x2BED30: 25 commands, 3 vertex loads, 1 textures
+0x2C1EC8	0x2C1EF8	48	payload	graphics	dl_blob	gfx_2C1EC8	f3dex self-relative blob in pool 0x2BED30: 6 commands, 1 vertex loads, 0 textures
+0x2C1EF8	0x2C2158	608	payload	graphics	dl_blob	gfx_2C1EF8	f3dex self-relative blob in pool 0x2BED30: 76 commands, 13 vertex loads, 3 textures
+0x2C2158	0x2C2198	64	payload	graphics	dl_blob	gfx_2C2158	f3dex self-relative blob in pool 0x2BED30: 8 commands, 1 vertex loads, 0 textures
+0x2C2198	0x2C2238	160	payload	graphics	dl_blob	gfx_2C2198	f3dex self-relative blob in pool 0x2BED30: 20 commands, 1 vertex loads, 1 textures
+0x2C2238	0x2C2420	488	payload	graphics	dl_blob	gfx_2C2238	f3dex self-relative blob in pool 0x2BED30: 61 commands, 10 vertex loads, 3 textures
+0x2C2420	0x2C24C8	168	payload	graphics	dl_blob	gfx_2C2420	f3dex self-relative blob in pool 0x2BED30: 21 commands, 1 vertex loads, 1 textures
+0x2C24C8	0x2C2568	160	payload	graphics	dl_blob	gfx_2C24C8	f3dex self-relative blob in pool 0x2BED30: 20 commands, 1 vertex loads, 1 textures
+0x2C2568	0x2C2758	496	payload	graphics	dl_blob	gfx_2C2568	f3dex self-relative blob in pool 0x2BED30: 62 commands, 11 vertex loads, 3 textures
+0x2C2758	0x2C29F0	664	payload	graphics	dl_blob	gfx_2C2758	f3dex self-relative blob in pool 0x2BED30: 83 commands, 9 vertex loads, 3 textures
+0x2C29F0	0x2C2AB0	192	payload	graphics	dl_blob	gfx_2C29F0	f3dex self-relative blob in pool 0x2BED30: 24 commands, 2 vertex loads, 1 textures
+0x2C2AB0	0x2C2B68	184	payload	graphics	dl_blob	gfx_2C2AB0	f3dex self-relative blob in pool 0x2BED30: 23 commands, 4 vertex loads, 1 textures
+0x2C2B68	0x2C2BB8	80	payload	graphics	dl_blob	gfx_2C2B68	f3dex self-relative blob in pool 0x2BED30: 10 commands, 4 vertex loads, 0 textures
+0x2C2BB8	0x2C2C10	88	payload	graphics	dl_blob	gfx_2C2BB8	f3dex self-relative blob in pool 0x2BED30: 11 commands, 5 vertex loads, 0 textures
+0x2C2C10	0x2C2C48	56	payload	graphics	dl_blob	gfx_2C2C10	f3dex self-relative blob in pool 0x2BED30: 7 commands, 3 vertex loads, 0 textures
+0x2C2C48	0x2E2548	129280	unknown	-	-	gap_2C2C48	-
+0x2E2548	0x2E25B0	104	payload	graphics	dl_blob	gfx_2E2548	f3dex self-relative blob in pool 0x2E2548: 13 commands, 0 vertex loads, 0 textures
+0x2E25B0	0x2E2768	440	payload	graphics	dl_blob	gfx_2E25B0	f3dex self-relative blob in pool 0x2E2548: 55 commands, 2 vertex loads, 2 textures
+0x2E2768	0x2E2810	168	payload	graphics	dl_blob	gfx_2E2768	f3dex self-relative blob in pool 0x2E2548: 21 commands, 1 vertex loads, 1 textures
+0x2E2810	0x2E2850	64	payload	graphics	dl_blob	gfx_2E2810	f3dex self-relative blob in pool 0x2E2548: 8 commands, 1 vertex loads, 0 textures
+0x2E2850	0x2E2890	64	payload	graphics	dl_blob	gfx_2E2850	f3dex self-relative blob in pool 0x2E2548: 8 commands, 1 vertex loads, 0 textures
+0x2E2890	0x2E28D0	64	payload	graphics	dl_blob	gfx_2E2890	f3dex self-relative blob in pool 0x2E2548: 8 commands, 1 vertex loads, 0 textures
+0x2E28D0	0x2E2910	64	payload	graphics	dl_blob	gfx_2E28D0	f3dex self-relative blob in pool 0x2E2548: 8 commands, 1 vertex loads, 0 textures
+0x2E2910	0x2E2950	64	payload	graphics	dl_blob	gfx_2E2910	f3dex self-relative blob in pool 0x2E2548: 8 commands, 1 vertex loads, 0 textures
+0x2E2950	0x2E2990	64	payload	graphics	dl_blob	gfx_2E2950	f3dex self-relative blob in pool 0x2E2548: 8 commands, 1 vertex loads, 0 textures
+0x2E2990	0x2E29D0	64	payload	graphics	dl_blob	gfx_2E2990	f3dex self-relative blob in pool 0x2E2548: 8 commands, 1 vertex loads, 0 textures
+0x2E29D0	0x2E2B50	384	payload	graphics	dl_blob	gfx_2E29D0	f3dex self-relative blob in pool 0x2E2548: 48 commands, 2 vertex loads, 2 textures
+0x2E2B50	0x2E2CD8	392	payload	graphics	dl_blob	gfx_2E2B50	f3dex self-relative blob in pool 0x2E2548: 49 commands, 2 vertex loads, 2 textures
+0x2E2CD8	0x2E2E78	416	payload	graphics	dl_blob	gfx_2E2CD8	f3dex self-relative blob in pool 0x2E2548: 52 commands, 2 vertex loads, 2 textures
+0x2E2E78	0x2EB8B8	35392	unknown	-	-	gap_2E2E78	-
+0x2EB8B8	0x2EB928	112	payload	graphics	dl_blob	gfx_2EB8B8	f3dex self-relative blob in pool 0x2EB8B8: 14 commands, 0 vertex loads, 0 textures
+0x2EB928	0x2EBBB0	648	payload	graphics	dl_blob	gfx_2EB928	f3dex self-relative blob in pool 0x2EB8B8: 81 commands, 4 vertex loads, 4 textures
+0x2EBBB0	0x2EBC98	232	payload	graphics	dl_blob	gfx_2EBBB0	f3dex self-relative blob in pool 0x2EB8B8: 29 commands, 1 vertex loads, 1 textures
+0x2EBC98	0x2EBD80	232	payload	graphics	dl_blob	gfx_2EBC98	f3dex self-relative blob in pool 0x2EB8B8: 29 commands, 1 vertex loads, 1 textures
+0x2EBD80	0x2EBE58	216	payload	graphics	dl_blob	gfx_2EBD80	f3dex self-relative blob in pool 0x2EB8B8: 27 commands, 1 vertex loads, 1 textures
+0x2EBE58	0x2EBF30	216	payload	graphics	dl_blob	gfx_2EBE58	f3dex self-relative blob in pool 0x2EB8B8: 27 commands, 1 vertex loads, 1 textures
+0x2EBF30	0x2EC0B8	392	payload	graphics	dl_blob	gfx_2EBF30	f3dex self-relative blob in pool 0x2EB8B8: 49 commands, 3 vertex loads, 2 textures
+0x2EC0B8	0x2EC190	216	payload	graphics	dl_blob	gfx_2EC0B8	f3dex self-relative blob in pool 0x2EB8B8: 27 commands, 1 vertex loads, 1 textures
+0x2EC190	0x2EC268	216	payload	graphics	dl_blob	gfx_2EC190	f3dex self-relative blob in pool 0x2EB8B8: 27 commands, 1 vertex loads, 1 textures
+0x2EC268	0x2EC360	248	payload	graphics	dl_blob	gfx_2EC268	f3dex self-relative blob in pool 0x2EB8B8: 31 commands, 1 vertex loads, 1 textures
+0x2EC360	0x2EC458	248	payload	graphics	dl_blob	gfx_2EC360	f3dex self-relative blob in pool 0x2EB8B8: 31 commands, 1 vertex loads, 1 textures
+0x2EC458	0x2EC540	232	payload	graphics	dl_blob	gfx_2EC458	f3dex self-relative blob in pool 0x2EB8B8: 29 commands, 1 vertex loads, 1 textures
+0x2EC540	0x2EC628	232	payload	graphics	dl_blob	gfx_2EC540	f3dex self-relative blob in pool 0x2EB8B8: 29 commands, 1 vertex loads, 1 textures
+0x2EC628	0x2EC950	808	payload	graphics	dl_blob	gfx_2EC628	f3dex self-relative blob in pool 0x2EB8B8: 101 commands, 5 vertex loads, 5 textures
+0x2EC950	0x2F2278	22824	unknown	-	-	gap_2EC950	-
+0x2F2278	0x2F2810	1432	payload	graphics	dl_blob	gfx_2F2278	f3dex self-relative blob in pool 0x2F2278: 179 commands, 11 vertex loads, 8 textures
+0x2F2810	0x2F2950	320	payload	graphics	dl_blob	gfx_2F2810	f3dex self-relative blob in pool 0x2F2278: 40 commands, 2 vertex loads, 2 textures
+0x2F2950	0x2F2A90	320	payload	graphics	dl_blob	gfx_2F2950	f3dex self-relative blob in pool 0x2F2278: 40 commands, 2 vertex loads, 2 textures
+0x2F2A90	0x2F2BD0	320	payload	graphics	dl_blob	gfx_2F2A90	f3dex self-relative blob in pool 0x2F2278: 40 commands, 2 vertex loads, 2 textures
+0x2F2BD0	0x2F2D10	320	payload	graphics	dl_blob	gfx_2F2BD0	f3dex self-relative blob in pool 0x2F2278: 40 commands, 2 vertex loads, 2 textures
+0x2F2D10	0x2F2D40	48	payload	graphics	dl_blob	gfx_2F2D10	f3dex self-relative blob in pool 0x2F2278: 6 commands, 0 vertex loads, 0 textures
+0x2F2D40	0x2F7648	18696	unknown	-	-	gap_2F2D40	-
+0x2F7648	0x2F7850	520	payload	graphics	dl_blob	gfx_2F7648	f3dex self-relative blob in pool 0x2F7648: 65 commands, 3 vertex loads, 3 textures
+0x2F7850	0x2F7938	232	payload	graphics	dl_blob	gfx_2F7850	f3dex self-relative blob in pool 0x2F7648: 29 commands, 1 vertex loads, 1 textures
+0x2F7938	0x2F7BC0	648	payload	graphics	dl_blob	gfx_2F7938	f3dex self-relative blob in pool 0x2F7648: 81 commands, 4 vertex loads, 4 textures
+0x2F7BC0	0x2F7C70	176	payload	graphics	dl_blob	gfx_2F7BC0	f3dex self-relative blob in pool 0x2F7648: 22 commands, 1 vertex loads, 1 textures
+0x2F7C70	0x2F7E50	480	payload	graphics	dl_blob	gfx_2F7C70	f3dex self-relative blob in pool 0x2F7648: 60 commands, 6 vertex loads, 3 textures
+0x2F7E50	0x2F8008	440	payload	graphics	dl_blob	gfx_2F7E50	f3dex self-relative blob in pool 0x2F7648: 55 commands, 3 vertex loads, 2 textures
+0x2F8008	0x2F80B8	176	payload	graphics	dl_blob	gfx_2F8008	f3dex self-relative blob in pool 0x2F7648: 22 commands, 1 vertex loads, 1 textures
+0x2F80B8	0x2F81F8	320	payload	graphics	dl_blob	gfx_2F80B8	f3dex self-relative blob in pool 0x2F7648: 40 commands, 5 vertex loads, 2 textures
+0x2F81F8	0x2F8288	144	payload	graphics	dl_blob	gfx_2F81F8	f3dex self-relative blob in pool 0x2F7648: 18 commands, 1 vertex loads, 1 textures
+0x2F8288	0x2F82A8	32	payload	graphics	dl_blob	gfx_2F8288	f3dex self-relative blob in pool 0x2F7648: 4 commands, 1 vertex loads, 0 textures
+0x2F82A8	0x2F82C8	32	payload	graphics	dl_blob	gfx_2F82A8	f3dex self-relative blob in pool 0x2F7648: 4 commands, 1 vertex loads, 0 textures
+0x2F82C8	0x2F82E8	32	payload	graphics	dl_blob	gfx_2F82C8	f3dex self-relative blob in pool 0x2F7648: 4 commands, 1 vertex loads, 0 textures
+0x2F82E8	0x2F8308	32	payload	graphics	dl_blob	gfx_2F82E8	f3dex self-relative blob in pool 0x2F7648: 4 commands, 1 vertex loads, 0 textures
+0x2F8308	0x2F8330	40	payload	graphics	dl_blob	gfx_2F8308	f3dex self-relative blob in pool 0x2F7648: 5 commands, 2 vertex loads, 0 textures
+0x2F8330	0x2F8350	32	payload	graphics	dl_blob	gfx_2F8330	f3dex self-relative blob in pool 0x2F7648: 4 commands, 1 vertex loads, 0 textures
+0x2F8350	0x2F8370	32	payload	graphics	dl_blob	gfx_2F8350	f3dex self-relative blob in pool 0x2F7648: 4 commands, 1 vertex loads, 0 textures
+0x2F8370	0x2F83F8	136	payload	graphics	dl_blob	gfx_2F8370	f3dex self-relative blob in pool 0x2F7648: 17 commands, 0 vertex loads, 0 textures
+0x2F83F8	0x2FD970	21880	unknown	-	-	gap_2F83F8	-
+0x2FD970	0x2FD9B8	72	payload	graphics	display_list	dl_2FD970	f3dex display list, 9 commands (data not resolvable)
+0x2FD9B8	0x2FDA18	96	unknown	-	-	gap_2FD9B8	-
+0x2FDA18	0x2FDA60	72	payload	graphics	display_list	dl_2FDA18	f3dex display list, 9 commands (data not resolvable)
+0x2FDA60	0x300F40	13536	unknown	-	-	gap_2FDA60	-
+0x300F40	0x3010E8	424	payload	graphics	dl_blob	gfx_300F40	f3dex self-relative blob in pool 0x300F40: 53 commands, 2 vertex loads, 2 textures
+0x3010E8	0x301360	632	payload	graphics	dl_blob	gfx_3010E8	f3dex self-relative blob in pool 0x300F40: 79 commands, 5 vertex loads, 3 textures
+0x301360	0x301430	208	payload	graphics	dl_blob	gfx_301360	f3dex self-relative blob in pool 0x300F40: 26 commands, 1 vertex loads, 1 textures
+0x301430	0x301528	248	payload	graphics	dl_blob	gfx_301430	f3dex self-relative blob in pool 0x300F40: 31 commands, 1 vertex loads, 1 textures
+0x301528	0x3016D0	424	payload	graphics	dl_blob	gfx_301528	f3dex self-relative blob in pool 0x300F40: 53 commands, 3 vertex loads, 3 textures
+0x3016D0	0x3017A0	208	payload	graphics	dl_blob	gfx_3016D0	f3dex self-relative blob in pool 0x300F40: 26 commands, 1 vertex loads, 1 textures
+0x3017A0	0x301898	248	payload	graphics	dl_blob	gfx_3017A0	f3dex self-relative blob in pool 0x300F40: 31 commands, 1 vertex loads, 1 textures
+0x301898	0x301A40	424	payload	graphics	dl_blob	gfx_301898	f3dex self-relative blob in pool 0x300F40: 53 commands, 3 vertex loads, 3 textures
+0x301A40	0x301C98	600	payload	graphics	dl_blob	gfx_301A40	f3dex self-relative blob in pool 0x300F40: 75 commands, 6 vertex loads, 3 textures
+0x301C98	0x301D78	224	payload	graphics	dl_blob	gfx_301C98	f3dex self-relative blob in pool 0x300F40: 28 commands, 1 vertex loads, 1 textures
+0x301D78	0x301E38	192	payload	graphics	dl_blob	gfx_301D78	f3dex self-relative blob in pool 0x300F40: 24 commands, 1 vertex loads, 1 textures
+0x301E38	0x301EF0	184	payload	graphics	dl_blob	gfx_301E38	f3dex self-relative blob in pool 0x300F40: 23 commands, 1 vertex loads, 1 textures
+0x301EF0	0x301FD0	224	payload	graphics	dl_blob	gfx_301EF0	f3dex self-relative blob in pool 0x300F40: 28 commands, 1 vertex loads, 1 textures
+0x301FD0	0x302090	192	payload	graphics	dl_blob	gfx_301FD0	f3dex self-relative blob in pool 0x300F40: 24 commands, 1 vertex loads, 1 textures
+0x302090	0x302148	184	payload	graphics	dl_blob	gfx_302090	f3dex self-relative blob in pool 0x300F40: 23 commands, 1 vertex loads, 1 textures
+0x302148	0x3021C8	128	payload	graphics	dl_blob	gfx_302148	f3dex self-relative blob in pool 0x300F40: 16 commands, 0 vertex loads, 0 textures
+0x3021C8	0x302348	384	payload	graphics	dl_blob	gfx_3021C8	f3dex self-relative blob in pool 0x300F40: 48 commands, 2 vertex loads, 2 textures
+0x302348	0x302488	320	payload	graphics	dl_blob	gfx_302348	f3dex self-relative blob in pool 0x300F40: 40 commands, 4 vertex loads, 1 textures
+0x302488	0x302540	184	payload	graphics	dl_blob	gfx_302488	f3dex self-relative blob in pool 0x300F40: 23 commands, 1 vertex loads, 1 textures
+0x302540	0x3025F8	184	payload	graphics	dl_blob	gfx_302540	f3dex self-relative blob in pool 0x300F40: 23 commands, 1 vertex loads, 1 textures
+0x3025F8	0x3027A0	424	payload	graphics	dl_blob	gfx_3025F8	f3dex self-relative blob in pool 0x300F40: 53 commands, 3 vertex loads, 3 textures
+0x3027A0	0x302850	176	payload	graphics	dl_blob	gfx_3027A0	f3dex self-relative blob in pool 0x300F40: 22 commands, 1 vertex loads, 1 textures
+0x302850	0x302908	184	payload	graphics	dl_blob	gfx_302850	f3dex self-relative blob in pool 0x300F40: 23 commands, 1 vertex loads, 1 textures
+0x302908	0x302AB0	424	payload	graphics	dl_blob	gfx_302908	f3dex self-relative blob in pool 0x300F40: 53 commands, 3 vertex loads, 3 textures
+0x302AB0	0x302CF8	584	payload	graphics	dl_blob	gfx_302AB0	f3dex self-relative blob in pool 0x300F40: 73 commands, 7 vertex loads, 3 textures
+0x302CF8	0x302DB8	192	payload	graphics	dl_blob	gfx_302CF8	f3dex self-relative blob in pool 0x300F40: 24 commands, 1 vertex loads, 1 textures
+0x302DB8	0x302E70	184	payload	graphics	dl_blob	gfx_302DB8	f3dex self-relative blob in pool 0x300F40: 23 commands, 1 vertex loads, 1 textures
+0x302E70	0x302F18	168	payload	graphics	dl_blob	gfx_302E70	f3dex self-relative blob in pool 0x300F40: 21 commands, 1 vertex loads, 1 textures
+0x302F18	0x302FD0	184	payload	graphics	dl_blob	gfx_302F18	f3dex self-relative blob in pool 0x300F40: 23 commands, 1 vertex loads, 1 textures
+0x302FD0	0x303088	184	payload	graphics	dl_blob	gfx_302FD0	f3dex self-relative blob in pool 0x300F40: 23 commands, 1 vertex loads, 1 textures
+0x303088	0x303130	168	payload	graphics	dl_blob	gfx_303088	f3dex self-relative blob in pool 0x300F40: 21 commands, 1 vertex loads, 1 textures
+0x303130	0x3031B0	128	payload	graphics	dl_blob	gfx_303130	f3dex self-relative blob in pool 0x300F40: 16 commands, 0 vertex loads, 0 textures
+0x3031B0	0x303300	336	payload	graphics	dl_blob	gfx_3031B0	f3dex self-relative blob in pool 0x300F40: 42 commands, 2 vertex loads, 2 textures
+0x303300	0x3033D0	208	payload	graphics	dl_blob	gfx_303300	f3dex self-relative blob in pool 0x300F40: 26 commands, 2 vertex loads, 1 textures
+0x3033D0	0x303470	160	payload	graphics	dl_blob	gfx_3033D0	f3dex self-relative blob in pool 0x300F40: 20 commands, 1 vertex loads, 1 textures
+0x303470	0x303508	152	payload	graphics	dl_blob	gfx_303470	f3dex self-relative blob in pool 0x300F40: 19 commands, 1 vertex loads, 1 textures
+0x303508	0x3035A8	160	payload	graphics	dl_blob	gfx_303508	f3dex self-relative blob in pool 0x300F40: 20 commands, 1 vertex loads, 1 textures
+0x3035A8	0x303648	160	payload	graphics	dl_blob	gfx_3035A8	f3dex self-relative blob in pool 0x300F40: 20 commands, 1 vertex loads, 1 textures
+0x303648	0x3036E0	152	payload	graphics	dl_blob	gfx_303648	f3dex self-relative blob in pool 0x300F40: 19 commands, 1 vertex loads, 1 textures
+0x3036E0	0x303780	160	payload	graphics	dl_blob	gfx_3036E0	f3dex self-relative blob in pool 0x300F40: 20 commands, 1 vertex loads, 1 textures
+0x303780	0x303848	200	payload	graphics	dl_blob	gfx_303780	f3dex self-relative blob in pool 0x300F40: 25 commands, 2 vertex loads, 1 textures
+0x303848	0x3038E8	160	payload	graphics	dl_blob	gfx_303848	f3dex self-relative blob in pool 0x300F40: 20 commands, 1 vertex loads, 1 textures
+0x3038E8	0x303980	152	payload	graphics	dl_blob	gfx_3038E8	f3dex self-relative blob in pool 0x300F40: 19 commands, 1 vertex loads, 1 textures
+0x303980	0x303A20	160	payload	graphics	dl_blob	gfx_303980	f3dex self-relative blob in pool 0x300F40: 20 commands, 1 vertex loads, 1 textures
+0x303A20	0x303AC0	160	payload	graphics	dl_blob	gfx_303A20	f3dex self-relative blob in pool 0x300F40: 20 commands, 1 vertex loads, 1 textures
+0x303AC0	0x303B58	152	payload	graphics	dl_blob	gfx_303AC0	f3dex self-relative blob in pool 0x300F40: 19 commands, 1 vertex loads, 1 textures
+0x303B58	0x303BF8	160	payload	graphics	dl_blob	gfx_303B58	f3dex self-relative blob in pool 0x300F40: 20 commands, 1 vertex loads, 1 textures
+0x303BF8	0x303C78	128	payload	graphics	dl_blob	gfx_303BF8	f3dex self-relative blob in pool 0x300F40: 16 commands, 0 vertex loads, 0 textures
+0x303C78	0x306B68	12016	unknown	-	-	gap_303C78	-
+0x306B68	0x306D10	424	payload	graphics	dl_blob	gfx_306B68	f3dex self-relative blob in pool 0x306B68: 53 commands, 2 vertex loads, 2 textures
+0x306D10	0x306F88	632	payload	graphics	dl_blob	gfx_306D10	f3dex self-relative blob in pool 0x306B68: 79 commands, 5 vertex loads, 3 textures
+0x306F88	0x307058	208	payload	graphics	dl_blob	gfx_306F88	f3dex self-relative blob in pool 0x306B68: 26 commands, 1 vertex loads, 1 textures
+0x307058	0x307120	200	payload	graphics	dl_blob	gfx_307058	f3dex self-relative blob in pool 0x306B68: 25 commands, 1 vertex loads, 1 textures
+0x307120	0x3072C8	424	payload	graphics	dl_blob	gfx_307120	f3dex self-relative blob in pool 0x306B68: 53 commands, 3 vertex loads, 3 textures
+0x3072C8	0x307398	208	payload	graphics	dl_blob	gfx_3072C8	f3dex self-relative blob in pool 0x306B68: 26 commands, 1 vertex loads, 1 textures
+0x307398	0x307460	200	payload	graphics	dl_blob	gfx_307398	f3dex self-relative blob in pool 0x306B68: 25 commands, 1 vertex loads, 1 textures
+0x307460	0x307608	424	payload	graphics	dl_blob	gfx_307460	f3dex self-relative blob in pool 0x306B68: 53 commands, 3 vertex loads, 3 textures
+0x307608	0x307880	632	payload	graphics	dl_blob	gfx_307608	f3dex self-relative blob in pool 0x306B68: 79 commands, 6 vertex loads, 3 textures
+0x307880	0x307960	224	payload	graphics	dl_blob	gfx_307880	f3dex self-relative blob in pool 0x306B68: 28 commands, 1 vertex loads, 1 textures
+0x307960	0x307A20	192	payload	graphics	dl_blob	gfx_307960	f3dex self-relative blob in pool 0x306B68: 24 commands, 1 vertex loads, 1 textures
+0x307A20	0x307AD8	184	payload	graphics	dl_blob	gfx_307A20	f3dex self-relative blob in pool 0x306B68: 23 commands, 1 vertex loads, 1 textures
+0x307AD8	0x307BB8	224	payload	graphics	dl_blob	gfx_307AD8	f3dex self-relative blob in pool 0x306B68: 28 commands, 1 vertex loads, 1 textures
+0x307BB8	0x307C78	192	payload	graphics	dl_blob	gfx_307BB8	f3dex self-relative blob in pool 0x306B68: 24 commands, 1 vertex loads, 1 textures
+0x307C78	0x307D30	184	payload	graphics	dl_blob	gfx_307C78	f3dex self-relative blob in pool 0x306B68: 23 commands, 1 vertex loads, 1 textures
+0x307D30	0x307DB0	128	payload	graphics	dl_blob	gfx_307D30	f3dex self-relative blob in pool 0x306B68: 16 commands, 0 vertex loads, 0 textures
+0x307DB0	0x307F30	384	payload	graphics	dl_blob	gfx_307DB0	f3dex self-relative blob in pool 0x306B68: 48 commands, 2 vertex loads, 2 textures
+0x307F30	0x308070	320	payload	graphics	dl_blob	gfx_307F30	f3dex self-relative blob in pool 0x306B68: 40 commands, 4 vertex loads, 1 textures
+0x308070	0x308128	184	payload	graphics	dl_blob	gfx_308070	f3dex self-relative blob in pool 0x306B68: 23 commands, 1 vertex loads, 1 textures
+0x308128	0x3081D8	176	payload	graphics	dl_blob	gfx_308128	f3dex self-relative blob in pool 0x306B68: 22 commands, 1 vertex loads, 1 textures
+0x3081D8	0x308380	424	payload	graphics	dl_blob	gfx_3081D8	f3dex self-relative blob in pool 0x306B68: 53 commands, 3 vertex loads, 3 textures
+0x308380	0x308430	176	payload	graphics	dl_blob	gfx_308380	f3dex self-relative blob in pool 0x306B68: 22 commands, 1 vertex loads, 1 textures
+0x308430	0x3084E0	176	payload	graphics	dl_blob	gfx_308430	f3dex self-relative blob in pool 0x306B68: 22 commands, 1 vertex loads, 1 textures
+0x3084E0	0x308688	424	payload	graphics	dl_blob	gfx_3084E0	f3dex self-relative blob in pool 0x306B68: 53 commands, 3 vertex loads, 3 textures
+0x308688	0x3088C8	576	payload	graphics	dl_blob	gfx_308688	f3dex self-relative blob in pool 0x306B68: 72 commands, 4 vertex loads, 3 textures
+0x3088C8	0x308980	184	payload	graphics	dl_blob	gfx_3088C8	f3dex self-relative blob in pool 0x306B68: 23 commands, 1 vertex loads, 1 textures
+0x308980	0x308A38	184	payload	graphics	dl_blob	gfx_308980	f3dex self-relative blob in pool 0x306B68: 23 commands, 1 vertex loads, 1 textures
+0x308A38	0x308AE0	168	payload	graphics	dl_blob	gfx_308A38	f3dex self-relative blob in pool 0x306B68: 21 commands, 1 vertex loads, 1 textures
+0x308AE0	0x308B98	184	payload	graphics	dl_blob	gfx_308AE0	f3dex self-relative blob in pool 0x306B68: 23 commands, 1 vertex loads, 1 textures
+0x308B98	0x308C50	184	payload	graphics	dl_blob	gfx_308B98	f3dex self-relative blob in pool 0x306B68: 23 commands, 1 vertex loads, 1 textures
+0x308C50	0x308CF8	168	payload	graphics	dl_blob	gfx_308C50	f3dex self-relative blob in pool 0x306B68: 21 commands, 1 vertex loads, 1 textures
+0x308CF8	0x308D78	128	payload	graphics	dl_blob	gfx_308CF8	f3dex self-relative blob in pool 0x306B68: 16 commands, 0 vertex loads, 0 textures
+0x308D78	0x308EC8	336	payload	graphics	dl_blob	gfx_308D78	f3dex self-relative blob in pool 0x306B68: 42 commands, 2 vertex loads, 2 textures
+0x308EC8	0x308F98	208	payload	graphics	dl_blob	gfx_308EC8	f3dex self-relative blob in pool 0x306B68: 26 commands, 2 vertex loads, 1 textures
+0x308F98	0x309038	160	payload	graphics	dl_blob	gfx_308F98	f3dex self-relative blob in pool 0x306B68: 20 commands, 1 vertex loads, 1 textures
+0x309038	0x3090D0	152	payload	graphics	dl_blob	gfx_309038	f3dex self-relative blob in pool 0x306B68: 19 commands, 1 vertex loads, 1 textures
+0x3090D0	0x309170	160	payload	graphics	dl_blob	gfx_3090D0	f3dex self-relative blob in pool 0x306B68: 20 commands, 1 vertex loads, 1 textures
+0x309170	0x309210	160	payload	graphics	dl_blob	gfx_309170	f3dex self-relative blob in pool 0x306B68: 20 commands, 1 vertex loads, 1 textures
+0x309210	0x3092A8	152	payload	graphics	dl_blob	gfx_309210	f3dex self-relative blob in pool 0x306B68: 19 commands, 1 vertex loads, 1 textures
+0x3092A8	0x309348	160	payload	graphics	dl_blob	gfx_3092A8	f3dex self-relative blob in pool 0x306B68: 20 commands, 1 vertex loads, 1 textures
+0x309348	0x309420	216	payload	graphics	dl_blob	gfx_309348	f3dex self-relative blob in pool 0x306B68: 27 commands, 2 vertex loads, 1 textures
+0x309420	0x3094C8	168	payload	graphics	dl_blob	gfx_309420	f3dex self-relative blob in pool 0x306B68: 21 commands, 1 vertex loads, 1 textures
+0x3094C8	0x309560	152	payload	graphics	dl_blob	gfx_3094C8	f3dex self-relative blob in pool 0x306B68: 19 commands, 1 vertex loads, 1 textures
+0x309560	0x309600	160	payload	graphics	dl_blob	gfx_309560	f3dex self-relative blob in pool 0x306B68: 20 commands, 1 vertex loads, 1 textures
+0x309600	0x3096A0	160	payload	graphics	dl_blob	gfx_309600	f3dex self-relative blob in pool 0x306B68: 20 commands, 1 vertex loads, 1 textures
+0x3096A0	0x309738	152	payload	graphics	dl_blob	gfx_3096A0	f3dex self-relative blob in pool 0x306B68: 19 commands, 1 vertex loads, 1 textures
+0x309738	0x3097D8	160	payload	graphics	dl_blob	gfx_309738	f3dex self-relative blob in pool 0x306B68: 20 commands, 1 vertex loads, 1 textures
+0x3097D8	0x309858	128	payload	graphics	dl_blob	gfx_3097D8	f3dex self-relative blob in pool 0x306B68: 16 commands, 0 vertex loads, 0 textures
+0x309858	0x30C898	12352	unknown	-	-	gap_309858	-
+0x30C898	0x30CA40	424	payload	graphics	dl_blob	gfx_30C898	f3dex self-relative blob in pool 0x30C898: 53 commands, 2 vertex loads, 2 textures
+0x30CA40	0x30CCB8	632	payload	graphics	dl_blob	gfx_30CA40	f3dex self-relative blob in pool 0x30C898: 79 commands, 5 vertex loads, 3 textures
+0x30CCB8	0x30CD88	208	payload	graphics	dl_blob	gfx_30CCB8	f3dex self-relative blob in pool 0x30C898: 26 commands, 1 vertex loads, 1 textures
+0x30CD88	0x30CE50	200	payload	graphics	dl_blob	gfx_30CD88	f3dex self-relative blob in pool 0x30C898: 25 commands, 1 vertex loads, 1 textures
+0x30CE50	0x30CFF8	424	payload	graphics	dl_blob	gfx_30CE50	f3dex self-relative blob in pool 0x30C898: 53 commands, 3 vertex loads, 3 textures
+0x30CFF8	0x30D0C8	208	payload	graphics	dl_blob	gfx_30CFF8	f3dex self-relative blob in pool 0x30C898: 26 commands, 1 vertex loads, 1 textures
+0x30D0C8	0x30D190	200	payload	graphics	dl_blob	gfx_30D0C8	f3dex self-relative blob in pool 0x30C898: 25 commands, 1 vertex loads, 1 textures
+0x30D190	0x30D338	424	payload	graphics	dl_blob	gfx_30D190	f3dex self-relative blob in pool 0x30C898: 53 commands, 3 vertex loads, 3 textures
+0x30D338	0x30D590	600	payload	graphics	dl_blob	gfx_30D338	f3dex self-relative blob in pool 0x30C898: 75 commands, 6 vertex loads, 3 textures
+0x30D590	0x30D670	224	payload	graphics	dl_blob	gfx_30D590	f3dex self-relative blob in pool 0x30C898: 28 commands, 1 vertex loads, 1 textures
+0x30D670	0x30D730	192	payload	graphics	dl_blob	gfx_30D670	f3dex self-relative blob in pool 0x30C898: 24 commands, 1 vertex loads, 1 textures
+0x30D730	0x30D7E8	184	payload	graphics	dl_blob	gfx_30D730	f3dex self-relative blob in pool 0x30C898: 23 commands, 1 vertex loads, 1 textures
+0x30D7E8	0x30D8C8	224	payload	graphics	dl_blob	gfx_30D7E8	f3dex self-relative blob in pool 0x30C898: 28 commands, 1 vertex loads, 1 textures
+0x30D8C8	0x30D988	192	payload	graphics	dl_blob	gfx_30D8C8	f3dex self-relative blob in pool 0x30C898: 24 commands, 1 vertex loads, 1 textures
+0x30D988	0x30DA40	184	payload	graphics	dl_blob	gfx_30D988	f3dex self-relative blob in pool 0x30C898: 23 commands, 1 vertex loads, 1 textures
+0x30DA40	0x30DAC0	128	payload	graphics	dl_blob	gfx_30DA40	f3dex self-relative blob in pool 0x30C898: 16 commands, 0 vertex loads, 0 textures
+0x30DAC0	0x30DC40	384	payload	graphics	dl_blob	gfx_30DAC0	f3dex self-relative blob in pool 0x30C898: 48 commands, 2 vertex loads, 2 textures
+0x30DC40	0x30DD80	320	payload	graphics	dl_blob	gfx_30DC40	f3dex self-relative blob in pool 0x30C898: 40 commands, 4 vertex loads, 1 textures
+0x30DD80	0x30DE38	184	payload	graphics	dl_blob	gfx_30DD80	f3dex self-relative blob in pool 0x30C898: 23 commands, 1 vertex loads, 1 textures
+0x30DE38	0x30DEE8	176	payload	graphics	dl_blob	gfx_30DE38	f3dex self-relative blob in pool 0x30C898: 22 commands, 1 vertex loads, 1 textures
+0x30DEE8	0x30E090	424	payload	graphics	dl_blob	gfx_30DEE8	f3dex self-relative blob in pool 0x30C898: 53 commands, 3 vertex loads, 3 textures
+0x30E090	0x30E140	176	payload	graphics	dl_blob	gfx_30E090	f3dex self-relative blob in pool 0x30C898: 22 commands, 1 vertex loads, 1 textures
+0x30E140	0x30E1F0	176	payload	graphics	dl_blob	gfx_30E140	f3dex self-relative blob in pool 0x30C898: 22 commands, 1 vertex loads, 1 textures
+0x30E1F0	0x30E398	424	payload	graphics	dl_blob	gfx_30E1F0	f3dex self-relative blob in pool 0x30C898: 53 commands, 3 vertex loads, 3 textures
+0x30E398	0x30E5E8	592	payload	graphics	dl_blob	gfx_30E398	f3dex self-relative blob in pool 0x30C898: 74 commands, 7 vertex loads, 3 textures
+0x30E5E8	0x30E6A0	184	payload	graphics	dl_blob	gfx_30E5E8	f3dex self-relative blob in pool 0x30C898: 23 commands, 1 vertex loads, 1 textures
+0x30E6A0	0x30E758	184	payload	graphics	dl_blob	gfx_30E6A0	f3dex self-relative blob in pool 0x30C898: 23 commands, 1 vertex loads, 1 textures
+0x30E758	0x30E800	168	payload	graphics	dl_blob	gfx_30E758	f3dex self-relative blob in pool 0x30C898: 21 commands, 1 vertex loads, 1 textures
+0x30E800	0x30E8B8	184	payload	graphics	dl_blob	gfx_30E800	f3dex self-relative blob in pool 0x30C898: 23 commands, 1 vertex loads, 1 textures
+0x30E8B8	0x30E970	184	payload	graphics	dl_blob	gfx_30E8B8	f3dex self-relative blob in pool 0x30C898: 23 commands, 1 vertex loads, 1 textures
+0x30E970	0x30EA18	168	payload	graphics	dl_blob	gfx_30E970	f3dex self-relative blob in pool 0x30C898: 21 commands, 1 vertex loads, 1 textures
+0x30EA18	0x30EA98	128	payload	graphics	dl_blob	gfx_30EA18	f3dex self-relative blob in pool 0x30C898: 16 commands, 0 vertex loads, 0 textures
+0x30EA98	0x30EBE8	336	payload	graphics	dl_blob	gfx_30EA98	f3dex self-relative blob in pool 0x30C898: 42 commands, 2 vertex loads, 2 textures
+0x30EBE8	0x30ECB8	208	payload	graphics	dl_blob	gfx_30EBE8	f3dex self-relative blob in pool 0x30C898: 26 commands, 2 vertex loads, 1 textures
+0x30ECB8	0x30ED58	160	payload	graphics	dl_blob	gfx_30ECB8	f3dex self-relative blob in pool 0x30C898: 20 commands, 1 vertex loads, 1 textures
+0x30ED58	0x30EDF0	152	payload	graphics	dl_blob	gfx_30ED58	f3dex self-relative blob in pool 0x30C898: 19 commands, 1 vertex loads, 1 textures
+0x30EDF0	0x30EE98	168	payload	graphics	dl_blob	gfx_30EDF0	f3dex self-relative blob in pool 0x30C898: 21 commands, 1 vertex loads, 1 textures
+0x30EE98	0x30EF40	168	payload	graphics	dl_blob	gfx_30EE98	f3dex self-relative blob in pool 0x30C898: 21 commands, 1 vertex loads, 1 textures
+0x30EF40	0x30EFD8	152	payload	graphics	dl_blob	gfx_30EF40	f3dex self-relative blob in pool 0x30C898: 19 commands, 1 vertex loads, 1 textures
+0x30EFD8	0x30F080	168	payload	graphics	dl_blob	gfx_30EFD8	f3dex self-relative blob in pool 0x30C898: 21 commands, 1 vertex loads, 1 textures
+0x30F080	0x30F150	208	payload	graphics	dl_blob	gfx_30F080	f3dex self-relative blob in pool 0x30C898: 26 commands, 2 vertex loads, 1 textures
+0x30F150	0x30F1F0	160	payload	graphics	dl_blob	gfx_30F150	f3dex self-relative blob in pool 0x30C898: 20 commands, 1 vertex loads, 1 textures
+0x30F1F0	0x30F288	152	payload	graphics	dl_blob	gfx_30F1F0	f3dex self-relative blob in pool 0x30C898: 19 commands, 1 vertex loads, 1 textures
+0x30F288	0x30F328	160	payload	graphics	dl_blob	gfx_30F288	f3dex self-relative blob in pool 0x30C898: 20 commands, 1 vertex loads, 1 textures
+0x30F328	0x30F3C8	160	payload	graphics	dl_blob	gfx_30F328	f3dex self-relative blob in pool 0x30C898: 20 commands, 1 vertex loads, 1 textures
+0x30F3C8	0x30F460	152	payload	graphics	dl_blob	gfx_30F3C8	f3dex self-relative blob in pool 0x30C898: 19 commands, 1 vertex loads, 1 textures
+0x30F460	0x30F500	160	payload	graphics	dl_blob	gfx_30F460	f3dex self-relative blob in pool 0x30C898: 20 commands, 1 vertex loads, 1 textures
+0x30F500	0x30F580	128	payload	graphics	dl_blob	gfx_30F500	f3dex self-relative blob in pool 0x30C898: 16 commands, 0 vertex loads, 0 textures
+0x30F580	0x3164A0	28448	unknown	-	-	gap_30F580	-
+0x3164A0	0x3165D0	304	payload	graphics	dl_blob	gfx_3164A0	f3dex self-relative blob in pool 0x3164A0: 38 commands, 1 vertex loads, 1 textures
+0x3165D0	0x316758	392	payload	graphics	dl_blob	gfx_3165D0	f3dex self-relative blob in pool 0x3164A0: 49 commands, 2 vertex loads, 2 textures
+0x316758	0x316828	208	payload	graphics	dl_blob	gfx_316758	f3dex self-relative blob in pool 0x3164A0: 26 commands, 1 vertex loads, 1 textures
+0x316828	0x316880	88	payload	graphics	dl_blob	gfx_316828	f3dex self-relative blob in pool 0x3164A0: 11 commands, 1 vertex loads, 0 textures
+0x316880	0x316A28	424	payload	graphics	dl_blob	gfx_316880	f3dex self-relative blob in pool 0x3164A0: 53 commands, 3 vertex loads, 3 textures
+0x316A28	0x316AF8	208	payload	graphics	dl_blob	gfx_316A28	f3dex self-relative blob in pool 0x3164A0: 26 commands, 1 vertex loads, 1 textures
+0x316AF8	0x316B50	88	payload	graphics	dl_blob	gfx_316AF8	f3dex self-relative blob in pool 0x3164A0: 11 commands, 1 vertex loads, 0 textures
+0x316B50	0x316CF8	424	payload	graphics	dl_blob	gfx_316B50	f3dex self-relative blob in pool 0x3164A0: 53 commands, 3 vertex loads, 3 textures
+0x316CF8	0x317108	1040	payload	graphics	dl_blob	gfx_316CF8	f3dex self-relative blob in pool 0x3164A0: 130 commands, 7 vertex loads, 6 textures
+0x317108	0x3171E8	224	payload	graphics	dl_blob	gfx_317108	f3dex self-relative blob in pool 0x3164A0: 28 commands, 1 vertex loads, 1 textures
+0x3171E8	0x3172A8	192	payload	graphics	dl_blob	gfx_3171E8	f3dex self-relative blob in pool 0x3164A0: 24 commands, 1 vertex loads, 1 textures
+0x3172A8	0x317360	184	payload	graphics	dl_blob	gfx_3172A8	f3dex self-relative blob in pool 0x3164A0: 23 commands, 1 vertex loads, 1 textures
+0x317360	0x317440	224	payload	graphics	dl_blob	gfx_317360	f3dex self-relative blob in pool 0x3164A0: 28 commands, 1 vertex loads, 1 textures
+0x317440	0x317500	192	payload	graphics	dl_blob	gfx_317440	f3dex self-relative blob in pool 0x3164A0: 24 commands, 1 vertex loads, 1 textures
+0x317500	0x3175B8	184	payload	graphics	dl_blob	gfx_317500	f3dex self-relative blob in pool 0x3164A0: 23 commands, 1 vertex loads, 1 textures
+0x3175B8	0x317638	128	payload	graphics	dl_blob	gfx_3175B8	f3dex self-relative blob in pool 0x3164A0: 16 commands, 0 vertex loads, 0 textures
+0x317638	0x3177C8	400	payload	graphics	dl_blob	gfx_317638	f3dex self-relative blob in pool 0x3164A0: 50 commands, 2 vertex loads, 2 textures
+0x3177C8	0x3178B8	240	payload	graphics	dl_blob	gfx_3177C8	f3dex self-relative blob in pool 0x3164A0: 30 commands, 2 vertex loads, 1 textures
+0x3178B8	0x317968	176	payload	graphics	dl_blob	gfx_3178B8	f3dex self-relative blob in pool 0x3164A0: 22 commands, 1 vertex loads, 1 textures
+0x317968	0x317A20	184	payload	graphics	dl_blob	gfx_317968	f3dex self-relative blob in pool 0x3164A0: 23 commands, 1 vertex loads, 1 textures
+0x317A20	0x317BC8	424	payload	graphics	dl_blob	gfx_317A20	f3dex self-relative blob in pool 0x3164A0: 53 commands, 3 vertex loads, 3 textures
+0x317BC8	0x317C78	176	payload	graphics	dl_blob	gfx_317BC8	f3dex self-relative blob in pool 0x3164A0: 22 commands, 1 vertex loads, 1 textures
+0x317C78	0x317D30	184	payload	graphics	dl_blob	gfx_317C78	f3dex self-relative blob in pool 0x3164A0: 23 commands, 1 vertex loads, 1 textures
+0x317D30	0x317ED8	424	payload	graphics	dl_blob	gfx_317D30	f3dex self-relative blob in pool 0x3164A0: 53 commands, 3 vertex loads, 3 textures
+0x317ED8	0x3182A0	968	payload	graphics	dl_blob	gfx_317ED8	f3dex self-relative blob in pool 0x3164A0: 121 commands, 7 vertex loads, 6 textures
+0x3182A0	0x318358	184	payload	graphics	dl_blob	gfx_3182A0	f3dex self-relative blob in pool 0x3164A0: 23 commands, 1 vertex loads, 1 textures
+0x318358	0x318410	184	payload	graphics	dl_blob	gfx_318358	f3dex self-relative blob in pool 0x3164A0: 23 commands, 1 vertex loads, 1 textures
+0x318410	0x3184B8	168	payload	graphics	dl_blob	gfx_318410	f3dex self-relative blob in pool 0x3164A0: 21 commands, 1 vertex loads, 1 textures
+0x3184B8	0x318570	184	payload	graphics	dl_blob	gfx_3184B8	f3dex self-relative blob in pool 0x3164A0: 23 commands, 1 vertex loads, 1 textures
+0x318570	0x318628	184	payload	graphics	dl_blob	gfx_318570	f3dex self-relative blob in pool 0x3164A0: 23 commands, 1 vertex loads, 1 textures
+0x318628	0x3186D0	168	payload	graphics	dl_blob	gfx_318628	f3dex self-relative blob in pool 0x3164A0: 21 commands, 1 vertex loads, 1 textures
+0x3186D0	0x318750	128	payload	graphics	dl_blob	gfx_3186D0	f3dex self-relative blob in pool 0x3164A0: 16 commands, 0 vertex loads, 0 textures
+0x318750	0x318830	224	payload	graphics	dl_blob	gfx_318750	f3dex self-relative blob in pool 0x3164A0: 28 commands, 1 vertex loads, 1 textures
+0x318830	0x318900	208	payload	graphics	dl_blob	gfx_318830	f3dex self-relative blob in pool 0x3164A0: 26 commands, 2 vertex loads, 1 textures
+0x318900	0x3189A0	160	payload	graphics	dl_blob	gfx_318900	f3dex self-relative blob in pool 0x3164A0: 20 commands, 1 vertex loads, 1 textures
+0x3189A0	0x3189D0	48	payload	graphics	dl_blob	gfx_3189A0	f3dex self-relative blob in pool 0x3164A0: 6 commands, 1 vertex loads, 0 textures
+0x3189D0	0x318A80	176	payload	graphics	dl_blob	gfx_3189D0	f3dex self-relative blob in pool 0x3164A0: 22 commands, 1 vertex loads, 1 textures
+0x318A80	0x318B20	160	payload	graphics	dl_blob	gfx_318A80	f3dex self-relative blob in pool 0x3164A0: 20 commands, 1 vertex loads, 1 textures
+0x318B20	0x318B50	48	payload	graphics	dl_blob	gfx_318B20	f3dex self-relative blob in pool 0x3164A0: 6 commands, 1 vertex loads, 0 textures
+0x318B50	0x318C00	176	payload	graphics	dl_blob	gfx_318B50	f3dex self-relative blob in pool 0x3164A0: 22 commands, 1 vertex loads, 1 textures
+0x318C00	0x318DE0	480	payload	graphics	dl_blob	gfx_318C00	f3dex self-relative blob in pool 0x3164A0: 60 commands, 4 vertex loads, 3 textures
+0x318DE0	0x318E88	168	payload	graphics	dl_blob	gfx_318DE0	f3dex self-relative blob in pool 0x3164A0: 21 commands, 1 vertex loads, 1 textures
+0x318E88	0x318F20	152	payload	graphics	dl_blob	gfx_318E88	f3dex self-relative blob in pool 0x3164A0: 19 commands, 1 vertex loads, 1 textures
+0x318F20	0x318FC0	160	payload	graphics	dl_blob	gfx_318F20	f3dex self-relative blob in pool 0x3164A0: 20 commands, 1 vertex loads, 1 textures
+0x318FC0	0x319060	160	payload	graphics	dl_blob	gfx_318FC0	f3dex self-relative blob in pool 0x3164A0: 20 commands, 1 vertex loads, 1 textures
+0x319060	0x3190F8	152	payload	graphics	dl_blob	gfx_319060	f3dex self-relative blob in pool 0x3164A0: 19 commands, 1 vertex loads, 1 textures
+0x3190F8	0x319198	160	payload	graphics	dl_blob	gfx_3190F8	f3dex self-relative blob in pool 0x3164A0: 20 commands, 1 vertex loads, 1 textures
+0x319198	0x319218	128	payload	graphics	dl_blob	gfx_319198	f3dex self-relative blob in pool 0x3164A0: 16 commands, 0 vertex loads, 0 textures
+0x319218	0x31F268	24656	unknown	-	-	gap_319218	-
+0x31F268	0x31F3F0	392	payload	graphics	dl_blob	gfx_31F268	f3dex self-relative blob in pool 0x31F268: 49 commands, 3 vertex loads, 1 textures
+0x31F3F0	0x31F568	376	payload	graphics	dl_blob	gfx_31F3F0	f3dex self-relative blob in pool 0x31F268: 47 commands, 3 vertex loads, 1 textures
+0x31F568	0x31F668	256	payload	graphics	dl_blob	gfx_31F568	f3dex self-relative blob in pool 0x31F268: 32 commands, 1 vertex loads, 1 textures
+0x31F668	0x31F750	232	payload	graphics	dl_blob	gfx_31F668	f3dex self-relative blob in pool 0x31F268: 29 commands, 1 vertex loads, 1 textures
+0x31F750	0x31F8D0	384	payload	graphics	dl_blob	gfx_31F750	f3dex self-relative blob in pool 0x31F268: 48 commands, 5 vertex loads, 2 textures
+0x31F8D0	0x31F9D0	256	payload	graphics	dl_blob	gfx_31F8D0	f3dex self-relative blob in pool 0x31F268: 32 commands, 1 vertex loads, 1 textures
+0x31F9D0	0x31FAB8	232	payload	graphics	dl_blob	gfx_31F9D0	f3dex self-relative blob in pool 0x31F268: 29 commands, 1 vertex loads, 1 textures
+0x31FAB8	0x31FC30	376	payload	graphics	dl_blob	gfx_31FAB8	f3dex self-relative blob in pool 0x31F268: 47 commands, 4 vertex loads, 2 textures
+0x31FC30	0x320048	1048	payload	graphics	dl_blob	gfx_31FC30	f3dex self-relative blob in pool 0x31F268: 131 commands, 13 vertex loads, 4 textures
+0x320048	0x3201E0	408	payload	graphics	dl_blob	gfx_320048	f3dex self-relative blob in pool 0x31F268: 51 commands, 2 vertex loads, 2 textures
+0x3201E0	0x3202D8	248	payload	graphics	dl_blob	gfx_3201E0	f3dex self-relative blob in pool 0x31F268: 31 commands, 1 vertex loads, 1 textures
+0x3202D8	0x3203E8	272	payload	graphics	dl_blob	gfx_3202D8	f3dex self-relative blob in pool 0x31F268: 34 commands, 1 vertex loads, 1 textures
+0x3203E8	0x320580	408	payload	graphics	dl_blob	gfx_3203E8	f3dex self-relative blob in pool 0x31F268: 51 commands, 2 vertex loads, 2 textures
+0x320580	0x320678	248	payload	graphics	dl_blob	gfx_320580	f3dex self-relative blob in pool 0x31F268: 31 commands, 1 vertex loads, 1 textures
+0x320678	0x320788	272	payload	graphics	dl_blob	gfx_320678	f3dex self-relative blob in pool 0x31F268: 34 commands, 1 vertex loads, 1 textures
+0x320788	0x320808	128	payload	graphics	dl_blob	gfx_320788	f3dex self-relative blob in pool 0x31F268: 16 commands, 0 vertex loads, 0 textures
+0x320808	0x3240A0	14488	unknown	-	-	gap_320808	-
+0x3240A0	0x324228	392	payload	graphics	dl_blob	gfx_3240A0	f3dex self-relative blob in pool 0x3240A0: 49 commands, 3 vertex loads, 1 textures
+0x324228	0x3243A0	376	payload	graphics	dl_blob	gfx_324228	f3dex self-relative blob in pool 0x3240A0: 47 commands, 3 vertex loads, 1 textures
+0x3243A0	0x3244A0	256	payload	graphics	dl_blob	gfx_3243A0	f3dex self-relative blob in pool 0x3240A0: 32 commands, 1 vertex loads, 1 textures
+0x3244A0	0x324588	232	payload	graphics	dl_blob	gfx_3244A0	f3dex self-relative blob in pool 0x3240A0: 29 commands, 1 vertex loads, 1 textures
+0x324588	0x324708	384	payload	graphics	dl_blob	gfx_324588	f3dex self-relative blob in pool 0x3240A0: 48 commands, 5 vertex loads, 2 textures
+0x324708	0x324808	256	payload	graphics	dl_blob	gfx_324708	f3dex self-relative blob in pool 0x3240A0: 32 commands, 1 vertex loads, 1 textures
+0x324808	0x3248F0	232	payload	graphics	dl_blob	gfx_324808	f3dex self-relative blob in pool 0x3240A0: 29 commands, 1 vertex loads, 1 textures
+0x3248F0	0x324A68	376	payload	graphics	dl_blob	gfx_3248F0	f3dex self-relative blob in pool 0x3240A0: 47 commands, 4 vertex loads, 2 textures
+0x324A68	0x324EE8	1152	payload	graphics	dl_blob	gfx_324A68	f3dex self-relative blob in pool 0x3240A0: 144 commands, 14 vertex loads, 4 textures
+0x324EE8	0x325080	408	payload	graphics	dl_blob	gfx_324EE8	f3dex self-relative blob in pool 0x3240A0: 51 commands, 2 vertex loads, 2 textures
+0x325080	0x325178	248	payload	graphics	dl_blob	gfx_325080	f3dex self-relative blob in pool 0x3240A0: 31 commands, 1 vertex loads, 1 textures
+0x325178	0x325288	272	payload	graphics	dl_blob	gfx_325178	f3dex self-relative blob in pool 0x3240A0: 34 commands, 1 vertex loads, 1 textures
+0x325288	0x325420	408	payload	graphics	dl_blob	gfx_325288	f3dex self-relative blob in pool 0x3240A0: 51 commands, 2 vertex loads, 2 textures
+0x325420	0x325518	248	payload	graphics	dl_blob	gfx_325420	f3dex self-relative blob in pool 0x3240A0: 31 commands, 1 vertex loads, 1 textures
+0x325518	0x325628	272	payload	graphics	dl_blob	gfx_325518	f3dex self-relative blob in pool 0x3240A0: 34 commands, 1 vertex loads, 1 textures
+0x325628	0x3256A8	128	payload	graphics	dl_blob	gfx_325628	f3dex self-relative blob in pool 0x3240A0: 16 commands, 0 vertex loads, 0 textures
+0x3256A8	0x32A098	18928	unknown	-	-	gap_3256A8	-
+0x32A098	0x32A1D8	320	payload	graphics	dl_blob	gfx_32A098	f3dex self-relative blob in pool 0x32A098: 40 commands, 3 vertex loads, 1 textures
+0x32A1D8	0x32A2B8	224	payload	graphics	dl_blob	gfx_32A1D8	f3dex self-relative blob in pool 0x32A098: 28 commands, 1 vertex loads, 1 textures
+0x32A2B8	0x32A310	88	payload	graphics	dl_blob	gfx_32A2B8	f3dex self-relative blob in pool 0x32A098: 11 commands, 1 vertex loads, 0 textures
+0x32A310	0x32A3B8	168	payload	graphics	dl_blob	gfx_32A310	f3dex self-relative blob in pool 0x32A098: 21 commands, 1 vertex loads, 1 textures
+0x32A3B8	0x32A498	224	payload	graphics	dl_blob	gfx_32A3B8	f3dex self-relative blob in pool 0x32A098: 28 commands, 1 vertex loads, 1 textures
+0x32A498	0x32A4F0	88	payload	graphics	dl_blob	gfx_32A498	f3dex self-relative blob in pool 0x32A098: 11 commands, 1 vertex loads, 0 textures
+0x32A4F0	0x32A598	168	payload	graphics	dl_blob	gfx_32A4F0	f3dex self-relative blob in pool 0x32A098: 21 commands, 1 vertex loads, 1 textures
+0x32A598	0x32A6C8	304	payload	graphics	dl_blob	gfx_32A598	f3dex self-relative blob in pool 0x32A098: 38 commands, 2 vertex loads, 2 textures
+0x32A6C8	0x32A7B8	240	payload	graphics	dl_blob	gfx_32A6C8	f3dex self-relative blob in pool 0x32A098: 30 commands, 1 vertex loads, 1 textures
+0x32A7B8	0x32A810	88	payload	graphics	dl_blob	gfx_32A7B8	f3dex self-relative blob in pool 0x32A098: 11 commands, 1 vertex loads, 0 textures
+0x32A810	0x32A8C8	184	payload	graphics	dl_blob	gfx_32A810	f3dex self-relative blob in pool 0x32A098: 23 commands, 1 vertex loads, 1 textures
+0x32A8C8	0x32AA70	424	payload	graphics	dl_blob	gfx_32A8C8	f3dex self-relative blob in pool 0x32A098: 53 commands, 3 vertex loads, 3 textures
+0x32AA70	0x32AB30	192	payload	graphics	dl_blob	gfx_32AA70	f3dex self-relative blob in pool 0x32A098: 24 commands, 1 vertex loads, 1 textures
+0x32AB30	0x32ABE8	184	payload	graphics	dl_blob	gfx_32AB30	f3dex self-relative blob in pool 0x32A098: 23 commands, 1 vertex loads, 1 textures
+0x32ABE8	0x32AD90	424	payload	graphics	dl_blob	gfx_32ABE8	f3dex self-relative blob in pool 0x32A098: 53 commands, 3 vertex loads, 3 textures
+0x32AD90	0x32B050	704	payload	graphics	dl_blob	gfx_32AD90	f3dex self-relative blob in pool 0x32A098: 88 commands, 5 vertex loads, 4 textures
+0x32B050	0x32B0D8	136	payload	graphics	dl_blob	gfx_32B050	f3dex self-relative blob in pool 0x32A098: 17 commands, 0 vertex loads, 0 textures
+0x32B0D8	0x331AC8	27120	unknown	-	-	gap_32B0D8	-
+0x331AC8	0x331BB0	232	payload	graphics	display_list	dl_331AC8	f3dex display list, 29 commands (data not resolvable)
+0x331BB0	0x331C60	176	payload	graphics	display_list	dl_331BB0	f3dex display list, 22 commands (data not resolvable)
+0x331C60	0x332060	1024	payload	graphics	display_list	dl_331C60	f3dex display list, 128 commands (data not resolvable)
+0x332060	0x3324F0	1168	payload	graphics	display_list	dl_332060	f3dex display list, 146 commands (data not resolvable)
+0x3324F0	0x332518	40	payload	graphics	display_list	dl_3324F0	f3dex display list, 5 commands (data not resolvable)
+0x332518	0x393280	396648	unknown	-	-	gap_332518	-
+0x393280	0x3933F8	376	payload	graphics	display_list	dl_393280	f3dex display list, 47 commands (data not resolvable)
+0x3933F8	0x4562A0	798376	unknown	-	-	gap_3933F8	-
+0x4562A0	0x4562B0	16	referenced	loader_range	raw	rom_4562A0	call 0x80004E48 in 0x80004E10
+0x4562B0	0x456398	232	payload	graphics	display_list	dl_4562B0	f3dex display list, 29 commands (data not resolvable)
+0x456398	0x4563A8	16	payload	graphics	display_list	dl_456398	f3dex display list, 2 commands (data not resolvable)
+0x4563A8	0x4563D0	40	payload	graphics	display_list	dl_4563A8	f3dex display list, 5 commands (data not resolvable)
+0x4563D0	0x456410	64	referenced	loader_range	raw	rom_4563D0	call 0x800947E4 in 0x80094500
+0x456410	0x456438	40	payload	graphics	display_list	dl_456410	f3dex display list, 5 commands (data not resolvable)
+0x456438	0x456478	64	referenced	loader_range	raw	rom_4563D0	call 0x800947E4 in 0x80094500
+0x456478	0x4564A0	40	payload	graphics	display_list	dl_456478	f3dex display list, 5 commands (data not resolvable)
+0x4564A0	0x482820	181120	referenced	loader_range	raw	rom_4563D0	call 0x800947E4 in 0x80094500
+0x482820	0x482D00	1248	referenced	loader_range	raw	rom_482820	call 0x800983CC in 0x8009559C
+0x482D00	0x482D10	16	payload	graphics	display_list	dl_482D00	f3dex display list, 2 commands (data not resolvable)
+0x482D10	0x48CF00	41456	referenced	loader_range	raw	rom_482820	call 0x800983CC in 0x8009559C
+0x48CF00	0x48D010	272	payload	graphics	display_list	dl_48CF00	f3dex display list, 34 commands (data not resolvable)
+0x48D010	0x48D0E8	216	payload	graphics	display_list	dl_48D010	f3dex display list, 27 commands (data not resolvable)
+0x48D0E8	0x48D128	64	payload	graphics	display_list	dl_48D0E8	f3dex display list, 8 commands (data not resolvable)
+0x48D128	0x48D148	32	payload	graphics	display_list	dl_48D128	f3dex display list, 4 commands (data not resolvable)
+0x48D148	0x48D210	200	payload	graphics	display_list	dl_48D148	f3dex display list, 25 commands (data not resolvable)
+0x48D210	0x48D2C0	176	payload	graphics	display_list	dl_48D210	f3dex display list, 22 commands (data not resolvable)
+0x48D2C0	0x48E138	3704	payload	graphics	display_list	dl_48D2C0	f3dex display list, 463 commands (data not resolvable)
+0x48E138	0x48E228	240	payload	graphics	display_list	dl_48E138	f3dex display list, 30 commands (data not resolvable)
+0x48E228	0x48E318	240	payload	graphics	display_list	dl_48E228	f3dex display list, 30 commands (data not resolvable)
+0x48E318	0x48EEE0	3016	payload	graphics	display_list	dl_48E318	f3dex display list, 377 commands (data not resolvable)
+0x48EEE0	0x48EF20	64	payload	graphics	display_list	dl_48EEE0	f3dex display list, 8 commands (data not resolvable)
+0x48EF20	0x492460	13632	referenced	loader_range	raw	rom_48EF20	call 0x8001B704 in 0x8001A604
+0x492460	0x4A45C0	74080	referenced	loader_range	raw	rom_492460	call 0x8001B764 in 0x8001A604
+0x4A45C0	0x4B73A0	77280	referenced	loader_range	raw	rom_4A45C0	call 0x8001B738 in 0x8001A604
+0x4B73A0	0x4BD988	26088	unknown	-	-	gap_4B73A0	-
+0x4BD988	0x4BDAC8	320	payload	graphics	display_list	dl_4BD988	f3dex display list, 40 commands (data not resolvable)
+0x4BDAC8	0x4BDAD8	16	payload	graphics	display_list	dl_4BDAC8	f3dex display list, 2 commands (data not resolvable)
+0x4BDAD8	0x4BDBE8	272	payload	graphics	display_list	dl_4BDAD8	f3dex display list, 34 commands (data not resolvable)
+0x4BDBE8	0x4BDBF8	16	payload	graphics	display_list	dl_4BDBE8	f3dex display list, 2 commands (data not resolvable)
+0x4BDBF8	0x4BDCF8	256	payload	graphics	display_list	dl_4BDBF8	f3dex display list, 32 commands (data not resolvable)
+0x4BDCF8	0x4BDD08	16	payload	graphics	display_list	dl_4BDCF8	f3dex display list, 2 commands (data not resolvable)
+0x4BDD08	0x4BDDF8	240	payload	graphics	display_list	dl_4BDD08	f3dex display list, 30 commands (data not resolvable)
+0x4BDDF8	0x4BDE08	16	payload	graphics	display_list	dl_4BDDF8	f3dex display list, 2 commands (data not resolvable)
+0x4BDE08	0x4BDEF8	240	payload	graphics	display_list	dl_4BDE08	f3dex display list, 30 commands (data not resolvable)
+0x4BDEF8	0x4BDF08	16	payload	graphics	display_list	dl_4BDEF8	f3dex display list, 2 commands (data not resolvable)
+0x4BDF08	0x4BDFF8	240	payload	graphics	display_list	dl_4BDF08	f3dex display list, 30 commands (data not resolvable)
+0x4BDFF8	0x4BE008	16	payload	graphics	display_list	dl_4BDFF8	f3dex display list, 2 commands (data not resolvable)
+0x4BE008	0x4BE108	256	payload	graphics	display_list	dl_4BE008	f3dex display list, 32 commands (data not resolvable)
+0x4BE108	0x4BE118	16	payload	graphics	display_list	dl_4BE108	f3dex display list, 2 commands (data not resolvable)
+0x4BE118	0x4BE208	240	payload	graphics	display_list	dl_4BE118	f3dex display list, 30 commands (data not resolvable)
+0x4BE208	0x4BE218	16	payload	graphics	display_list	dl_4BE208	f3dex display list, 2 commands (data not resolvable)
+0x4BE218	0x4BE308	240	payload	graphics	display_list	dl_4BE218	f3dex display list, 30 commands (data not resolvable)
+0x4BE308	0x4BE318	16	payload	graphics	display_list	dl_4BE308	f3dex display list, 2 commands (data not resolvable)
+0x4BE318	0x4BE408	240	payload	graphics	display_list	dl_4BE318	f3dex display list, 30 commands (data not resolvable)
+0x4BE408	0x4BE418	16	payload	graphics	display_list	dl_4BE408	f3dex display list, 2 commands (data not resolvable)
+0x4BE418	0x4BE528	272	payload	graphics	display_list	dl_4BE418	f3dex display list, 34 commands (data not resolvable)
+0x4BE528	0x4BE538	16	payload	graphics	display_list	dl_4BE528	f3dex display list, 2 commands (data not resolvable)
+0x4BE538	0x4BE648	272	payload	graphics	display_list	dl_4BE538	f3dex display list, 34 commands (data not resolvable)
+0x4BE648	0x4BE658	16	payload	graphics	display_list	dl_4BE648	f3dex display list, 2 commands (data not resolvable)
+0x4BE658	0x4BE7B0	344	payload	graphics	display_list	dl_4BE658	f3dex display list, 43 commands (data not resolvable)
+0x4BE7B0	0x4BE7C0	16	payload	graphics	display_list	dl_4BE7B0	f3dex display list, 2 commands (data not resolvable)
+0x4BE7C0	0x4BE918	344	payload	graphics	display_list	dl_4BE7C0	f3dex display list, 43 commands (data not resolvable)
+0x4BE918	0x4BE928	16	payload	graphics	display_list	dl_4BE918	f3dex display list, 2 commands (data not resolvable)
+0x4BE928	0x4BEAA8	384	payload	graphics	display_list	dl_4BE928	f3dex display list, 48 commands (data not resolvable)
+0x4BEAA8	0x4BEAB8	16	payload	graphics	display_list	dl_4BEAA8	f3dex display list, 2 commands (data not resolvable)
+0x4BEAB8	0x4BEBE0	296	payload	graphics	display_list	dl_4BEAB8	f3dex display list, 37 commands (data not resolvable)
+0x4BEBE0	0x4BEBF0	16	payload	graphics	display_list	dl_4BEBE0	f3dex display list, 2 commands (data not resolvable)
+0x4BEBF0	0x4BEDA0	432	payload	graphics	display_list	dl_4BEBF0	f3dex display list, 54 commands (data not resolvable)
+0x4BEDA0	0x4BEDB0	16	payload	graphics	display_list	dl_4BEDA0	f3dex display list, 2 commands (data not resolvable)
+0x4BEDB0	0x4BEED8	296	payload	graphics	display_list	dl_4BEDB0	f3dex display list, 37 commands (data not resolvable)
+0x4BEED8	0x4BEEE8	16	payload	graphics	display_list	dl_4BEED8	f3dex display list, 2 commands (data not resolvable)
+0x4BEEE8	0x4BEFE8	256	payload	graphics	display_list	dl_4BEEE8	f3dex display list, 32 commands (data not resolvable)
+0x4BEFE8	0x4BEFF8	16	payload	graphics	display_list	dl_4BEFE8	f3dex display list, 2 commands (data not resolvable)
+0x4BEFF8	0x4BF118	288	payload	graphics	display_list	dl_4BEFF8	f3dex display list, 36 commands (data not resolvable)
+0x4BF118	0x4BF128	16	payload	graphics	display_list	dl_4BF118	f3dex display list, 2 commands (data not resolvable)
+0x4BF128	0x4BF250	296	payload	graphics	display_list	dl_4BF128	f3dex display list, 37 commands (data not resolvable)
+0x4BF250	0x4BF260	16	payload	graphics	display_list	dl_4BF250	f3dex display list, 2 commands (data not resolvable)
+0x4BF260	0x4BF360	256	payload	graphics	display_list	dl_4BF260	f3dex display list, 32 commands (data not resolvable)
+0x4BF360	0x4BF370	16	payload	graphics	display_list	dl_4BF360	f3dex display list, 2 commands (data not resolvable)
+0x4BF370	0x4BF4A8	312	payload	graphics	display_list	dl_4BF370	f3dex display list, 39 commands (data not resolvable)
+0x4BF4A8	0x4BF4B8	16	payload	graphics	display_list	dl_4BF4A8	f3dex display list, 2 commands (data not resolvable)
+0x4BF4B8	0x4BF5E0	296	payload	graphics	display_list	dl_4BF4B8	f3dex display list, 37 commands (data not resolvable)
+0x4BF5E0	0x4BF5F0	16	payload	graphics	display_list	dl_4BF5E0	f3dex display list, 2 commands (data not resolvable)
+0x4BF5F0	0x4BF708	280	payload	graphics	display_list	dl_4BF5F0	f3dex display list, 35 commands (data not resolvable)
+0x4BF708	0x4BF718	16	payload	graphics	display_list	dl_4BF708	f3dex display list, 2 commands (data not resolvable)
+0x4BF718	0x4BF878	352	payload	graphics	display_list	dl_4BF718	f3dex display list, 44 commands (data not resolvable)
+0x4BF878	0x4BF888	16	payload	graphics	display_list	dl_4BF878	f3dex display list, 2 commands (data not resolvable)
+0x4BF888	0x4BF9A8	288	payload	graphics	display_list	dl_4BF888	f3dex display list, 36 commands (data not resolvable)
+0x4BF9A8	0x4BF9B8	16	payload	graphics	display_list	dl_4BF9A8	f3dex display list, 2 commands (data not resolvable)
+0x4BF9B8	0x4BFAD0	280	payload	graphics	display_list	dl_4BF9B8	f3dex display list, 35 commands (data not resolvable)
+0x4BFAD0	0x4BFAE0	16	payload	graphics	display_list	dl_4BFAD0	f3dex display list, 2 commands (data not resolvable)
+0x4BFAE0	0x4BFC58	376	payload	graphics	display_list	dl_4BFAE0	f3dex display list, 47 commands (data not resolvable)
+0x4BFC58	0x4BFC68	16	payload	graphics	display_list	dl_4BFC58	f3dex display list, 2 commands (data not resolvable)
+0x4BFC68	0x4BFD88	288	payload	graphics	display_list	dl_4BFC68	f3dex display list, 36 commands (data not resolvable)
+0x4BFD88	0x4BFD98	16	payload	graphics	display_list	dl_4BFD88	f3dex display list, 2 commands (data not resolvable)
+0x4BFD98	0x4BFEA0	264	payload	graphics	display_list	dl_4BFD98	f3dex display list, 33 commands (data not resolvable)
+0x4BFEA0	0x4BFEB0	16	payload	graphics	display_list	dl_4BFEA0	f3dex display list, 2 commands (data not resolvable)
+0x4BFEB0	0x4BFFC0	272	payload	graphics	display_list	dl_4BFEB0	f3dex display list, 34 commands (data not resolvable)
+0x4BFFC0	0x4BFFD0	16	payload	graphics	display_list	dl_4BFFC0	f3dex display list, 2 commands (data not resolvable)
+0x4BFFD0	0x4C00C0	240	payload	graphics	display_list	dl_4BFFD0	f3dex display list, 30 commands (data not resolvable)
+0x4C00C0	0x4C00D0	16	payload	graphics	display_list	dl_4C00C0	f3dex display list, 2 commands (data not resolvable)
+0x4C00D0	0x4C01A8	216	payload	graphics	display_list	dl_4C00D0	f3dex display list, 27 commands (data not resolvable)
+0x4C01A8	0x4C01B8	16	payload	graphics	display_list	dl_4C01A8	f3dex display list, 2 commands (data not resolvable)
+0x4C01B8	0x4C0420	616	payload	graphics	display_list	dl_4C01B8	f3dex display list, 77 commands (data not resolvable)
+0x4C0420	0x4C0430	16	payload	graphics	display_list	dl_4C0420	f3dex display list, 2 commands (data not resolvable)
+0x4C0430	0x4C0510	224	payload	graphics	display_list	dl_4C0430	f3dex display list, 28 commands (data not resolvable)
+0x4C0510	0x4C0520	16	payload	graphics	display_list	dl_4C0510	f3dex display list, 2 commands (data not resolvable)
+0x4C0520	0x4C0620	256	payload	graphics	display_list	dl_4C0520	f3dex display list, 32 commands (data not resolvable)
+0x4C0620	0x4C0630	16	payload	graphics	display_list	dl_4C0620	f3dex display list, 2 commands (data not resolvable)
+0x4C0630	0x4C0730	256	payload	graphics	display_list	dl_4C0630	f3dex display list, 32 commands (data not resolvable)
+0x4C0730	0x4C0740	16	payload	graphics	display_list	dl_4C0730	f3dex display list, 2 commands (data not resolvable)
+0x4C0740	0x4C0840	256	payload	graphics	display_list	dl_4C0740	f3dex display list, 32 commands (data not resolvable)
+0x4C0840	0x4C0850	16	payload	graphics	display_list	dl_4C0840	f3dex display list, 2 commands (data not resolvable)
+0x4C0850	0x4C0950	256	payload	graphics	display_list	dl_4C0850	f3dex display list, 32 commands (data not resolvable)
+0x4C0950	0x7A2550	3021824	unknown	-	-	gap_4C0950	-
+0x7A2550	0x7A3290	3392	referenced	loader_range	raw	rom_7A2550	call 0x8001BB0C in 0x8001A604
+0x7A3290	0x7A47A0	5392	referenced	loader_range	raw	rom_7A3290	call 0x8001BB38 in 0x8001A604
+0x7A47A0	0x800000	374880	padding	-	fill_FF	gap_7A47A0	-

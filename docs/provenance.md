@@ -44,16 +44,6 @@ against `decompals/ultralib` commit
 These routines are provenance-backed assembly because their semantics depend
 on instructions that portable C cannot express precisely.
 
-## Shared Titus payload inventory
-
-The retail ROM bytes from `0x0D49B0` through `0x7FFFFF` exactly match Rugrats
-64 ROM bytes `0x0373F0` through `0x762A3F`. The detailed physical inventory in
-`docs/rom_inventory_tail.tsv` translates the full-ROM ledger from
-`TheGh0stShip/Rugrats-Scavenger-Hunt` commit
-`970beb763697053eded0513de0a05a55a9cfb2b0` by the constant offset
-`0x09D5C0`. The translated ledger preserves each upstream source range and its
-verification evidence.
-
 ## Shared libc string unit
 
 The `0x0CE070-0x0CE10F` unit is byte-identical to the established

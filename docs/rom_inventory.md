@@ -21,22 +21,31 @@
 | --- | ---: | --- | --- |
 | `0x000000-0x00003F` | `0x40` | cartridge header | `asm/header.s` |
 | `0x000040-0x000FFF` | `0xFC0` | IPL3 boot code | extracted `bin/boot.bin` |
-| `0x001000-0x0D49AF` | `0xD39B0` | resident MIPS code | 153 ordered units in `superman.yaml`; C and assembly sources |
-| `0x0D49B0-0x7FFFFF` | `0x72B650` | shared Titus engine payload | 2,102 contiguous records in `docs/rom_inventory_tail.tsv` |
+| `0x001000-0x0E15EF` | `0xE05F0` | IPL3-loaded program image | CPU code, RSP text, initialized data and rodata |
+| `0x0E15F0-0x7FFFFF` | `0x71EA10` | asset/payload region | graphics, referenced ranges, padding and unknown ranges |
 
 These ranges are contiguous, non-overlapping, and cover every byte of the
-retail ROM. `superman.yaml` is the authoritative ordered inventory of all 153
-known resident code-unit boundaries. The tail ledger classifies every byte as
-code, initialized program data, audio, display-list data, archive indexes,
-archive records, or alignment fill. It contains 403 code records, 477 program
-data records, 348 audio records, one display-list record, two archive indexes,
-493 archive records, and 378 fill records.
+retail ROM. Boot-path analysis measures the loaded image at
+`0x80000400-0x800E09EF`, followed by BSS through `0x80147F0F`.
+`superman.yaml` supplies the 152 stable source-unit boundaries, while
+`analysis/rom_inventory.tsv` records 1,272 contiguous physical ranges derived
+from the Superman ROM itself with `n64-decomp-kit survey` at commit
+`45dabb8a7171a065f54f771ef74173118319bd94`.
 
-The entire tail is byte-identical to the range `0x0373F0-0x762A3F` in the
-North American Rugrats 64 ROM. Its physical record boundaries were translated
-by adding `0x09D5C0`; the original offsets are retained in the last two ledger
-columns. This is an exact shared-payload mapping, not a similarity inference.
-Run `make inventory` to verify the ROM identity and contiguous ledger coverage.
+| Physical class | Bytes |
+| --- | ---: |
+| Cartridge header and IPL3 | 4,096 |
+| CPU and RSP executable code | 875,680 |
+| Initialized program data | 43,344 |
+| Identified graphics payload | 313,848 |
+| Loader-referenced payload | 1,142,904 |
+| Padding | 374,888 |
+| Unknown | 5,633,848 |
+
+The classes sum to all 8,388,608 ROM bytes. Identification is not matching
+credit: only reconstructed source represented by reviewed matching manifests
+advances public progress. Run `make inventory` to verify ROM identity,
+contiguous coverage, and these class totals.
 
 ## Reconstruction gate
 
