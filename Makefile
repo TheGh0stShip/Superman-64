@@ -115,6 +115,7 @@ $(BUILD_DIR)/src/main_4CA0.o: OPT_FLAGS := -O1 -g3
 $(BUILD_DIR)/src/main_4D60.o: OPT_FLAGS := -O1 -g3
 $(BUILD_DIR)/src/main_5AE70.o: OPT_FLAGS := -O2 -g3
 $(BUILD_DIR)/src/main_848E0.o: OPT_FLAGS := -O2 -g3
+$(BUILD_DIR)/src/main_B7610.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_B9940.o: OPT_FLAGS := -O1 -g3
 $(BUILD_DIR)/src/main_BD1D0.o: OPT_FLAGS := -O1 -g3
 $(BUILD_DIR)/src/main_BFAE0.o: OPT_FLAGS := -O1
