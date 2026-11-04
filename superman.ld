@@ -100,6 +100,8 @@ SECTIONS
         BUILD_DIR/asm/main_2AE90.o(.text.after_350B0);
         main_47930_s = .;
         BUILD_DIR/asm/main_47930.o(.text);
+        BUILD_DIR/src/main_48CB0.o(.text);
+        BUILD_DIR/asm/main_47930.o(.text.after_48CB0);
         main_54460_s = .;
         BUILD_DIR/asm/main_54460.o(.text);
         BUILD_DIR/src/main_5AE70.o(.text);
