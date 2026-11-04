@@ -21,6 +21,7 @@ conversions. Current candidates, in order:
 | `0x017F10` | `func_80017310` | normalize and clamp a motion-record value through runtime helpers | matching C (`-O1 -g3`) |
 | `0x018390` | `func_80017790` | normalize and scale a motion-record angular value | matching C (`-O1 -g3`) |
 | `0x019080` | `func_80018480` | validate and copy a linked runtime-object index | matching C (`-O1 -g3`) |
+| `0x0350B0` | `func_800344B0` | traverse linked runtime objects and dispatch matching states | matching C (`-O1 -g3`) |
 | `0x0848E0` | `func_80083CE0` | store six floating-point configuration values | matching C (`-O2 -g3`) |
 | `0x090710` | three threshold handlers | detect exceeded record thresholds and flag linked state | matching C (`-O1 -g3`) |
 | `0x094770` | two event-state helpers | poll, clear, and configure the pending event | matching C (`-O1 -g3`) |
