@@ -76,6 +76,7 @@ $(BUILD_DIR)/src/main_CCD30.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_D3A60.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_C4070.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_12A20.o: OPT_FLAGS := -O1
+$(BUILD_DIR)/src/main_5070.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_C4800.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_C4910.o: OPT_FLAGS := -O1
 $(BUILD_DIR)/src/main_CEE20.o: OPT_FLAGS := -O1

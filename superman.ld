@@ -57,6 +57,8 @@ SECTIONS
         BUILD_DIR/asm/main_4CA0.o(.text);
         main_4D60_s = .;
         BUILD_DIR/asm/main_4D60.o(.text);
+        BUILD_DIR/src/main_5070.o(.text);
+        BUILD_DIR/asm/main_4D60.o(.text.after_5070);
         main_5420_s = .;
         BUILD_DIR/asm/main_5420.o(.text);
         main_5A10_s = .;
