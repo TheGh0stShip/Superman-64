@@ -258,7 +258,9 @@ def validate_nonfunction_classes(nonfunction: list[dict[str, int | str]],
 
 
 def data_category_measures(total: int, matched: int = 0) -> dict[str, object]:
-    result = measures(total, matched, 0, 0, 0, 0)
+    # Data-only categories must not also claim their bytes as code. Trackers
+    # aggregate and visualize these fields independently.
+    result = measures(0, 0, 0, 0, 0, 0)
     percent = matched * 100.0 / total if total else 0.0
     result.update({
         "total_data": str(total),

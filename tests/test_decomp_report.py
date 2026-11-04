@@ -81,8 +81,8 @@ class DecompReportTests(unittest.TestCase):
         self.assertEqual(categories["data"]["measures"]["matched_data_percent"], 0.0)
         for name, category in categories.items():
             if name not in {"cpu_units", "cpu_tail", "rsp"}:
-                self.assertEqual(category["measures"]["total_code"],
-                                 category["measures"]["total_data"])
+                self.assertEqual(category["measures"]["total_code"], "0")
+                self.assertGreater(int(category["measures"]["total_data"]), 0)
         accounted = sum(
             int(categories[name]["measures"]["total_code"])
             for name in ("cpu_units", "cpu_tail", "rsp")
