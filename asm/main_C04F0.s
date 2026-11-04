@@ -163,7 +163,8 @@ glabel func_800BFA60_asm
 /* C072C 800BFB2C A08B0000 */   sb        $t3, ($a0)
 
 .section .text.after_C0660, "ax"
-glabel func_800BFB30
+.section .text.replaced_C0730, "ax"
+glabel func_800BFB30_asm
 /* C0730 800BFB30 27BDFFF0 */  addiu      $sp, $sp, -0x10
 /* C0734 800BFB34 308400FF */  andi       $a0, $a0, 0xff
 /* C0738 800BFB38 AFA00000 */  sw         $zero, ($sp)

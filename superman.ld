@@ -31,6 +31,7 @@ D_800DFE90 = 0x800DFE90;
 D_800DFEB4 = 0x800DFEB4;
 
 D_801458CC = 0x801458CC;
+D_8014541C = 0x8014541C;
 
 SECTIONS
 {
@@ -179,6 +180,7 @@ SECTIONS
         BUILD_DIR/asm/main_C04F0.o(.text);
         BUILD_DIR/src/main_C0660.o(.text);
         BUILD_DIR/asm/main_C04F0.o(.text.after_C0660);
+        BUILD_DIR/src/main_C0730.o(.text);
         main_C0830_s = .;
         BUILD_DIR/src/main_C0830.o(.text);
         BUILD_DIR/asm/main_C0830.o(.text.after_C08EF);
