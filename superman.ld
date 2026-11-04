@@ -72,7 +72,8 @@ SECTIONS
         main_B1E0_s = .;
         BUILD_DIR/asm/main_B1E0.o(.text);
         BUILD_DIR/src/main_B5C0.o(.text);
-        BUILD_DIR/asm/main_B1E0.o(.text.after_B5C0);
+        BUILD_DIR/src/main_B630.o(.text);
+        BUILD_DIR/asm/main_B1E0.o(.text.after_B780);
         main_D830_s = .;
         BUILD_DIR/asm/main_D830.o(.text);
         main_104D0_s = .;
