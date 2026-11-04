@@ -5974,7 +5974,8 @@ glabel func_800B726C
 /* B7EF8 800B72F8 03E00008 */  jr         $ra
 /* B7EFC 800B72FC 27BD0008 */   addiu     $sp, $sp, 8
 
-glabel func_800B7300
+.section .text.replaced_B7FB0, "ax"
+glabel func_800B7300_asm
 /* B7F00 800B7300 8C8E0004 */  lw         $t6, 4($a0)
 /* B7F04 800B7304 2401FFC0 */  addiu      $at, $zero, -0x40
 /* B7F08 800B7308 11C10010 */  beq        $t6, $at, .L800B734C
@@ -6001,7 +6002,7 @@ glabel func_800B7300
 /* B7F50 800B7350 03E00008 */  jr         $ra
 /* B7F54 800B7354 00000000 */   nop
 
-glabel func_800B7358
+glabel func_800B7358_asm
 /* B7F58 800B7358 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* B7F5C 800B735C AFBF0014 */  sw         $ra, 0x14($sp)
 /* B7F60 800B7360 AFA40018 */  sw         $a0, 0x18($sp)
@@ -6014,7 +6015,7 @@ glabel func_800B7358
 /* B7F7C 800B737C 03E00008 */  jr         $ra
 /* B7F80 800B7380 00000000 */   nop
 
-glabel func_800B7384
+glabel func_800B7384_asm
 /* B7F84 800B7384 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* B7F88 800B7388 AFBF0014 */  sw         $ra, 0x14($sp)
 /* B7F8C 800B738C AFA40018 */  sw         $a0, 0x18($sp)
@@ -6027,6 +6028,7 @@ glabel func_800B7384
 /* B7FA8 800B73A8 03E00008 */  jr         $ra
 /* B7FAC 800B73AC 00000000 */   nop
 
+.section .text.after_B7F00, "ax"
 glabel func_800B73B0
 /* B7FB0 800B73B0 27BDFED8 */  addiu      $sp, $sp, -0x128
 /* B7FB4 800B73B4 AFBF0024 */  sw         $ra, 0x24($sp)
