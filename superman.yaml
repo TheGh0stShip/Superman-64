@@ -19,7 +19,7 @@ segments:
     vram: 0x80000400
     subsections:
       - [0x1000, asm]
-      - [0x1B90, asm]
+      - [0x1B90, c]
       - [0x1DA0, asm]
       - [0x3050, asm]
       - [0x3A80, asm]

@@ -5,9 +5,9 @@
 .set noreorder # don't insert nops after branches
 .set gp=64     # allow use of 64-bit general purpose registers
 
-.section .text, "ax"
+.section .text.replaced_1B90, "ax"
 
-glabel func_80000F90
+glabel func_80000F90_asm
 /* 1B90 80000F90 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 1B94 80000F94 AFBF0014 */  sw         $ra, 0x14($sp)
 /* 1B98 80000F98 3C04800F */  lui        $a0, %hi(D_800E85C0)
@@ -20,6 +20,8 @@ glabel func_80000F90
 /* 1BB4 80000FB4 27BD0018 */  addiu      $sp, $sp, 0x18
 /* 1BB8 80000FB8 03E00008 */  jr         $ra
 /* 1BBC 80000FBC 00000000 */   nop
+
+.section .text.after_1B90, "ax"
 
 glabel func_80000FC0
 /* 1BC0 80000FC0 27BDFFB8 */  addiu      $sp, $sp, -0x48

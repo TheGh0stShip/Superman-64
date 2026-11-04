@@ -46,7 +46,8 @@ SECTIONS
         main_1000_s = .;
         BUILD_DIR/asm/main_1000.o(.text);
         main_1B90_s = .;
-        BUILD_DIR/asm/main_1B90.o(.text);
+        BUILD_DIR/src/main_1B90.o(.text);
+        BUILD_DIR/asm/main_1B90.o(.text.after_1B90);
         main_1DA0_s = .;
         BUILD_DIR/asm/main_1DA0.o(.text);
         main_3050_s = .;
