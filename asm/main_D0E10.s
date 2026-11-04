@@ -222,7 +222,9 @@ glabel func_800D0240
 /* D1128 800D0528 03E00008 */  jr         $ra
 /* D112C 800D052C 00000000 */   nop
 
-glabel func_800D0530
+.section .text.pfsinit_legacy, "ax"
+
+glabel legacy_func_800D0530
 /* D1130 800D0530 27BDFF98 */  addiu      $sp, $sp, -0x68
 /* D1134 800D0534 AFBF0014 */  sw         $ra, 0x14($sp)
 /* D1138 800D0538 AFA40068 */  sw         $a0, 0x68($sp)

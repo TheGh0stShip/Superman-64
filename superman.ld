@@ -409,6 +409,7 @@ SECTIONS
         main_D0E10_s = .;
         BUILD_DIR/src/main_D0E10.o(.text);
         BUILD_DIR/asm/main_D0E10.o(.text);
+        BUILD_DIR/src/main_D1130.o(.text);
         main_D13D0_s = .;
         BUILD_DIR/src/main_D13D0.o(.text);
         BUILD_DIR/src/main_D1610.o(.text);

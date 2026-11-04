@@ -79,6 +79,7 @@ conversions. Current candidates, in order:
 | `0x0D2A90` | `func_800D1E90` | initialize and insert a timer | matching C (`-O1`) |
 | `0x0D3C40` | two controller-pak helpers | read a RAM block and construct its command packet | matching C (`-O1`) |
 | `0x0D13D0` | three controller-pak helpers | request and decode one channel's status | matching C (`-O1`) |
+| `0x0D1130` | `func_800D0530` | initialize and validate a controller pak filesystem | matching C (`-O1`) |
 | `0x0D1610` | three controller-pak filesystem helpers | check and repair directory and inode consistency | matching C (`-O1`) |
 | `0x0C4070` | `func_800C3470` | raw PI word read | matching C (`-O1`) |
 | `0x0D3A60` | `func_800D2E60` | raw SI word write | matching C (`-O1`) |
