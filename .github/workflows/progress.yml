@@ -4,10 +4,15 @@ on:
   pull_request:
   push:
   workflow_dispatch:
+    inputs:
+      runner:
+        description: Runner label
+        required: false
+        default: ubuntu-latest
 
 jobs:
   decomp-report:
-    runs-on: ubuntu-latest
+    runs-on: ${{ inputs.runner || 'ubuntu-latest' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
