@@ -551,7 +551,7 @@
 0xA3078	0xEC	0x800A2478	func_800A2478	retail_disassembly
 0xA3164	0xA90	0x800A2564	func_800A2564	retail_disassembly
 0xA3BF4	0x17C	0x800A2FF4	func_800A2FF4	retail_disassembly
-0xA3D70	0xF0	0x800A3170	func_800A3170	retail_disassembly
+0xA3D70	0xF0	0x800A3170	func_800A3170	matching_source
 0xA3E60	0x884	0x800A3260	func_800A3260	retail_disassembly
 0xA46E4	0x83C	0x800A3AE4	func_800A3AE4	retail_disassembly
 0xA4F20	0x8	0x800A4320	func_800A4320	matching_source

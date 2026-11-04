@@ -34295,7 +34295,8 @@ glabel func_800A2FF4
 /* A3D68 800A3168 03E00008 */  jr         $ra
 /* A3D6C 800A316C 00000000 */   nop
 
-glabel func_800A3170
+.section .text.replaced_A3D70, "ax"
+glabel func_800A3170_asm
 /* A3D70 800A3170 27BDFFF8 */  addiu      $sp, $sp, -8
 /* A3D74 800A3174 3C0E802E */  lui        $t6, %hi(D_802E2C10)
 /* A3D78 800A3178 25CE2C10 */  addiu      $t6, $t6, %lo(D_802E2C10)
@@ -34361,6 +34362,7 @@ glabel func_800A3170
 /* A3E58 800A3258 03E00008 */  jr         $ra
 /* A3E5C 800A325C 27BD0008 */   addiu     $sp, $sp, 8
 
+.section .text.after_A3D70, "ax"
 glabel func_800A3260
 /* A3E60 800A3260 27BDFFA8 */  addiu      $sp, $sp, -0x58
 /* A3E64 800A3264 AFBF0014 */  sw         $ra, 0x14($sp)
