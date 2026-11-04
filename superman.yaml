@@ -59,7 +59,7 @@ segments:
       - [0xC1610, asm]
       - [0xC1750, asm]
       - [0xC1D70, asm]
-      - [0xC36B0, asm]
+      - [0xC36B0, c]
       - [0xC3D60, asm]
       - [0xC3DE0, asm]
       - [0xC4070, asm]

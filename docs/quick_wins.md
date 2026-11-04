@@ -16,6 +16,7 @@ conversions. Current candidates, in order:
 | `0x0A4F28` | `func_800A4328` | empty callback | matching C |
 | `0x0C0CB0` | `func_800C00B0` | empty callback | matching C |
 | `0x0C0CB8` | `func_800C00B8` | empty callback | matching C |
+| `0x0C36B0` | `func_800C2AB0` | set a synthesizer voice priority | matching C (`-O2`) |
 | `0x0C8BD0` | `func_800C7FD0` | pop and unlink the runtime-list head | matching C |
 | `0x0D3BA0` | `func_800D2FA0` | read the SP status register | matching C |
 | `0x0D3B90` | `func_800D2F90` | write the SP status register | matching C |
