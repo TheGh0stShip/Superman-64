@@ -23,7 +23,7 @@ segments:
       - [0x1DA0, asm]
       - [0x3050, asm]
       - [0x3A80, asm]
-      - [0x4CA0, asm]
+      - [0x4CA0, c]
       - [0x4D60, asm]
       - [0x5420, asm]
       - [0x5A10, asm]
