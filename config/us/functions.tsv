@@ -148,7 +148,7 @@
 0x18D04	0x118	0x80018104	func_80018104	retail_disassembly
 0x18E1C	0x2C	0x8001821C	func_8001821C	retail_disassembly
 0x18E48	0x238	0x80018248	func_80018248	retail_disassembly
-0x19080	0xB0	0x80018480	func_80018480	retail_disassembly
+0x19080	0xB0	0x80018480	func_80018480	matching_source
 0x19130	0x1390	0x80018530	func_80018530	retail_disassembly
 0x1A4C0	0x14C	0x800198C0	func_800198C0	retail_disassembly
 0x1A60C	0x19C	0x80019A0C	func_80019A0C	retail_disassembly

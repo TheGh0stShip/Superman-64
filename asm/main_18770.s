@@ -628,7 +628,8 @@ glabel func_80018248
 /* 19078 80018478 03E00008 */  jr         $ra
 /* 1907C 8001847C 00000000 */   nop
 
-glabel func_80018480
+.section .text.replaced_19080, "ax"
+glabel func_80018480_asm
 /* 19080 80018480 27BDFFF8 */  addiu      $sp, $sp, -8
 /* 19084 80018484 00057880 */  sll        $t7, $a1, 2
 /* 19088 80018488 01E57823 */  subu       $t7, $t7, $a1
@@ -675,6 +676,7 @@ glabel func_80018480
 /* 19128 80018528 03E00008 */  jr         $ra
 /* 1912C 8001852C 27BD0008 */   addiu     $sp, $sp, 8
 
+.section .text.after_19080, "ax"
 glabel func_80018530
 /* 19130 80018530 27BDFFC8 */  addiu      $sp, $sp, -0x38
 /* 19134 80018534 AFBF0024 */  sw         $ra, 0x24($sp)
