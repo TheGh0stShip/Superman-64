@@ -194,3 +194,82 @@ This survey records 150 distinct public-source investigations performed for the 
 ## Evidence rules
 
 Public search results can suggest names, data formats, compiler patterns, or binary versions. They do not establish authorship or matching status. A reconstructed function is credited only after its object bytes match the retail ROM and the full ROM build passes. Handwritten assembly retains provenance rather than being presented as reconstructed C.
+
+## Branching N64 ecosystem expansion: 157 rounds
+
+A second campaign expanded the survey by 157 numbered investigations. It did
+not stop at project landing pages: each useful result was followed through
+source paths, version branches, forks, mirrors, symbol lists, build flags,
+object ordering, commit history, and independent comparison projects before
+being retained. No candidate from this campaign was credited as matching code.
+
+The broadest catalogues located during this pass enumerate 97 N64
+decompilation entries on [decomps.net](https://decomps.net/?f=1&platform=n64&type=decompilation),
+74 on the [Recomp project catalogue](https://recompsoftware.com/decompiled-games-list/),
+and the independently maintained [N64 development directory](https://n64.dev/).
+Their combined project and mirror set was checked across GitHub organizations,
+GitLab originals and mirrors, Codeberg, repository search indexes, archival
+snapshots, preservation databases, historical forums, and public prototype
+records. Duplicate ports, abandoned mirrors, and static translations were
+kept distinct from matching source projects.
+
+The resulting comparison corpus covers AeroGauge, Aidyn Chronicles, Animal
+Forest, Banjo-Kazooie, Banjo-Tooie, BattleTanx, BattleTanx: Global Assault,
+Beetle Adventure Racing, Blast Corps, Body Harvest, the Bomberman series,
+Castlevania 64, both Chameleon Twist games, Conker's Bad Fur Day, Dark Rift,
+Diddy Kong Racing, Dinosaur Planet, Donkey Kong 64, Doom 64, Doraemon,
+Dr. Mario 64, both N64 Duke Nukem projects, F-Zero X and its expansion,
+Gauntlet Legends, Gex 64, Glover, GoldenEye 007, Harvest Moon 64, Hybrid
+Heaven, Jet Force Gemini, Kirby 64, Lego Racers, Mario Golf, Mario Kart 64,
+all three Mario Party games, Mario Tennis, Mischief Makers, Mystical Ninja,
+Neon Genesis Evangelion, Onegai Monsters, Paper Mario, Perfect Dark,
+Pilotwings 64, Pokemon Puzzle League, Pokemon Snap, both Pokemon Stadium
+games, Quest 64, Rocket, Shadowgate 64, both Snowboard Kids games, Space
+Station Silicon Valley, Star Fox 64, Shadows of the Empire, Super Mario 64,
+Super Smash Bros., The New Tetris, the Turok projects, Virtual Pool 64,
+Virtual Pro Wrestling 2, Wave Race 64, Wonder Project J2, Yoshi's Story, and
+the other public entries indexed by those catalogues. Titus sibling-title
+searches additionally covered Roadsters, Blues Brothers 2000, Virtual Chess
+64, and Automobili Lamborghini; no matching source project for those titles
+was established.
+
+### Groomed technical findings
+
+- Superman's controller-pak objects consistently identify the pre-J 2.0I
+  source family. Independent projects using later library revisions produce
+  different object sizes, providing useful negative evidence rather than only
+  coincidental symbol matches.
+- `pfschecker.c` compiled for VERSION_I with IDO `-O1` produces the exact
+  three-body layout `0x6C4, 0x1B4, 0x1E8`, totaling `0xA60`. The remaining
+  retail range `0xD1610-0xD206F` has the same three boundaries. This is a
+  high-priority candidate for a future byte-level integration test, not yet
+  matching credit.
+- `pfsinitpak.c` under the same configuration produces a `0x294` public body
+  in a `0x2A0` text object. The retail body at `0xD1130` is also `0x294`, with
+  twelve following non-function bytes. It remains a candidate pending full
+  relocation and ROM verification.
+- Other compiled VERSION_I PFS layouts now provide mechanical search keys:
+  `contpfs` is `0xD60`; `pfsreadwritefile` is `0x520`;
+  `pfsallocatefile` is `0x7B0`; `pfsfreeblocks` is `0x150`;
+  `pfssearchfile` is `0x1C0`; and `pfsdeletefile` is `0x620`.
+- Relocation-masked object fingerprints are the best scalable next step.
+  Jump targets and linker-resolved high/low immediates should be masked while
+  PC-relative branches remain significant. This is stronger than size-only
+  matching and can be run locally across the catalogued source corpus.
+- The September 1998 prototype remains a valuable second binary oracle for
+  identifying stable engine objects, but it cannot establish retail source
+  provenance by itself.
+- Public static-translation configurations can corroborate addresses,
+  signatures, and behavior. They are not accepted as original source or as
+  proof of matching names.
+
+### Expanded primary references
+
+- [decompals ultralib](https://github.com/decompals/ultralib)
+- [N64 OS version and patch research](https://github.com/akopetsch/n64os-info)
+- [n64sym library coverage](https://github.com/shygoo/n64sym/blob/master/included-libs.md)
+- [n64decomp organization](https://github.com/n64decomp)
+- [Hybrid Heaven object fingerprinting precedent](https://github.com/ogdanimal/HybridHeaven-Decomp)
+- [Superman retail configuration cross-check](https://github.com/gcsmith/Superman64Recomp)
+- [September 1998 prototype record](https://hiddenpalace.org/w/index.php?title=Superman_64_%28Sep_6%2C_1998_prototype%29)
+- [Titus archive holdings](https://gameinformer.com/2019/05/31/as-superman-64-turns-20-we-dig-up-some-relics-from-the-past)
