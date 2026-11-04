@@ -1058,7 +1058,8 @@ glabel func_80003C84
 /* 4948 80003D48 03E00008 */  jr         $ra
 /* 494C 80003D4C 00000000 */   nop
 
-glabel func_80003D50
+.section .text.replaced_4A40, "ax"
+glabel func_80003D50_asm
 /* 4950 80003D50 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 4954 80003D54 AFBF0014 */  sw         $ra, 0x14($sp)
 /* 4958 80003D58 AFA40018 */  sw         $a0, 0x18($sp)
@@ -1090,7 +1091,7 @@ glabel func_80003D50
 /* 49BC 80003DBC 03E00008 */  jr         $ra
 /* 49C0 80003DC0 00000000 */   nop
 
-glabel func_80003DC4
+glabel func_80003DC4_asm
 /* 49C4 80003DC4 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 49C8 80003DC8 AFBF0014 */  sw         $ra, 0x14($sp)
 /* 49CC 80003DCC AFA40018 */  sw         $a0, 0x18($sp)
@@ -1124,6 +1125,7 @@ glabel func_80003DC4
 /* 4A38 80003E38 03E00008 */  jr         $ra
 /* 4A3C 80003E3C 00000000 */   nop
 
+.section .text.after_4A40, "ax"
 glabel func_80003E40
 /* 4A40 80003E40 3C0E8018 */  lui        $t6, %hi(D_8017A320)
 /* 4A44 80003E44 85CEA320 */  lh         $t6, %lo(D_8017A320)($t6)
