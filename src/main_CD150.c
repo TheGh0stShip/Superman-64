@@ -41,7 +41,7 @@ static void func_800CC550(PrintState *px, va_list *pap, char code, char *ac);
 
 int func_800CCBC0(void* pfn(void*,const char*,size_t), void *arg, const char *fmt, va_list ap) {
     PrintState x;
-    
+
     x.nchar = 0;
 
     while (1) {
@@ -56,15 +56,15 @@ int func_800CCBC0(void* pfn(void*,const char*,size_t), void *arg, const char *fm
         for (c = *s; c != 0 && c != '%';) {
             c = *++s;
         }
-        
+
         PUT(fmt, s - fmt);
-        
+
         if (c == 0) {
             return x.nchar;
         }
-        
+
         fmt = ++s;
-        
+
         for (x.flags = 0; (t = func_800CD4C4(fchar, *s)) != NULL; s++) {
             x.flags |= fbit[t - fchar];
         }
@@ -77,7 +77,7 @@ int func_800CCBC0(void* pfn(void*,const char*,size_t), void *arg, const char *fm
                 x.flags |= FLAGS_MINUS;
             }
             s++;
-        } else 
+        } else
             ATOI(x.width, s);
 
 
@@ -86,15 +86,15 @@ int func_800CCBC0(void* pfn(void*,const char*,size_t), void *arg, const char *fm
         } else if (*++s == '*') {
             x.prec = va_arg(ap, int);
             ++s;
-        } else 
-            for (x.prec = 0; isdigit(*s); s++) { 
-                if (x.prec < 999) 
-                    x.prec = x.prec * 10 + *s - '0'; 
+        } else
+            for (x.prec = 0; isdigit(*s); s++) {
+                if (x.prec < 999)
+                    x.prec = x.prec * 10 + *s - '0';
             }
 
 
         x.qual = func_800CD4C4("hlL", *s) ? *s++ : '\0';
-        
+
         if (x.qual == 'l' && *s == 'l') {
             x.qual = 'L';
             ++s;
@@ -237,11 +237,11 @@ static void func_800CC550(PrintState *px, va_list *pap, char code, char *ac) {
         case 's':
             px->s = va_arg(*pap, char *);
             px->n1 = func_800CD49C(px->s);
-            
+
             if (px->prec >= 0 && px->prec < px->n1) {
                 px->n1 = px->prec;
             }
-            
+
             break;
         case '%':
             ac[px->n0++] = '%';
