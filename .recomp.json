@@ -1,0 +1,41 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Superman: The New Superman Adventures",
+  "system": "N64",
+  "type": "decomp",
+  "original": {
+    "region": "USA",
+    "revision": "Rev 0",
+    "serial": "NSPE",
+    "sha1": "c271db752610c9581e1ba1e9125ea8ecdb56f74f"
+  },
+  "project": "Superman 64 matching decompilation",
+  "status": "in-progress",
+  "toolchain": [
+    "IDO",
+    "Objdiff"
+  ],
+  "approach": "Byte-matching C reconstruction with a verified full-ROM build and reviewed progress manifests.",
+  "notes": "Tracker credit is limited to reviewed C functions. Inherited generated assembly is excluded; established handwritten assembly will use a separate provenance-backed manifest.",
+  "maintainers": [
+    {
+      "name": "TheGh0stShip",
+      "link": "https://github.com/TheGh0stShip"
+    }
+  ],
+  "links": [
+    {
+      "label": "Repository",
+      "url": "https://github.com/TheGh0stShip/Superman-64"
+    },
+    {
+      "label": "ByteMatch progress",
+      "url": "https://bytematch.dev/TheGh0stShip/Superman-64"
+    }
+  ],
+  "tags": [
+    "matching",
+    "MIPS",
+    "byte-exact"
+  ]
+}
