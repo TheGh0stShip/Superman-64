@@ -12,6 +12,7 @@ conversions. Current candidates, in order:
 | `0x0050C0` | `func_800044C0` | convert an ASCII string to uppercase in place | matching C (`-O1`) |
 | `0x05AE70` | three vector helpers | dot product, construction, and copy | matching C (`-O2 -g3`) |
 | `0x0848E0` | `func_80083CE0` | store six floating-point configuration values | matching C (`-O2 -g3`) |
+| `0x090710` | three threshold handlers | detect exceeded record thresholds and flag linked state | matching C (`-O1 -g3`) |
 | `0x0C8AC0` | two runtime scaling helpers | empty callback and fixed-point scale/round/alignment | matching C (`-O2`) |
 | `0x0C8B20` | three linked-list helpers | move nodes between runtime lists and prepend a node | matching C (`-O2`) |
 | `0x0A4F20` | `func_800A4320` | empty callback | matching C |
