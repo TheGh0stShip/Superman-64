@@ -5,13 +5,13 @@
 .set noreorder # don't insert nops after branches
 .set gp=64     # allow use of 64-bit general purpose registers
 
-.section .text, "ax"
+.section .text.replaced_C8AC0, "ax"
 
-glabel func_800C7EC0
+glabel func_800C7EC0_asm
 /* C8AC0 800C7EC0 03E00008 */  jr         $ra
 /* C8AC4 800C7EC4 00000000 */   nop
 
-glabel func_800C7EC8
+glabel func_800C7EC8_asm
 /* C8AC8 800C7EC8 8C8E0044 */  lw         $t6, 0x44($a0)
 /* C8ACC 800C7ECC 44852000 */  mtc1       $a1, $f4
 /* C8AD0 800C7ED0 3C01800E */  lui        $at, %hi(D_800DFC10)
@@ -34,6 +34,8 @@ glabel func_800C7EC8
 /* C8B14 800C7F14 0041C024 */  and        $t8, $v0, $at
 /* C8B18 800C7F18 03E00008 */  jr         $ra
 /* C8B1C 800C7F1C 03001025 */   or        $v0, $t8, $zero
+
+.section .text.after_C8AC0, "ax"
 
 glabel func_800C7F20
 /* C8B20 800C7F20 27BDFFE8 */  addiu      $sp, $sp, -0x18
