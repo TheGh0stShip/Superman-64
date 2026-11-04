@@ -4559,7 +4559,8 @@ glabel func_800176C4
 /* 18388 80017788 03E00008 */  jr         $ra
 /* 1838C 8001778C 00000000 */   nop
 
-glabel func_80017790
+.section .text.replaced_18390, "ax"
+glabel func_80017790_asm
 /* 18390 80017790 27BDFFE0 */  addiu      $sp, $sp, -0x20
 /* 18394 80017794 AFBF0014 */  sw         $ra, 0x14($sp)
 /* 18398 80017798 AFA40020 */  sw         $a0, 0x20($sp)
@@ -4609,6 +4610,7 @@ glabel func_80017790
 /* 18448 80017848 03E00008 */  jr         $ra
 /* 1844C 8001784C 00000000 */   nop
 
+.section .text.after_18390, "ax"
 glabel func_80017850
 /* 18450 80017850 27BDFFB8 */  addiu      $sp, $sp, -0x48
 /* 18454 80017854 AFBF0024 */  sw         $ra, 0x24($sp)
