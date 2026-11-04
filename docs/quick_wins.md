@@ -13,6 +13,7 @@ conversions. Current candidates, in order:
 | `0x0050C0` | `func_800044C0` | convert an ASCII string to uppercase in place | matching C (`-O1`) |
 | `0x05AE70` | three vector helpers | dot product, construction, and copy | matching C (`-O2 -g3`) |
 | `0x05B650` | `func_8005AA50` | multiply alternating descending integers as a float | matching C (`-O1 -g3`) |
+| `0x00B5C0` | `func_8000A9C0` | flag a cell in the shared 31-column grid | matching C (`-O1 -g3`) |
 | `0x0848E0` | `func_80083CE0` | store six floating-point configuration values | matching C (`-O2 -g3`) |
 | `0x090710` | three threshold handlers | detect exceeded record thresholds and flag linked state | matching C (`-O1 -g3`) |
 | `0x094770` | two event-state helpers | poll, clear, and configure the pending event | matching C (`-O1 -g3`) |
