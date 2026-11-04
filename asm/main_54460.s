@@ -7001,7 +7001,9 @@ glabel func_8005A208
 /* 5AE68 8005A268 03E00008 */  jr         $ra
 /* 5AE6C 8005A26C 27BD0010 */   addiu     $sp, $sp, 0x10
 
-glabel func_8005A270
+.section .text.replaced_5AE70, "ax"
+
+glabel func_8005A270_asm
 /* 5AE70 8005A270 AFA40000 */  sw         $a0, ($sp)
 /* 5AE74 8005A274 AFA50004 */  sw         $a1, 4($sp)
 /* 5AE78 8005A278 AFA60008 */  sw         $a2, 8($sp)
@@ -7020,7 +7022,7 @@ glabel func_8005A270
 /* 5AEAC 8005A2AC 03E00008 */  jr         $ra
 /* 5AEB0 8005A2B0 00000000 */   nop
 
-glabel func_8005A2B4
+glabel func_8005A2B4_asm
 /* 5AEB4 8005A2B4 AFA60008 */  sw         $a2, 8($sp)
 /* 5AEB8 8005A2B8 E4EC0000 */  swc1       $f12, ($a3)
 /* 5AEBC 8005A2BC E4EE0004 */  swc1       $f14, 4($a3)
@@ -7029,7 +7031,7 @@ glabel func_8005A2B4
 /* 5AEC8 8005A2C8 03E00008 */  jr         $ra
 /* 5AECC 8005A2CC 00000000 */   nop
 
-glabel func_8005A2D0
+glabel func_8005A2D0_asm
 /* 5AED0 8005A2D0 C4840000 */  lwc1       $f4, ($a0)
 /* 5AED4 8005A2D4 E4A40000 */  swc1       $f4, ($a1)
 /* 5AED8 8005A2D8 C4860004 */  lwc1       $f6, 4($a0)
@@ -7038,6 +7040,8 @@ glabel func_8005A2D0
 /* 5AEE4 8005A2E4 E4A80008 */  swc1       $f8, 8($a1)
 /* 5AEE8 8005A2E8 03E00008 */  jr         $ra
 /* 5AEEC 8005A2EC 00000000 */   nop
+
+.section .text.after_5AE70, "ax"
 
 glabel func_8005A2F0
 /* 5AEF0 8005A2F0 AFA40000 */  sw         $a0, ($sp)
