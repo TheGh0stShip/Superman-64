@@ -347,7 +347,7 @@ SECTIONS
         main_CE310_s = .;
         BUILD_DIR/src/main_CE310.o(.text);
         main_CE470_s = .;
-        BUILD_DIR/asm/main_CE470.o(.text);
+        BUILD_DIR/src/main_CE470.o(.text);
         main_CE6D0_s = .;
         BUILD_DIR/src/main_CE6D0.o(.text);
         main_CE700_s = .;

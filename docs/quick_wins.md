@@ -149,11 +149,11 @@ conversions. Current candidates, in order:
 | `0x0CE310` | `func_800CD710` | update an audio-save filter parameter | matching C (`-O2`) |
 | `0x0CE344` | `func_800CD744` | emit audio-save commands | matching C (`-O2`) |
 | `0x0CE3D0` | `func_800CD7D0` | remove a player from the synthesizer | matching C (`-O2`) |
-| `0x0CDE90` | `func_800CD290` | initialize the pre-J 64DD PI handle | canonical C identified; data split pending |
+| `0x0CDE90` | `func_800CD290` | initialize the pre-J 64DD PI handle | matching C (`-O1`) |
 | `0x0CDF90` | `func_800CD390` | empty four-argument callback | matching C (`-O1`) |
 | `0x0CDFAC` | `func_800CD3AC` | empty four-argument callback | matching C (`-O1`) |
 | `0x0CA710` | `func_800C9B10` | pull commands from the auxiliary audio bus | matching C (`-O3`) |
-| `0x0CE470` | `func_800CD870` | initialize a controller motor | canonical C identified; data split pending |
+| `0x0CE470` | `func_800CD870` | read and validate the controller-pak identifier | matching C (`-O1`) |
 | `0x0BEAA0` | `func_800BDEA0` | send a kernel message | matching C (`-O1`) |
 | `0x0BED70` | `func_800BE170` | receive a kernel message | matching C (`-O1`) |
 | `0x0CE730` | `func_800CDB30` | prepend a kernel message | matching C (`-O1`) |

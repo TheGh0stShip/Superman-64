@@ -284,8 +284,9 @@ The 64DD handle initializer at `0x0CDE90` follows
 `0fcb8c363c4dd75b7d50dfd96aa123dd4d5a0b47`, reconstructed against the same
 decompals/ultralib commit. Its domain-2 timing values, PI register writes,
 transfer-info clear, interrupt-protected PI-table insertion, and published
-disk handle identify the pre-J `osLeoDiskInit`. It remains assembly pending
-the handle's initialized-data split and exact object reconstruction.
+disk handle identify the pre-J `osLeoDiskInit`. Defining the handle in its
+original translation unit while pinning its audited address reproduces the
+complete retail object.
 
 The two empty callbacks immediately following that initializer at `0x0CDF90`
 and `0x0CDFAC` were reconstructed from the verified retail disassembly. Each
@@ -299,12 +300,11 @@ The auxiliary audio-bus pull routine at `0x0CA710` follows
 source-filter traversal, five-argument callback ABI, and returned command
 cursor compile byte-exactly with IDO `-O3`.
 
-The controller-motor initializer at `0x0CE470` follows
-`src/libultra/os_motor_init.c` from the same Rugrats64 commit. Its PFS
-queue/channel setup, bank probe and retry flow, 32-byte motor patterns, PIF
-write-request construction, and per-channel packet cache identify
-`osMotorInit`. The unit remains assembly pending reconstruction of its shared
-PIF packet and channel-cache data ownership.
+The controller-pak identifier routine at `0x0CE470` follows pre-J `__osGetId`
+in `src/io/contpfs.c` from decompals/ultralib commit
+`e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. Its bank selection, identifier
+checksum and repair flow, 32-byte copy, filesystem-layout derivation, and label
+read reproduce the complete retail function and its trailing alignment.
 
 The message-send and message-receive routines at `0x0BEAA0` and `0x0BED70`
 follow `src/os/sendmesg.c` and `src/os/recvmesg.c` from the same
