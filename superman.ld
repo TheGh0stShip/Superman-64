@@ -39,6 +39,8 @@ D_80146C74 = 0x80146C74;
 
 SECTIONS
 {
+    __ll_mul = 0x800C3638;
+    __ull_div = 0x800C3538;
     SPLAT_BEGIN_SEG(header, 0x0, 0x0, SUBALIGN(16))
         header_s = .;
         BUILD_DIR/asm/header.o(.data);
@@ -214,7 +216,7 @@ SECTIONS
         main_C3D60_s = .;
         BUILD_DIR/asm/main_C3D60.o(.text);
         main_C3DE0_s = .;
-        BUILD_DIR/asm/main_C3DE0.o(.text);
+        BUILD_DIR/src/main_C3DE0.o(.text);
         main_C4070_s = .;
         BUILD_DIR/src/main_C4070.o(.text);
         main_C40D0_s = .;
@@ -475,6 +477,14 @@ SECTIONS
         bin_D49B0_bin = .;
         BUILD_DIR/bin/bin_D49B0.o(.data);
     SPLAT_END_SEG(data_D49B0, 0x800000)
+    .libultra_initialize_data 0x800DA0B0 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_C3DE0.o(.data);
+    }
+    .libultra_initialize_bss 0x80145490 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_C3DE0.o(.bss);
+    }
     /DISCARD/ :
     {
         *(*);

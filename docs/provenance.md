@@ -437,8 +437,10 @@ The system bootstrap at `0x0C3DE0` follows
 `e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. Its status-register setup,
 PIF handshake, exception-preamble installation, cache synchronization, TLB
 initialization, reset-buffer clearing, and video-clock selection identify
-`osInitialize`. It remains provenance-backed assembly because the exception
-preamble copy and SDK-owned static layout must be reconstructed together.
+`osInitialize` and compile byte-exactly with IDO `-O1`. Its canonical clock,
+video-clock, shutdown, interrupt-mask, and final-ROM globals are visible to
+the compiler through non-load sections at their retail RAM addresses; the
+inventoried raw data block remains the sole owner of their ROM bytes.
 
 The ten 64-bit helpers at `0x0C40D0-0x0C438F` follow
 `src/libultra/ll.c` from BattleTanx commit

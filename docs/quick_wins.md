@@ -182,7 +182,7 @@ conversions. Current candidates, in order:
 | `0x0C36F8` | `func_800C2AF8` | return the current standard MIDI sequence tick | matching C (`-O1`) |
 | `0x0C3CE0` | `func_800C30E0` | translate a virtual address to a physical address | matching C (`-O1`) |
 | `0x0C36C0` | standard MIDI sequence object | parse events, markers, deltas, and headers | matching C (`-O3`) |
-| `0x0C3DE0` | `func_800C31E0` | initialize the operating-system hardware state | canonical `osInitialize`; provenance-backed assembly |
+| `0x0C3DE0` | `func_800C31E0` | initialize the operating-system hardware state | matching C (`-O1`) |
 | `0x0C40D0` | ten 64-bit compiler helpers | shifts, division, remainder, multiplication | canonical `ll.c`; provenance-backed assembly |
 | `0x0C44B0` | `func_800C38B0` | submit a type-17 runtime event | matching C (`-O2`) |
 | `0x0C4710` | `func_800C3B10` | build and convert a fixed-point perspective matrix | matching C (`-O3`) |
