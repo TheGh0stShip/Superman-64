@@ -207,7 +207,7 @@
 0x2B134	0x2C4	0x8002A534	func_8002A534	retail_disassembly
 0x2B3F8	0x1F8	0x8002A7F8	func_8002A7F8	retail_disassembly
 0x2B5F0	0x420	0x8002A9F0	func_8002A9F0	retail_disassembly
-0x2BA10	0x100	0x8002AE10	func_8002AE10	retail_disassembly
+0x2BA10	0x100	0x8002AE10	func_8002AE10	matching_source
 0x2BB10	0x450	0x8002AF10	func_8002AF10	retail_disassembly
 0x2BF60	0x238	0x8002B360	func_8002B360	retail_disassembly
 0x2C198	0x1B0	0x8002B598	func_8002B598	retail_disassembly
