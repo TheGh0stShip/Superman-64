@@ -116,6 +116,8 @@ SECTIONS
         BUILD_DIR/src/main_BEF70.o(.text);
         main_BF010_s = .;
         BUILD_DIR/asm/main_BF010.o(.text);
+        BUILD_DIR/src/main_BFAE0.o(.text);
+        BUILD_DIR/asm/main_BF010.o(.text.after_BFAE0);
         main_BFC30_s = .;
         BUILD_DIR/src/main_BFC30.o(.text);
         main_BFC70_s = .;

@@ -749,6 +749,8 @@ glabel func_800BED44
 /* BFAD4 800BEED4 00002025 */   or        $a0, $zero, $zero
 /* BFAD8 800BEED8 00000000 */  nop
 /* BFADC 800BEEDC 00000000 */  nop
+.section .text.replaced_BFAE0, "ax"
+
 /* BFAE0 800BEEE0 00803025 */  or         $a2, $a0, $zero
 /* BFAE4 800BEEE4 8CC70000 */  lw         $a3, ($a2)
 /* BFAE8 800BEEE8 27BDFFF8 */  addiu      $sp, $sp, -8
@@ -768,6 +770,8 @@ glabel func_800BED44
 .L800BEF18:
 /* BFB18 800BEF18 03E00008 */  jr         $ra
 /* BFB1C 800BEF1C 27BD0008 */   addiu     $sp, $sp, 8
+
+.section .text.after_BFAE0, "ax"
 
 glabel func_800BEF20
 /* BFB20 800BEF20 27BDFFC8 */  addiu      $sp, $sp, -0x38

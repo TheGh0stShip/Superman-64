@@ -723,7 +723,7 @@
 0xBF8FC	0x48	0x800BECFC	func_800BECFC	retail_disassembly
 0xBF944	0x10	0x800BED44	func_800BED44	retail_disassembly
 0xBF954	0x17C	0x800BED54	func_800BED54	retail_disassembly
-0xBFAE0	0x40	0x800BEEE0	func_800BEEE0	retail_disassembly
+0xBFAE0	0x40	0x800BEEE0	func_800BEEE0	matching_source
 0xBFB20	0x104	0x800BEF20	func_800BEF20	retail_disassembly
 0xBFC30	0x34	0x800BF030	func_800BF030	matching_source
 0xBFC70	0x6A4	0x800BF070	func_800BF070	retail_disassembly
