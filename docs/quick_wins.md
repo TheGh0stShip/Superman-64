@@ -190,7 +190,7 @@ conversions. Current candidates, in order:
 | `0x0C5040` | `func_800C4440` | build a floating-point identity matrix | matching C (`-O2`) |
 | `0x0C50C8` | `func_800C44C8` | build a fixed-point identity matrix | matching C (`-O2`) |
 | `0x0C50F8` | `func_800C44F8` | convert a fixed-point matrix to floating point | matching C (`-O2`) |
-| `0x0C4F40` | `func_800C4340` | convert a floating-point matrix to fixed point | canonical `guMtxF2L`; provenance-backed assembly |
+| `0x0C4F40` | `func_800C4340` | convert a floating-point matrix to fixed point | matching C (`-O2`) |
 | `0x0C67D0` | `func_800C5BD0` | dispatch a type-7 floating-point command | matching C (`-O2`) |
 | `0x0C70F0` | `func_800C64F0` | return the scheduler command queue | matching C (`-O2`) |
 | `0x0C70F8` | `func_800C64F8` | remove a protected scheduler client | matching C (`-O2`) |

@@ -239,7 +239,6 @@ SECTIONS
         main_C4A20_s = .;
         BUILD_DIR/asm/main_C4A20.o(.text);
         main_C4F40_s = .;
-        BUILD_DIR/asm/main_C4F40.o(.text);
         BUILD_DIR/src/main_C5040.o(.text);
         main_C51B0_s = .;
         BUILD_DIR/src/main_C51B0.o(.text);

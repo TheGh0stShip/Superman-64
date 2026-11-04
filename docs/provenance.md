@@ -550,7 +550,7 @@ and `guMtxL2F` are independently represented by BattleTanx commits
 `06610320ff7caaaaf4ac4816cf1ca90d0466d824`,
 `2e4c6d2afaddcf670f90c2c4f94b65508cd3b2d2`, and
 `4c59c0296a955ecc07b4daee14b90c3690f318b6`. Compiling the three routines
-together preserves their unaligned internal boundaries and matches the ROM
-byte-for-byte with IDO `-O2`. The preceding `guMtxF2L` conversion remains
-provenance-backed assembly because its packed conversion loop uses the
-retail optimized instruction schedule.
+together with the preceding `guMtxF2L` conversion preserves their unaligned
+internal boundaries and matches the complete object byte-for-byte with IDO
+`-O2`. The conversion scales each float to 16.16 fixed point and packs paired
+integer and fractional halves into the retail matrix layout.
