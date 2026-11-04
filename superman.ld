@@ -84,6 +84,8 @@ SECTIONS
         BUILD_DIR/asm/main_104D0.o(.text.after_12A4F);
         main_13F20_s = .;
         BUILD_DIR/asm/main_13F20.o(.text);
+        BUILD_DIR/src/main_17F10.o(.text);
+        BUILD_DIR/asm/main_13F20.o(.text.after_17F10);
         main_18770_s = .;
         BUILD_DIR/asm/main_18770.o(.text);
         BUILD_DIR/src/main_19080.o(.text);

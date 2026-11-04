@@ -4249,7 +4249,8 @@ glabel func_8001721C
 /* 17F08 80017308 03E00008 */  jr         $ra
 /* 17F0C 8001730C 00000000 */   nop
 
-glabel func_80017310
+.section .text.replaced_17F10, "ax"
+glabel func_80017310_asm
 /* 17F10 80017310 27BDFFE0 */  addiu      $sp, $sp, -0x20
 /* 17F14 80017314 AFBF0014 */  sw         $ra, 0x14($sp)
 /* 17F18 80017318 AFA60028 */  sw         $a2, 0x28($sp)
@@ -4317,6 +4318,7 @@ glabel func_80017310
 /* 18008 80017408 03E00008 */  jr         $ra
 /* 1800C 8001740C 00000000 */   nop
 
+.section .text.after_17F10, "ax"
 glabel func_80017410
 /* 18010 80017410 27BDFFE0 */  addiu      $sp, $sp, -0x20
 /* 18014 80017414 AFBF0014 */  sw         $ra, 0x14($sp)
