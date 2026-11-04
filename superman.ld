@@ -125,6 +125,8 @@ SECTIONS
         BUILD_DIR/src/main_C0A40.o(.text);
         main_C0A90_s = .;
         BUILD_DIR/asm/main_C0A90.o(.text);
+        BUILD_DIR/src/main_C0CB0.o(.text);
+        BUILD_DIR/asm/main_C0A90.o(.text.after_C0CB0);
         main_C0F00_s = .;
         BUILD_DIR/asm/main_C0F00.o(.text);
         main_C1610_s = .;

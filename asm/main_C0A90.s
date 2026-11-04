@@ -156,13 +156,15 @@ glabel func_800BFFC4
 /* C0CA8 800C00A8 03E00008 */  jr         $ra
 /* C0CAC 800C00AC A1590000 */   sb        $t9, ($t2)
 
-glabel func_800C00B0
+.section .text.replaced_C0CB0, "ax"
+glabel func_800C00B0_asm
 /* C0CB0 800C00B0 03E00008 */  jr         $ra
 /* C0CB4 800C00B4 00000000 */   nop
 
-glabel func_800C00B8
+glabel func_800C00B8_asm
 /* C0CB8 800C00B8 03E00008 */  jr         $ra
 /* C0CBC 800C00BC 00000000 */   nop
+.section .text.after_C0CB0, "ax"
 
 glabel func_800C00C0
 /* C0CC0 800C00C0 908E0003 */  lbu        $t6, 3($a0)
