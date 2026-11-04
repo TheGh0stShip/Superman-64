@@ -6,6 +6,7 @@ conversions. Current candidates, in order:
 | ROM offset | Symbol | Behavior | Status |
 | --- | --- | --- | --- |
 | `0x004CA0` | `func_800040A0` | parse decimal digits backward into an integer | matching C (`-O1 -g3`) |
+| `0x004D60` | six string helpers | copy, bounded copy, concatenate, and compare strings | matching C (`-O1 -g3`) |
 | `0x005070` | `func_80004470` | convert an ASCII string to lowercase in place | matching C (`-O1`) |
 | `0x0050C0` | `func_800044C0` | convert an ASCII string to uppercase in place | matching C (`-O1`) |
 | `0x0A4F20` | `func_800A4320` | empty callback | matching C |

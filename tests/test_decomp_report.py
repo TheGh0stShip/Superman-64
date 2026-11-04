@@ -19,10 +19,10 @@ class DecompReportTests(unittest.TestCase):
         measures = self.report["measures"]
         self.assertEqual(self.report["version"], 2)
         self.assertEqual(measures["total_code"], "875680")
-        self.assertEqual(measures["matched_code"], "16768")
+        self.assertEqual(measures["matched_code"], "17552")
         self.assertEqual(measures["complete_code"], "13264")
         self.assertEqual(measures["total_functions"], 1056)
-        self.assertEqual(measures["matched_functions"], 139)
+        self.assertEqual(measures["matched_functions"], 145)
         self.assertEqual(measures["total_data"], "43344")
         self.assertEqual(measures["matched_data"], "0")
         self.assertEqual(measures["total_units"], 152)
@@ -49,13 +49,13 @@ class DecompReportTests(unittest.TestCase):
         self.assertEqual(sum(int(unit["measures"]["total_code"])
                              for unit in code_units), 866788)
         self.assertEqual(sum(int(unit["measures"]["matched_code"])
-                             for unit in code_units), 16768)
+                             for unit in code_units), 17552)
         self.assertEqual(sum(int(unit["measures"]["complete_code"])
                              for unit in code_units), 13264)
         self.assertEqual(sum(
             int(function["size"]) for function in functions
             if function["fuzzy_match_percent"] == 100.0
-        ), 16260)
+        ), 17044)
         self.assertTrue(all(
             unit["measures"]["matched_code"] == unit["measures"]["total_code"]
             and unit["measures"]["complete_code"] == unit["measures"]["total_code"]

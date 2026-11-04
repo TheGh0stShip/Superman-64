@@ -5,9 +5,9 @@
 .set noreorder # don't insert nops after branches
 .set gp=64     # allow use of 64-bit general purpose registers
 
-.section .text, "ax"
+.section .text.replaced_4D60, "ax"
 
-glabel func_80004160
+glabel func_80004160_asm
 /* 4D60 80004160 27BDFFF0 */  addiu      $sp, $sp, -0x10
 /* 4D64 80004164 AFA4000C */  sw         $a0, 0xc($sp)
 /* 4D68 80004168 80A60000 */  lb         $a2, ($a1)
@@ -28,7 +28,7 @@ glabel func_80004160
 /* 4D9C 8000419C 03E00008 */  jr         $ra
 /* 4DA0 800041A0 27BD0010 */   addiu     $sp, $sp, 0x10
 
-glabel func_800041A4
+glabel func_800041A4_asm
 /* 4DA4 800041A4 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 4DA8 800041A8 AFA40014 */  sw         $a0, 0x14($sp)
 /* 4DAC 800041AC A3A00013 */  sb         $zero, 0x13($sp)
@@ -63,7 +63,7 @@ glabel func_800041A4
 /* 4E14 80004214 03E00008 */  jr         $ra
 /* 4E18 80004218 27BD0018 */   addiu     $sp, $sp, 0x18
 
-glabel func_8000421C
+glabel func_8000421C_asm
 /* 4E1C 8000421C 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* 4E20 80004220 AFA40014 */  sw         $a0, 0x14($sp)
 /* 4E24 80004224 A3A00013 */  sb         $zero, 0x13($sp)
@@ -98,7 +98,7 @@ glabel func_8000421C
 /* 4E8C 8000428C 03E00008 */  jr         $ra
 /* 4E90 80004290 27BD0018 */   addiu     $sp, $sp, 0x18
 
-glabel func_80004294
+glabel func_80004294_asm
 /* 4E94 80004294 27BDFFF0 */  addiu      $sp, $sp, -0x10
 /* 4E98 80004298 AFA4000C */  sw         $a0, 0xc($sp)
 /* 4E9C 8000429C 80860000 */  lb         $a2, ($a0)
@@ -130,7 +130,7 @@ glabel func_80004294
 /* 4EF4 800042F4 03E00008 */  jr         $ra
 /* 4EF8 800042F8 27BD0010 */   addiu     $sp, $sp, 0x10
 
-glabel func_800042FC
+glabel func_800042FC_asm
 /* 4EFC 800042FC 27BDFFF8 */  addiu      $sp, $sp, -8
 /* 4F00 80004300 808E0000 */  lb         $t6, ($a0)
 /* 4F04 80004304 24840001 */  addiu      $a0, $a0, 1
@@ -181,7 +181,7 @@ glabel func_800042FC
 /* 4FA0 800043A0 03E00008 */  jr         $ra
 /* 4FA4 800043A4 27BD0008 */   addiu     $sp, $sp, 8
 
-glabel func_800043A8
+glabel func_800043A8_asm
 /* 4FA8 800043A8 27BDFFF8 */  addiu      $sp, $sp, -8
 /* 4FAC 800043AC 808E0000 */  lb         $t6, ($a0)
 /* 4FB0 800043B0 24840001 */  addiu      $a0, $a0, 1
