@@ -243,6 +243,7 @@ SECTIONS
         BUILD_DIR/asm/main_C59B0.o(.text);
         main_C6490_s = .;
         BUILD_DIR/asm/main_C6490.o(.text);
+        BUILD_DIR/src/main_C6490.o(.text);
         BUILD_DIR/src/main_C6630.o(.text);
         BUILD_DIR/src/main_C6700.o(.text);
         BUILD_DIR/src/main_C67D0.o(.text);

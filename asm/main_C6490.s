@@ -7,7 +7,8 @@
 
 .section .text, "ax"
 
-glabel func_800C5890
+.section .text.replaced_C6490, "ax"
+glabel func_800C5890_asm
 /* C6490 800C5890 27BDFFC0 */  addiu      $sp, $sp, -0x40
 /* C6494 800C5894 AFBF0014 */  sw         $ra, 0x14($sp)
 /* C6498 800C5898 240E0003 */  addiu      $t6, $zero, 3
