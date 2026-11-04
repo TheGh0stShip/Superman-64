@@ -32,6 +32,9 @@ D_800DFEB4 = 0x800DFEB4;
 
 D_801458CC = 0x801458CC;
 D_8014541C = 0x8014541C;
+D_800DB0FC = 0x800DB0FC;
+D_80146C00 = 0x80146C00;
+D_80146C74 = 0x80146C74;
 
 SECTIONS
 {
@@ -324,7 +327,7 @@ SECTIONS
         main_CDE50_s = .;
         BUILD_DIR/src/main_CDE50.o(.text);
         main_CDE90_s = .;
-        BUILD_DIR/asm/main_CDE90.o(.text);
+        BUILD_DIR/src/main_CDE90.o(.text);
         BUILD_DIR/src/main_CDF90.o(.text);
         main_CDFD0_s = .;
         BUILD_DIR/src/main_CDFD0.o(.text);

@@ -226,6 +226,12 @@ It remains assembly until the handle currently retained in the monolithic data
 segment is split into the same translation unit, which is required to reproduce
 the retail IDO register schedule.
 
+The 64DD handle initializer at `0x0CDE90` follows the pre-J implementation of
+`osLeoDiskInit` in `src/io/leodiskinit.c` from decompals/ultralib commit
+`e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. Its domain-two handle fields,
+PI timing-register writes, transfer-info clear, interrupt-protected handle-list
+insertion, and disk-handle publication reproduce the complete retail function.
+
 Four cache-maintenance units are handwritten libultra assembly from
 decompals/ultralib commit `e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`.
 The routine at `0x0CE140` follows `src/os/invalicache.s`, `0x0CE1C0` follows

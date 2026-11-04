@@ -66,6 +66,7 @@ conversions. Current candidates, in order:
 | `0x0C6630` | `func_800C5A30` | initialize the secondary packed-record array and append its sentinel | matching C (`-O1`) |
 | `0x0C6700` | `func_800C5B00` | decode the secondary packed-record array and accumulate its valid-entry mask | matching C (`-O1`) |
 | `0x0CDE50` | `func_800CD250` | initialize an aligned buffer | matching C |
+| `0x0CDE90` | `func_800CD290` | initialize the 64DD PI handle and timing registers | matching C (`-O1`) |
 | `0x0CE070` | three libc string helpers | copy/length/search | matching C |
 | `0x0CF940` | `func_800CED40` | copy a byte range | matching C |
 | `0x0D3BE0` | `func_800D2FE0` | allocate from an audio heap | matching C |
