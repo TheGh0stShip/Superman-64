@@ -70,7 +70,7 @@ conversions. Current candidates, in order:
 | `0x0CEBF0` | `func_800CDFF0` | start an extended PI raw DMA transfer | matching C (`-O1`) |
 | `0x0D0860` | `func_800CFC60` | compute single-precision cosine | matching C (`-O3`) |
 | `0x0CF9C0` | `func_800CEDC0` | overlap-safe libultra block copy | provenance-backed assembly |
-| `0x0CD080` | `func_800CC480` | libultra pseudorandom-number generator | canonical C identified; data split pending |
+| `0x0CD080` | `func_800CC480` | libultra pseudorandom-number generator | canonical C and seed identified; compiler schedule pending |
 | `0x0C84B0` | `osGetCount` | read the coprocessor count register | provenance-backed assembly |
 | `0x0CCDA0` | `sqrtf` | single-precision square root | provenance-backed assembly |
 | `0x0CF930` | `__osSetCompare` | write the coprocessor compare register | provenance-backed assembly |
