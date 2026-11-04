@@ -155,10 +155,13 @@ inventory:
 report:
 	$(PYTHON) tools/generate_decomp_report.py
 
+verify-history:
+	$(PYTHON) tools/verify_history.py
+
 hexedit:
 	wine ~/.wine/drive_c/Program\ Files/HxD/HxD.exe baserom.z64
 
-.PHONY: all clean default diff test inventory report distclean
+.PHONY: all clean default diff test inventory report verify-history distclean
 
 # Remove built-in rules, to improve performance
 MAKEFLAGS += --no-builtin-rules
