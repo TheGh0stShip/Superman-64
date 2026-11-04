@@ -224,7 +224,7 @@ SECTIONS
         BUILD_DIR/asm/main_C4490.o(.text);
         main_C44B0_s = .;
         BUILD_DIR/src/main_C44B0.o(.text);
-        BUILD_DIR/asm/main_C44B0.o(.text);
+        BUILD_DIR/src/main_C44E0.o(.text);
         BUILD_DIR/src/main_C4710.o(.text);
         main_C4770_s = .;
         BUILD_DIR/src/main_C4770.o(.text);

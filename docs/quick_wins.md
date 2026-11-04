@@ -190,7 +190,7 @@ conversions. Current candidates, in order:
 | `0x0C40D0` | ten 64-bit compiler helpers | shifts, division, remainder, multiplication | canonical `ll.c`; provenance-backed assembly |
 | `0x0C44B0` | `func_800C38B0` | submit a type-17 runtime event | matching C (`-O2`) |
 | `0x0C4710` | `func_800C3B10` | build and convert a fixed-point perspective matrix | matching C (`-O3`) |
-| `0x0C44E0` | `func_800C38E0` | build a floating-point perspective matrix | canonical `guPerspectiveF`; compiler schedule pending |
+| `0x0C44E0` | `func_800C38E0` | build a floating-point perspective matrix | matching C (`-O2`) |
 | `0x0C5040` | `func_800C4440` | build a floating-point identity matrix | matching C (`-O2`) |
 | `0x0C50C8` | `func_800C44C8` | build a fixed-point identity matrix | matching C (`-O2`) |
 | `0x0C50F8` | `func_800C44F8` | convert a fixed-point matrix to floating point | matching C (`-O2`) |

@@ -539,11 +539,11 @@ The perspective-matrix routines at `0x0C44E0-0x0C476F` follow
 `src/libultra/gu_perspective.c` from BattleTanx commit
 `2e4c6d2afaddcf670f90c2c4f94b65508cd3b2d2`, corresponding to
 `src/gu/perspective.c` in decompals/ultralib commit
-`e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. The fixed-point wrapper at
-`0x0C4710` compiles byte-exactly with IDO `-O3` as `guPerspective`. The
-floating-point `guPerspectiveF` builder remains provenance-backed assembly
-because its retail floating-point and conversion schedule is not yet
-reproduced by the current translation.
+`e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. The floating-point builder at
+`0x0C44E0` compiles byte-exactly with IDO `-O2` as `guPerspectiveF`, including
+its nested scale loop and perspective-normalization conversion. It reuses the
+retail degree-to-radian constant at `0x800DFBE0`. The fixed-point wrapper at
+`0x0C4710` compiles byte-exactly with IDO `-O3` as `guPerspective`.
 
 The matrix utility object at `0x0C4F40-0x0C51AF` follows `src/gu/mtxutil.c`
 from decompals/ultralib commit
