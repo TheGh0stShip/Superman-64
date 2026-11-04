@@ -35463,13 +35463,15 @@ glabel func_800A3AE4
 /* A4F18 800A4318 03E00008 */  jr         $ra
 /* A4F1C 800A431C 00000000 */   nop
 
-glabel func_800A4320
+.section .text.replaced_A4F20, "ax"
+glabel func_800A4320_asm
 /* A4F20 800A4320 03E00008 */  jr         $ra
 /* A4F24 800A4324 00000000 */   nop
 
-glabel func_800A4328
+glabel func_800A4328_asm
 /* A4F28 800A4328 03E00008 */  jr         $ra
 /* A4F2C 800A432C 00000000 */   nop
+.section .text.after_A4F20, "ax"
 
 glabel func_800A4330
 /* A4F30 800A4330 03E00008 */  jr         $ra

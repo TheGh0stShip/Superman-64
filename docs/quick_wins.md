@@ -5,6 +5,8 @@ conversions. Current candidates, in order:
 
 | ROM offset | Symbol | Behavior | Status |
 | --- | --- | --- | --- |
+| `0x0A4F20` | `func_800A4320` | empty callback | matching C |
+| `0x0A4F28` | `func_800A4328` | empty callback | matching C |
 | `0x0D3BA0` | `func_800D2FA0` | read the SP status register | matching C |
 | `0x0D3B90` | `func_800D2F90` | write the SP status register | matching C |
 | `0x0D4500` | `func_800D3900` | return one global word | matching C |
