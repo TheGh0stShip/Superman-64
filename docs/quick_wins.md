@@ -6,6 +6,7 @@ conversions. Current candidates, in order:
 | ROM offset | Symbol | Behavior | Status |
 | --- | --- | --- | --- |
 | `0x001B90` | `func_80000F90` | initialize the shared six-field state | matching C (`-O2`) |
+| `0x0035A0` | `func_800029A0` | dispatch three flag-selected runtime parameters | matching C (`-O1 -g3`) |
 | `0x003680` | eight runtime dispatch/lifecycle helpers | map entries and manage shared runtime state | matching C (`-O1 -g3`) |
 | `0x004CA0` | `func_800040A0` | parse decimal digits backward into an integer | matching C (`-O1 -g3`) |
 | `0x004950` | four record-state helpers | activate records, set states, and update four runtime slots | matching C (`-O1 -g3`) |
