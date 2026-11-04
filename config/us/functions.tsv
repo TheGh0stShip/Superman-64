@@ -417,7 +417,7 @@
 0x83FE8	0x2CC	0x800833E8	func_800833E8	retail_disassembly
 0x842B4	0x2C0	0x800836B4	func_800836B4	retail_disassembly
 0x84574	0x36C	0x80083974	func_80083974	retail_disassembly
-0x848E0	0x50	0x80083CE0	func_80083CE0	retail_disassembly
+0x848E0	0x50	0x80083CE0	func_80083CE0	matching_source
 0x84930	0x4E4	0x80083D30	func_80083D30	retail_disassembly
 0x84E14	0x5A0	0x80084214	func_80084214	retail_disassembly
 0x853B4	0x51C	0x800847B4	func_800847B4	retail_disassembly

@@ -98,6 +98,8 @@ SECTIONS
         BUILD_DIR/asm/main_70FE0.o(.text);
         main_83B40_s = .;
         BUILD_DIR/asm/main_83B40.o(.text);
+        BUILD_DIR/src/main_848E0.o(.text);
+        BUILD_DIR/asm/main_83B40.o(.text.after_848E0);
         BUILD_DIR/src/main_A4F20.o(.text);
         BUILD_DIR/asm/main_83B40.o(.text.after_A4F20);
         main_B2590_s = .;
