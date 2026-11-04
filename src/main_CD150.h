@@ -1,6 +1,14 @@
 typedef unsigned int size_t;
 typedef char *va_list;
 typedef double ldouble;
+typedef struct {
+    long quot;
+    long rem;
+} ldiv_t;
+typedef struct {
+    long long quot;
+    long long rem;
+} lldiv_t;
 
 #define NULL 0
 #ifdef NON_MATCHING
@@ -61,3 +69,6 @@ extern char *func_800CD4C4(const char *text, int character);
 extern size_t func_800CD49C(const char *text);
 extern void func_800D2BC0(PrintState *state, char code);
 extern void func_800D24E0(PrintState *state, char code);
+extern ldiv_t func_800D2B30(long numerator, long denominator);
+extern lldiv_t func_800D2A30(long long numerator, long long denominator);
+extern void *func_800CD470(void *destination, const void *source, size_t count);

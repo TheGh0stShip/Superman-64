@@ -215,6 +215,21 @@ table are visible to the compiler through non-load sections at their retail
 RAM addresses, while the inventoried raw data remains the sole owner of their
 ROM bytes.
 
+The complete `0x0D2B70-0x0D362F` floating-point formatting object follows
+`src/libc/xldtob.c` from the same decompals/ultralib commit. Its field emitter,
+floating-point classifier, and `_Ldtob` conversion routine compile together
+byte-exactly with IDO `-O3` and unsigned characters. The compiler-visible
+power table, text constants, and rounding constant are linked through a
+non-load section at their retail RAM address, leaving the inventoried raw data
+as the sole owner of the corresponding ROM bytes.
+
+The `0x0D37C0-0x0D3A5F` integer formatting object follows
+`src/libc/xlitob.c` from the same decompals/ultralib commit. Its `_Litob`
+conversion routine compiles byte-exactly with IDO `-O3` and unsigned
+characters, including the unit's trailing alignment. Its lowercase and
+uppercase digit tables are linked through a non-load section at their retail
+RAM address, while the raw data inventory remains the sole ROM owner.
+
 Five small linked assembly entry points also match handwritten sources in
 decompals/ultralib commit `e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`:
 `osGetCount` at `0x0C84B0` follows `src/os/getcount.s`, `sqrtf` at `0x0CCDA0`

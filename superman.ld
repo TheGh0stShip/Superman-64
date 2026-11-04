@@ -41,6 +41,7 @@ SECTIONS
 {
     __ll_mul = 0x800C3638;
     __ull_div = 0x800C3538;
+    __ull_rem = 0x800C34FC;
     SPLAT_BEGIN_SEG(header, 0x0, 0x0, SUBALIGN(16))
         header_s = .;
         BUILD_DIR/asm/header.o(.data);
@@ -430,12 +431,12 @@ SECTIONS
         main_D2900_s = .;
         BUILD_DIR/asm/main_D2900.o(.text);
         main_D2B70_s = .;
-        BUILD_DIR/asm/main_D2B70.o(.text);
+        BUILD_DIR/src/main_D2B70.o(.text);
         main_D3630_s = .;
         BUILD_DIR/src/main_D3630.o(.text);
         BUILD_DIR/src/main_D3730.o(.text);
         main_D37C0_s = .;
-        BUILD_DIR/asm/main_D37C0.o(.text);
+        BUILD_DIR/src/main_D37C0.o(.text);
         main_D3A60_s = .;
         BUILD_DIR/src/main_D3A60.o(.text);
         main_D3AB0_s = .;
@@ -500,6 +501,14 @@ SECTIONS
     .libultra_printf_rodata 0x800DFD30 (NOLOAD) :
     {
         BUILD_DIR/src/main_CD150.o(.rodata);
+    }
+    .libultra_xldtob_rodata 0x800DFEC0 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_D2B70.o(.rodata);
+    }
+    .libultra_xlitob_data 0x800DB2F0 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_D37C0.o(.data);
     }
     .libultra_position_bss 0x80146C80 (NOLOAD) :
     {

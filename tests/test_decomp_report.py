@@ -19,14 +19,14 @@ class DecompReportTests(unittest.TestCase):
         measures = self.report["measures"]
         self.assertEqual(self.report["version"], 2)
         self.assertEqual(measures["total_code"], "875680")
-        self.assertEqual(measures["matched_code"], "35876")
-        self.assertEqual(measures["complete_code"], "24592")
+        self.assertEqual(measures["matched_code"], "39300")
+        self.assertEqual(measures["complete_code"], "28016")
         self.assertEqual(measures["total_functions"], 1056)
-        self.assertEqual(measures["matched_functions"], 237)
+        self.assertEqual(measures["matched_functions"], 241)
         self.assertEqual(measures["total_data"], "43344")
         self.assertEqual(measures["matched_data"], "0")
         self.assertEqual(measures["total_units"], 152)
-        self.assertEqual(measures["complete_units"], 78)
+        self.assertEqual(measures["complete_units"], 80)
 
     def test_units_account_for_every_function_once(self):
         functions = [function for unit in self.report["units"]
@@ -49,13 +49,13 @@ class DecompReportTests(unittest.TestCase):
         self.assertEqual(sum(int(unit["measures"]["total_code"])
                              for unit in code_units), 866788)
         self.assertEqual(sum(int(unit["measures"]["matched_code"])
-                             for unit in code_units), 35876)
+                             for unit in code_units), 39300)
         self.assertEqual(sum(int(unit["measures"]["complete_code"])
-                             for unit in code_units), 24592)
+                             for unit in code_units), 28016)
         self.assertEqual(sum(
             int(function["size"]) for function in functions
             if function["fuzzy_match_percent"] == 100.0
-        ), 35268)
+        ), 38680)
         self.assertTrue(all(
             unit["measures"]["matched_code"] == unit["measures"]["total_code"]
             and unit["measures"]["complete_code"] == unit["measures"]["total_code"]
