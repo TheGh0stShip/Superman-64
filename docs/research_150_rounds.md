@@ -241,13 +241,12 @@ was established.
   coincidental symbol matches.
 - `pfschecker.c` compiled for VERSION_I with IDO `-O1` produces the exact
   three-body layout `0x6C4, 0x1B4, 0x1E8`, totaling `0xA60`. The remaining
-  retail range `0xD1610-0xD206F` has the same three boundaries. This is a
-  high-priority candidate for a future byte-level integration test, not yet
-  matching credit.
+  retail range `0xD1610-0xD206F` has the same three boundaries. The complete
+  object is now integrated and ROM-exact.
 - `pfsinitpak.c` under the same configuration produces a `0x294` public body
   in a `0x2A0` text object. The retail body at `0xD1130` is also `0x294`, with
-  twelve following non-function bytes. It remains a candidate pending full
-  relocation and ROM verification.
+  twelve following non-function bytes. The complete object is now integrated
+  and ROM-exact.
 - Other compiled VERSION_I PFS layouts now provide mechanical search keys:
   `contpfs` is `0xD60`; `pfsreadwritefile` is `0x520`;
   `pfsallocatefile` is `0x7B0`; `pfsfreeblocks` is `0x150`;
@@ -273,3 +272,138 @@ was established.
 - [Superman retail configuration cross-check](https://github.com/gcsmith/Superman64Recomp)
 - [September 1998 prototype record](https://hiddenpalace.org/w/index.php?title=Superman_64_%28Sep_6%2C_1998_prototype%29)
 - [Titus archive holdings](https://gameinformer.com/2019/05/31/as-superman-64-turns-20-we-dig-up-some-relics-from-the-past)
+
+## Ecosystem-wide N64 source-reconstruction census
+
+The follow-up census deliberately went beyond completed projects. It
+cross-reconciled the current 74-entry N64 decompilation registry, the broader
+90-entry community catalogue, historical lists, direct forge checks, moved
+repositories, mirrors, and deleted-but-referenced projects. A reachable
+repository is not assumed active, and an unknown region or revision remains
+unknown rather than being inferred.
+
+Primary registry evidence:
+
+- [Recomp N64 catalogue](https://recompsoftware.com/platforms/nintendo-64/)
+- [decomps.net N64 filter](https://decomps.net/?platform=n64&type=decompilation)
+- [decmp.dev tracker](https://www.decmp.dev/)
+- [community decompilation catalogue](https://github.com/AlperOZCAN/RetroGames-AllGameDecompilations-2)
+- [curated N64 development list](https://github.com/command-tab/awesome-n64-development#game-decompilation)
+- [February 2022 historical snapshot](https://www.reddit.com/r/n64/comments/ssas1b/every_n64_decompilation_project_2_microcode/)
+
+### Verified source-reconstruction repositories
+
+- AeroGauge: <https://github.com/LLONSIT/AeroGauge>
+- Aidyn Chronicles: <https://github.com/blackgamma7/Aidyn>
+- Animal Forest: <https://github.com/zeldaret/af>
+- Banjo-Kazooie: <https://gitlab.com/banjo.decomp/banjo-kazooie>
+- Banjo-Tooie: <https://github.com/mr-wiseguy/banjo-tooie>
+- Beetle Adventure Racing: <https://github.com/synamaxmusic/bar-decomp>
+- Blast Corps: <https://github.com/retroplastic/blastcorps>
+- Body Harvest: <https://github.com/jaytheham/body-harvest-decompilation>
+- Bomberman 64: <https://github.com/bomberhackers/bm64>
+- Bomberman 64: The Second Attack: <https://github.com/bomberhackers/tsa>
+- Bomberman Hero: <https://github.com/bomberhackers/bmhero>
+- Castlevania 64: <https://github.com/blazkowolf/cv64>
+- Chameleon Twist, Japanese 1.0: <https://github.com/chameleontwistret/chameleontwistv1.0-jp>
+- Chameleon Twist 2, Japanese 1.0: <https://github.com/chameleontwistret/chameleontwist2v1.0-jp>
+- Conker's Bad Fur Day: <https://github.com/mkst/conker>
+- Conker alternate lineage: <https://github.com/DevOldSchool/conkers-bfd-decomp>
+- Dark Rift: <https://github.com/unnunu/darkrift>
+- Diddy Kong Racing: <https://github.com/davidsm64/diddy-kong-racing>
+- Dinosaur Planet: <https://github.com/zestydevy/dinosaur-planet>
+- Donkey Kong 64: <https://gitlab.com/dk64_decomp/dk64>
+- Doraemon: <https://github.com/prakxo/doraemon1>
+- Dr. Mario 64: <https://github.com/angheloalf/drmario64>
+- Duke Nukem: Zero Hour: <https://github.com/gillou68310/dukenukemzerohour>
+- Evo's Space Adventures: <https://github.com/mkst/esa>
+- F-Zero X: <https://github.com/inspectredc/fzerox>
+- F-Zero X Expansion Kit: <https://github.com/inspectredc/fzerox-expansion-kit>
+- Gauntlet Legends: <https://github.com/drahsid/gauntlet-legends>
+- Gex 64: <https://github.com/matbourgon/gex64decomp>
+- Glover: <https://github.com/rainchus/glover>
+- GoldenEye 007: <https://github.com/n64decomp/007>
+- GoldenEye historical lineage: <https://gitlab.com/kholdfuzion/goldeneye_src>
+- Harvest Moon 64: <https://github.com/harvestwhisperer/hm64-decomp>
+- Hybrid Heaven: <https://github.com/ogdanimal/HybridHeaven-Decomp>
+- Jet Force Gemini: <https://github.com/ryan-myers/jet-force-gemini>
+- Kirby 64: <https://github.com/kirby64ret/kirby64>
+- Mario Golf: <https://github.com/monde-lointain/mariogolf64>
+- Mario Kart 64: <https://github.com/n64decomp/mk64>
+- Mario Party: <https://github.com/mariopartyrd/marioparty>
+- Mario Party 2: <https://github.com/mariopartyrd/marioparty2>
+- Mario Party 3: <https://github.com/mariopartyrd/marioparty3>
+- Mario Tennis: <https://github.com/dellm-79/mariotennisn64>
+- Mischief Makers: <https://github.com/drahsid/mischief-makers>
+- Mystical Ninja Starring Goemon: <https://github.com/klorfmorf/mnsg>
+- Neon Genesis Evangelion: <https://github.com/farisawan-2000/evangelion>
+- The New Tetris: <https://github.com/kiritodv/tnt>
+- Onegai Monsters: <https://github.com/ryan-myers/onegaimonsters>
+- Paper Mario: <https://github.com/pmret/papermario>
+- Paperboy: <https://github.com/marijnvdwerf/paperboy-n64>
+- Perfect Dark: <https://github.com/n64decomp/perfect_dark>
+- Perfect Dark historical lineage: <https://gitlab.com/ryandwyer/perfect-dark>
+- Pokemon Puzzle League: <https://github.com/angheloalf/puzzleleague64>
+- Pokemon Snap: <https://github.com/ethteck/pokemonsnap>
+- Pokemon Stadium: <https://github.com/pret/pokestadium>
+- Pokemon Stadium 2: <https://github.com/pret/pokestadiumgs>
+- Quest 64: <https://github.com/rainchus/quest64-decomp>
+- Ridge Racer 64: <https://github.com/jvicu2001/rr64-decomp>
+- Rocket: Robot on Wheels: <https://github.com/RocketRet/Rocket-Robot-On-Wheels>
+- Shadowgate 64: <https://github.com/rainchus/shadowgate64>
+- Snowboard Kids: <https://github.com/sonicdcer/sk>
+- Snowboard Kids 2: <https://github.com/cdlewis/snowboardkids2-decomp>
+- Space Station Silicon Valley: <https://github.com/mkst/sssv>
+- Star Fox 64: <https://github.com/sonicdcer/sf64>
+- Star Wars: Rogue Squadron: <https://github.com/Tmcg2/rogue_squadron64>
+- Star Wars: Shadows of the Empire: <https://github.com/eltalelibrarian/sote>
+- Super Mario 64: <https://github.com/n64decomp/sm64>
+- Super Smash Bros.: <https://github.com/vetritheretri/ssb-decomp-re>
+- Tube: <https://github.com/rep-stosw/tube64>
+- Turok 3: <https://github.com/Drahsid/turok3>
+- Virtual Pool 64: <https://github.com/llonsit/virtualpool64>
+- Virtual Pro Wrestling 2: <https://github.com/aki-club/vpw2>
+- Wave Race 64: <https://github.com/llonsit/wave-race-64>
+- WCW Thunder: <https://github.com/martinbean/thunder>
+- Wonder Project J2: <https://github.com/LLONSIT-glitch/wonder>
+- Yoshi's Story: <https://github.com/decompals/yoshis-story>
+- Rugrats: Scavenger Hunt, USA revision 0: <https://github.com/TheGh0stShip/Rugrats-Scavenger-Hunt>
+- BattleTanx, USA revision 0: <https://github.com/TheGh0stShip/BattleTanx>
+- BattleTanx: Global Assault, USA revision 0: <https://github.com/TheGh0stShip/BattleTanx-Global-Assault>
+
+The completed Nagano project was independently verified in the registries but
+its current canonical repository URL was not rediscovered. It remains a
+resolved project with an unresolved present location. The historical Superman
+repository is retained as external research evidence only and must never be
+used as this repository's ancestry.
+
+### Moved, deleted, and alternate lineages
+
+- Majora's Mask moved from <https://github.com/n64decomp/majora> to
+  <https://github.com/zeldaret/mm>.
+- Mystical Ninja moved from the unavailable `Fluvian/mnsg` lineage to
+  <https://github.com/klorfmorf/mnsg>.
+- Banjo-Tooie moved from <https://github.com/wedarobi/banjo2> to
+  <https://github.com/mr-wiseguy/banjo-tooie>.
+- Goemon's Great Adventure at `Fluvian/gga`, San Francisco Rush 2049 at
+  `cabi24/SFRush2049-decomp`, and WCW/nWo Revenge at `svinsmoke212/revenge`
+  are documented historical projects whose endpoints were unavailable during
+  the census.
+- Paper Mario's older RetroReversing effort, the Ocarina N64DD support-code
+  project, and the Shadows of the Empire prototype project are separate
+  historical scopes, not duplicates of the retail projects.
+
+### Deliberately separate comparison corpora
+
+Static translation projects, native ports, clean-room rewrites, tools, and
+symbol-only scaffolds can provide names, boundaries, behavior, and compiler
+clues, but they do not count toward matching-source progress. Relevant
+examples include Superman64Recomp, N64Recomp projects, Doom64-RE, Duke64-RE,
+SpaghettiKart, PaperBoat, and Knife Edge reversing scaffolds. This distinction
+is mandatory when importing evidence into function, data, and unit totals.
+
+No independently verifiable source-reconstruction project was found on
+Codeberg, SourceHut, or Bitbucket during this census. That is a statement about
+the search result, not proof that those forges contain none. GitLab yielded
+canonical or historically important Banjo-Kazooie, Donkey Kong 64, GoldenEye,
+and Perfect Dark repositories.
