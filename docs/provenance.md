@@ -410,21 +410,17 @@ The thread-start routine at `0x0D3FA0` follows
 transitions, queue repair, dispatch, and priority-based preemption compile
 byte-exactly with IDO `-O1` as `osStartThread`.
 
-The three standard MIDI sequence helpers at `0x0C36C0-0x0C36FF` follow
+The standard MIDI sequence object at `0x0C36C0-0x0C3CDF` follows
 `src/libultra/al_seq.c` from BattleTanx commit
 `ed81185e451219473fcbf230ed503c726516f210`, corresponding to
 `src/audio/seq.c` in decompals/ultralib commit
-`e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. `alSeqGetLoc`, `alSeqSetLoc`,
-and `alSeqGetTicks` compile byte-exactly with IDO `-O1`. The adjacent legacy
-parameter stub and no-op remain assembly so their calling convention and
-unit alignment are preserved.
-
-The remaining standard MIDI parser routines from `0x0C3708` through
-`0x0C3CDF` follow the same BattleTanx and decompals `seq.c` sources. They
-include the variable-length reader, event decoder, marker constructor, time
-conversion helpers, delta peek, endian-safe 16/32-bit readers, and sequence
-initializer. They remain provenance-backed assembly because compiling an
-isolated subset changes the original full-unit register allocation.
+`e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. Its location helpers,
+compiler-retained private no-op, variable-length reader, event decoder,
+marker constructor, time conversions, delta peek, endian-safe readers, and
+sequence initializer compile together byte-exactly with IDO `-O3`. Keeping
+the complete translation unit preserves the private-call allocation and
+layout that isolated subsets could not reproduce. The two retail million
+constants at `0x800DFBD0` and `0x800DFBD8` remain in the original data block.
 
 The virtual-address translator at `0x0C3CE0` follows
 `src/libultra/os_virtual_to_physical.c` from BattleTanx commit

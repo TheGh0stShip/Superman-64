@@ -181,11 +181,7 @@ conversions. Current candidates, in order:
 | `0x0C36DC` | `func_800C2ADC` | restore a standard MIDI sequence location | matching C (`-O1`) |
 | `0x0C36F8` | `func_800C2AF8` | return the current standard MIDI sequence tick | matching C (`-O1`) |
 | `0x0C3CE0` | `func_800C30E0` | translate a virtual address to a physical address | matching C (`-O1`) |
-| `0x0C3708` | `func_800C2B08` | read a variable-length standard MIDI value | canonical C identified; full-unit allocation pending |
-| `0x0C3B30` | `func_800C2F30` | peek at the next standard MIDI delta | canonical C identified; full-unit allocation pending |
-| `0x0C3B88` | `func_800C2F88` | read a big-endian 32-bit sequence value | canonical C identified; full-unit allocation pending |
-| `0x0C3BD8` | `func_800C2FD8` | read a big-endian 16-bit sequence value | canonical C identified; full-unit allocation pending |
-| `0x0C3C08` | `func_800C3008` | initialize a standard MIDI sequence | canonical C identified; full-unit allocation pending |
+| `0x0C36C0` | standard MIDI sequence object | parse events, markers, deltas, and headers | matching C (`-O3`) |
 | `0x0C3DE0` | `func_800C31E0` | initialize the operating-system hardware state | canonical `osInitialize`; provenance-backed assembly |
 | `0x0C40D0` | ten 64-bit compiler helpers | shifts, division, remainder, multiplication | canonical `ll.c`; provenance-backed assembly |
 | `0x0C44B0` | `func_800C38B0` | submit a type-17 runtime event | matching C (`-O2`) |
