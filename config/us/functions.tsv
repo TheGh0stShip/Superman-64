@@ -774,7 +774,7 @@
 0xC22CC	0x78	0x800C16CC	func_800C16CC	retail_disassembly
 0xC2344	0x48	0x800C1744	func_800C1744	retail_disassembly
 0xC238C	0x74	0x800C178C	func_800C178C	retail_disassembly
-0xC2400	0x70	0x800C1800	func_800C1800	retail_disassembly
+0xC2400	0x70	0x800C1800	func_800C1800	matching_source
 0xC2470	0xFC	0x800C1870	func_800C1870	retail_disassembly
 0xC256C	0x818	0x800C196C	func_800C196C	retail_disassembly
 0xC2D84	0x8	0x800C2184	func_800C2184	retail_disassembly

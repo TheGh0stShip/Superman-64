@@ -483,7 +483,8 @@ glabel func_800C178C
 /* C23F8 800C17F8 03E00008 */  jr         $ra
 /* C23FC 800C17FC 00000000 */   nop
 
-glabel func_800C1800
+.section .text.replaced_C2400, "ax"
+glabel func_800C1800_asm
 /* C2400 800C1800 AFA50004 */  sw         $a1, 4($sp)
 /* C2404 800C1804 AFA60008 */  sw         $a2, 8($sp)
 /* C2408 800C1808 AFA7000C */  sw         $a3, 0xc($sp)
@@ -516,6 +517,7 @@ glabel func_800C1800
 /* C2468 800C1868 03E00008 */  jr         $ra
 /* C246C 800C186C 00601025 */   or        $v0, $v1, $zero
 
+.section .text.after_C2400, "ax"
 glabel func_800C1870
 /* C2470 800C1870 AFA50004 */  sw         $a1, 4($sp)
 /* C2474 800C1874 AFA60008 */  sw         $a2, 8($sp)

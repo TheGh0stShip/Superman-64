@@ -144,6 +144,8 @@ SECTIONS
         BUILD_DIR/asm/main_C1750.o(.text);
         main_C1D70_s = .;
         BUILD_DIR/asm/main_C1D70.o(.text);
+        BUILD_DIR/src/main_C2400.o(.text);
+        BUILD_DIR/asm/main_C1D70.o(.text.after_C2400);
         main_C36B0_s = .;
         BUILD_DIR/src/main_C36B0_prefix.o(.text);
         BUILD_DIR/src/main_C36B0.o(.text);
