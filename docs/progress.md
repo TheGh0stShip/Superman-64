@@ -16,7 +16,7 @@ executable text inventory, not merely the sum of function bodies.
 The 152 source units own 866,788 executable bytes. A complete source unit
 receives credit for its emitted alignment as well as its matching functions;
 the current 65 complete units therefore contribute 13,264 complete bytes.
-Matching functions in incomplete units add another 12,328 bytes, for 25,592
+Matching functions in incomplete units add another 12,536 bytes, for 25,800
 matched code bytes overall. The remaining executable inventory is shown
 separately as 1,532 bytes of uncatalogued CPU text and 7,360 bytes of RSP text,
 with no matching credit.
