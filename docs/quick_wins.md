@@ -16,6 +16,7 @@ conversions. Current candidates, in order:
 | `0x0C8B20` | three linked-list helpers | move nodes between runtime lists and prepend a node | matching C (`-O2`) |
 | `0x0A4F20` | `func_800A4320` | empty callback | matching C |
 | `0x0A4F28` | `func_800A4328` | empty callback | matching C |
+| `0x0B9940` | `func_800B8D40` | clear active runtime entries up to the sentinel | matching C (`-O1 -g3`) |
 | `0x0C0CB0` | `func_800C00B0` | empty callback | matching C |
 | `0x0C0CB8` | `func_800C00B8` | empty callback | matching C |
 | `0x0C2400` | `func_800C1800` | acquire and initialize a node from a runtime free list | matching C (`-O2`) |

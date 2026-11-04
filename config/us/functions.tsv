@@ -629,7 +629,7 @@
 0xB96EC	0x134	0x800B8AEC	func_800B8AEC	retail_disassembly
 0xB9820	0x84	0x800B8C20	func_800B8C20	retail_disassembly
 0xB98A4	0x9C	0x800B8CA4	func_800B8CA4	retail_disassembly
-0xB9940	0x50	0x800B8D40	func_800B8D40	retail_disassembly
+0xB9940	0x50	0x800B8D40	func_800B8D40	matching_source
 0xB9990	0x148	0x800B8D90	func_800B8D90	retail_disassembly
 0xB9AD8	0x94	0x800B8ED8	func_800B8ED8	retail_disassembly
 0xB9B6C	0x7C	0x800B8F6C	func_800B8F6C	retail_disassembly
