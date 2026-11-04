@@ -385,6 +385,7 @@ SECTIONS
         BUILD_DIR/src/main_CFCD0.o(.text);
         main_CFD30_s = .;
         BUILD_DIR/asm/main_CFD30.o(.text);
+        BUILD_DIR/src/main_CFD30.o(.text);
         main_D0350_s = .;
         BUILD_DIR/asm/main_D0350.o(.text);
         main_D0390_s = .;

@@ -5,9 +5,9 @@
 .set noreorder # don't insert nops after branches
 .set gp=64     # allow use of 64-bit general purpose registers
 
-.section .text, "ax"
+.section .text.pfsdelete_legacy, "ax"
 
-glabel func_800CF130
+glabel legacy_func_800CF130
 /* CFD30 800CF130 27BDFEA0 */  addiu      $sp, $sp, -0x160
 /* CFD34 800CF134 AFA50164 */  sw         $a1, 0x164($sp)
 /* CFD38 800CF138 97AE0166 */  lhu        $t6, 0x166($sp)
@@ -210,7 +210,7 @@ glabel func_800CF130
 /* D0008 800CF408 03E00008 */  jr         $ra
 /* D000C 800CF40C 00000000 */   nop
 
-glabel func_800CF410
+glabel legacy_func_800CF410
 /* D0010 800CF410 27BDFFD8 */  addiu      $sp, $sp, -0x28
 /* D0014 800CF414 AFA60030 */  sw         $a2, 0x30($sp)
 /* D0018 800CF418 93B80033 */  lbu        $t8, 0x33($sp)
@@ -371,7 +371,7 @@ glabel func_800CF410
 /* D0250 800CF650 03E00008 */  jr         $ra
 /* D0254 800CF654 00000000 */   nop
 
-glabel func_800CF658
+glabel legacy_func_800CF658
 /* D0258 800CF658 27BDFFC0 */  addiu      $sp, $sp, -0x40
 /* D025C 800CF65C AFA40040 */  sw         $a0, 0x40($sp)
 /* D0260 800CF660 AFA7004C */  sw         $a3, 0x4c($sp)
