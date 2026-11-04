@@ -427,9 +427,9 @@ SECTIONS
         BUILD_DIR/src/main_D2460.o(.text);
         BUILD_DIR/src/main_D24B0.o(.text);
         main_D25A0_s = .;
-        BUILD_DIR/asm/main_D25A0.o(.text);
+        BUILD_DIR/src/main_D25A0.o(.text);
         main_D2900_s = .;
-        BUILD_DIR/asm/main_D2900.o(.text);
+        BUILD_DIR/src/main_D2900.o(.text);
         main_D2B70_s = .;
         BUILD_DIR/src/main_D2B70.o(.text);
         main_D3630_s = .;

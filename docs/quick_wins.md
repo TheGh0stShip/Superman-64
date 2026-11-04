@@ -74,6 +74,9 @@ conversions. Current candidates, in order:
 | `0x0CE6D0` | `func_800CDAD0` | test SI status bits | matching C (`-O1`) |
 | `0x0CE700` | `func_800CDB00` | test SP status bits | matching C (`-O1`) |
 | `0x0D3B60` | `func_800D2F60` | test DP status bit | matching C (`-O1`) |
+| `0x0D25A0` | two controller-pak helpers | write a RAM block and construct its command packet | matching C (`-O1`) |
+| `0x0D2900` | `func_800D1D00` | write one word through a PI handle | matching C (`-O1`) |
+| `0x0D2A90` | `func_800D1E90` | initialize and insert a timer | matching C (`-O1`) |
 | `0x0C4070` | `func_800C3470` | raw PI word read | matching C (`-O1`) |
 | `0x0D3A60` | `func_800D2E60` | raw SI word write | matching C (`-O1`) |
 | `0x0D3AB0` | `func_800D2EB0` | set the DP next buffer | matching C (`-O1`) |

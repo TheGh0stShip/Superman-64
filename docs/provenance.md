@@ -590,3 +590,14 @@ together with the preceding `guMtxF2L` conversion preserves their unaligned
 internal boundaries and matches the complete object byte-for-byte with IDO
 `-O2`. The conversion scales each float to 16.16 fixed point and packs paired
 integer and fractional halves into the retail matrix layout.
+
+The controller-pak RAM-write object at `0x0D25A0-0x0D28FF` follows the
+pre-J implementation of `src/io/contramwrite.c` from decompals/ultralib
+commit `e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. Its public transfer routine
+and private command-packet builder compile together byte-exactly with IDO
+`-O1`, including the object's trailing alignment.
+
+The adjacent PI write and timer objects at `0x0D2900-0x0D2B6F` follow
+`src/io/epirawwrite.c` and the pre-K path of `src/os/settimer.c` from the same
+ultralib revision. They compile byte-exactly with IDO `-O1`, including the
+timer object's trailing alignment.
