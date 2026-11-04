@@ -11651,7 +11651,7 @@ glabel func_800BC620_asm
 /* BD27C 800BC67C 00000000 */   nop
 
 .section .text.after_BD220, "ax"
-glabel func_800BC680
+glabel func_800BC680_asm
 /* BD280 800BC680 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* BD284 800BC684 AFBF0014 */  sw         $ra, 0x14($sp)
 /* BD288 800BC688 3C0E8014 */  lui        $t6, %hi(D_80144334)
@@ -11682,6 +11682,7 @@ glabel func_800BC680
 /* BD2E8 800BC6E8 03E00008 */  jr         $ra
 /* BD2EC 800BC6EC 00000000 */   nop
 
+.section .text.after_BD280, "ax"
 glabel func_800BC6F0
 /* BD2F0 800BC6F0 27BDFFE8 */  addiu      $sp, $sp, -0x18
 /* BD2F4 800BC6F4 AFBF0014 */  sw         $ra, 0x14($sp)
