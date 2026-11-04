@@ -411,7 +411,7 @@ SECTIONS
         BUILD_DIR/asm/main_D0E10.o(.text);
         main_D13D0_s = .;
         BUILD_DIR/src/main_D13D0.o(.text);
-        BUILD_DIR/asm/main_D13D0.o(.text.tail);
+        BUILD_DIR/src/main_D1610.o(.text);
         BUILD_DIR/src/main_D2070.o(.text);
         main_D2080_s = .;
         BUILD_DIR/src/main_D2080.o(.text);

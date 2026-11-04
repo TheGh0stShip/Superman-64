@@ -611,3 +611,8 @@ The controller-pak status object at `0x0D13D0-0x0D160F` follows the pre-J
 implementation of `src/io/pfsgetstatus.c` from the same ultralib revision.
 The status transaction, one-channel request builder, and response decoder
 compile together byte-exactly with IDO `-O1`.
+
+The controller-pak consistency-check object at `0x0D1610-0x0D206F` follows
+the pre-J implementation of `src/io/pfschecker.c` from the same ultralib
+revision. The public checker and its two private inode-consistency helpers
+compile together byte-exactly with IDO `-O1` as a complete `0xA60` object.

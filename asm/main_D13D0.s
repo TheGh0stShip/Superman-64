@@ -167,7 +167,7 @@ glabel legacy_func_800D0974
 /* D1608 800D0A08 03E00008 */  jr         $ra
 /* D160C 800D0A0C 27BD0010 */   addiu     $sp, $sp, 0x10
 
-.section .text.tail, "ax"
+.section .text.legacy_tail, "ax"
 
 glabel func_800D0A10
 /* D1610 800D0A10 27BDFB78 */  addiu      $sp, $sp, -0x488
