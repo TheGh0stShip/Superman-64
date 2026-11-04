@@ -174,6 +174,16 @@ def index_assembly_sources() -> dict[str, str]:
     return symbols
 
 
+def report_source_path(source_path: str) -> str:
+    """Return the intended C unit path, never a generated assembly path."""
+    if not source_path.startswith("asm/") or not source_path.endswith(".s"):
+        return source_path
+    relative = source_path.removeprefix("asm/").removesuffix(".s")
+    if relative.endswith("_prefix"):
+        relative = relative.removesuffix("_prefix")
+    return f"src/{relative}.c"
+
+
 def build_report() -> dict[str, object]:
     catalogue = read_catalogue()
     validate_image_coverage(catalogue, read_nonfunction_ranges())
@@ -197,6 +207,8 @@ def build_report() -> dict[str, object]:
             source_path = assembly_sources.get(name, "")
             if not source_path:
                 raise ValueError(f"no assembly source for unmatched function: {name}")
+        generated = not complete
+        source_path = report_source_path(source_path)
         grouped.setdefault(source_path, []).append({
                 "name": name,
                 "size": str(size),
@@ -204,6 +216,7 @@ def build_report() -> dict[str, object]:
                 "address": str(vram),
                 "metadata": {"virtual_address": str(vram)},
                 "complete": complete,
+                "generated": generated,
             })
 
     units = []
@@ -212,6 +225,7 @@ def build_report() -> dict[str, object]:
         matched_total = sum(
             int(function["size"]) for function in functions if function.pop("complete")
         )
+        auto_generated = any(function.pop("generated") for function in functions)
         matched_count = sum(
             function["fuzzy_match_percent"] == 100.0 for function in functions
         )
@@ -227,7 +241,7 @@ def build_report() -> dict[str, object]:
                 "complete": complete,
                 "source_path": source_path,
                 "progress_categories": ["game"],
-                "auto_generated": source_path.startswith("asm/"),
+                "auto_generated": auto_generated,
             },
         })
 

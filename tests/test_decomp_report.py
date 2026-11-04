@@ -22,8 +22,8 @@ class DecompReportTests(unittest.TestCase):
         self.assertEqual(measures["matched_code"], "15836")
         self.assertEqual(measures["total_functions"], 1050)
         self.assertEqual(measures["matched_functions"], 131)
-        self.assertEqual(measures["total_units"], 190)
-        self.assertEqual(measures["complete_units"], 102)
+        self.assertEqual(measures["total_units"], 181)
+        self.assertEqual(measures["complete_units"], 94)
 
     def test_units_account_for_every_function_once(self):
         functions = [function for unit in self.report["units"]
@@ -32,6 +32,12 @@ class DecompReportTests(unittest.TestCase):
         self.assertEqual(len({function["address"] for function in functions}), 1050)
         self.assertEqual(sum(int(function["size"]) for function in functions), 865304)
         self.assertTrue(all(unit["name"] == unit["metadata"]["source_path"]
+                            for unit in self.report["units"]))
+        self.assertTrue(all(not unit["name"].endswith(".s")
+                            and not unit["name"].startswith("asm/")
+                            for unit in self.report["units"]))
+        self.assertTrue(all(unit["name"].startswith("src/")
+                            and unit["name"].endswith(".c")
                             for unit in self.report["units"]))
 
     def test_boundary_evidence_and_nonfunction_ledger(self):

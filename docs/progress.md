@@ -19,11 +19,13 @@ The report generator rejects stale hashes, duplicate names, noncanonical
 starts, mismatched body sizes, overlap, incomplete image accounting and
 out-of-range entries.
 
-Report units are grouped by active source path (the translation-unit model
-used by Nagano, BattleTanx and BattleTanx: Global Assault), rather than
-inventing one unit for every function. Function counts and byte totals remain
-independent measures, so a source containing several functions is represented
-as one unit with all of its functions nested beneath it.
+Report units are grouped by their intended C source path (the translation-unit
+model used by Nagano, BattleTanx and BattleTanx: Global Assault), rather than
+inventing one unit for every function. Generated assembly prefixes and suffixes
+are folded into the corresponding `src/...c` unit and are never exposed as
+public unit names. Function counts and byte totals remain independent measures,
+so a source containing several functions is represented as one unit with all
+of its functions nested beneath it.
 
 Inherited generated assembly is not matching progress. Handwritten assembly
 is eligible only after its upstream origin is established in
