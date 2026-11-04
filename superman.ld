@@ -452,7 +452,7 @@ SECTIONS
         main_D3BE0_s = .;
         BUILD_DIR/src/main_D3BE0.o(.text);
         main_D3C40_s = .;
-        BUILD_DIR/asm/main_D3C40.o(.text);
+        BUILD_DIR/src/main_D3C40.o(.text);
         main_D3FA0_s = .;
         BUILD_DIR/src/main_D3FA0.o(.text);
         BUILD_DIR/asm/main_D3FA0.o(.text);

@@ -601,3 +601,8 @@ The adjacent PI write and timer objects at `0x0D2900-0x0D2B6F` follow
 `src/io/epirawwrite.c` and the pre-K path of `src/os/settimer.c` from the same
 ultralib revision. They compile byte-exactly with IDO `-O1`, including the
 timer object's trailing alignment.
+
+The controller-pak RAM-read object at `0x0D3C40-0x0D3F9F` follows the pre-J
+implementation of `src/io/contramread.c` from the same ultralib revision. Its
+public transfer routine and private command-packet builder compile together
+byte-exactly with IDO `-O1`, including the object's trailing alignment.
