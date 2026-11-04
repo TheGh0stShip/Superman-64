@@ -178,6 +178,7 @@ SECTIONS
         BUILD_DIR/asm/main_BFC70.o(.text);
         main_C04F0_s = .;
         BUILD_DIR/asm/main_C04F0.o(.text);
+        BUILD_DIR/src/main_C04F0.o(.text);
         BUILD_DIR/src/main_C0660.o(.text);
         BUILD_DIR/asm/main_C04F0.o(.text.after_C0660);
         BUILD_DIR/src/main_C0730.o(.text);

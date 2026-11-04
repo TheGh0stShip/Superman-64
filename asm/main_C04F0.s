@@ -7,7 +7,8 @@
 
 .section .text, "ax"
 
-glabel func_800BF8F0
+.section .text.replaced_C04F0, "ax"
+glabel func_800BF8F0_asm
 /* C04F0 800BF8F0 27BDFF90 */  addiu      $sp, $sp, -0x70
 /* C04F4 800BF8F4 3C0E800E */  lui        $t6, %hi(D_800DA090)
 /* C04F8 800BF8F8 8DCEA090 */  lw         $t6, %lo(D_800DA090)($t6)

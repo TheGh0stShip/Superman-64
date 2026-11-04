@@ -59,6 +59,7 @@ conversions. Current candidates, in order:
 | `0x0D0830` | `func_800CFC30` | select a global value | matching C (`-O1`) |
 | `0x0BED40` | `func_800BE140` | forward a pointer to a global owner | matching C |
 | `0x0BFAE0` | `func_800BEEE0` | unlink a node from a singly linked list | matching C (`-O1`) |
+| `0x0C04F0` | `func_800BF8F0` | initialize and perform the primary packed-record transfer | matching C (`-O1`) |
 | `0x0C0660` | `func_800BFA60` | decode packed records and accumulate their valid-entry mask | matching C (`-O1`) |
 | `0x0C0730` | `func_800BFB30` | initialize the primary packed-record array and append its sentinel | matching C (`-O1`) |
 | `0x0C6490` | `func_800C5890` | retry, validate, and summarize the secondary packed-record transfer | matching C (`-O1`) |
