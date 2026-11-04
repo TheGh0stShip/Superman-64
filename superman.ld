@@ -80,6 +80,8 @@ SECTIONS
         BUILD_DIR/asm/main_D830.o(.text);
         main_104D0_s = .;
         BUILD_DIR/asm/main_104D0.o(.text);
+        BUILD_DIR/src/main_12300.o(.text);
+        BUILD_DIR/asm/main_104D0.o(.text.after_12300);
         BUILD_DIR/src/main_12A20.o(.text);
         BUILD_DIR/asm/main_104D0.o(.text.after_12A4F);
         main_13F20_s = .;

@@ -18,6 +18,7 @@ conversions. Current candidates, in order:
 | `0x05B650` | `func_8005AA50` | multiply alternating descending integers as a float | matching C (`-O1 -g3`) |
 | `0x00B5C0` | `func_8000A9C0` | flag a cell in the shared 31-column grid | matching C (`-O1 -g3`) |
 | `0x00B630` | two grid dispatch helpers | emit an 11-by-11 region and derive horizontal bounds | matching C (`-O1 -g3`) |
+| `0x012300` | `func_80011700` | compute and normalize an object-relative angular value | matching C (`-O1 -g3`) |
 | `0x017F10` | `func_80017310` | normalize and clamp a motion-record value through runtime helpers | matching C (`-O1 -g3`) |
 | `0x018390` | `func_80017790` | normalize and scale a motion-record angular value | matching C (`-O1 -g3`) |
 | `0x019080` | `func_80018480` | validate and copy a linked runtime-object index | matching C (`-O1 -g3`) |
