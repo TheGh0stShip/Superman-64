@@ -328,9 +328,13 @@ The fixed-point position-matrix wrapper at `0x0CEB80` follows
 `src/libultra/gu_position.c` from Rugrats64 commit
 `f817a0db7e8ca1900cb47b0a3f4ea9bccf84a9aa`. Its stack matrix, call to the
 floating-point builder, and final float-to-fixed conversion compile
-byte-exactly with IDO `-O3`. The adjacent floating-point builder has the
-canonical `guPositionF` computation, but remains assembly because its retail
-KMC-style global spill and instruction schedule are not reproduced by IDO.
+byte-exactly with IDO `-O3`. The adjacent floating-point builder at
+`0x0CE9D0` is `guPositionF` from `src/gu/position.c` in decompals/ultralib
+commit `e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. Its canonical computation
+also compiles byte-exactly with IDO `-O3`; the apparent global spill at
+`0x80146C80` is the `-O3` placement of its initialized `dtor` static in
+`.bss`, stored from `.rodata` on entry. Those sections are visible to the
+compiler through non-load sections at their retail RAM addresses.
 
 The runtime list helper at `0x0D0C60` masks interrupts through the existing
 interrupt-control wrapper, copies the list's shared value into the new node,
@@ -384,17 +388,26 @@ byte-exactly with IDO `-O3` as `guAlign`.
 Its floating-point builder at `0x0D4640` is the adjacent `guAlignF` from the
 same decompals/ultralib source and commit. The normalized axis, degree
 conversion, sine/cosine pair, horizontal-length guard, and matrix terms match
-the canonical implementation. It remains provenance-backed assembly because
-the retail compiler's global spill schedule is not reproduced by the current
-IDO translation.
+the canonical implementation, which compiles byte-exactly with IDO `-O3`. As
+with `guPositionF` and `guRotateF`, the apparent global spill at `0x80147F00`
+is the `-O3` placement of the initialized `dtor` static in `.bss`, and the
+source's empty `else` branch has no code.
 
 Likewise, the floating-point rotation builder at `0x0CF380` follows
 `src/gu/rotate.c` from decompals/ultralib commit
 `e24c836796df4bf520ff8b11a5c9d2cea3a66cbd`. Its normalized axis and
 Rodrigues-style matrix terms identify `guRotateF`; the adjacent routine at
-`0x0CF514` is its `guRotate` fixed-point wrapper. Both remain assembly because
-splitting the unaligned wrapper and reproducing the retail global spill
-schedule require a different object-layout strategy.
+`0x0CF514` is its `guRotate` fixed-point wrapper. The pre-2.0K form of the
+source, with each axis-sine product recomputed, compiles byte-exactly with IDO
+`-O3` as the complete `0x0CF380-0x0CF56F` object, including its trailing
+alignment padding. At `-O3` the compiler places the initialized `dtor` static
+in `.bss` and stores its constant from `.rodata` on entry; this is the
+apparent global spill at `0x80146CD0`. The same `-O3` object shape is
+documented for the 2.0I `gu/rotate.o` by `src/libultra/gu_rotate.c` in the
+BattleTanx: Global Assault decompilation, commit
+`453a1011e27f438f5be4096fa119602fa6d53381`. Both sections are visible to the
+compiler through non-load sections at their retail RAM addresses; the
+inventoried raw data block remains the sole owner of the constant's ROM bytes.
 
 The signed division helpers at `0x0D3630-0x0D37BF` follow `src/libc/ldiv.c`
 from decompals/ultralib commit

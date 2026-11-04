@@ -160,6 +160,7 @@ conversions. Current candidates, in order:
 | `0x0CE880` | `func_800CDC80` | set a thread priority | matching C (`-O1`) |
 | `0x0CE960` | `func_800CDD60` | get a thread priority | matching C (`-O2`) |
 | `0x0CE980` | `func_800CDD80` | request a VI framebuffer swap | matching C (`-O1`) |
+| `0x0CE9D0` | `func_800CDDD0` | build a floating-point position matrix | matching C (`-O3`) |
 | `0x0CEB80` | `func_800CDF80` | build and convert a fixed-point position matrix | matching C (`-O3`) |
 | `0x0D0C60` | `func_800D0060` | insert a node while interrupts are masked | matching C (`-O2`) |
 | `0x0CF5C0` | `func_800CE9C0` | program the audio DAC frequency | matching C (`-O1`) |
@@ -170,9 +171,9 @@ conversions. Current candidates, in order:
 | `0x0CFCD0` | `func_800CF0D0` | reset selected global interrupt-mask bits | matching C (`-O1`) |
 | `0x0D4850` | `func_800D3C50` | submit the next audio DMA buffer | matching C (`-O1`) |
 | `0x0D4800` | `func_800D3C00` | build and convert a fixed-point alignment matrix | matching C (`-O3`) |
-| `0x0D4640` | `func_800D3A40` | build a floating-point alignment matrix | canonical `guAlignF`; compiler spill pending |
-| `0x0CF380` | `func_800CE780` | build a floating-point rotation matrix | canonical `guRotateF`; compiler spill pending |
-| `0x0CF514` | `func_800CE914` | build and convert a fixed-point rotation matrix | canonical `guRotate`; unit split pending |
+| `0x0D4640` | `func_800D3A40` | build a floating-point alignment matrix | matching C (`-O3`) |
+| `0x0CF380` | `func_800CE780` | build a floating-point rotation matrix | matching C (`-O3`) |
+| `0x0CF514` | `func_800CE914` | build and convert a fixed-point rotation matrix | matching C (`-O3`) |
 | `0x0D3630` | `func_800D2A30` | return an adjusted 64-bit quotient and remainder | matching C (`-O3`) |
 | `0x0D3730` | `func_800D2B30` | return an adjusted signed quotient and remainder | matching C (`-O3`) |
 | `0x0D3FA0` | `func_800D33A0` | start a kernel thread and preempt when needed | matching C (`-O1`) |

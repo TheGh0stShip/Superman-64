@@ -358,7 +358,7 @@ SECTIONS
         BUILD_DIR/src/main_CE960.o(.text);
         main_CE980_s = .;
         BUILD_DIR/src/main_CE980.o(.text);
-        BUILD_DIR/asm/main_CE980.o(.text);
+        BUILD_DIR/src/main_CE9D0.o(.text);
         BUILD_DIR/src/main_CEB80.o(.text);
         main_CEBF0_s = .;
         BUILD_DIR/src/main_CEBF0.o(.text);
@@ -368,6 +368,7 @@ SECTIONS
         BUILD_DIR/src/main_CEEF0.o(.text);
         main_CEF80_s = .;
         BUILD_DIR/asm/main_CEF80.o(.text);
+        BUILD_DIR/src/main_CF380.o(.text);
         main_CF570_s = .;
         BUILD_DIR/src/main_CF570.o(.text);
         main_CF5C0_s = .;
@@ -465,7 +466,7 @@ SECTIONS
         main_D4630_s = .;
         BUILD_DIR/src/main_D4630.o(.text);
         main_D4640_s = .;
-        BUILD_DIR/asm/main_D4640.o(.text);
+        BUILD_DIR/src/main_D4640.o(.text);
         BUILD_DIR/src/main_D4800.o(.text);
         BUILD_DIR/src/main_D4850.o(.text);
         main_D4900_s = .;
@@ -483,6 +484,30 @@ SECTIONS
     .libultra_initialize_bss 0x80145490 (NOLOAD) :
     {
         BUILD_DIR/src/main_C3DE0.o(.bss);
+    }
+    .libultra_position_rodata 0x800DFE30 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_CE9D0.o(.rodata);
+    }
+    .libultra_position_bss 0x80146C80 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_CE9D0.o(.bss);
+    }
+    .libultra_rotate_rodata 0x800DFE40 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_CF380.o(.rodata);
+    }
+    .libultra_rotate_bss 0x80146CD0 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_CF380.o(.bss);
+    }
+    .libultra_align_rodata 0x800DFF20 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_D4640.o(.rodata);
+    }
+    .libultra_align_bss 0x80147F00 (NOLOAD) :
+    {
+        BUILD_DIR/src/main_D4640.o(.bss);
     }
     /DISCARD/ :
     {
