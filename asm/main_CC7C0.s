@@ -377,33 +377,3 @@ glabel func_800CC050
 /* CCD24 800CC124 8FB10018 */  lw         $s1, 0x18($sp)
 /* CCD28 800CC128 03E00008 */  jr         $ra
 /* CCD2C 800CC12C 27BD0028 */   addiu     $sp, $sp, 0x28
-
-glabel func_800CC130
-/* CCD30 800CC130 27BDFFD8 */  addiu      $sp, $sp, -0x28
-/* CCD34 800CC134 AFBF001C */  sw         $ra, 0x1c($sp)
-/* CCD38 800CC138 AFA40028 */  sw         $a0, 0x28($sp)
-/* CCD3C 800CC13C AFA5002C */  sw         $a1, 0x2c($sp)
-/* CCD40 800CC140 AFA60030 */  sw         $a2, 0x30($sp)
-/* CCD44 800CC144 0C033DD4 */  jal        func_800CF750
-/* CCD48 800CC148 AFB00018 */   sw        $s0, 0x18($sp)
-/* CCD4C 800CC14C 8FAE0028 */  lw         $t6, 0x28($sp)
-/* CCD50 800CC150 3C188014 */  lui        $t8, %hi(D_80146B80)
-/* CCD54 800CC154 8FA8002C */  lw         $t0, 0x2c($sp)
-/* CCD58 800CC158 27186B80 */  addiu      $t8, $t8, %lo(D_80146B80)
-/* CCD5C 800CC15C 000E78C0 */  sll        $t7, $t6, 3
-/* CCD60 800CC160 01F8C821 */  addu       $t9, $t7, $t8
-/* CCD64 800CC164 AFB90020 */  sw         $t9, 0x20($sp)
-/* CCD68 800CC168 AF280000 */  sw         $t0, ($t9)
-/* CCD6C 800CC16C 8FAA0020 */  lw         $t2, 0x20($sp)
-/* CCD70 800CC170 8FA90030 */  lw         $t1, 0x30($sp)
-/* CCD74 800CC174 00408025 */  or         $s0, $v0, $zero
-/* CCD78 800CC178 02002025 */  or         $a0, $s0, $zero
-/* CCD7C 800CC17C 0C033DDC */  jal        func_800CF770
-/* CCD80 800CC180 AD490004 */   sw        $t1, 4($t2)
-/* CCD84 800CC184 8FBF001C */  lw         $ra, 0x1c($sp)
-/* CCD88 800CC188 8FB00018 */  lw         $s0, 0x18($sp)
-/* CCD8C 800CC18C 27BD0028 */  addiu      $sp, $sp, 0x28
-/* CCD90 800CC190 03E00008 */  jr         $ra
-/* CCD94 800CC194 00000000 */   nop
-/* CCD98 800CC198 00000000 */  nop
-/* CCD9C 800CC19C 00000000 */  nop

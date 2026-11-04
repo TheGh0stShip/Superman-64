@@ -226,6 +226,7 @@ SECTIONS
         . += 0x10;
         main_CC7C0_s = .;
         BUILD_DIR/asm/main_CC7C0.o(.text);
+        BUILD_DIR/src/main_CCD30.o(.text);
         main_CCDA0_s = .;
         BUILD_DIR/asm/main_CCDA0.o(.text);
         main_CCDB0_s = .;
