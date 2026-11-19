@@ -1,5 +1,9 @@
 # Superman 64
 
+[![Matching code](https://bytematch.dev/TheGh0stShip/Superman-64.svg?version=NSPE&measure=matched_code_percent&label=Matching%20code)](https://bytematch.dev/TheGh0stShip/Superman-64/NSPE)
+[![Matching functions](https://bytematch.dev/TheGh0stShip/Superman-64.svg?version=NSPE&measure=matched_functions_percent&label=Matching%20functions)](https://bytematch.dev/TheGh0stShip/Superman-64/NSPE)
+[![Fully linked](https://bytematch.dev/TheGh0stShip/Superman-64.svg?version=NSPE&measure=complete_code_percent&label=Fully%20linked)](https://bytematch.dev/TheGh0stShip/Superman-64/NSPE)
+
 Matching decompilation of the North American release of *Superman: The New
 Superman Adventures* for Nintendo 64.
 
