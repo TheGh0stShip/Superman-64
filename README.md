@@ -29,3 +29,11 @@ credit excludes inherited generated assembly; provenance-backed handwritten
 assembly is recorded separately from compiler-generated C. See
 [`docs/progress.md`](docs/progress.md) for the reporting policy and audited
 denominators.
+
+Current audited progress is **95,100 of 875,680 executable bytes (10.86%)**
+and **505 of 1,056 functions (47.82%)** matched in C. Of that total, 35,184
+bytes across 85 source units are fully linked into the exact-ROM build. The
+remaining function-level matches are strict recompilation results published
+with their source, recipe or donor provenance, and hashes under
+`verified/n64dk/`. ByteMatch reports linked and function-level progress
+separately.

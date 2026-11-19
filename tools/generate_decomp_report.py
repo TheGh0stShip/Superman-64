@@ -10,7 +10,8 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST = ROOT / "config/us/matching_units.tsv"
+LINKED_MANIFEST = ROOT / "config/us/matching_units.tsv"
+VERIFIED_MANIFEST = ROOT / "config/us/verified_n64dk.tsv"
 CATALOGUE = ROOT / "config/us/functions.tsv"
 NONFUNCTION = ROOT / "config/us/nonfunction_ranges.tsv"
 ROM_REGIONS = ROOT / "config/us/rom_regions.tsv"
@@ -116,14 +117,18 @@ def validate_image_coverage(catalogue: list[dict[str, object]],
         raise ValueError("ledgers do not cover the complete program image")
 
 
-def read_manifest(catalogue: list[dict[str, object]]) -> list[dict[str, object]]:
+def read_manifest(path: Path, catalogue: list[dict[str, object]],
+                  *, linked: bool) -> list[dict[str, object]]:
     rows: list[dict[str, object]] = []
-    with MANIFEST.open(newline="") as stream:
+    with path.open(newline="") as stream:
         lines = (line for line in stream if line.strip() and not line.startswith("#"))
         reader = csv.DictReader(
             lines,
             delimiter="\t",
-            fieldnames=("rom", "size", "vram", "name", "source", "sha256"),
+            fieldnames=(
+                "rom", "size", "vram", "name", "source", "sha256",
+                "recipe", "verdict",
+            ),
         )
         for row in reader:
             start = int(row["rom"], 0)
@@ -140,7 +145,13 @@ def read_manifest(catalogue: list[dict[str, object]]) -> list[dict[str, object]]
             expected_vram = CODE_VRAM_START + start - CODE_ROM_START
             if vram != expected_vram:
                 raise ValueError(f"ROM/VRAM mismatch: {row['name']}")
-            rows.append({**row, "start": start, "size_int": size, "vram_int": vram})
+            rows.append({
+                **row,
+                "start": start,
+                "size_int": size,
+                "vram_int": vram,
+                "linked": linked,
+            })
 
     rows.sort(key=lambda item: int(item["start"]))
     cursor = CODE_ROM_START
@@ -276,7 +287,14 @@ def build_report() -> dict[str, object]:
     catalogue = read_catalogue()
     nonfunction = read_nonfunction_ranges()
     validate_image_coverage(catalogue, nonfunction)
-    rows = read_manifest(catalogue)
+    linked_rows = read_manifest(LINKED_MANIFEST, catalogue, linked=True)
+    verified_rows = read_manifest(VERIFIED_MANIFEST, catalogue, linked=False)
+    linked_starts = {int(row["start"]) for row in linked_rows}
+    verified_starts = {int(row["start"]) for row in verified_rows}
+    overlap = linked_starts & verified_starts
+    if overlap:
+        raise ValueError(f"linked and external manifests overlap at {min(overlap):#x}")
+    rows = sorted(linked_rows + verified_rows, key=lambda row: int(row["start"]))
     matched_by_start = {int(row["start"]): row for row in rows}
     read_rom_regions()
     inventory = read_rom_inventory()
@@ -294,19 +312,24 @@ def build_report() -> dict[str, object]:
         vram = int(function["vram_int"])
         name = str(function["name"])
         matched = matched_by_start.get(start)
-        complete = matched is not None
+        fuzzy_matched = matched is not None
+        linked = matched is not None and bool(matched["linked"])
         owners = [unit for unit in code_units if unit[0] <= start < unit[1]]
         if len(owners) != 1:
             raise ValueError(f"function does not have exactly one code unit: {name}")
         source_path = owners[0][2]
-        generated = not complete
+        generated = not linked
         grouped.setdefault(source_path, []).append({
                 "name": name,
                 "size": str(size),
-                "fuzzy_match_percent": 100.0 if complete else 0.0,
+                "fuzzy_match_percent": 100.0 if fuzzy_matched else 0.0,
                 "address": str(vram),
-                "metadata": {"virtual_address": str(vram)},
-                "complete": complete,
+                "metadata": {
+                    "virtual_address": str(vram),
+                    "source_path": str(matched["source"]) if matched else source_path,
+                    "linked": linked,
+                },
+                "linked": linked,
                 "generated": generated,
             })
 
@@ -317,13 +340,16 @@ def build_report() -> dict[str, object]:
             raise ValueError(f"code unit has no catalogued function: {source_path}")
         total = code_bytes_in_range(inventory, unit_start, unit_end)
         matched_body = sum(
-            int(function["size"]) for function in functions if function.pop("complete")
+            int(function["size"])
+            for function in functions
+            if function["fuzzy_match_percent"] == 100.0
         )
+        linked_count = sum(bool(function.pop("linked")) for function in functions)
         auto_generated = any([function.pop("generated") for function in functions])
         matched_count = sum(
             function["fuzzy_match_percent"] == 100.0 for function in functions
         )
-        complete = matched_count == len(functions)
+        complete = linked_count == len(functions)
         matched_total = total if complete else matched_body
         unit_measures = measures(
             total, matched_total, len(functions), matched_count, 1, int(complete),
