@@ -1,0 +1,66 @@
+{
+  "schema": "n64dk-cartridge-relink/1",
+  "credit": "a measurement: grants no credit and changes no run, receipt or evidence store",
+  "rom_bytes": 8388608,
+  "rom_sha1_match": true,
+  "differing_bytes": 0,
+  "first_difference": null,
+  "bytes_by_provenance": {
+    "linked": 962236,
+    "repacked": 0,
+    "preserved-compressed": 0,
+    "preserved": 7426372
+  },
+  "preserved_inputs_needed": 7426372,
+  "linked_from_source_bytes": {
+    "text": 85532,
+    "data": 1968
+  },
+  "compressed_payload_reconstructed": 0,
+  "compressed_exactly_repacked_bytes": 0,
+  "translation_units_reconstructed": "not measured (original unit boundaries are not part of this check)",
+  "images": {
+    "main": {
+      "outcome": "identical",
+      "differing_bytes": 0,
+      "coverage": {
+        "exact": 84948,
+        "assumed": 0,
+        "assembly": 2364,
+        "raw-unit": 779852,
+        "raw-other": 51860
+      },
+      "source_text_bytes": 85344,
+      "source_data_bytes": 1968,
+      "placed": "ROM 0x1000"
+    },
+    "seg_1C6C00": {
+      "outcome": "identical",
+      "differing_bytes": 0,
+      "coverage": {
+        "exact": 120,
+        "assumed": 0,
+        "assembly": 0,
+        "raw-unit": 12288,
+        "raw-other": 200
+      },
+      "source_text_bytes": 120,
+      "source_data_bytes": 0,
+      "placed": "ROM 0x1C6C00 (copied, uncompressed)"
+    },
+    "seg_EC038": {
+      "outcome": "identical",
+      "differing_bytes": 0,
+      "coverage": {
+        "exact": 68,
+        "assumed": 0,
+        "assembly": 0,
+        "raw-unit": 30536,
+        "raw-other": 0
+      },
+      "source_text_bytes": 68,
+      "source_data_bytes": 0,
+      "placed": "ROM 0xEC038 (copied, uncompressed)"
+    }
+  }
+}

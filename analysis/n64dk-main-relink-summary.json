@@ -1,0 +1,32 @@
+{
+  "schema": "superman64-relink-summary/1",
+  "image": "main",
+  "linker": "kit",
+  "outcome": "identical",
+  "differing_bytes": 0,
+  "coverage": {
+    "exact": 84948,
+    "assumed": 0,
+    "assembly": 2364,
+    "raw-unit": 779852,
+    "raw-other": 51860
+  },
+  "source_text_bytes": 85344,
+  "source_data_bytes": 1968,
+  "units": {
+    "in_image": 1056,
+    "linked": 382,
+    "objects": 986,
+    "objects_by_result": {
+      "linked-identical": 382,
+      "raw": 604
+    },
+    "raw_members_by_reason": {
+      "assumed": 23,
+      "raw": 581
+    }
+  },
+  "external_manifest_functions_linked": 248,
+  "external_manifest_source_bytes_linked": 47772,
+  "external_manifest_trailing_padding_raw": 212
+}

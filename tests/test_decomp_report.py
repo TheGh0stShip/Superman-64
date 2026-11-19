@@ -20,7 +20,7 @@ class DecompReportTests(unittest.TestCase):
         self.assertEqual(self.report["version"], 2)
         self.assertEqual(measures["total_code"], "875680")
         self.assertEqual(measures["matched_code"], "95100")
-        self.assertEqual(measures["complete_code"], "35184")
+        self.assertEqual(measures["complete_code"], "94888")
         self.assertEqual(measures["total_functions"], 1056)
         self.assertEqual(measures["matched_functions"], 505)
         self.assertEqual(measures["total_data"], "43344")
@@ -70,11 +70,19 @@ class DecompReportTests(unittest.TestCase):
             if function["metadata"]["source_path"].startswith("verified/n64dk/")
         ]
         self.assertEqual(len(externally_verified), 248)
+        self.assertTrue(all(function["fuzzy_match_percent"] == 100.0
+                            for function in externally_verified))
+        linked_external = [function for function in externally_verified
+                           if function["metadata"]["linked"]]
+        self.assertEqual(len(linked_external), 248)
+        self.assertEqual(sum(int(function["size"])
+                             for function in linked_external), 47984)
         self.assertTrue(all(
-            function["fuzzy_match_percent"] == 100.0
-            and not function["metadata"]["linked"]
-            for function in externally_verified
+            function["metadata"]["link_profile"] == "n64dk-mixed-exact-c"
+            for function in linked_external
         ))
+        self.assertFalse(any(not function["metadata"]["linked"]
+                             for function in externally_verified))
 
     def test_category_breakdown(self):
         categories = {item["id"]: item for item in self.report["categories"]}

@@ -16,8 +16,11 @@ executable text inventory, not merely the sum of function bodies.
 The 152 source units own 866,788 executable bytes. A complete source unit
 receives credit for its emitted alignment as well as its matching functions;
 the current 85 complete units therefore contribute 35,184 fully linked bytes.
-Matching functions in incomplete units and strict function-level N64 Decomp
-Kit evidence add another 59,916 bytes, for 95,100 matched code bytes overall.
+An independently exact N64 Decomp Kit mixed cartridge profile links every
+externally verified function. Across both profiles, 94,224 function-body bytes
+and 664 bytes of linked complete-unit alignment produce 94,888 fully linked
+bytes. The remaining 212 matched bytes are trailing alignment retained raw by
+the mixed profile, for 95,100 matched code bytes overall.
 The remaining executable inventory is shown
 separately as 1,532 bytes of uncatalogued CPU text and 7,360 bytes of RSP text,
 with no matching credit.
@@ -26,10 +29,13 @@ with no matching credit.
 whose bytes are already covered by the full-ROM SHA-1 build gate. Every row
 records its ROM and VRAM address, emitted size, source path and source hash.
 `config/us/verified_n64dk.tsv` separately records strict function-level C
-recompilations that are not yet linked into this source tree. Those rows carry
-their compiler recipe or donor evidence and point to immutable source copies
-under `verified/n64dk/`. They receive matching-function and matching-byte
-credit, but never complete-unit or fully-linked credit.
+recompilations. Those rows carry their compiler recipe or donor evidence and
+point to immutable source copies under `verified/n64dk/`.
+`config/us/linked_profiles.json` cryptographically binds that manifest to an
+exact mixed-source cartridge relink. Its manifest-indexed bitmap grants linked
+status to all 248 rows and records 47,772 linked source bytes; 212 trailing
+alignment bytes remain raw. External profiles do not grant complete-unit
+credit.
 The report generator rejects stale hashes, duplicate or overlapping evidence,
 noncanonical starts, mismatched body sizes, incomplete image accounting and
 out-of-range entries.

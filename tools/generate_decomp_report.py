@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LINKED_MANIFEST = ROOT / "config/us/matching_units.tsv"
 VERIFIED_MANIFEST = ROOT / "config/us/verified_n64dk.tsv"
+LINKED_PROFILES = ROOT / "config/us/linked_profiles.json"
 CATALOGUE = ROOT / "config/us/functions.tsv"
 NONFUNCTION = ROOT / "config/us/nonfunction_ranges.tsv"
 ROM_REGIONS = ROOT / "config/us/rom_regions.tsv"
@@ -151,6 +152,8 @@ def read_manifest(path: Path, catalogue: list[dict[str, object]],
                 "size_int": size,
                 "vram_int": vram,
                 "linked": linked,
+                "unit_linked": linked,
+                "link_profile": "conventional" if linked else None,
             })
 
     rows.sort(key=lambda item: int(item["start"]))
@@ -176,6 +179,70 @@ def read_manifest(path: Path, catalogue: list[dict[str, object]],
     if len(rows) > len(catalogue):
         raise ValueError("matching function count exceeds the reviewed catalogue")
     return rows
+
+
+def apply_linked_profiles(rows: list[dict[str, object]]) -> int:
+    """Promote function rows linked by independently exact cartridge profiles.
+
+    The bitmap is indexed by the immutable, hashed manifest order.  This keeps
+    the receipt compact while preventing a changed or reordered manifest from
+    inheriting link credit accidentally.
+    """
+    document = json.loads(LINKED_PROFILES.read_text())
+    if document.get("schema") != "superman64-linked-profiles/1":
+        raise ValueError("unknown linked-profile schema")
+    claimed: set[int] = set()
+    linked_bytes = 0
+    for profile in document.get("profiles", []):
+        manifest_path = ROOT / str(profile["manifest"])
+        if manifest_path != VERIFIED_MANIFEST:
+            raise ValueError("linked profile names an unexpected manifest")
+        digest = hashlib.sha256(manifest_path.read_bytes()).hexdigest()
+        if digest != profile["manifest_sha256"]:
+            raise ValueError("linked-profile manifest hash changed")
+        if (profile.get("retail_rom_sha1")
+                != "c271db752610c9581e1ba1e9125ea8ecdb56f74f"
+                or profile.get("rom_bytes") != ROM_SIZE
+                or profile.get("rom_sha1_match") is not True
+                or profile.get("differing_bytes") != 0):
+            raise ValueError("linked profile is not an exact retail-ROM link")
+        for field in ("cartridge_receipt", "main_relink_receipt"):
+            receipt = ROOT / str(profile[field])
+            if (not receipt.is_file()
+                    or hashlib.sha256(receipt.read_bytes()).hexdigest()
+                    != profile[field + "_sha256"]):
+                raise ValueError(f"linked-profile {field} is missing or changed")
+        cartridge = json.loads((ROOT / str(profile["cartridge_receipt"])).read_text())
+        main = json.loads((ROOT / str(profile["main_relink_receipt"])).read_text())
+        if (cartridge.get("rom_sha1_match") is not True
+                or cartridge.get("differing_bytes") != 0
+                or cartridge.get("rom_bytes") != ROM_SIZE
+                or main.get("outcome") != "identical"
+                or main.get("differing_bytes") != 0
+                or main.get("external_manifest_functions_linked")
+                != profile["linked_functions"]
+                or main.get("external_manifest_source_bytes_linked")
+                != profile["linked_function_bytes"]):
+            raise ValueError("linked-profile receipts disagree with the claimed exact link")
+        bitmap = bin(int(str(profile["linked_bitmap_hex"]), 16))[2:].zfill(len(rows))
+        if len(bitmap) != len(rows):
+            raise ValueError("linked-profile bitmap length differs from manifest")
+        selected = [row for bit, row in zip(bitmap, rows) if bit == "1"]
+        selected_bytes = sum(int(row["size_int"]) for row in selected)
+        padding = int(profile.get("unlinked_trailing_padding_bytes", 0))
+        if (len(selected) != profile["linked_functions"]
+                or selected_bytes - padding != profile["linked_function_bytes"]
+                or not 0 <= padding <= selected_bytes):
+            raise ValueError("linked-profile totals disagree with its bitmap")
+        linked_bytes += int(profile["linked_function_bytes"])
+        for row in selected:
+            start = int(row["start"])
+            if start in claimed:
+                raise ValueError(f"function linked by multiple external profiles: {start:#x}")
+            claimed.add(start)
+            row["linked"] = True
+            row["link_profile"] = profile["id"]
+    return linked_bytes
 
 
 def read_code_units() -> list[tuple[int, int, str]]:
@@ -289,6 +356,7 @@ def build_report() -> dict[str, object]:
     validate_image_coverage(catalogue, nonfunction)
     linked_rows = read_manifest(LINKED_MANIFEST, catalogue, linked=True)
     verified_rows = read_manifest(VERIFIED_MANIFEST, catalogue, linked=False)
+    external_linked_code = apply_linked_profiles(verified_rows)
     linked_starts = {int(row["start"]) for row in linked_rows}
     verified_starts = {int(row["start"]) for row in verified_rows}
     overlap = linked_starts & verified_starts
@@ -314,11 +382,12 @@ def build_report() -> dict[str, object]:
         matched = matched_by_start.get(start)
         fuzzy_matched = matched is not None
         linked = matched is not None and bool(matched["linked"])
+        unit_linked = matched is not None and bool(matched["unit_linked"])
         owners = [unit for unit in code_units if unit[0] <= start < unit[1]]
         if len(owners) != 1:
             raise ValueError(f"function does not have exactly one code unit: {name}")
         source_path = owners[0][2]
-        generated = not linked
+        generated = not unit_linked
         grouped.setdefault(source_path, []).append({
                 "name": name,
                 "size": str(size),
@@ -328,8 +397,9 @@ def build_report() -> dict[str, object]:
                     "virtual_address": str(vram),
                     "source_path": str(matched["source"]) if matched else source_path,
                     "linked": linked,
+                    "link_profile": matched["link_profile"] if matched else None,
                 },
-                "linked": linked,
+                "unit_linked": unit_linked,
                 "generated": generated,
             })
 
@@ -344,7 +414,7 @@ def build_report() -> dict[str, object]:
             for function in functions
             if function["fuzzy_match_percent"] == 100.0
         )
-        linked_count = sum(bool(function.pop("linked")) for function in functions)
+        linked_count = sum(bool(function.pop("unit_linked")) for function in functions)
         auto_generated = any([function.pop("generated") for function in functions])
         matched_count = sum(
             function["fuzzy_match_percent"] == 100.0 for function in functions
@@ -397,6 +467,21 @@ def build_report() -> dict[str, object]:
     if unit_matched_code < manifest_matched_code:
         raise ValueError("source-unit matched code is below matching function bytes")
     matched_code = unit_matched_code
+    complete_unit_function_code = sum(
+        int(function["size"])
+        for unit in units if bool(unit["metadata"]["complete"])
+        for function in unit["functions"]
+    )
+    linked_padding = unit_complete_code - complete_unit_function_code
+    if linked_padding < 0:
+        raise ValueError("complete-unit padding accounting is negative")
+    fully_linked_code = (
+        sum(int(row["size_int"]) for row in linked_rows)
+        + external_linked_code
+        + linked_padding
+    )
+    if fully_linked_code > matched_code:
+        raise ValueError("fully linked code exceeds matched code")
 
     aggregate = measures(
         total_code,
@@ -405,7 +490,7 @@ def build_report() -> dict[str, object]:
         matched_functions,
         len(code_units),
         sum(bool(unit["metadata"]["complete"]) for unit in units),
-        unit_complete_code,
+        fully_linked_code,
     )
     aggregate.update({
         "total_data": str(total_data),
@@ -418,7 +503,7 @@ def build_report() -> dict[str, object]:
         unit_total_code, unit_matched_code, len(catalogue), matched_functions,
         len(code_units),
         sum(bool(unit["metadata"]["complete"]) for unit in units),
-        unit_complete_code,
+        fully_linked_code,
     )
     categories = [
         {"id": "cpu_units", "name": "Resident CPU source units", "measures": unit_code_measures},

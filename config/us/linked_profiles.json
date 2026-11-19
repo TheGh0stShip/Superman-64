@@ -1,0 +1,29 @@
+{
+  "schema": "superman64-linked-profiles/1",
+  "profiles": [
+    {
+      "id": "n64dk-mixed-exact-c",
+      "description": "N64DK mixed-source cartridge relink with the deterministic N64DK linker; unresolved units remain raw",
+      "retail_rom_sha1": "c271db752610c9581e1ba1e9125ea8ecdb56f74f",
+      "rom_bytes": 8388608,
+      "rom_sha1_match": true,
+      "differing_bytes": 0,
+      "linked_from_source": {
+        "text_bytes_all_images": 85532,
+        "data_bytes_all_images": 1968,
+        "main_text_bytes": 85344,
+        "main_data_bytes": 1968
+      },
+      "manifest": "config/us/verified_n64dk.tsv",
+      "manifest_sha256": "03682c968ce1dff45eed4a5d0b28153ae76afefff37a788c530d47287dc829d3",
+      "linked_bitmap_hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "linked_functions": 248,
+      "linked_function_bytes": 47772,
+      "unlinked_trailing_padding_bytes": 212,
+      "cartridge_receipt": "analysis/n64dk-cartridge-relink.json",
+      "cartridge_receipt_sha256": "073b88d64b07eab6810c232027abcd3c6f864f1bb118dcb9857f0d1c712f439a",
+      "main_relink_receipt": "analysis/n64dk-main-relink-summary.json",
+      "main_relink_receipt_sha256": "c85055b6adc913354358280d8f50c7f7cb7017caae75f25584fcd7ab64a99919"
+    }
+  ]
+}
