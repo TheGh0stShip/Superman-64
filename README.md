@@ -34,10 +34,10 @@ assembly is recorded separately from compiler-generated C. See
 [`docs/progress.md`](docs/progress.md) for the reporting policy and audited
 denominators.
 
-Current audited progress is **98,208 of 875,680 executable bytes (11.22%)**
-and **525 of 1,056 functions (49.72%)** matched in C. Of that total, **97,996
-bytes (11.19%) are fully linked** across two independently byte-identical
-retail cartridge profiles. All 525 matched functions are consumed from C by at
+Current audited progress is **98,308 of 875,680 executable bytes (11.23%)**
+and **526 of 1,056 functions (49.81%)** matched in C. Of that total, **98,096
+bytes (11.20%) are fully linked** across two independently byte-identical
+retail cartridge profiles. All 526 matched functions are consumed from C by at
 least one exact profile. Only 212 trailing alignment bytes inside catalogued
 function ranges remain raw, so they receive match credit but not linked credit.
 The N64 Decomp Kit profile reproduces all 8,388,608 ROM bytes with the retail
