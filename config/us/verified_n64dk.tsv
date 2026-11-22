@@ -51,6 +51,7 @@
 0x5E884	0x48	0x8005DC84	func_8005DC84	verified/n64dk/src/main/func_8005DC84.c	f813fe0bcf98dcd7f8c9fa65bac3bc29d4a3e936c068e7994e7a1d066fe5d20f	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x5EB00	0xDC	0x8005DF00	func_8005DF00	verified/n64dk/src/main/func_8005DF00.c	9ca411224f6d0915f646cc3dd630b5ad6cd2833e0fbd72eb099af36a1aa17314	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x5EBDC	0x130	0x8005DFDC	func_8005DFDC	verified/n64dk/src/main/func_8005DFDC.c	dca59baa3f8150df6839fbb551c1e1c162661cf343028cab6ca3d65fc0c7a03c	custom:mipspro744 -g -g3 -mips2 (draft)	exact
+0x5F704	0xB4	0x8005EB04	func_8005EB04	verified/n64dk/src/main/func_8005EB04.c	7cad53b1ece68654572218bad4a4bba4f04e42db2d134885b83c7396b17a34a8	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x610A0	0x1FC	0x800604A0	func_800604A0	verified/n64dk/src/main/func_800604A0.c	8472e311fd8f1361e102ffd78fe93efdd4f929518752cd4e64057dea13cadd84	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x63BD4	0xD4	0x80062FD4	func_80062FD4	verified/n64dk/src/main/func_80062FD4.c	3c88fde0b220d2b8236b2371be7e1ce4fd39f44bb5b98aecdfb99ab252847d28	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x695D0	0xB4	0x800689D0	func_800689D0	verified/n64dk/src/main/func_800689D0.c	764da10114a7365ef9c4bf42ab194b274bd72a913b736a7dd3651683c45dccc0	custom:mipspro744 -g -g3 -mips2 (draft)	exact
