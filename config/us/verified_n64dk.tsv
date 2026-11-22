@@ -153,6 +153,7 @@
 0xBDD9C	0x6C	0x800BD19C	func_800BD19C	verified/n64dk/src/main/func_800BD19C.c	43a21393340f25f76a1d7b7578cf0613a961477f91b05d4b6f569e868dcfa874	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0xBDE08	0x4C	0x800BD208	func_800BD208	verified/n64dk/src/main/func_800BD208.c	f821163a949f41b84e725cc03d954da65cc0dd9d1d5ac23b5b01b4aa273212ef	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0xBDE54	0x48	0x800BD254	func_800BD254	verified/n64dk/src/main/func_800BD254.c	e38222b98340ced6370fa72209d992cf201ddcb91c37fc3166fb62df19028dc9	custom:mipspro744 -g -g3 -mips2 (draft)	exact
+0xBE160	0xAC	0x800BD560	func_800BD560	verified/n64dk/src/main/func_800BD560.c	174800afc70dfe8e7de667b530a86207367b32b580f12d53294e8ecbf5e54002	ido5.3 -g -g3 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (typed bounds struct and source comparison order)	exact
 0xBE998	0x60	0x800BDD98	func_800BDD98	verified/n64dk/src/main/func_800BDD98.c	0d55f2808234932d6abc0211f88082fdaa538f5ea03854f72d67b4ae1ca2d402	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0xBE9F8	0x18	0x800BDDF8	func_800BDDF8	verified/n64dk/donors/main/src/Madden64/src/code/menu_state.c	a8bfd0545015f9c48b938528a925f05fd36b54189709c9493a71586ebae134df	donor unit Madden64: src/code/menu_state.c	donor
 0xBEBF0	0x14C	0x800BDFF0	func_800BDFF0	verified/n64dk/donors/main/src/BattleTanx/src/libultra/os_pfs_free_blocks.c	dd77e7521e8b1b1ebdfcb9815db3cc89bdc3486305e6c4e5722fabf83957288b	donor unit BattleTanx: src/libultra/os_pfs_free_blocks.c	donor

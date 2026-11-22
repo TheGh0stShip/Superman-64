@@ -19,10 +19,10 @@ class DecompReportTests(unittest.TestCase):
         measures = self.report["measures"]
         self.assertEqual(self.report["version"], 2)
         self.assertEqual(measures["total_code"], "875680")
-        self.assertEqual(measures["matched_code"], "98036")
-        self.assertEqual(measures["complete_code"], "97824")
+        self.assertEqual(measures["matched_code"], "98208")
+        self.assertEqual(measures["complete_code"], "97996")
         self.assertEqual(measures["total_functions"], 1056)
-        self.assertEqual(measures["matched_functions"], 524)
+        self.assertEqual(measures["matched_functions"], 525)
         self.assertEqual(measures["total_data"], "43344")
         self.assertEqual(measures["matched_data"], "0")
         self.assertEqual(measures["total_units"], 152)
@@ -49,13 +49,13 @@ class DecompReportTests(unittest.TestCase):
         self.assertEqual(sum(int(unit["measures"]["total_code"])
                              for unit in code_units), 866788)
         self.assertEqual(sum(int(unit["measures"]["matched_code"])
-                             for unit in code_units), 98036)
+                             for unit in code_units), 98208)
         self.assertEqual(sum(int(unit["measures"]["complete_code"])
                              for unit in code_units), 35184)
         self.assertEqual(sum(
             int(function["size"]) for function in functions
             if function["fuzzy_match_percent"] == 100.0
-        ), 97372)
+        ), 97544)
         self.assertTrue(all(
             unit["measures"]["matched_code"] == unit["measures"]["total_code"]
             and unit["measures"]["complete_code"] == unit["measures"]["total_code"]
@@ -69,14 +69,14 @@ class DecompReportTests(unittest.TestCase):
             function for function in functions
             if function["metadata"]["source_path"].startswith("verified/n64dk/")
         ]
-        self.assertEqual(len(externally_verified), 267)
+        self.assertEqual(len(externally_verified), 268)
         self.assertTrue(all(function["fuzzy_match_percent"] == 100.0
                             for function in externally_verified))
         linked_external = [function for function in externally_verified
                            if function["metadata"]["linked"]]
-        self.assertEqual(len(linked_external), 267)
+        self.assertEqual(len(linked_external), 268)
         self.assertEqual(sum(int(function["size"])
-                             for function in linked_external), 50920)
+                             for function in linked_external), 51092)
         self.assertTrue(all(
             function["metadata"]["link_profile"] == "n64dk-mixed-exact-c"
             for function in linked_external
@@ -150,7 +150,7 @@ class DecompReportTests(unittest.TestCase):
                 if line and not line.startswith("#")]
         self.assertEqual(len(rows), 1)
         self.assertIn("func_8026B000", rows[0])
-        self.assertEqual(self.report["measures"]["matched_functions"], 524)
+        self.assertEqual(self.report["measures"]["matched_functions"], 525)
 
 
 if __name__ == "__main__":
