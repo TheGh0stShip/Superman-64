@@ -13,7 +13,7 @@
   },
   "preserved_inputs_needed": 7426372,
   "linked_from_source_bytes": {
-    "text": 89600,
+    "text": 89780,
     "data": 2028
   },
   "compressed_payload_reconstructed": 0,
@@ -24,13 +24,13 @@
       "outcome": "identical",
       "differing_bytes": 0,
       "coverage": {
-        "exact": 88816,
+        "exact": 88996,
         "assumed": 0,
         "assembly": 2364,
-        "raw-unit": 776040,
+        "raw-unit": 775860,
         "raw-other": 51804
       },
-      "source_text_bytes": 89152,
+      "source_text_bytes": 89332,
       "source_data_bytes": 2028,
       "placed": "ROM 0x1000"
     },

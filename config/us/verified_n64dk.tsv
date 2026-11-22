@@ -48,6 +48,7 @@
 0x2AE90	0xCC	0x8002A290	func_8002A290	verified/n64dk/src/main/func_8002A290.c	b7f3944a374649af0c5d40d9df511b0996e44d66d55aadf5ebf43bb7a2fa0bf2	ido5.3 -g -g3 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (reconstructed 0x2CC-byte actor layout)	exact
 0x2BF60	0x238	0x8002B360	func_8002B360	verified/n64dk/src/main/func_8002B360.c	02ed242e24f1d64818eae4bc401ce51e0123145e578a1556277e093d9ac0c08d	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x2C348	0xA4	0x8002B748	func_8002B748	verified/n64dk/src/main/func_8002B748.c	48ef82432237baef7a7a174c233f4a1be5deafc528333532c53fb50d7f89b446	custom:mipspro744 -g -g3 -mips2 (draft; .rodata 0x800DCB24 size 0x3C)	exact
+0x2D488	0xB4	0x8002C888	func_8002C888	verified/n64dk/src/main/func_8002C888.c	fa56dc6a6e1f2f79f863e3ddd378d88c010ea8df76e6cc552df3e29db5210de9	custom:mipspro744 -g -g3 -mips2 (typed actor and type table; removed false pointer temporary)	exact
 0x34C80	0x98	0x80034080	func_80034080	verified/n64dk/src/main/func_80034080.c	c28fb1eebf31b5357a8afd20bd6c21590eb0912533d7f0c0cc55b7c3fb295fe4	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x47B14	0xB8	0x80046F14	func_80046F14	verified/n64dk/src/main/func_80046F14.c	42b1cdef337ad113b4e4393e25fcee78b9fa7b71bc700ebbc4b0525f6a723518	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x47BCC	0xAC	0x80046FCC	func_80046FCC	verified/n64dk/src/main/func_80046FCC.c	ee846f2cd16e06d7218fac181d06b5a06fe92f09d79599f7b96543645ab20633	custom:mipspro744 -g -g3 -mips2 (draft; reconstructed 0x28-byte record layout)	exact
