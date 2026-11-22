@@ -9,21 +9,21 @@
       "rom_sha1_match": true,
       "differing_bytes": 0,
       "linked_from_source": {
-        "text_bytes_all_images": 86428,
+        "text_bytes_all_images": 86524,
         "data_bytes_all_images": 2028,
-        "main_text_bytes": 86240,
+        "main_text_bytes": 86336,
         "main_data_bytes": 2028
       },
       "manifest": "config/us/verified_n64dk.tsv",
-      "manifest_sha256": "a7b89c380d6663ccc401426e7f91fc68bd57c927e66635bcdf2a958f7b95bfa2",
-      "linked_bitmap_hex": "7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
-      "linked_functions": 255,
-      "linked_function_bytes": 48668,
+      "manifest_sha256": "367bae9a414b38a30b94aff4729fa17a24f41d498b522f34ece9da2bc8ed9908",
+      "linked_bitmap_hex": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "linked_functions": 256,
+      "linked_function_bytes": 48764,
       "unlinked_trailing_padding_bytes": 212,
       "cartridge_receipt": "analysis/n64dk-cartridge-relink.json",
-      "cartridge_receipt_sha256": "c0602328569d4e8525a57fd13485f8d582996c35d08b1bed1da5096eccc879f7",
+      "cartridge_receipt_sha256": "0c9d6ad7c753ac816001967ef61f95e9afd34114624a8cd79d7b469a46e09291",
       "main_relink_receipt": "analysis/n64dk-main-relink-summary.json",
-      "main_relink_receipt_sha256": "9d5d02ac604d6dc5c57cb89dbe8b73fe25bf643d5e31969037628e5bdf24dcbe"
+      "main_relink_receipt_sha256": "d6289a5df983386dcad02d0713abee6ca1754cede18693e73c75530d1734fa32"
     }
   ]
 }

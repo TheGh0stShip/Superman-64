@@ -82,6 +82,7 @@
 0x905E4	0x10	0x8008F9E4	func_8008F9E4	verified/n64dk/src/main/func_8008F9E4.c	73eb8b2b9ef8c2de5e8adc2a61300355996c90ceb73000b9cfa43b84e248c584	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x905F4	0x80	0x8008F9F4	func_8008F9F4	verified/n64dk/src/main/func_8008F9F4.c	abbf05fdcc7f54f816492eb9ab4d7877a19805093570b295c51b4ba78a2e22e5	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x90674	0x10	0x8008FA74	func_8008FA74	verified/n64dk/src/main/func_8008FA74.c	dae21ddd7854efd5960d84eaadd7284deee934cc7efc78fec3a3b3f79b59dcf0	custom:mipspro744 -g -g3 -mips2 (draft)	exact
+0x90B08	0x60	0x8008FF08	func_8008FF08	verified/n64dk/src/main/func_8008FF08.c	0f8e7e6fd1459df645cb554e994898b5b51b3e366f23be71cfaa8d1aa3205477	ido5.3 -g -g3 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (typed 0x30-byte entry array)	exact
 0x918EC	0x8C	0x80090CEC	func_80090CEC	verified/n64dk/src/main/func_80090CEC.c	c2480811f6a11fdf56507f184b76e76ddd978928519576b6a5de4f896dce7429	custom:mipspro744 -g -g3 -mips2 (draft, recipe of its region)	exact
 0x93200	0xC4	0x80092600	func_80092600	verified/n64dk/src/main/func_80092600.c	3c34b4985f38b85603eaf0c8073a6d9796f6ce9512866402bad8cfa3992c2700	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x932C4	0x18	0x800926C4	func_800926C4	verified/n64dk/src/main/func_800926C4.c	c912126fa38ea4a330749c136301b4f571ce4c4de95540bbcda4b5f7058f727c	custom:mipspro744 -O2 -g3 -mips2 (draft)	exact
