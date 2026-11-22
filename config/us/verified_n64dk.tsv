@@ -102,6 +102,7 @@
 0x93F58	0x50	0x80093358	func_80093358	verified/n64dk/src/main/func_80093358.c	3879b40897af655b73cf64de669b6ff32ea56083137a04612506e7843e589210	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x940AC	0x4C	0x800934AC	func_800934AC	verified/n64dk/src/main/func_800934AC.c	5d8a9e72faeddb150fa9b9b40c591b47dd3443129404b24b8a0b0a3c7df213a6	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x943DC	0x50	0x800937DC	func_800937DC	verified/n64dk/src/main/func_800937DC.c	388f704f14c3e4d5a4eee36cd795c52e2eed44a363f055edf30c60eb62d40d95	custom:mipspro744 -g -g3 -mips2 (draft)	exact
+0x944C8	0x80	0x800938C8	func_800938C8	verified/n64dk/src/main/func_800938C8.c	24c6b7b28e7c6ca7c162db7ce208f2ee57f939c9002e9abd177dd31f45801c68	ido5.3 -g -g3 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (removed false lifted pointer temporary)	exact
 0x94D84	0xE4	0x80094184	func_80094184	verified/n64dk/src/main/func_80094184.c	4fd183ad5857c5ed4c75bbf66ab0e165e602be5680e5ea5133ec64af6dce5a28	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x94FCC	0x2C	0x800943CC	func_800943CC	verified/n64dk/src/main/func_800943CC.c	7889a40ebf5f477778b5d507a473a19e96cff7875a01977adb57b6eba803df3c	custom:mipspro744 -O2 -g3 -mips2 (draft)	exact
 0xA4F30	0x8	0x800A4330	func_800A4330	verified/n64dk/donors/main/src/BattleTanx/src/code/assets/resource_variant_callback_noop.c	2554a8337f218beeba07b9e572e14ad61c00b8280f25a85af40dcf14c8c66463	donor unit BattleTanx: src/code/assets/resource_variant_callback_noop.c	donor
