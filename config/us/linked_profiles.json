@@ -9,27 +9,27 @@
       "rom_sha1_match": true,
       "differing_bytes": 0,
       "linked_from_source": {
-        "text_bytes_all_images": 88608,
+        "text_bytes_all_images": 88668,
         "data_bytes_all_images": 2028,
-        "main_text_bytes": 88160,
+        "main_text_bytes": 88220,
         "main_data_bytes": 2028
       },
       "manifest": "config/us/verified_n64dk.tsv",
-      "manifest_sha256": "3921986acbfa31145574f0245a6c3f6bf51583d0636c7368535c251f3b224ae7",
+      "manifest_sha256": "7a81601308e69c311dca500be79e0598029c91d339c0cf8163d41cac0812ac13",
       "auxiliary_manifests": [
         {
           "path": "config/us/verified_n64dk_overlays.tsv",
           "sha256": "591ecf0a6bc7f818c48a65a75bb0880b00a18d432206fd108fca20a8397a7e2b"
         }
       ],
-      "linked_bitmap_hex": "1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
-      "linked_functions": 265,
-      "linked_function_bytes": 50532,
+      "linked_bitmap_hex": "3ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "linked_functions": 266,
+      "linked_function_bytes": 50592,
       "unlinked_trailing_padding_bytes": 212,
       "cartridge_receipt": "analysis/n64dk-cartridge-relink.json",
-      "cartridge_receipt_sha256": "7b0e7b6d63735ebdc58983a285a823f45781465e788fdd1fe474f9126ad3e091",
+      "cartridge_receipt_sha256": "e27cfa674550dd2a43ce0799454d395f229eef73867ddae01955bf45c036ef31",
       "main_relink_receipt": "analysis/n64dk-main-relink-summary.json",
-      "main_relink_receipt_sha256": "bd8d79ce7bc362035ec87ce44459b5875664a41252ef80db2bf86f8f04df88a6"
+      "main_relink_receipt_sha256": "75d87a77981e32a405bb2a9ecd8a52e84f3d023351c5abc58aef992d58aacd53"
     }
   ]
 }
