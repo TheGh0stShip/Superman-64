@@ -25,6 +25,7 @@
 0x12E0C	0x58	0x8001220C	func_8001220C	verified/n64dk/src/main/func_8001220C.c	e3d5fa04e5e3280d4b3176ec3f271fc97cae21ed8ef3c3fb951a94d99a6593c8	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x18E1C	0x2C	0x8001821C	func_8001821C	verified/n64dk/src/main/func_8001821C.c	011e7f06143943e14ca7d68c88c0fbf193f4d7561b96fd723c6c7a0e55c93bf6	custom:mipspro744 -O2 -g3 -mips2 (draft)	exact
 0x1A60C	0x19C	0x80019A0C	func_80019A0C	verified/n64dk/src/main/func_80019A0C.c	2bb7aecedaee5fd0d113cefe57e5e1bb420cfaf1971206ac98b67fe9b9d3d35d	custom:mipspro744 -g -g3 -mips2 (draft)	exact
+0x1CEB8	0x30	0x8001C2B8	func_8001C2B8	verified/n64dk/src/main/func_8001C2B8.c	4fc1b9970450ef7435af7c38560ac80fa03c0f6fbfa5d37b6090de63dbdfa5f3	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x1CEE8	0x84	0x8001C2E8	func_8001C2E8	verified/n64dk/src/main/func_8001C2E8.c	872f9722f67d9ec09ee20bd28f74ec73606cf86cc5953b1266b23b77ae5e54be	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x1FCB0	0x44	0x8001F0B0	func_8001F0B0	verified/n64dk/src/main/func_8001F0B0.c	8b93126b4996b1f3955b65597f59d1ca313aeb11a25458a3c4b07ea1eb0fa07d	custom:mipspro744 -O2 -g3 -mips2 (draft)	exact
 0x2086C	0x54	0x8001FC6C	func_8001FC6C	verified/n64dk/src/main/func_8001FC6C.c	a304aed5df4a129d48316924a145321758798afbeee79013e55996190eb244ec	ido5.3 -O1 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (draft)	exact

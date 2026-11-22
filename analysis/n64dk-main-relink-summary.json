@@ -5,28 +5,28 @@
   "outcome": "identical",
   "differing_bytes": 0,
   "coverage": {
-    "exact": 85128,
+    "exact": 85176,
     "assumed": 0,
     "assembly": 2364,
-    "raw-unit": 779672,
+    "raw-unit": 779624,
     "raw-other": 51860
   },
-  "source_text_bytes": 85524,
+  "source_text_bytes": 85572,
   "source_data_bytes": 1968,
   "units": {
     "in_image": 1056,
-    "linked": 383,
+    "linked": 384,
     "objects": 986,
     "objects_by_result": {
-      "linked-identical": 383,
-      "raw": 603
+      "linked-identical": 384,
+      "raw": 602
     },
     "raw_members_by_reason": {
       "assumed": 23,
-      "raw": 580
+      "raw": 579
     }
   },
-  "external_manifest_functions_linked": 249,
-  "external_manifest_source_bytes_linked": 47952,
+  "external_manifest_functions_linked": 250,
+  "external_manifest_source_bytes_linked": 48000,
   "external_manifest_trailing_padding_raw": 212
 }
