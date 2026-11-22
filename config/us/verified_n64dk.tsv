@@ -12,6 +12,7 @@
 0xBCB8	0xA8	0x8000B0B8	func_8000B0B8	verified/n64dk/src/main/func_8000B0B8.c	c91f69c8933fd82d24a66dead7a40d66ae38293b21f3a1deb36262c806eea62b	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0xC45C	0x94	0x8000B85C	func_8000B85C	verified/n64dk/src/main/func_8000B85C.c	767ee7dc2fa8d02a2b6c94f79f76d5266e623bf7afbce9d03ca6a90b2e5cd795	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0xF3DC	0x54	0x8000E7DC	func_8000E7DC	verified/n64dk/src/main/func_8000E7DC.c	b131c908cdd7a3e9a22e70154d582320b6e5110d325b3c1a7fd76c0593c9c244	custom:mipspro744 -O2 -g3 -mips2 (draft)	exact
+0x1190C	0x7C	0x80010D0C	func_80010D0C	verified/n64dk/src/main/func_80010D0C.c	a67fba5748a38dc01e06bc39ba9db457e6be0066d5018ce2e8c997b0fcda1544	ido5.3 -g -g3 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (correct signed field and expression order)	exact
 0x11D30	0x6C	0x80011130	func_80011130	verified/n64dk/src/main/func_80011130.c	410314bb8db163e38826caf404b8a63f1b8985c41b6c3b3fba9f3a352069cb1a	custom:mipspro744 -g -g3 -mips2 (draft after variant search)	exact
 0x11D9C	0x6C	0x8001119C	func_8001119C	verified/n64dk/src/main/func_8001119C.c	20a7589ce39519c8828b1b24c372fc096a9b589662f6174523283ef3f5fea528	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x12840	0x24	0x80011C40	func_80011C40	verified/n64dk/src/main/func_80011C40.c	5bbf0b1441db46e9daab39e7e98249b49b35384fd78950b713623fc72e4765d1	custom:mipspro744 -O2 -g3 -mips2 (draft)	exact
