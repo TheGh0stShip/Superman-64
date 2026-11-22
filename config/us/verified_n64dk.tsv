@@ -115,6 +115,7 @@
 0xB8080	0x54	0x800B7480	func_800B7480	verified/n64dk/src/main/func_800B7480.c	9f0b0da23a17e2de83642985973cbc15c6a64e2c31406392ebc46116033e397d	custom:mipspro744 -g -g3 -mips2 (draft after variant search)	exact
 0xB9610	0x24	0x800B8A10	func_800B8A10	verified/n64dk/src/main/func_800B8A10.c	92b6659e02c51c8476786c40978f6373684587eb5d6d9c403ba93377f820cc84	ido5.3 -O1 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (draft)	exact
 0xB9634	0xB8	0x800B8A34	func_800B8A34	verified/n64dk/src/main/func_800B8A34.c	27fbacd5edf94e1e6f20d3e6d2cf40e32011e4145bc9a1a44bcc10b37cad5d02	custom:mipspro744 -g -g3 -mips2 (draft)	exact
+0xB9820	0x84	0x800B8C20	func_800B8C20	verified/n64dk/src/main/func_800B8C20.c	c01929acddd362067330d00b5d9fe863f5a8f5e114fc0eb70aa94dea0fe1bb1e	ido5.3 -g -g3 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (typed object and 0x28-byte entry array)	exact
 0xB9AD8	0x94	0x800B8ED8	func_800B8ED8	verified/n64dk/src/main/func_800B8ED8.c	c1167c91473c9064ef1d97427a95c091ec082d64b33a0de6eb51865a45d68fce	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0xB9B6C	0x7C	0x800B8F6C	func_800B8F6C	verified/n64dk/src/main/func_800B8F6C.c	7a47d1537f67b30b6bd399cd0edd0c656e0304c406742dc31b78bac1813aac97	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0xB9BE8	0x8	0x800B8FE8	func_800B8FE8	verified/n64dk/donors/main/src/BattleTanx/src/code/assets/resource_variant_callback_noop.c	2554a8337f218beeba07b9e572e14ad61c00b8280f25a85af40dcf14c8c66463	donor unit BattleTanx: src/code/assets/resource_variant_callback_noop.c	donor
