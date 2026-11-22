@@ -17,10 +17,10 @@ The 152 source units own 866,788 executable bytes. A complete source unit
 receives credit for its emitted alignment as well as its matching functions;
 the current 85 complete units therefore contribute 35,184 fully linked bytes.
 An independently exact N64 Decomp Kit mixed cartridge profile links every
-externally verified function. Across both profiles, 94,788 function-body bytes
-and 664 bytes of linked complete-unit alignment produce 95,452 fully linked
+externally verified function. Across both profiles, 94,956 function-body bytes
+and 664 bytes of linked complete-unit alignment produce 95,620 fully linked
 bytes. The remaining 212 matched bytes are trailing alignment retained raw by
-the mixed profile, for 95,664 matched code bytes overall.
+the mixed profile, for 95,832 matched code bytes overall.
 The remaining executable inventory is shown
 separately as 1,532 bytes of uncatalogued CPU text and 7,360 bytes of RSP text,
 with no matching credit.
@@ -33,7 +33,7 @@ recompilations. Those rows carry their compiler recipe or donor evidence and
 point to immutable source copies under `verified/n64dk/`.
 `config/us/linked_profiles.json` cryptographically binds that manifest to an
 exact mixed-source cartridge relink. Its manifest-indexed bitmap grants linked
-status to all 252 rows and records 48,336 linked source bytes; 212 trailing
+status to all 253 rows and records 48,504 linked source bytes; 212 trailing
 alignment bytes remain raw. External profiles do not grant complete-unit
 credit.
 The report generator rejects stale hashes, duplicate or overlapping evidence,
