@@ -15,11 +15,11 @@ library and then verified at Superman 64's addresses.
 `config/us/linked_profiles.json` records the mixed profile's immutable proof:
 the retail ROM SHA-1, zero differing bytes, linked-source byte totals, hashes
 of the N64DK manifest and relink receipts, and a manifest-indexed bitmap of the
-functions actually linked. The profile links all 257 externally verified
-functions, including donor C, and contributes 48,936 source-linked bytes.
+functions actually linked. The profile links all 258 externally verified
+functions, including donor C, and contributes 49,040 source-linked bytes.
 Because 53 canonical catalogue ranges include trailing alignment, 212 bytes at
 their ends remain raw and do not receive linked credit. The complete cartridge
-contains 86,696 linked text bytes and 2,028 linked data bytes across all images and is exactly
+contains 86,800 linked text bytes and 2,028 linked data bytes across all images and is exactly
 8,388,608 bytes with retail SHA-1
 `c271db752610c9581e1ba1e9125ea8ecdb56f74f`.
 

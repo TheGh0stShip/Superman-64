@@ -67,6 +67,7 @@
 0x80420	0x24	0x8007F820	func_8007F820	verified/n64dk/src/main/func_8007F820.c	c898640a782a72c9465880ad3949ad2b18478d3b5817b562eeccb293f36bd2e6	custom:mipspro744 -O2 -g3 -mips2 (draft)	exact
 0x80444	0x8	0x8007F844	func_8007F844	verified/n64dk/donors/main/src/BattleTanx/src/code/assets/resource_variant_callback_noop.c	2554a8337f218beeba07b9e572e14ad61c00b8280f25a85af40dcf14c8c66463	donor unit BattleTanx: src/code/assets/resource_variant_callback_noop.c	donor
 0x83FD0	0x18	0x800833D0	func_800833D0	verified/n64dk/src/main/func_800833D0.c	772c4819835131a7733cb586e88b29182795f9556268f5ade5ede01876f30214	custom:mipspro744 -O2 -g3 -mips2 (draft)	exact
+0x8602C	0x68	0x8008542C	func_8008542C	verified/n64dk/src/main/func_8008542C.c	3b3202dc73e053e86cb4e28a27c15991ed2351e2a0dd36d6c42a59d21ff2b00e	ido5.3 -g -g3 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (correct u16 element type)	exact
 0x89528	0xC	0x80088928	func_80088928	verified/n64dk/src/main/func_80088928.c	ef22bb59e91b057015229dcf387f0d316bbac4c651da0b61d1a28288f1acccdb	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x89534	0xC	0x80088934	func_80088934	verified/n64dk/src/main/func_80088934.c	bc37b941354e3d890383e41141448b131f52ca3483d57b711dc1b8c0dabae9db	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x89834	0x238	0x80088C34	func_80088C34	verified/n64dk/src/main/func_80088C34.c	8679b23252fcec83372ffee40faa61d24702ba563ee6eac6ce0b6a9a4a365a47	custom:mipspro744 -g -g3 -mips2 (draft)	exact
