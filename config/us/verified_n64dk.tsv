@@ -43,6 +43,7 @@
 0x2C348	0xA4	0x8002B748	func_8002B748	verified/n64dk/src/main/func_8002B748.c	48ef82432237baef7a7a174c233f4a1be5deafc528333532c53fb50d7f89b446	custom:mipspro744 -g -g3 -mips2 (draft; .rodata 0x800DCB24 size 0x3C)	exact
 0x34C80	0x98	0x80034080	func_80034080	verified/n64dk/src/main/func_80034080.c	c28fb1eebf31b5357a8afd20bd6c21590eb0912533d7f0c0cc55b7c3fb295fe4	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x47B14	0xB8	0x80046F14	func_80046F14	verified/n64dk/src/main/func_80046F14.c	42b1cdef337ad113b4e4393e25fcee78b9fa7b71bc700ebbc4b0525f6a723518	custom:mipspro744 -g -g3 -mips2 (draft)	exact
+0x47BCC	0xAC	0x80046FCC	func_80046FCC	verified/n64dk/src/main/func_80046FCC.c	ee846f2cd16e06d7218fac181d06b5a06fe92f09d79599f7b96543645ab20633	custom:mipspro744 -g -g3 -mips2 (draft; reconstructed 0x28-byte record layout)	exact
 0x49004	0xAC	0x80048404	func_80048404	verified/n64dk/src/main/func_80048404.c	688a5bc122a103c357960594b97cedfd86183e7b582c6c01986a4abab9e57c69	custom:mipspro744 -g -g3 -mips2 (draft after variant search)	exact
 0x499B4	0xDC	0x80048DB4	func_80048DB4	verified/n64dk/src/main/func_80048DB4.c	91898cb7fd4a7736fd6372741b23e8acd4a16a716f59316382773ebf779fbac1	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x49A90	0x1CC	0x80048E90	func_80048E90	verified/n64dk/src/main/func_80048E90.c	357009d9e911b553080a72ba6ca945fed12964e9988586fd82170fbcec88cf5b	custom:mipspro744 -g -g3 -mips2 (draft)	exact
