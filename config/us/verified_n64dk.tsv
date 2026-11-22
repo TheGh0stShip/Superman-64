@@ -66,6 +66,7 @@
 0x63BD4	0xD4	0x80062FD4	func_80062FD4	verified/n64dk/src/main/func_80062FD4.c	3c88fde0b220d2b8236b2371be7e1ce4fd39f44bb5b98aecdfb99ab252847d28	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x695D0	0xB4	0x800689D0	func_800689D0	verified/n64dk/src/main/func_800689D0.c	764da10114a7365ef9c4bf42ab194b274bd72a913b736a7dd3651683c45dccc0	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x69D00	0x84	0x80069100	func_80069100	verified/n64dk/src/main/func_80069100.c	937c5fb50f4d59fc654afbb5a363497514f0f8c494b01327f365f024a12a7ec9	ido5.3 -g -g3 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (typed 0x28-byte entry array; pre-increment loop latch)	exact
+0x70E3C	0x198	0x8007023C	func_8007023C	verified/n64dk/src/main/func_8007023C.c	ce918bcb3f16369f6079dbd5c99be08c6be8f2418d8ecedc051695885fe31ec9	custom:mipspro744 -g -g3 -mips2 (typed actor fields and compound assignment load order)	exact
 0x70FE0	0x28	0x800703E0	func_800703E0	verified/n64dk/src/main/func_800703E0.c	b0844f9de532d6cb11d87f31e7469d11f52b2e3e82996adbd32712f96c0c364c	ido5.3 -O1 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (draft)	exact
 0x718E0	0x38	0x80070CE0	func_80070CE0	verified/n64dk/src/main/func_80070CE0.c	5ba0fd7dbbde397a925abc9fd8f4030c37e556aeba088e368eff702e5525122d	custom:mipspro744 -g -g3 -mips2 (draft)	exact
 0x71E68	0x8	0x80071268	func_80071268	verified/n64dk/donors/main/src/BattleTanx/src/code/assets/resource_variant_callback_noop.c	2554a8337f218beeba07b9e572e14ad61c00b8280f25a85af40dcf14c8c66463	donor unit BattleTanx: src/code/assets/resource_variant_callback_noop.c	donor
