@@ -212,6 +212,12 @@ def apply_linked_profiles(rows: list[dict[str, object]]) -> int:
                     or hashlib.sha256(receipt.read_bytes()).hexdigest()
                     != profile[field + "_sha256"]):
                 raise ValueError(f"linked-profile {field} is missing or changed")
+        for auxiliary in profile.get("auxiliary_manifests", []):
+            manifest = ROOT / str(auxiliary["path"])
+            if (not manifest.is_file()
+                    or hashlib.sha256(manifest.read_bytes()).hexdigest()
+                    != auxiliary["sha256"]):
+                raise ValueError("linked-profile auxiliary manifest is missing or changed")
         cartridge = json.loads((ROOT / str(profile["cartridge_receipt"])).read_text())
         main = json.loads((ROOT / str(profile["main_relink_receipt"])).read_text())
         if (cartridge.get("rom_sha1_match") is not True

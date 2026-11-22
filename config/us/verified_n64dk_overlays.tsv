@@ -1,0 +1,3 @@
+# Strict function-level C evidence for non-resident images; not part of the ByteMatch resident-code denominator
+# IMAGE	IMAGE_OFFSET	ROM_START	SIZE	VRAM	NAME	SOURCE	SHA256	RECIPE	VERDICT
+seg_1C6C00	0x0	0x1C6C00	0x104	0x8026B000	func_8026B000	verified/n64dk/src/seg_1C6C00/func_8026B000.c	9ac50272e53a86597065aa6f457269933d3dea4c4701ad5d607790bd928e5b39	ido5.3 -O1 -mips2 -non_shared -G 0 -Xcpluscomm -Wab,-r4300_mul (typed 0x2CC-byte object array)	exact

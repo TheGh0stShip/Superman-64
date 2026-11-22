@@ -135,6 +135,23 @@ class DecompReportTests(unittest.TestCase):
         workflow = (ROOT / ".github/workflows/progress.yml").read_text()
         self.assertIn("name: NSPE_report", workflow)
 
+    def test_overlay_evidence_is_bound_without_resident_credit(self):
+        profile = json.loads((ROOT / "config/us/linked_profiles.json").read_text())["profiles"][0]
+        auxiliary = profile["auxiliary_manifests"]
+        self.assertEqual(auxiliary, [{
+            "path": "config/us/verified_n64dk_overlays.tsv",
+            "sha256": auxiliary[0]["sha256"],
+        }])
+        manifest = ROOT / auxiliary[0]["path"]
+        import hashlib
+        self.assertEqual(hashlib.sha256(manifest.read_bytes()).hexdigest(),
+                         auxiliary[0]["sha256"])
+        rows = [line for line in manifest.read_text().splitlines()
+                if line and not line.startswith("#")]
+        self.assertEqual(len(rows), 1)
+        self.assertIn("func_8026B000", rows[0])
+        self.assertEqual(self.report["measures"]["matched_functions"], 522)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -43,3 +43,8 @@ function ranges remain raw, so they receive match credit but not linked credit.
 The N64 Decomp Kit profile reproduces all 8,388,608 ROM bytes with the retail
 SHA-1. See [`docs/n64dk-verification.md`](docs/n64dk-verification.md) for the
 receipt and accounting rules.
+
+The exact cartridge profile also links verified C from non-resident images.
+These sources are tracked separately because the public ByteMatch denominator
+currently covers resident executable code only; see
+[`config/us/verified_n64dk_overlays.tsv`](config/us/verified_n64dk_overlays.tsv).

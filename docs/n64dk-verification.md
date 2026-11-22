@@ -19,7 +19,7 @@ functions actually linked. The profile links all 265 externally verified
 functions, including donor C, and contributes 50,532 source-linked bytes.
 Because 53 canonical catalogue ranges include trailing alignment, 212 bytes at
 their ends remain raw and do not receive linked credit. The complete cartridge
-contains 88,348 linked text bytes and 2,028 linked data bytes across all images and is exactly
+contains 88,608 linked text bytes and 2,028 linked data bytes across all images and is exactly
 8,388,608 bytes with retail SHA-1
 `c271db752610c9581e1ba1e9125ea8ecdb56f74f`.
 
@@ -34,3 +34,10 @@ evidence includes material verified from BattleTanx, Madden 64, Rugrats,
 Nagano, Pilotwings 64, and reconstructed Nintendo 64 SDK units. Their presence
 is evidence of byte identity, not a claim that those projects authored the
 original Superman 64 source.
+
+`config/us/verified_n64dk_overlays.tsv` records strict C evidence for loaded
+images outside the resident-code catalogue. Its first entry reconstructs all
+260 bytes of `seg_1C6C00`'s `func_8026B000` from typed C. The exact cartridge
+profile cryptographically binds this auxiliary manifest and links the source,
+but it does not add those bytes to ByteMatch's resident-code numerator or
+denominator.
